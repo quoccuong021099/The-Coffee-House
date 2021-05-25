@@ -1,0 +1,5238 @@
+{
+  "key": "5b7b89e2fbc6867dea6bb364",
+  "message": "",
+  "data": [
+    {
+      "_id": "605da09f717e5d00114a3cda",
+      "localize": {
+        "en": "Tr\u00e0 S\u1eefa Oolong N\u01b0\u1edbng",
+        "vi": "Tr\u00e0 S\u1eefa Oolong N\u01b0\u1edbng"
+      },
+      "description": "\u0110\u1eadm \u0111\u00e0 chu\u1ea9n gu - b\u1edfi tr\u00e0 oolong n\u01b0\u1edbng \u0111\u1eadm v\u1ecb ho\u00e0 c\u00f9ng l\u1edbp s\u1eefa th\u01a1m b\u00e9o.\n\nH\u01b0\u01a1ng v\u1ecb ch\u00e2n \u00e1i \u0111\u00fang gu \u0111\u1eadm \u0111\u00e0 - tr\u00e0 oolong \u0111\u01b0\u1ee3c \"sao\" (n\u01b0\u1edbng) l\u00e2u h\u01a1n cho v\u1ecb \u0111\u1eadm \u0111\u00e0, ho\u00e0 quy\u1ec7n v\u1edbi s\u1eefa th\u01a1m ng\u1eady. Cho t\u1eebng ng\u1ee5m m\u00e1t l\u1ea1nh, l\u01b0u luy\u1ebfn v\u1ecb tr\u00e0 s\u1eefa \u0111\u1eadm \u0111\u00e0 m\u00e3i n\u01a1i cu\u1ed1ng h\u1ecdng.",
+      "product_odoo": {
+        "product_tmpl_id": 4674,
+        "variants": [
+          {
+            "code": "10010143",
+            "price": 55000,
+            "product_id": 2535,
+            "val": "L\u1edbn"
+          },
+          {
+            "code": "10010142",
+            "price": 50000,
+            "product_id": 2534,
+            "val": "V\u1eeba",
+            "localize": { "en": null, "vi": "Size V\u1eeba" }
+          }
+        ]
+      },
+      "categ_id": [9, 4, 24, 69],
+      "topping_list": [
+        {
+          "product_id": 1667,
+          "product_name": "Tr\u00e2n ch\u00e2u tr\u1eafng",
+          "code": "10100016",
+          "price": 10000
+        }
+      ],
+      "variants": [
+        {
+          "code": "10010143",
+          "price": 55000,
+          "product_id": 2535,
+          "localize": { "en": "L\u1edbn", "vi": "L\u1edbn" },
+          "val": "L\u1edbn"
+        },
+        {
+          "code": "10010142",
+          "price": 50000,
+          "product_id": 2534,
+          "val": "V\u1eeba",
+          "localize": { "en": null, "vi": "V\u1eeba" }
+        }
+      ],
+      "type": [],
+      "options": [
+        {
+          "name": "Size",
+          "desciption": "Ch\u1ecdn 1 lo\u1ea1i size",
+          "min": 1,
+          "max": 1,
+          "default_index": 0,
+          "items": [
+            {
+              "code": "10010143",
+              "price": 5000,
+              "product_id": 2535,
+              "localize": { "en": "L\u1edbn", "vi": "L\u1edbn" },
+              "val": "L\u1edbn",
+              "is_main": true
+            },
+            {
+              "code": "10010142",
+              "price": 0,
+              "product_id": 2534,
+              "val": "V\u1eeba",
+              "localize": { "en": null, "vi": "V\u1eeba" },
+              "is_main": true
+            }
+          ]
+        },
+        {
+          "name": "Topping",
+          "desciption": "Ch\u1ecdn t\u1ed1i \u0111a 2 lo\u1ea1i",
+          "min": 0,
+          "max": 2,
+          "default_index": -1,
+          "items": [
+            {
+              "product_id": 1667,
+              "product_name": "Tr\u00e2n ch\u00e2u tr\u1eafng",
+              "code": "10100016",
+              "price": 10000,
+              "type": 3
+            }
+          ]
+        }
+      ],
+      "codes": [],
+      "product_category_id": "609fec3cd51c0000a7001d47",
+      "product_name": "Tr\u00e0 S\u1eefa Oolong N\u01b0\u1edbng",
+      "price": 50000,
+      "base_price": 50000,
+      "active": true,
+      "branch": "TCH",
+      "slug": "tra-sua-oolong-nuong",
+      "created_at": "2021-03-26 08:51:43",
+      "updated_at": "2021-04-01 04:06:36",
+      "__v": 1,
+      "high_res_image": "https://tch-app.s3.ap-southeast-1.amazonaws.com/menufrontend/high_res_image/605da09f717e5d00114a3cda_oolong-nuong-new.jpg",
+      "hint_note": [
+        "\u00edt ng\u1ecdt",
+        "\u00edt \u0111\u00e1",
+        "kh\u00f4ng \u0111\u00e1",
+        "\u0111\u00e1 \u0111\u1ec3 ri\u00eang"
+      ],
+      "image": "https://tch-app.s3.ap-southeast-1.amazonaws.com/menufrontend/605da09f717e5d00114a3cda_oolong-nuong-new.jpg",
+      "intro": { "en": null, "vi": null },
+      "is_delivery": true,
+      "is_pickup": true,
+      "image_id": null,
+      "is_menuset": true,
+      "stock": true
+    },
+    {
+      "_id": "605da09f717e5d00114a3cdb",
+      "localize": {
+        "en": "Tr\u00e0 S\u1eefa Oolong N\u01b0\u1edbng N\u00f3ng",
+        "vi": "Tr\u00e0 S\u1eefa Oolong N\u01b0\u1edbng N\u00f3ng"
+      },
+      "description": "\u0110\u1eadm \u0111\u00e0 chu\u1ea9n gu v\u00e0 \u1ea5m n\u00f3ng - b\u1edfi l\u1edbp tr\u00e0 oolong n\u01b0\u1edbng \u0111\u1eadm v\u1ecb ho\u00e0 c\u00f9ng l\u1edbp s\u1eefa th\u01a1m b\u00e9o.\n\nH\u01b0\u01a1ng v\u1ecb ch\u00e2n \u00e1i \u0111\u00fang gu \u0111\u1eadm \u0111\u00e0 - tr\u00e0 oolong \u0111\u01b0\u1ee3c \"sao\" (n\u01b0\u1edbng) l\u00e2u h\u01a1n cho v\u1ecb \u0111\u1eadm \u0111\u00e0, ho\u00e0 quy\u1ec7n v\u1edbi s\u1eefa th\u01a1m ng\u1eady. Cho t\u1eebng ng\u1ee5m \u1ea5m \u00e1p, l\u01b0u luy\u1ebfn v\u1ecb tr\u00e0 s\u1eefa \u0111\u1eadm \u0111\u00e0 m\u00e3i n\u01a1i cu\u1ed1ng h\u1ecdng.",
+      "product_odoo": {
+        "product_tmpl_id": 4673,
+        "variants": [
+          {
+            "code": "10010141",
+            "price": 50000,
+            "product_id": 2533,
+            "val": "V\u1eeba"
+          }
+        ]
+      },
+      "categ_id": [9, 4, 24],
+      "topping_list": [],
+      "variants": [
+        {
+          "code": "10010141",
+          "price": 50000,
+          "product_id": 2533,
+          "localize": { "en": "V\u1eeba", "vi": "V\u1eeba" },
+          "val": "V\u1eeba"
+        }
+      ],
+      "type": [],
+      "options": [
+        {
+          "name": "Size",
+          "desciption": "Ch\u1ecdn 1 lo\u1ea1i size",
+          "min": 1,
+          "max": 1,
+          "default_index": 0,
+          "items": [
+            {
+              "code": "10010141",
+              "price": 0,
+              "product_id": 2533,
+              "localize": { "en": "V\u1eeba", "vi": "V\u1eeba" },
+              "val": "V\u1eeba",
+              "is_main": true
+            }
+          ]
+        }
+      ],
+      "codes": [],
+      "product_category_id": "609fec3cd51c0000a7001d47",
+      "product_name": "Tr\u00e0 S\u1eefa Oolong N\u01b0\u1edbng N\u00f3ng",
+      "price": 50000,
+      "base_price": 50000,
+      "active": true,
+      "branch": "TCH",
+      "slug": "tra-sua-oolong-nuong-nong",
+      "created_at": "2021-03-26 15:51:43",
+      "updated_at": "2021-04-01 11:06:53",
+      "__v": 0,
+      "high_res_image": "https://tch-app.s3.ap-southeast-1.amazonaws.com/menufrontend/high_res_image/605da09f717e5d00114a3cdb_oolong-nong-new.jpg",
+      "hint_note": ["\u00edt ng\u1ecdt"],
+      "image": "https://tch-app.s3.ap-southeast-1.amazonaws.com/menufrontend/605da09f717e5d00114a3cdb_oolong-nong-new.jpg",
+      "intro": { "en": null, "vi": null },
+      "is_delivery": true,
+      "is_pickup": true,
+      "image_id": null,
+      "is_menuset": true,
+      "stock": true
+    },
+    {
+      "_id": "6051cdb617a9cf0011ee6d90",
+      "localize": {
+        "en": "Mochi Kem Vi\u1ec7t Qu\u1ea5t",
+        "vi": "Mochi Kem Vi\u1ec7t Qu\u1ea5t"
+      },
+      "description": "S\u1ea3n ph\u1ea9m ph\u1ea3i b\u1ea3o qu\u1ea3n m\u00e1t v\u00e0 d\u00f9ng ngon trong 2h sau khi nh\u1eadn h\u00e0ng",
+      "product_odoo": {
+        "product_tmpl_id": 4669,
+        "variants": [
+          {
+            "code": "11040272",
+            "price": 19000,
+            "product_id": 2525,
+            "val": "V\u1eeba"
+          }
+        ]
+      },
+      "categ_id": [11, 23],
+      "topping_list": [],
+      "variants": [
+        {
+          "code": "11040272",
+          "price": 19000,
+          "product_id": 2525,
+          "localize": { "en": "V\u1eeba", "vi": "V\u1eeba" },
+          "val": "V\u1eeba"
+        }
+      ],
+      "type": [],
+      "options": [
+        {
+          "name": "Size",
+          "desciption": "Ch\u1ecdn 1 lo\u1ea1i size",
+          "min": 1,
+          "max": 1,
+          "default_index": 0,
+          "items": [
+            {
+              "code": "11040272",
+              "price": 0,
+              "product_id": 2525,
+              "localize": { "en": "V\u1eeba", "vi": "V\u1eeba" },
+              "val": "V\u1eeba",
+              "is_main": true
+            }
+          ]
+        }
+      ],
+      "codes": [],
+      "product_category_id": "609fec3cd51c0000a7001d50",
+      "product_name": "Mochi Kem Vi\u1ec7t Qu\u1ea5t",
+      "price": 19000,
+      "base_price": 19000,
+      "active": true,
+      "branch": "TCH",
+      "slug": "mochi-kem-viet-quat",
+      "created_at": "2021-03-17 16:36:54",
+      "updated_at": "2021-04-01 16:38:02",
+      "__v": 0,
+      "high_res_image": "https://tch-app.s3.ap-southeast-1.amazonaws.com/menufrontend/high_res_image/6051cdb617a9cf0011ee6d90_MOCHI_viet%20quat.jpg",
+      "hint_note": [],
+      "image": "https://tch-app.s3.ap-southeast-1.amazonaws.com/menufrontend/6051cdb617a9cf0011ee6d90_MOCHI_viet%20quat.jpg",
+      "intro": { "en": null, "vi": null },
+      "is_delivery": true,
+      "is_pickup": true,
+      "is_menuset": true,
+      "stock": true
+    },
+    {
+      "_id": "6051cdb617a9cf0011ee6d8f",
+      "localize": {
+        "en": "Mochi Kem Ph\u00fac B\u1ed3n T\u1eed",
+        "vi": "Mochi Kem Ph\u00fac B\u1ed3n T\u1eed"
+      },
+      "description": "S\u1ea3n ph\u1ea9m ph\u1ea3i b\u1ea3o qu\u1ea3n m\u00e1t v\u00e0 d\u00f9ng ngon trong 2h sau khi nh\u1eadn h\u00e0ng",
+      "product_odoo": {
+        "product_tmpl_id": 4670,
+        "variants": [
+          {
+            "code": "11040273",
+            "price": 19000,
+            "product_id": 2526,
+            "val": "V\u1eeba"
+          }
+        ]
+      },
+      "categ_id": [11, 23],
+      "topping_list": [],
+      "variants": [
+        {
+          "code": "11040273",
+          "price": 19000,
+          "product_id": 2526,
+          "localize": { "en": "V\u1eeba", "vi": "V\u1eeba" },
+          "val": "V\u1eeba"
+        }
+      ],
+      "type": [],
+      "options": [
+        {
+          "name": "Size",
+          "desciption": "Ch\u1ecdn 1 lo\u1ea1i size",
+          "min": 1,
+          "max": 1,
+          "default_index": 0,
+          "items": [
+            {
+              "code": "11040273",
+              "price": 0,
+              "product_id": 2526,
+              "localize": { "en": "V\u1eeba", "vi": "V\u1eeba" },
+              "val": "V\u1eeba",
+              "is_main": true
+            }
+          ]
+        }
+      ],
+      "codes": [],
+      "product_category_id": "609fec3cd51c0000a7001d50",
+      "product_name": "Mochi Kem Ph\u00fac B\u1ed3n T\u1eed",
+      "price": 19000,
+      "base_price": 19000,
+      "active": true,
+      "branch": "TCH",
+      "slug": "mochi-kem-phuc-bon-tu",
+      "created_at": "2021-03-17 16:36:54",
+      "updated_at": "2021-04-01 16:40:12",
+      "__v": 0,
+      "high_res_image": "https://tch-app.s3.ap-southeast-1.amazonaws.com/menufrontend/high_res_image/6051cdb617a9cf0011ee6d8f_MOCHI_phuc%20bon%20tu-min.jpg",
+      "hint_note": [],
+      "image": "https://tch-app.s3.ap-southeast-1.amazonaws.com/menufrontend/6051cdb617a9cf0011ee6d8f_MOCHI_phuc%20bon%20tu-min.jpg",
+      "intro": { "en": null, "vi": null },
+      "is_delivery": true,
+      "is_pickup": true,
+      "is_menuset": true,
+      "stock": true
+    },
+    {
+      "_id": "6051cdb617a9cf0011ee6d8e",
+      "localize": {
+        "en": "Mochi Kem D\u1eeba D\u1ee9a",
+        "vi": "Mochi Kem D\u1eeba D\u1ee9a"
+      },
+      "description": "S\u1ea3n ph\u1ea9m ph\u1ea3i b\u1ea3o qu\u1ea3n m\u00e1t v\u00e0 d\u00f9ng ngon trong 2h sau khi nh\u1eadn h\u00e0ng",
+      "product_odoo": {
+        "product_tmpl_id": 4671,
+        "variants": [
+          {
+            "code": "11040274",
+            "price": 19000,
+            "product_id": 2527,
+            "val": "V\u1eeba"
+          }
+        ]
+      },
+      "categ_id": [11, 23],
+      "topping_list": [],
+      "variants": [
+        {
+          "code": "11040274",
+          "price": 19000,
+          "product_id": 2527,
+          "localize": { "en": "V\u1eeba", "vi": "V\u1eeba" },
+          "val": "V\u1eeba"
+        }
+      ],
+      "type": [],
+      "options": [
+        {
+          "name": "Size",
+          "desciption": "Ch\u1ecdn 1 lo\u1ea1i size",
+          "min": 1,
+          "max": 1,
+          "default_index": 0,
+          "items": [
+            {
+              "code": "11040274",
+              "price": 0,
+              "product_id": 2527,
+              "localize": { "en": "V\u1eeba", "vi": "V\u1eeba" },
+              "val": "V\u1eeba",
+              "is_main": true
+            }
+          ]
+        }
+      ],
+      "codes": [],
+      "product_category_id": "609fec3cd51c0000a7001d50",
+      "product_name": "Mochi Kem D\u1eeba D\u1ee9a",
+      "price": 19000,
+      "base_price": 19000,
+      "active": true,
+      "branch": "TCH",
+      "slug": "mochi-kem-dua-dua",
+      "created_at": "2021-03-17 16:36:54",
+      "updated_at": "2021-04-01 16:38:34",
+      "__v": 0,
+      "high_res_image": "https://tch-app.s3.ap-southeast-1.amazonaws.com/menufrontend/high_res_image/6051cdb617a9cf0011ee6d8e_MOCHI_dua%20dua.jpg",
+      "hint_note": [],
+      "image": "https://tch-app.s3.ap-southeast-1.amazonaws.com/menufrontend/6051cdb617a9cf0011ee6d8e_MOCHI_dua%20dua.jpg",
+      "intro": { "en": null, "vi": null },
+      "is_delivery": true,
+      "is_pickup": true,
+      "is_menuset": true,
+      "stock": true
+    },
+    {
+      "_id": "6014df0e540c0c001894d83c",
+      "localize": {
+        "en": "H\u1ed3ng Tr\u00e0 S\u1eefa Tr\u00e2n Ch\u00e2u",
+        "vi": "H\u1ed3ng Tr\u00e0 S\u1eefa Tr\u00e2n Ch\u00e2u"
+      },
+      "description": "T\u1eebng ng\u1ee5m tr\u00e0 chu\u1ea9n gu th\u01a1m l\u1eebng, \u0111\u1eadm \u0111\u00e0 beo b\u00e9o b\u1edfi l\u1edbp s\u1eefa t\u01b0\u01a1i ch\u00e2n \u00e1i ho\u00e0 quy\u1ec7n.\n\nS\u1ef1 k\u1ebft h\u1ee3p ho\u00e0n h\u1ea3o c\u1ee7a tr\u00e0 \u0111en nguy\u00ean l\u00e1 \u0111\u1eadm \u0111\u00e0 chu\u1ea9n gu, c\u00f9ng l\u1edbp s\u1eefa th\u01a1m b\u00e9o ng\u1ecdt ng\u00e0o \u0111\u01b0\u1ee3m v\u1ecb. C\u00f3 s\u1eb5n tr\u00e2n ch\u00e2u tr\u1eafng dai gi\u00f2n cho phi\u00ean b\u1ea3n l\u1ea1nh - \u0111\u1ec3 t\u0103ng th\u00eam h\u1ee9ng kh\u1edfi, vui mi\u1ec7ng b\u1edbt l\u0103n t\u0103n.",
+      "product_odoo": {
+        "product_tmpl_id": 4664,
+        "variants": [
+          {
+            "code": "10010134",
+            "price": 55000,
+            "product_id": 2520,
+            "val": "V\u1eeba"
+          },
+          {
+            "code": "10010138",
+            "price": 60000,
+            "product_id": 2529,
+            "val": "L\u1edbn",
+            "localize": { "en": null, "vi": "Size L\u1edbn" }
+          }
+        ]
+      },
+      "categ_id": [9, 4, 24, 69],
+      "topping_list": [
+        {
+          "product_id": 1667,
+          "product_name": "Tr\u00e2n ch\u00e2u tr\u1eafng",
+          "code": "10100016",
+          "price": 10000
+        }
+      ],
+      "variants": [
+        {
+          "code": "10010134",
+          "price": 55000,
+          "product_id": 2520,
+          "localize": { "en": "V\u1eeba", "vi": "V\u1eeba" },
+          "val": "V\u1eeba"
+        },
+        {
+          "code": "10010138",
+          "price": 60000,
+          "product_id": 2529,
+          "val": "L\u1edbn",
+          "localize": { "en": null, "vi": "L\u1edbn" }
+        }
+      ],
+      "type": [],
+      "options": [
+        {
+          "name": "Size",
+          "desciption": "Ch\u1ecdn 1 lo\u1ea1i size",
+          "min": 1,
+          "max": 1,
+          "default_index": 0,
+          "items": [
+            {
+              "code": "10010134",
+              "price": 0,
+              "product_id": 2520,
+              "localize": { "en": "V\u1eeba", "vi": "V\u1eeba" },
+              "val": "V\u1eeba",
+              "is_main": true
+            },
+            {
+              "code": "10010138",
+              "price": 5000,
+              "product_id": 2529,
+              "val": "L\u1edbn",
+              "localize": { "en": null, "vi": "L\u1edbn" },
+              "is_main": true
+            }
+          ]
+        },
+        {
+          "name": "Topping",
+          "desciption": "Ch\u1ecdn t\u1ed1i \u0111a 2 lo\u1ea1i",
+          "min": 0,
+          "max": 2,
+          "default_index": -1,
+          "items": [
+            {
+              "product_id": 1667,
+              "product_name": "Tr\u00e2n ch\u00e2u tr\u1eafng",
+              "code": "10100016",
+              "price": 10000,
+              "type": 3
+            }
+          ]
+        }
+      ],
+      "codes": [],
+      "product_category_id": "609fec3cd51c0000a7001d47",
+      "product_name": "H\u1ed3ng Tr\u00e0 S\u1eefa Tr\u00e2n Ch\u00e2u",
+      "price": 55000,
+      "base_price": 55000,
+      "active": true,
+      "branch": "TCH",
+      "slug": "hong-tra-sua-tran-chau",
+      "created_at": "2021-01-30 04:22:38",
+      "updated_at": "2021-04-01 04:20:04",
+      "__v": 1,
+      "high_res_image": "https://tch-app.s3.ap-southeast-1.amazonaws.com/menufrontend/high_res_image/6014df0e540c0c001894d83c_hong-tra-sua-new.jpg",
+      "image": "https://tch-app.s3.ap-southeast-1.amazonaws.com/menufrontend/6014df0e540c0c001894d83c_hong-tra-sua-new.jpg",
+      "intro": { "en": null, "vi": null },
+      "hint_note": [
+        "\u00edt ng\u1ecdt",
+        "\u00edt \u0111\u00e1",
+        "kh\u00f4ng tr\u00e2n ch\u00e2u",
+        "kh\u00f4ng \u0111\u00e1"
+      ],
+      "is_delivery": true,
+      "is_pickup": true,
+      "image_id": null,
+      "is_menuset": true,
+      "stock": true
+    },
+    {
+      "_id": "605da09f717e5d00114a3cdc",
+      "localize": {
+        "en": "H\u1ed3ng Tr\u00e0 Latte Macchiato",
+        "vi": "H\u1ed3ng Tr\u00e0 Latte Macchiato"
+      },
+      "description": "\u0110\u00fang gu tinh t\u1ebf, healthy v\u1edbi v\u1ecb tr\u00e0 nh\u1eb9 nh\u00e0ng, quy\u1ec7n c\u00f9ng s\u1eefa t\u01b0\u01a1i v\u00e0 macchiato th\u01a1m b\u00e9o. \n \nS\u1ef1 k\u1ebft h\u1ee3p ho\u00e0n h\u1ea3o b\u1edfi h\u1ed3ng tr\u00e0 d\u1ecbu nh\u1eb9 v\u00e0 s\u1eefa t\u01b0\u01a1i, nh\u1ea5n nh\u00e1 th\u00eam l\u1edbp macchiato tr\u1ee9 danh c\u1ee7a Nh\u00e0, cho b\u1ea1n t\u1eebng ng\u1ee5m th\u01b0\u1edfng th\u1ee9c tinh t\u1ebf, d\u1ec5 ch\u1ecbu.",
+      "product_odoo": {
+        "product_tmpl_id": 4672,
+        "variants": [
+          {
+            "code": "10010140",
+            "price": 60000,
+            "product_id": 2532,
+            "val": "L\u1edbn",
+            "localize": { "en": null, "vi": "Size L\u1edbn" }
+          },
+          {
+            "code": "10010139",
+            "price": 55000,
+            "product_id": 2531,
+            "val": "V\u1eeba",
+            "localize": { "en": null, "vi": "Size V\u1eeba" }
+          }
+        ]
+      },
+      "categ_id": [9, 4, 24],
+      "topping_list": [
+        {
+          "product_id": 1456,
+          "product_name": "Extra foam",
+          "code": "10100024",
+          "price": 10000
+        }
+      ],
+      "variants": [
+        {
+          "code": "10010139",
+          "price": 55000,
+          "product_id": 2531,
+          "val": "V\u1eeba",
+          "localize": { "en": null, "vi": "V\u1eeba" }
+        },
+        {
+          "code": "10010140",
+          "price": 60000,
+          "product_id": 2532,
+          "val": "L\u1edbn",
+          "localize": { "en": null, "vi": "L\u1edbn" }
+        }
+      ],
+      "type": [],
+      "options": [
+        {
+          "name": "Size",
+          "desciption": "Ch\u1ecdn 1 lo\u1ea1i size",
+          "min": 1,
+          "max": 1,
+          "default_index": 0,
+          "items": [
+            {
+              "code": "10010139",
+              "price": 0,
+              "product_id": 2531,
+              "val": "V\u1eeba",
+              "localize": { "en": null, "vi": "V\u1eeba" },
+              "is_main": true
+            },
+            {
+              "code": "10010140",
+              "price": 5000,
+              "product_id": 2532,
+              "val": "L\u1edbn",
+              "localize": { "en": null, "vi": "L\u1edbn" },
+              "is_main": true
+            }
+          ]
+        },
+        {
+          "name": "Topping",
+          "desciption": "Ch\u1ecdn t\u1ed1i \u0111a 2 lo\u1ea1i",
+          "min": 0,
+          "max": 2,
+          "default_index": -1,
+          "items": [
+            {
+              "product_id": 1456,
+              "product_name": "Extra foam",
+              "code": "10100024",
+              "price": 10000,
+              "type": 3
+            }
+          ]
+        }
+      ],
+      "codes": [],
+      "product_category_id": "609fec3cd51c0000a7001d47",
+      "product_name": "H\u1ed3ng Tr\u00e0 Latte Macchiato",
+      "price": 55000,
+      "base_price": 55000,
+      "active": true,
+      "branch": "TCH",
+      "slug": "hong-tra-latte-macchiato",
+      "created_at": "2021-03-26 08:51:43",
+      "updated_at": "2021-04-01 04:25:56",
+      "__v": 1,
+      "high_res_image": "https://tch-app.s3.ap-southeast-1.amazonaws.com/menufrontend/high_res_image/605da09f717e5d00114a3cdc_ht-latte-macchiato-new.jpg",
+      "hint_note": [
+        "\u00edt ng\u1ecdt",
+        "\u00edt \u0111\u00e1",
+        "kh\u00f4ng \u0111\u00e1",
+        "\u0111\u00e1 \u0111\u1ec3 ri\u00eang"
+      ],
+      "image": "https://tch-app.s3.ap-southeast-1.amazonaws.com/menufrontend/605da09f717e5d00114a3cdc_ht-latte-macchiato-new.jpg",
+      "intro": { "en": null, "vi": null },
+      "is_delivery": true,
+      "is_pickup": true,
+      "is_menuset": true,
+      "stock": true
+    },
+    {
+      "_id": "5b03966a1acd4d5bbd6723a3",
+      "product_name": "C\u00e0 Ph\u00ea S\u1eefa \u0110\u00e1",
+      "base_price": 32000,
+      "description": "C\u00e0 ph\u00ea phin k\u1ebft h\u1ee3p c\u0169ng s\u1eefa \u0111\u1eb7c l\u00e0 m\u1ed9t s\u00e1ng t\u1ea1o \u0111\u1ea7y t\u1ef1 h\u00e0o c\u1ee7a ng\u01b0\u1eddi Vi\u1ec7t, \u0111\u01b0\u1ee3c xem m\u00f3n u\u1ed1ng th\u01b0\u01a1ng hi\u1ec7u c\u1ee7a Vi\u1ec7t Nam.",
+      "categ_id": [9, 1, 24, 69],
+      "branch": "TCH",
+      "image_id": 180,
+      "image": "https://tch-app.s3.ap-southeast-1.amazonaws.com/menufrontend/5b03966a1acd4d5bbd6723a3_cafe-sua-da.jpg",
+      "variants": [
+        {
+          "product_id": "180",
+          "code": "10020012",
+          "price": 32000,
+          "val": "Nh\u1ecf",
+          "localize": { "vi": "Nh\u1ecf", "en": "Nh\u1ecf" }
+        },
+        {
+          "product_id": "179",
+          "code": "10020011",
+          "price": 35000,
+          "val": "V\u1eeba",
+          "localize": { "vi": "V\u1eeba", "en": "V\u1eeba" }
+        },
+        {
+          "code": "10020222",
+          "localize": { "en": "L\u1edbn", "vi": "L\u1edbn" },
+          "price": 38000,
+          "product_id": 10020222,
+          "val": "L\u1edbn"
+        }
+      ],
+      "updated_at": "2020-12-26 08:19:51",
+      "created_at": "2018-05-22 04:02:50",
+      "active": true,
+      "localize": {
+        "en": "Ice Vietnamese Coffee With Condensed Milk",
+        "vi": "C\u00e0 Ph\u00ea S\u1eefa \u0110\u00e1"
+      },
+      "options": [
+        {
+          "name": "Size",
+          "desciption": "Ch\u1ecdn 1 lo\u1ea1i size",
+          "min": 1,
+          "max": 1,
+          "default_index": 0,
+          "items": [
+            {
+              "product_id": "180",
+              "code": "10020012",
+              "price": 0,
+              "val": "Nh\u1ecf",
+              "localize": { "vi": "Nh\u1ecf", "en": "Nh\u1ecf" },
+              "is_main": true
+            },
+            {
+              "product_id": "179",
+              "code": "10020011",
+              "price": 3000,
+              "val": "V\u1eeba",
+              "localize": { "vi": "V\u1eeba", "en": "V\u1eeba" },
+              "is_main": true
+            },
+            {
+              "code": "10020222",
+              "localize": { "en": "L\u1edbn", "vi": "L\u1edbn" },
+              "price": 6000,
+              "product_id": 10020222,
+              "val": "L\u1edbn",
+              "is_main": true
+            }
+          ]
+        }
+      ],
+      "price": 32000,
+      "topping_list": [],
+      "type": [],
+      "slug": "ca-phe-sua-da",
+      "high_res_image": "https://tch-app.s3.ap-southeast-1.amazonaws.com/menufrontend/high_res_image/5b03966a1acd4d5bbd6723a3_cafe-sua-da.jpg",
+      "__v": 8,
+      "codes": [],
+      "product_category_id": "609fec3cd51c0000a7001d43",
+      "product_odoo": {
+        "product_tmpl_id": 254,
+        "variants": [
+          {
+            "code": "10020222",
+            "price": 38000,
+            "product_id": 1903,
+            "val": "L\u1edbn"
+          },
+          {
+            "code": "10020012",
+            "price": 32000,
+            "product_id": 180,
+            "val": "Nh\u1ecf"
+          },
+          {
+            "code": "10020011",
+            "price": 35000,
+            "product_id": 179,
+            "val": "V\u1eeba"
+          }
+        ]
+      },
+      "is_menuset": true,
+      "is_delivery": true,
+      "is_pickup": true,
+      "hint_note": [
+        "\u00cdt s\u1eefa",
+        "\u00edt \u0111\u00e1",
+        "\u00edt ng\u1ecdt",
+        "\u0111\u00e1 \u0111\u1ec3 ri\u00eang",
+        "kh\u00f4ng l\u1ea5y \u1ed1ng h\u00fat & mu\u1ed7ng nh\u1ef1a"
+      ],
+      "intro": { "en": null, "vi": null },
+      "stock": true
+    },
+    {
+      "_id": "5e92fd7dc788bc0011abaa06",
+      "localize": {
+        "en": "Tr\u00e0 S\u1eefa M\u1eafc Ca Tr\u00e2n Ch\u00e2u",
+        "vi": "Tr\u00e0 S\u1eefa M\u1eafc Ca Tr\u00e2n Ch\u00e2u"
+      },
+      "description": "\u0110\u1ed5i v\u1ecb t\u01b0\u01a1i m\u1edbi - V\u1eeba ngon v\u1eeba kho\u1ebb\nM\u1ed7i ng\u00e0y v\u1edbi Nh\u00e0 s\u1ebd l\u00e0 \u0111i\u1ec1u t\u01b0\u01a1i m\u1edbi h\u01a1n v\u1edbi s\u1eefa h\u1ea1t m\u1eafc ca th\u01a1m ngon, b\u1ed5 d\u01b0\u1ee1ng quy\u1ec7n c\u00f9ng n\u1ec1n tr\u00e0 Oolong cho v\u1ecb c\u00e2n b\u1eb1ng, ng\u1ecdt d\u1ecbu. Tr\u00e2n ch\u00e2u tr\u1eafng gi\u00f2n dai \u0111\u01b0\u1ee3c th\u00eam s\u1eb5n, mang l\u1ea1i cho b\u1ea1n c\u1ea3m gi\u00e1c \"\u0111\u00e3\" trong t\u1eebng ng\u1ee5m, tho\u1ea3 c\u01a1n th\u00e8m tr\u00e0 s\u1eefa ngay.",
+      "product_odoo": {
+        "product_tmpl_id": 3952,
+        "variants": [
+          {
+            "code": "10010091",
+            "price": 55000,
+            "product_id": 2216,
+            "val": "L\u1edbn"
+          },
+          {
+            "code": "10010092",
+            "price": 50000,
+            "product_id": 2215,
+            "val": "V\u1eeba",
+            "localize": { "en": null, "vi": "Size V\u1eeba" }
+          },
+          {
+            "code": "10010093",
+            "price": 45000,
+            "product_id": 2214,
+            "val": "Nh\u1ecf",
+            "localize": { "en": null, "vi": "Size Nh\u1ecf" }
+          }
+        ]
+      },
+      "categ_id": [9, 4],
+      "topping_list": [
+        {
+          "product_id": 1667,
+          "product_name": "Tr\u00e2n ch\u00e2u tr\u1eafng",
+          "code": "10100016",
+          "price": 10000
+        }
+      ],
+      "variants": [
+        {
+          "code": "10010091",
+          "price": 55000,
+          "product_id": 2216,
+          "localize": { "en": "L\u1edbn", "vi": "L\u1edbn" },
+          "val": "L\u1edbn"
+        },
+        {
+          "code": "10010092",
+          "price": 50000,
+          "product_id": 2215,
+          "val": "V\u1eeba",
+          "localize": { "en": null, "vi": "V\u1eeba" }
+        }
+      ],
+      "type": [],
+      "options": [
+        {
+          "name": "Size",
+          "desciption": "Ch\u1ecdn 1 lo\u1ea1i size",
+          "min": 1,
+          "max": 1,
+          "default_index": 0,
+          "items": [
+            {
+              "code": "10010091",
+              "price": 5000,
+              "product_id": 2216,
+              "localize": { "en": "L\u1edbn", "vi": "L\u1edbn" },
+              "val": "L\u1edbn",
+              "is_main": true
+            },
+            {
+              "code": "10010092",
+              "price": 0,
+              "product_id": 2215,
+              "val": "V\u1eeba",
+              "localize": { "en": null, "vi": "V\u1eeba" },
+              "is_main": true
+            }
+          ]
+        },
+        {
+          "name": "Topping",
+          "desciption": "Ch\u1ecdn t\u1ed1i \u0111a 2 lo\u1ea1i",
+          "min": 0,
+          "max": 2,
+          "default_index": -1,
+          "items": [
+            {
+              "product_id": 1667,
+              "product_name": "Tr\u00e2n ch\u00e2u tr\u1eafng",
+              "code": "10100016",
+              "price": 10000,
+              "type": 3
+            }
+          ]
+        }
+      ],
+      "codes": [],
+      "product_category_id": "609fec3cd51c0000a7001d47",
+      "product_name": "Tr\u00e0 S\u1eefa M\u1eafc Ca Tr\u00e2n Ch\u00e2u",
+      "price": 50000,
+      "base_price": 50000,
+      "active": true,
+      "branch": "TCH",
+      "slug": "tra-sua-mac-ca-tran-chau",
+      "created_at": "2020-04-12 11:37:33",
+      "updated_at": "2021-04-01 02:39:04",
+      "__v": 2,
+      "high_res_image": "https://tch-app.s3.ap-southeast-1.amazonaws.com/menufrontend/high_res_image/5e92fd7dc788bc0011abaa06_TS-Macca-tran-chau-trang.jpg",
+      "image": "https://tch-app.s3.ap-southeast-1.amazonaws.com/menufrontend/5e92fd7dc788bc0011abaa06_TS-Macca-tran-chau-trang.jpg",
+      "hint_note": [
+        "\u00edt ng\u1ecdt",
+        "\u00edt \u0111\u00e1",
+        "kh\u00f4ng tr\u00e2n ch\u00e2u",
+        "kh\u00f4ng l\u1ea5y \u1ed1ng h\u00fat & mu\u1ed7ng nh\u1ef1a"
+      ],
+      "intro": { "en": null, "vi": null },
+      "is_delivery": true,
+      "is_pickup": true,
+      "image_id": null,
+      "is_menuset": true,
+      "stock": true
+    },
+    {
+      "_id": "5b03966a1acd4d5bbd6723a4",
+      "product_name": "B\u1ea1c X\u1ec9u",
+      "base_price": 32000,
+      "description": "Theo ch\u00e2n nh\u1eefng ng\u01b0\u1eddi g\u1ed1c Hoa \u0111\u1ebfn \u0111\u1ecbnh c\u01b0 t\u1ea1i S\u00e0i G\u00f2n, B\u1ea1c s\u1ec9u l\u00e0 c\u00e1ch g\u1ecdi t\u1eaft c\u1ee7a \"B\u1ea1c t\u1ea9y x\u1ec9u ph\u00e9\" trong ti\u1ebfng Qu\u1ea3ng \u0110\u00f4ng, ch\u00ednh l\u00e0: Ly s\u1eefa tr\u1eafng k\u00e8m m\u1ed9t ch\u00fat c\u00e0 ph\u00ea.",
+      "categ_id": [1, 69],
+      "branch": "TCH",
+      "image_id": 168,
+      "image": "https://tch-app.s3.ap-southeast-1.amazonaws.com/menufrontend/5b03966a1acd4d5bbd6723a4_Bac-siu.jpg",
+      "variants": [
+        {
+          "product_id": 10020006,
+          "code": "10020006",
+          "price": 32000,
+          "val": "Nh\u1ecf",
+          "localize": { "vi": "Nh\u1ecf", "en": "Nh\u1ecf" }
+        },
+        {
+          "product_id": 10020005,
+          "code": "10020005",
+          "price": 35000,
+          "val": "V\u1eeba",
+          "localize": { "vi": "V\u1eeba", "en": "V\u1eeba" }
+        },
+        {
+          "code": "10020226",
+          "localize": { "en": "L\u1edbn", "vi": "L\u1edbn" },
+          "price": 38000,
+          "product_id": 10020226,
+          "val": "L\u1edbn"
+        }
+      ],
+      "updated_at": "2020-12-21 04:44:42",
+      "created_at": "2018-05-22 04:02:50",
+      "active": true,
+      "localize": {
+        "en": "Ice White Vietnamese Coffee",
+        "vi": "B\u1ea1c X\u1ec9u"
+      },
+      "options": [
+        {
+          "name": "Size",
+          "desciption": "Ch\u1ecdn 1 lo\u1ea1i size",
+          "min": 1,
+          "max": 1,
+          "default_index": 0,
+          "items": [
+            {
+              "product_id": 10020006,
+              "code": "10020006",
+              "price": 0,
+              "val": "Nh\u1ecf",
+              "localize": { "vi": "Nh\u1ecf", "en": "Nh\u1ecf" },
+              "is_main": true
+            },
+            {
+              "product_id": 10020005,
+              "code": "10020005",
+              "price": 3000,
+              "val": "V\u1eeba",
+              "localize": { "vi": "V\u1eeba", "en": "V\u1eeba" },
+              "is_main": true
+            },
+            {
+              "code": "10020226",
+              "localize": { "en": "L\u1edbn", "vi": "L\u1edbn" },
+              "price": 6000,
+              "product_id": 10020226,
+              "val": "L\u1edbn",
+              "is_main": true
+            }
+          ]
+        }
+      ],
+      "price": 32000,
+      "topping_list": [],
+      "type": [],
+      "slug": "bac-xiu",
+      "__v": 8,
+      "codes": [],
+      "product_category_id": "609fec3cd51c0000a7001d43",
+      "product_odoo": {
+        "product_tmpl_id": 246,
+        "variants": [
+          {
+            "code": "10020226",
+            "price": 38000,
+            "product_id": 1909,
+            "val": "L\u1edbn"
+          },
+          {
+            "code": "10020006",
+            "price": 32000,
+            "product_id": 168,
+            "val": "Nh\u1ecf"
+          },
+          {
+            "code": "10020005",
+            "price": 35000,
+            "product_id": 167,
+            "val": "V\u1eeba"
+          }
+        ]
+      },
+      "high_res_image": "https://tch-app.s3.ap-southeast-1.amazonaws.com/menufrontend/high_res_image/5b03966a1acd4d5bbd6723a4_Bac-siu.jpg",
+      "is_menuset": true,
+      "is_delivery": true,
+      "is_pickup": true,
+      "hint_note": [
+        "\u00edt ng\u1ecdt",
+        "\u00edt \u0111\u00e1",
+        "nhi\u1ec1u s\u1eefa",
+        "kh\u00f4ng l\u1ea5y \u1ed1ng h\u00fat & mu\u1ed7ng nh\u1ef1a"
+      ],
+      "intro": { "en": null, "vi": null },
+      "stock": true
+    },
+    {
+      "_id": "5b03966a1acd4d5bbd67237b",
+      "product_name": "Caramel Macchiato \u0110\u00e1",
+      "base_price": 50000,
+      "description": "V\u1ecb th\u01a1m b\u00e9o c\u1ee7a s\u1eefa t\u01b0\u01a1i, v\u1ecb \u0111\u1eafng thanh tho\u00e1t c\u1ee7a c\u00e0 ph\u00ea Espresso h\u1ea3o h\u1ea1ng, v\u00e0 v\u1ecb ng\u1ecdt \u0111\u1eadm c\u1ee7a s\u1ed1t caramel.",
+      "categ_id": [1, 10],
+      "branch": "TCH",
+      "image_id": 1292,
+      "image": "https://tch-app.s3.ap-southeast-1.amazonaws.com/menufrontend/5b03966a1acd4d5bbd67237b_Caramel-macchiato.jpg",
+      "variants": [
+        {
+          "product_id": 10020020,
+          "code": "10020020",
+          "price": 50000,
+          "val": "Nh\u1ecf",
+          "localize": { "vi": "Nh\u1ecf", "en": "Nh\u1ecf" },
+          "is_main": true
+        },
+        {
+          "product_id": 10020019,
+          "code": "10020019",
+          "price": 55000,
+          "val": "V\u1eeba",
+          "localize": { "vi": "V\u1eeba", "en": "V\u1eeba" },
+          "is_main": true
+        }
+      ],
+      "updated_at": "2020-12-27 05:52:30",
+      "created_at": "2018-05-22 04:02:50",
+      "active": true,
+      "localize": {
+        "en": "Ice Caramel Macchiato",
+        "vi": "Caramel Macchiato \u0110\u00e1"
+      },
+      "options": [
+        {
+          "name": "Size",
+          "desciption": "Ch\u1ecdn 1 lo\u1ea1i size",
+          "min": 1,
+          "max": 1,
+          "default_index": 0,
+          "items": [
+            {
+              "product_id": 10020020,
+              "code": "10020020",
+              "price": 0,
+              "val": "Nh\u1ecf",
+              "localize": { "vi": "Nh\u1ecf", "en": "Nh\u1ecf" },
+              "is_main": true
+            },
+            {
+              "product_id": 10020019,
+              "code": "10020019",
+              "price": 5000,
+              "val": "V\u1eeba",
+              "localize": { "vi": "V\u1eeba", "en": "V\u1eeba" },
+              "is_main": true
+            }
+          ]
+        },
+        {
+          "name": "Topping",
+          "desciption": "Ch\u1ecdn t\u1ed1i \u0111a 2 lo\u1ea1i",
+          "min": 0,
+          "max": 2,
+          "default_index": -1,
+          "items": [
+            {
+              "product_id": 196,
+              "product_name": "Espresso (1shot)",
+              "code": "10100003",
+              "price": 10000,
+              "type": 3
+            },
+            {
+              "product_id": 10100019,
+              "product_name": "Sauce Caramel",
+              "code": "10100019",
+              "price": 10000,
+              "type": 3
+            }
+          ]
+        }
+      ],
+      "price": 50000,
+      "topping_list": [
+        {
+          "product_id": 196,
+          "product_name": "Espresso (1shot)",
+          "code": "10100003",
+          "price": 10000
+        },
+        {
+          "product_id": 10100019,
+          "product_name": "Sauce Caramel",
+          "code": "10100019",
+          "price": 10000
+        }
+      ],
+      "type": [],
+      "slug": "caramel-macchiato-da",
+      "high_res_image": "https://tch-app.s3.ap-southeast-1.amazonaws.com/menufrontend/high_res_image/5b03966a1acd4d5bbd67237b_Caramel-macchiato.jpg",
+      "__v": 6,
+      "codes": [],
+      "product_category_id": "609fec3cd51c0000a7001d44",
+      "product_odoo": {
+        "product_tmpl_id": 259,
+        "variants": [
+          {
+            "code": "10020019",
+            "price": 55000,
+            "product_id": 1292,
+            "val": "V\u1eeba"
+          },
+          {
+            "code": "10020020",
+            "price": 50000,
+            "product_id": 1291,
+            "val": "Nh\u1ecf"
+          }
+        ]
+      },
+      "is_menuset": true,
+      "is_delivery": true,
+      "is_pickup": true,
+      "hint_note": [
+        "kh\u00f4ng \u0111\u01b0\u1eddng",
+        "\u00edt \u0111\u00e1",
+        "\u0111\u00e1 \u0111\u1ec3 ri\u00eang",
+        "kh\u00f4ng l\u1ea5y \u1ed1ng h\u00fat & mu\u1ed7ng nh\u1ef1a"
+      ],
+      "intro": { "en": null, "vi": null },
+      "stock": true
+    },
+    {
+      "_id": "5d43be2e41d3ac39a44bd7a2",
+      "product_name": "Tr\u00e0 Ph\u00fac B\u1ed3n T\u1eed",
+      "localize": {
+        "en": "Oolong Tea With Raspberry",
+        "vi": "Tr\u00e0 Ph\u00fac B\u1ed3n T\u1eed"
+      },
+      "base_price": 50000,
+      "price": 50000,
+      "categ_id": [5],
+      "topping_list": [
+        {
+          "product_id": 1667,
+          "product_name": "Tr\u00e2n ch\u00e2u tr\u1eafng",
+          "code": "10100016",
+          "price": 10000
+        }
+      ],
+      "description": "L\u1ea7n \u0111\u1ea7u ti\u00ean Tr\u00e0 Oolong v\u00e0 tr\u00e1i \"Ph\u00fac B\u1ed3n T\u1eed\" ho\u00e0n to\u00e0n t\u1ef1 nhi\u00ean, \u0111\u01b0\u1ee3c k\u1ebft h\u1ee3p \u0111\u1ec3 t\u1ea1o ra m\u1ed9t d\u01b0 v\u1ecb ho\u00e0n to\u00e0n t\u01b0\u01a1i m\u1edbi. Nh\u1ea5p ngay m\u1ed9t ng\u1ee5m l\u00e0 th\u1ea5y m\u00e1t l\u1ea1nh ngay t\u1ee9c kh\u1eafc, \u0111\u1ecdng l\u1ea1i m\u00e3i n\u01a1i cu\u1ed1n h\u1ecdng l\u00e0 h\u01b0\u01a1ng v\u1ecb tr\u00e0 th\u01a1m l\u1eebng v\u00e0 v\u1ecb ng\u1ecdt thanh, chua d\u1ecbu kh\u00f3 qu\u00ean c\u1ee7a tr\u00e1i ph\u00fac b\u1ed3n t\u1eed.",
+      "variants": [
+        {
+          "code": "10010068",
+          "localize": { "en": "Nh\u1ecf", "vi": "Nh\u1ecf" },
+          "price": 50000,
+          "product_id": 10010068,
+          "val": "Nh\u1ecf"
+        },
+        {
+          "code": "10010067",
+          "localize": { "en": "\bV\u1eeba", "vi": "\bV\u1eeba" },
+          "price": 55000,
+          "product_id": 10010067,
+          "val": "V\u1eeba"
+        },
+        {
+          "code": "10010066",
+          "localize": { "en": "\bL\u1edbn", "vi": "\bL\u1edbn" },
+          "price": 60000,
+          "product_id": 10010066,
+          "val": "L\u1edbn"
+        }
+      ],
+      "type": [],
+      "options": [
+        {
+          "name": "Size",
+          "desciption": "Ch\u1ecdn 1 lo\u1ea1i size",
+          "min": 1,
+          "max": 1,
+          "default_index": 0,
+          "items": [
+            {
+              "code": "10010068",
+              "localize": { "en": "Nh\u1ecf", "vi": "Nh\u1ecf" },
+              "price": 0,
+              "product_id": 10010068,
+              "val": "Nh\u1ecf",
+              "is_main": true
+            },
+            {
+              "code": "10010067",
+              "localize": { "en": "\bV\u1eeba", "vi": "\bV\u1eeba" },
+              "price": 5000,
+              "product_id": 10010067,
+              "val": "V\u1eeba",
+              "is_main": true
+            },
+            {
+              "code": "10010066",
+              "localize": { "en": "\bL\u1edbn", "vi": "\bL\u1edbn" },
+              "price": 10000,
+              "product_id": 10010066,
+              "val": "L\u1edbn",
+              "is_main": true
+            }
+          ]
+        },
+        {
+          "name": "Topping",
+          "desciption": "Ch\u1ecdn t\u1ed1i \u0111a 2 lo\u1ea1i",
+          "min": 0,
+          "max": 2,
+          "default_index": -1,
+          "items": [
+            {
+              "product_id": 1667,
+              "product_name": "Tr\u00e2n ch\u00e2u tr\u1eafng",
+              "code": "10100016",
+              "price": 10000,
+              "type": 3
+            }
+          ]
+        }
+      ],
+      "branch": "TCH",
+      "slug": "tra-phuc-bon-tu",
+      "updated_at": "2020-12-25 04:32:55",
+      "created_at": "2019-08-02 04:38:06",
+      "high_res_image": "https://tch-app.s3.ap-southeast-1.amazonaws.com/menufrontend/high_res_image/5d43be2e41d3ac39a44bd7a2_Tra-pbt.jpg",
+      "image": "https://tch-app.s3.ap-southeast-1.amazonaws.com/menufrontend/5d43be2e41d3ac39a44bd7a2_Tra-pbt.jpg",
+      "__v": 9,
+      "codes": [],
+      "product_category_id": "609fec3cd51c0000a7001d46",
+      "product_odoo": {
+        "product_tmpl_id": 2715,
+        "variants": [
+          {
+            "code": "10010066",
+            "price": 60000,
+            "product_id": 2052,
+            "val": "L\u1edbn"
+          },
+          {
+            "code": "10010067",
+            "price": 55000,
+            "product_id": 2051,
+            "val": "V\u1eeba"
+          },
+          {
+            "code": "10010068",
+            "price": 50000,
+            "product_id": 2050,
+            "val": "Nh\u1ecf"
+          }
+        ]
+      },
+      "active": true,
+      "is_menuset": true,
+      "is_delivery": true,
+      "is_pickup": true,
+      "hint_note": [
+        "kh\u00f4ng \u0111\u01b0\u1eddng",
+        "\u00edt \u0111\u00e1",
+        "\u0111\u00e1 \u0111\u1ec3 ri\u00eang",
+        "kh\u00f4ng \u0111\u00e1",
+        "kh\u00f4ng l\u1ea5y \u1ed1ng h\u00fat & mu\u1ed7ng nh\u1ef1a"
+      ],
+      "stock": true
+    },
+    {
+      "_id": "5b03966a1acd4d5bbd67239c",
+      "product_name": "Tr\u00e0 \u0110\u00e0o Cam S\u1ea3 - \u0110\u00e1",
+      "base_price": 45000,
+      "description": "V\u1ecb thanh ng\u1ecdt c\u1ee7a \u0111\u00e0o Hy L\u1ea1p, v\u1ecb chua d\u1ecbu c\u1ee7a Cam V\u00e0ng nguy\u00ean v\u1ecf, v\u1ecb ch\u00e1t c\u1ee7a tr\u00e0 \u0111en t\u01b0\u01a1i \u0111\u01b0\u1ee3c \u1ee7 m\u1edbi m\u1ed7i 4 ti\u1ebfng, c\u00f9ng h\u01b0\u01a1ng th\u01a1m n\u1ed3ng \u0111\u1eb7c tr\u01b0ng c\u1ee7a s\u1ea3 ch\u00ednh l\u00e0 \u0111i\u1ec3m s\u00e1ng l\u00e0m n\u00ean s\u1ee9c h\u1ea5p d\u1eabn c\u1ee7a th\u1ee9c u\u1ed1ng n\u00e0y.",
+      "categ_id": [9, 5, 24],
+      "branch": "TCH",
+      "image_id": 28,
+      "image": "https://tch-app.s3.ap-southeast-1.amazonaws.com/menufrontend/5b03966a1acd4d5bbd67239c_Tra-dao-cam-sapng.jpg",
+      "variants": [
+        {
+          "product_id": 10010004,
+          "code": "10010004",
+          "price": 45000,
+          "val": "Nh\u1ecf",
+          "localize": { "vi": "Nh\u1ecf", "en": "Nh\u1ecf" }
+        },
+        {
+          "product_id": 10010003,
+          "code": "10010003",
+          "price": 52000,
+          "val": "V\u1eeba",
+          "localize": { "vi": "V\u1eeba", "en": "V\u1eeba" }
+        },
+        {
+          "code": "10010057",
+          "localize": { "en": "L\u1edbn", "vi": "L\u1edbn" },
+          "price": 59000,
+          "product_id": 10010057,
+          "val": "L\u1edbn"
+        }
+      ],
+      "updated_at": "2021-01-12 06:51:50",
+      "created_at": "2018-05-22 04:02:50",
+      "active": true,
+      "localize": {
+        "en": "Ice Peach Tea Mania",
+        "vi": "Tr\u00e0 \u0110\u00e0o Cam S\u1ea3 - \u0110\u00e1"
+      },
+      "topping_list": [
+        {
+          "product_id": 539,
+          "product_name": "\u0110\u00e0o ng\u00e2m",
+          "code": "10100017",
+          "price": 10000
+        }
+      ],
+      "options": [
+        {
+          "name": "Size",
+          "desciption": "Ch\u1ecdn 1 lo\u1ea1i size",
+          "min": 1,
+          "max": 1,
+          "default_index": 0,
+          "items": [
+            {
+              "product_id": 10010004,
+              "code": "10010004",
+              "price": 0,
+              "val": "Nh\u1ecf",
+              "localize": { "vi": "Nh\u1ecf", "en": "Nh\u1ecf" },
+              "is_main": true
+            },
+            {
+              "product_id": 10010003,
+              "code": "10010003",
+              "price": 7000,
+              "val": "V\u1eeba",
+              "localize": { "vi": "V\u1eeba", "en": "V\u1eeba" },
+              "is_main": true
+            },
+            {
+              "code": "10010057",
+              "localize": { "en": "L\u1edbn", "vi": "L\u1edbn" },
+              "price": 14000,
+              "product_id": 10010057,
+              "val": "L\u1edbn",
+              "is_main": true
+            }
+          ]
+        },
+        {
+          "name": "Topping",
+          "desciption": "Ch\u1ecdn t\u1ed1i \u0111a 2 lo\u1ea1i",
+          "min": 0,
+          "max": 2,
+          "default_index": -1,
+          "items": [
+            {
+              "product_id": 539,
+              "product_name": "\u0110\u00e0o ng\u00e2m",
+              "code": "10100017",
+              "price": 10000,
+              "type": 3
+            }
+          ]
+        }
+      ],
+      "price": 45000,
+      "type": [],
+      "slug": "tra-dao-cam-sa-da",
+      "high_res_image": "https://tch-app.s3.ap-southeast-1.amazonaws.com/menufrontend/high_res_image/5b03966a1acd4d5bbd67239c_Tra-dao-cam-sapng.jpg",
+      "__v": 8,
+      "codes": [],
+      "product_category_id": "609fec3cd51c0000a7001d46",
+      "product_odoo": {
+        "product_tmpl_id": 122,
+        "variants": [
+          {
+            "code": "10010057",
+            "price": 59000,
+            "product_id": 1912,
+            "val": "L\u1edbn"
+          },
+          {
+            "code": "10010003",
+            "price": 52000,
+            "product_id": 233,
+            "val": "V\u1eeba"
+          },
+          {
+            "code": "10010004",
+            "price": 45000,
+            "product_id": 28,
+            "val": "Nh\u1ecf"
+          }
+        ]
+      },
+      "is_menuset": true,
+      "is_delivery": true,
+      "is_pickup": true,
+      "hint_note": [
+        "kh\u00f4ng \u0111\u01b0\u1eddng",
+        "\u00edt \u0111\u00e1",
+        "\u0111\u00e1 \u0111\u1ec3 ri\u00eang",
+        "kh\u00f4ng \u0111\u00e1",
+        "kh\u00f4ng l\u1ea5y \u1ed1ng h\u00fat & mu\u1ed7ng nh\u1ef1a"
+      ],
+      "intro": { "en": "", "vi": "" },
+      "stock": true
+    },
+    {
+      "_id": "5c3ff3c5acf0d338d22adbaa",
+      "product_name": "Oolong H\u1ea1t Sen - N\u00f3ng",
+      "base_price": 52000,
+      "description": "Tr\u00e0 Oolong Sen n\u00f3ng s\u1ebd d\u1eady h\u01a1n m\u00f9i th\u01a1m c\u1ee7a tr\u00e0 v\u00e0 h\u1ea1t sen. Tr\u00e0 c\u00f3 v\u1ecb ng\u1ecdt d\u1ecbu nh\u1eb9, r\u1ea5t t\u1ed1t cho s\u1ee9c kho\u1ebb v\u00e0 gi\u00fap gi\u1eef \u1ea5m c\u01a1 th\u1ec3. S\u1ea3n ph\u1ea9m c\u00f3 v\u1ecb tr\u00e0 nh\u1eb9 nh\u00e0ng v\u1eeba ph\u1ea3i, c\u00f3 th\u1ec3 d\u00f9ng \u0111\u01b0\u1ee3c c\u1ea3 cho bu\u1ed5i  s\u00e1ng v\u00e0 chi\u1ec1u t\u1ed1i.",
+      "branch": "TCH",
+      "categ_id": [5],
+      "active": true,
+      "variants": [
+        {
+          "code": "10010048",
+          "localize": { "en": "V\u1eeba", "vi": "V\u1eeba" },
+          "price": 52000,
+          "product_id": 1859,
+          "val": "V\u1eeba"
+        }
+      ],
+      "updated_at": "2020-12-25 06:43:48",
+      "created_at": "2019-01-17 03:17:25",
+      "high_res_image": "https://tch-app.s3.ap-southeast-1.amazonaws.com/menufrontend/high_res_image/5c3ff3c5acf0d338d22adbaa_Tra-sen-nong.jpg",
+      "image": "https://tch-app.s3.ap-southeast-1.amazonaws.com/menufrontend/5c3ff3c5acf0d338d22adbaa_Tra-sen-nong.jpg",
+      "localize": {
+        "en": "Hot Oolong Tea With Lotus Seed",
+        "vi": "Oolong H\u1ea1t Sen - N\u00f3ng"
+      },
+      "topping_list": [
+        {
+          "product_id": 10100020,
+          "product_name": "Sen ng\u00e2m",
+          "code": "10100020",
+          "price": 10000
+        }
+      ],
+      "options": [
+        {
+          "name": "Size",
+          "desciption": "Ch\u1ecdn 1 lo\u1ea1i size",
+          "min": 1,
+          "max": 1,
+          "default_index": 0,
+          "items": [
+            {
+              "code": "10010048",
+              "localize": { "en": "V\u1eeba", "vi": "V\u1eeba" },
+              "price": 0,
+              "product_id": 1859,
+              "val": "V\u1eeba",
+              "is_main": true
+            }
+          ]
+        },
+        {
+          "name": "Topping",
+          "desciption": "Ch\u1ecdn t\u1ed1i \u0111a 2 lo\u1ea1i",
+          "min": 0,
+          "max": 2,
+          "default_index": -1,
+          "items": [
+            {
+              "product_id": 10100020,
+              "product_name": "Sen ng\u00e2m",
+              "code": "10100020",
+              "price": 10000,
+              "type": 3
+            }
+          ]
+        }
+      ],
+      "price": 52000,
+      "type": [],
+      "slug": "oolong-hat-sen---nong",
+      "__v": 5,
+      "codes": [],
+      "product_category_id": "609fec3cd51c0000a7001d46",
+      "product_odoo": {
+        "product_tmpl_id": 1869,
+        "variants": [
+          {
+            "code": "10010048",
+            "price": 52000,
+            "product_id": 1859,
+            "val": "V\u1eeba"
+          },
+          {
+            "code": "10010047",
+            "price": 49000,
+            "product_id": 1858,
+            "val": "Nh\u1ecf",
+            "localize": { "en": null, "vi": "Size Nh\u1ecf" }
+          }
+        ]
+      },
+      "is_menuset": true,
+      "is_delivery": true,
+      "is_pickup": true,
+      "stock": true
+    },
+    {
+      "_id": "5b03966a1acd4d5bbd67239e",
+      "product_name": "Tr\u00e0 \u0110en Macchiato",
+      "base_price": 50000,
+      "description": "Tr\u00e0 \u0111en \u0111\u01b0\u1ee3c \u1ee7 m\u1edbi m\u1ed7i ng\u00e0y, gi\u1eef nguy\u00ean \u0111\u01b0\u1ee3c v\u1ecb ch\u00e1t m\u1ea1nh m\u1ebd \u0111\u1eb7c tr\u01b0ng c\u1ee7a l\u00e1 tr\u00e0, ph\u1ee7 b\u00ean tr\u00ean l\u00e0 l\u1edbp Macchiato \"homemade\" b\u1ed3ng b\u1ec1nh quy\u1ebfn r\u0169 v\u1ecb ph\u00f4 mai m\u1eb7n m\u1eb7n m\u00e0 b\u00e9o b\u00e9o.",
+      "categ_id": [4],
+      "branch": "TCH",
+      "image_id": 1419,
+      "image": "https://tch-app.s3.ap-southeast-1.amazonaws.com/menufrontend/5b03966a1acd4d5bbd67239e_Tra-den-Macchiato.jpg",
+      "variants": [
+        {
+          "code": "10010059",
+          "price": 55000,
+          "product_id": 1914,
+          "val": "L\u1edbn",
+          "localize": { "en": null, "vi": "L\u1edbn" }
+        },
+        {
+          "code": "10010023",
+          "price": 50000,
+          "product_id": 1420,
+          "val": "V\u1eeba",
+          "localize": { "en": null, "vi": "Size V\u1eeba" }
+        }
+      ],
+      "updated_at": "2021-04-01 02:34:05",
+      "created_at": "2018-05-22 04:02:50",
+      "active": true,
+      "localize": {
+        "en": "Black Tea Macchiato",
+        "vi": "Tr\u00e0 \u0110en Macchiato"
+      },
+      "topping_list": [
+        {
+          "product_id": 1456,
+          "product_name": "Extra foam",
+          "code": "10100024",
+          "price": 10000
+        },
+        {
+          "product_id": 1667,
+          "product_name": "Tr\u00e2n ch\u00e2u tr\u1eafng",
+          "code": "10100016",
+          "price": 10000
+        }
+      ],
+      "options": [
+        {
+          "name": "Size",
+          "desciption": "Ch\u1ecdn 1 lo\u1ea1i size",
+          "min": 1,
+          "max": 1,
+          "default_index": 0,
+          "items": [
+            {
+              "code": "10010059",
+              "price": 5000,
+              "product_id": 1914,
+              "val": "L\u1edbn",
+              "localize": { "en": null, "vi": "L\u1edbn" },
+              "is_main": true
+            },
+            {
+              "code": "10010023",
+              "price": 0,
+              "product_id": 1420,
+              "val": "V\u1eeba",
+              "localize": { "en": null, "vi": "Size V\u1eeba" },
+              "is_main": true
+            }
+          ]
+        },
+        {
+          "name": "Topping",
+          "desciption": "Ch\u1ecdn t\u1ed1i \u0111a 2 lo\u1ea1i",
+          "min": 0,
+          "max": 2,
+          "default_index": -1,
+          "items": [
+            {
+              "product_id": 1456,
+              "product_name": "Extra foam",
+              "code": "10100024",
+              "price": 10000,
+              "type": 3
+            },
+            {
+              "product_id": 1667,
+              "product_name": "Tr\u00e2n ch\u00e2u tr\u1eafng",
+              "code": "10100016",
+              "price": 10000,
+              "type": 3
+            }
+          ]
+        }
+      ],
+      "price": 50000,
+      "type": [],
+      "slug": "tra-den-macchiato",
+      "__v": 8,
+      "codes": [],
+      "product_category_id": "609fec3cd51c0000a7001d47",
+      "product_odoo": {
+        "product_tmpl_id": 1441,
+        "variants": [
+          {
+            "code": "10010059",
+            "price": 55000,
+            "product_id": 1914,
+            "val": "L\u1edbn",
+            "localize": { "en": null, "vi": "Size L\u1edbn" }
+          },
+          {
+            "code": "10010023",
+            "price": 50000,
+            "product_id": 1420,
+            "val": "V\u1eeba",
+            "localize": { "en": null, "vi": "Size V\u1eeba" }
+          },
+          {
+            "code": "10010017",
+            "price": 42000,
+            "product_id": 1419,
+            "val": "Nh\u1ecf"
+          }
+        ]
+      },
+      "high_res_image": "https://tch-app.s3.ap-southeast-1.amazonaws.com/menufrontend/high_res_image/5b03966a1acd4d5bbd67239e_Tra-den-Macchiato.jpg",
+      "hint_note": [
+        "kh\u00f4ng \u0111\u01b0\u1eddng",
+        "kh\u00f4ng kem",
+        "\u00edt \u0111\u00e1",
+        "kh\u00f4ng l\u1ea5y \u1ed1ng h\u00fat & mu\u1ed7ng nh\u1ef1a"
+      ],
+      "intro": { "en": null, "vi": null },
+      "is_delivery": true,
+      "is_pickup": true,
+      "is_menuset": true,
+      "stock": true
+    },
+    {
+      "_id": "5d43bf5d073b26002948a362",
+      "product_name": "Ph\u00fac B\u1ed3n T\u1eed Cam \u0110\u00e1 Xay",
+      "localize": {
+        "en": "Raspberry With Orange Ice Blended",
+        "vi": "Ph\u00fac B\u1ed3n T\u1eed Cam \u0110\u00e1 Xay"
+      },
+      "base_price": 59000,
+      "price": 59000,
+      "categ_id": [2, 22],
+      "topping_list": [],
+      "description": "T\u00ea t\u00e1i ngay \u0111\u1ea7u l\u01b0\u1ee1i b\u1edfi s\u1ef1 m\u00e1t l\u1ea1nh c\u1ee7a \u0111\u00e1 xay. H\u00f2a quy\u1ec7n th\u00eam h\u01b0\u01a1ng v\u1ecb chua chua, ng\u1ecdt ng\u1ecdt t\u1eeb tr\u00e1i cam t\u01b0\u01a1i v\u00e0 tr\u00e1i ph\u00fac b\u1ed3n t\u1eed 100% t\u1ef1 nhi\u00ean, \u0111\u1ec3 cho ra m\u1ed9t h\u01b0\u01a1ng v\u1ecb thanh m\u00e1t, k\u00edch th\u00edch v\u1ecb gi\u00e1c \u0111\u1ea7y th\u00fa v\u1ecb ngay t\u1eeb l\u1ea7n \u0111\u1ea7u th\u01b0\u1edfng th\u1ee9c.",
+      "variants": [
+        {
+          "code": "10030021",
+          "localize": { "en": "V\u1eeba", "vi": "\bV\u1eeba" },
+          "price": 59000,
+          "product_id": 10030021,
+          "val": "V\u1eeba"
+        },
+        {
+          "code": "10030020",
+          "localize": { "en": "L\u1edbn", "vi": "L\u1edbn" },
+          "price": 65000,
+          "product_id": 10030020,
+          "val": "L\u1edbn"
+        }
+      ],
+      "type": [],
+      "options": [
+        {
+          "name": "Size",
+          "desciption": "Ch\u1ecdn 1 lo\u1ea1i size",
+          "min": 1,
+          "max": 1,
+          "default_index": 0,
+          "items": [
+            {
+              "code": "10030021",
+              "localize": { "en": "V\u1eeba", "vi": "\bV\u1eeba" },
+              "price": 0,
+              "product_id": 10030021,
+              "val": "V\u1eeba",
+              "is_main": true
+            },
+            {
+              "code": "10030020",
+              "localize": { "en": "L\u1edbn", "vi": "L\u1edbn" },
+              "price": 6000,
+              "product_id": 10030020,
+              "val": "L\u1edbn",
+              "is_main": true
+            }
+          ]
+        }
+      ],
+      "branch": "TCH",
+      "slug": "phuc-bon-tu-cam-da-xay",
+      "updated_at": "2020-12-25 03:57:15",
+      "created_at": "2019-08-02 04:43:09",
+      "high_res_image": "https://tch-app.s3.ap-southeast-1.amazonaws.com/menufrontend/high_res_image/5d43bf5d073b26002948a362_Cam-pbt-da-xay.jpg",
+      "image": "https://tch-app.s3.ap-southeast-1.amazonaws.com/menufrontend/5d43bf5d073b26002948a362_Cam-pbt-da-xay.jpg",
+      "__v": 7,
+      "codes": [],
+      "product_category_id": "609fec3cd51c0000a7001d49",
+      "product_odoo": {
+        "product_tmpl_id": 2716,
+        "variants": [
+          {
+            "code": "10030020",
+            "price": 65000,
+            "product_id": 2054,
+            "val": "L\u1edbn"
+          },
+          {
+            "code": "10030021",
+            "price": 59000,
+            "product_id": 2053,
+            "val": "V\u1eeba"
+          }
+        ]
+      },
+      "active": true,
+      "is_menuset": true,
+      "is_delivery": true,
+      "is_pickup": true,
+      "hint_note": [
+        "\u00edt ng\u1ecdt",
+        "kh\u00f4ng \u0111\u01b0\u1eddng",
+        "kh\u00f4ng l\u1ea5y \u1ed1ng h\u00fat & mu\u1ed7ng nh\u1ef1a"
+      ],
+      "stock": true
+    },
+    {
+      "_id": "5e4f9e4316bd0a0018d2e24e",
+      "localize": {
+        "en": "C\u00e0 Ph\u00ea \u0110\u00e1 Xay-L\u1ea1nh",
+        "vi": "C\u00e0 Ph\u00ea \u0110\u00e1 Xay-L\u1ea1nh"
+      },
+      "description": "M\u1ed9t phi\u00ean b\u1ea3n \"upgrade\" t\u1eeb ly c\u00e0 ph\u00ea s\u1eefa quen thu\u1ed9c, nh\u01b0ng l\u1ea1i t\u1ec9nh t\u00e1o v\u00e0 t\u01b0\u01a1i m\u00e1t h\u01a1n b\u1edfi l\u1edbp \u0111\u00e1 xay \u0111i k\u00e8m. Nh\u1ea5p 1 ng\u1ee5m l\u00e0 th\u1ea5y \u0111\u00e3, ng\u1ee5m th\u1ee9 hai th\u00eam t\u1ec9nh t\u00e1o v\u00e0 c\u1ee9 th\u1ebf l\u00f4i cu\u1ed1n b\u1ea1n \u0111\u1ebfn gi\u1ecdt cu\u1ed1i c\u00f9ng.",
+      "product_odoo": {
+        "product_tmpl_id": 3939,
+        "variants": [
+          {
+            "code": "10030028",
+            "price": 65000,
+            "product_id": 2199,
+            "val": "L\u1edbn"
+          },
+          {
+            "code": "10030029",
+            "price": 59000,
+            "product_id": 2198,
+            "val": "V\u1eeba"
+          }
+        ]
+      },
+      "categ_id": [1, 2],
+      "topping_list": [],
+      "variants": [
+        {
+          "code": "10030028",
+          "price": 65000,
+          "product_id": 2199,
+          "localize": { "en": "L\u1edbn", "vi": "L\u1edbn" },
+          "val": "L\u1edbn"
+        },
+        {
+          "code": "10030029",
+          "price": 59000,
+          "product_id": 2198,
+          "val": "V\u1eeba",
+          "localize": { "en": "V\u1eeba", "vi": "V\u1eeba" }
+        }
+      ],
+      "type": [],
+      "options": [
+        {
+          "name": "Size",
+          "desciption": "Ch\u1ecdn 1 lo\u1ea1i size",
+          "min": 1,
+          "max": 1,
+          "default_index": 0,
+          "items": [
+            {
+              "code": "10030028",
+              "price": 6000,
+              "product_id": 2199,
+              "localize": { "en": "L\u1edbn", "vi": "L\u1edbn" },
+              "val": "L\u1edbn",
+              "is_main": true
+            },
+            {
+              "code": "10030029",
+              "price": 0,
+              "product_id": 2198,
+              "val": "V\u1eeba",
+              "localize": { "en": "V\u1eeba", "vi": "V\u1eeba" },
+              "is_main": true
+            }
+          ]
+        }
+      ],
+      "codes": [],
+      "product_category_id": "609fec3cd51c0000a7001d48",
+      "product_name": "C\u00e0 Ph\u00ea \u0110\u00e1 Xay-L\u1ea1nh",
+      "price": 59000,
+      "base_price": 59000,
+      "active": true,
+      "branch": "TCH",
+      "slug": "ca-phe-da-xay-lanh",
+      "created_at": "2020-02-21 09:09:23",
+      "updated_at": "2020-12-22 04:42:07",
+      "__v": 1,
+      "high_res_image": "https://tch-app.s3.ap-southeast-1.amazonaws.com/menufrontend/high_res_image/5e4f9e4316bd0a0018d2e24e_cafe-da-xay.jpg",
+      "image": "https://tch-app.s3.ap-southeast-1.amazonaws.com/menufrontend/5e4f9e4316bd0a0018d2e24e_cafe-da-xay.jpg",
+      "is_menuset": true,
+      "is_delivery": true,
+      "is_pickup": true,
+      "stock": true
+    },
+    {
+      "_id": "5b03966a1acd4d5bbd67237e",
+      "product_name": "Cookie \u0110\u00e1 Xay",
+      "base_price": 59000,
+      "description": "Nh\u1eefng m\u1ea9u b\u00e1nh cookies gi\u00f2n r\u1ee5m k\u1ebft h\u1ee3p \u0103n \u00fd v\u1edbi s\u1eefa t\u01b0\u01a1i v\u00e0 kem t\u01b0\u01a1i b\u00e9o ng\u1ecdt, \u0111em \u0111\u1ebfn c\u1ea3m gi\u00e1c l\u1ea1 mi\u1ec7ng g\u00e2y th\u00edch th\u00fa. M\u1ed9t m\u00f3n u\u1ed1ng ph\u00e1 c\u00e1ch d\u1ec5 th\u01b0\u01a1ng.",
+      "categ_id": [2, 22],
+      "branch": "TCH",
+      "image_id": 1275,
+      "image": "https://tch-app.s3.ap-southeast-1.amazonaws.com/menufrontend/5b03966a1acd4d5bbd67237e_Cookie-da-xay.jpg",
+      "variants": [
+        {
+          "product_id": 10030003,
+          "code": "10030003",
+          "price": 59000,
+          "val": "V\u1eeba",
+          "localize": { "vi": "V\u1eeba", "en": "V\u1eeba" }
+        },
+        {
+          "code": "10030018",
+          "localize": { "en": "L\u1edbn", "vi": "L\u1edbn" },
+          "price": 65000,
+          "product_id": 10030018,
+          "val": "L\u1edbn"
+        }
+      ],
+      "updated_at": "2020-12-25 04:21:54",
+      "created_at": "2018-05-22 04:02:50",
+      "active": true,
+      "localize": {
+        "en": "Cookie Ice Blended",
+        "vi": "Cookie \u0110\u00e1 Xay"
+      },
+      "topping_list": [],
+      "options": [
+        {
+          "name": "Size",
+          "desciption": "Ch\u1ecdn 1 lo\u1ea1i size",
+          "min": 1,
+          "max": 1,
+          "default_index": 0,
+          "items": [
+            {
+              "product_id": 10030003,
+              "code": "10030003",
+              "price": 0,
+              "val": "V\u1eeba",
+              "localize": { "vi": "V\u1eeba", "en": "V\u1eeba" },
+              "is_main": true
+            },
+            {
+              "code": "10030018",
+              "localize": { "en": "L\u1edbn", "vi": "L\u1edbn" },
+              "price": 6000,
+              "product_id": 10030018,
+              "val": "L\u1edbn",
+              "is_main": true
+            }
+          ]
+        }
+      ],
+      "price": 59000,
+      "type": [],
+      "slug": "cookie-da-xay",
+      "__v": 6,
+      "codes": [],
+      "product_category_id": "609fec3cd51c0000a7001d48",
+      "product_odoo": {
+        "product_tmpl_id": 1316,
+        "variants": [
+          {
+            "code": "10030003",
+            "price": 59000,
+            "product_id": 1275,
+            "val": "V\u1eeba"
+          },
+          {
+            "code": "10030018",
+            "price": 65000,
+            "product_id": 2015,
+            "val": "L\u1edbn"
+          }
+        ]
+      },
+      "high_res_image": "https://tch-app.s3.ap-southeast-1.amazonaws.com/menufrontend/high_res_image/5b03966a1acd4d5bbd67237e_Cookie-da-xay.jpg",
+      "is_menuset": true,
+      "is_delivery": true,
+      "is_pickup": true,
+      "stock": true
+    },
+    {
+      "_id": "5d2bdfa5acf0d30ba264432b",
+      "product_name": "\u0110\u00e0o Vi\u1ec7t Qu\u1ea5t \u0110\u00e1 Xay",
+      "base_price": 59000,
+      "description": "V\u1eabn v\u1ecb \u0111\u00e0o quen thu\u1ed9c nh\u01b0ng \u0111\u01b0\u1ee3c kho\u00e1c l\u00ean m\u00ecnh m\u1ed9t v\u1ebb \u0111\u1ea7y thanh m\u00e1t v\u00e0 gi\u1ea3i kh\u00e1t h\u01a1n.",
+      "branch": "TCH",
+      "categ_id": [2, 22],
+      "active": true,
+      "localize": {
+        "en": "Peach Mixed Berries Ice Blended",
+        "vi": "\u0110\u00e0o Vi\u1ec7t Qu\u1ea5t \u0110\u00e1 Xay"
+      },
+      "variants": [
+        {
+          "product_id": 2002,
+          "code": "10030014",
+          "price": 59000,
+          "val": "V\u1eeba",
+          "localize": { "vi": "V\u1eeba", "en": "V\u1eeba" }
+        },
+        {
+          "code": "10030015",
+          "localize": { "en": "L\u1edbn", "vi": "L\u1edbn" },
+          "price": 65000,
+          "product_id": 2003,
+          "val": "L\u1edbn"
+        }
+      ],
+      "updated_at": "2020-12-25 04:00:22",
+      "created_at": "2019-07-15 02:06:29",
+      "options": [
+        {
+          "name": "Size",
+          "desciption": "Ch\u1ecdn 1 lo\u1ea1i size",
+          "min": 1,
+          "max": 1,
+          "default_index": 0,
+          "items": [
+            {
+              "product_id": 2002,
+              "code": "10030014",
+              "price": 0,
+              "val": "V\u1eeba",
+              "localize": { "vi": "V\u1eeba", "en": "V\u1eeba" },
+              "is_main": true
+            },
+            {
+              "code": "10030015",
+              "localize": { "en": "L\u1edbn", "vi": "L\u1edbn" },
+              "price": 6000,
+              "product_id": 2003,
+              "val": "L\u1edbn",
+              "is_main": true
+            }
+          ]
+        }
+      ],
+      "price": 59000,
+      "high_res_image": "https://tch-app.s3.ap-southeast-1.amazonaws.com/menufrontend/high_res_image/5d2bdfa5acf0d30ba264432b_Dao-viet-quat-da-xay.jpg",
+      "image": "https://tch-app.s3.ap-southeast-1.amazonaws.com/menufrontend/5d2bdfa5acf0d30ba264432b_Dao-viet-quat-da-xay.jpg",
+      "slug": "dao-viet-quat-da-xay",
+      "topping_list": [],
+      "type": [],
+      "__v": 6,
+      "codes": [],
+      "product_category_id": "609fec3cd51c0000a7001d49",
+      "product_odoo": {
+        "product_tmpl_id": 1992,
+        "variants": [
+          {
+            "code": "10030015",
+            "price": 65000,
+            "product_id": 2003,
+            "val": "L\u1edbn"
+          },
+          {
+            "code": "10030014",
+            "price": 59000,
+            "product_id": 2002,
+            "val": "V\u1eeba"
+          }
+        ]
+      },
+      "is_menuset": true,
+      "is_delivery": true,
+      "is_pickup": true,
+      "hint_note": [
+        "\u00edt ng\u1ecdt",
+        "kh\u00f4ng \u0111\u01b0\u1eddng",
+        "kh\u00f4ng l\u1ea5y \u1ed1ng h\u00fat & mu\u1ed7ng nh\u1ef1a"
+      ],
+      "stock": true
+    },
+    {
+      "_id": "5b03966a1acd4d5bbd672391",
+      "product_name": "Latte \u0110\u00e1",
+      "base_price": 50000,
+      "description": "Latte l\u00e0 m\u1ed9t s\u1ef1 k\u1ebft h\u1ee3p tinh t\u1ebf gi\u1eefa l\u1edbp n\u1ec1n Espresso h\u1ea3o h\u1ea1ng v\u00e0 s\u1eefa t\u01b0\u01a1i (nhi\u1ec1u h\u01a1n so v\u1edbi Cappucino) - mang \u0111\u1ebfn s\u1ef1 c\u00e2n b\u1eb1ng, nh\u1eb9 nh\u00e0ng trong h\u01b0\u01a1ng v\u1ecb.",
+      "categ_id": [1, 10],
+      "branch": "TCH",
+      "image_id": 217,
+      "image": "https://tch-app.s3.ap-southeast-1.amazonaws.com/menufrontend/5b03966a1acd4d5bbd672391_Latte-da.jpg",
+      "variants": [
+        {
+          "product_id": 10020032,
+          "code": "10020032",
+          "price": 50000,
+          "val": "Nh\u1ecf",
+          "localize": { "vi": "Nh\u1ecf", "en": "Nh\u1ecf" }
+        },
+        {
+          "product_id": 10020033,
+          "code": "10020033",
+          "price": 55000,
+          "val": "V\u1eeba",
+          "localize": { "vi": "V\u1eeba", "en": "V\u1eeba" }
+        }
+      ],
+      "updated_at": "2020-12-22 05:10:20",
+      "created_at": "2018-05-22 04:02:50",
+      "active": true,
+      "localize": { "en": "Ice Latte", "vi": "Latte \u0110\u00e1" },
+      "topping_list": [
+        {
+          "product_id": 196,
+          "product_name": "Espresso (1shot)",
+          "code": "10100003",
+          "price": 10000
+        }
+      ],
+      "options": [
+        {
+          "name": "Size",
+          "desciption": "Ch\u1ecdn 1 lo\u1ea1i size",
+          "min": 1,
+          "max": 1,
+          "default_index": 0,
+          "items": [
+            {
+              "product_id": 10020032,
+              "code": "10020032",
+              "price": 0,
+              "val": "Nh\u1ecf",
+              "localize": { "vi": "Nh\u1ecf", "en": "Nh\u1ecf" },
+              "is_main": true
+            },
+            {
+              "product_id": 10020033,
+              "code": "10020033",
+              "price": 5000,
+              "val": "V\u1eeba",
+              "localize": { "vi": "V\u1eeba", "en": "V\u1eeba" },
+              "is_main": true
+            }
+          ]
+        },
+        {
+          "name": "Topping",
+          "desciption": "Ch\u1ecdn t\u1ed1i \u0111a 2 lo\u1ea1i",
+          "min": 0,
+          "max": 2,
+          "default_index": -1,
+          "items": [
+            {
+              "product_id": 196,
+              "product_name": "Espresso (1shot)",
+              "code": "10100003",
+              "price": 10000,
+              "type": 3
+            }
+          ]
+        }
+      ],
+      "price": 50000,
+      "type": [],
+      "slug": "latte-da",
+      "high_res_image": "https://tch-app.s3.ap-southeast-1.amazonaws.com/menufrontend/high_res_image/5b03966a1acd4d5bbd672391_Latte-da.jpg",
+      "__v": 6,
+      "codes": [],
+      "product_category_id": "609fec3cd51c0000a7001d44",
+      "product_odoo": {
+        "product_tmpl_id": 1353,
+        "variants": [
+          {
+            "code": "10020033",
+            "price": 55000,
+            "product_id": 217,
+            "val": "V\u1eeba"
+          },
+          {
+            "code": "10020032",
+            "price": 50000,
+            "product_id": 216,
+            "val": "Nh\u1ecf"
+          }
+        ]
+      },
+      "is_menuset": true,
+      "is_delivery": true,
+      "is_pickup": true,
+      "hint_note": [
+        "kh\u00f4ng \u0111\u01b0\u1eddng",
+        "\u00edt \u0111\u00e1",
+        "\u0111\u00e1 \u0111\u1ec3 ri\u00eang",
+        "kh\u00f4ng l\u1ea5y \u1ed1ng h\u00fat & mu\u1ed7ng nh\u1ef1a"
+      ],
+      "stock": true
+    },
+    {
+      "_id": "5b03966a1acd4d5bbd67237c",
+      "product_name": "Chocolate \u0110\u00e1 Xay",
+      "base_price": 59000,
+      "description": "S\u1eefa v\u00e0 kem t\u01b0\u01a1i b\u00e9o ng\u1ecdt \u0111\u01b0\u1ee3c \u201cc\u00e1 t\u00ednh ho\u00e1\u201d b\u1edfi v\u1ecb chocolate \u0111\u0103ng \u0111\u1eafng. D\u00e0nh cho c\u00e1c t\u00edn \u0111\u1ed3 h\u1ea3o ng\u1ecdt. L\u1ef1a ch\u1ecdn h\u00e0ng \u0111\u1ea7u n\u1ebfu b\u1ea1n \u0111ang c\u1ea7n ch\u00fat n\u0103ng l\u01b0\u1ee3ng tinh th\u1ea7n \u0111\u1ec3 th\u00fac \u0111\u1ea9y nh\u1ecbp s\u1ed1ng.",
+      "categ_id": [2, 22],
+      "branch": "TCH",
+      "image_id": 42,
+      "image": "https://tch-app.s3.ap-southeast-1.amazonaws.com/menufrontend/5b03966a1acd4d5bbd67237c_Chocolate-da-xay.jpg",
+      "variants": [
+        {
+          "product_id": 10030002,
+          "code": "10030002",
+          "price": 59000,
+          "val": "V\u1eeba",
+          "localize": { "vi": "V\u1eeba", "en": "V\u1eeba" }
+        },
+        {
+          "code": "10030019",
+          "localize": { "en": "L\u1edbn", "vi": "L\u1edbn" },
+          "price": 65000,
+          "product_id": 10030019,
+          "val": "L\u1edbn"
+        }
+      ],
+      "updated_at": "2020-12-25 03:58:59",
+      "created_at": "2018-05-22 04:02:50",
+      "active": true,
+      "localize": {
+        "en": "Chocolate Ice Blended",
+        "vi": "Chocolate \u0110\u00e1 Xay"
+      },
+      "topping_list": [
+        {
+          "product_id": 10100018,
+          "product_name": "Sauce Chocolate",
+          "code": "10100018",
+          "price": 10000
+        }
+      ],
+      "options": [
+        {
+          "name": "Size",
+          "desciption": "Ch\u1ecdn 1 lo\u1ea1i size",
+          "min": 1,
+          "max": 1,
+          "default_index": 0,
+          "items": [
+            {
+              "product_id": 10030002,
+              "code": "10030002",
+              "price": 0,
+              "val": "V\u1eeba",
+              "localize": { "vi": "V\u1eeba", "en": "V\u1eeba" },
+              "is_main": true
+            },
+            {
+              "code": "10030019",
+              "localize": { "en": "L\u1edbn", "vi": "L\u1edbn" },
+              "price": 6000,
+              "product_id": 10030019,
+              "val": "L\u1edbn",
+              "is_main": true
+            }
+          ]
+        },
+        {
+          "name": "Topping",
+          "desciption": "Ch\u1ecdn t\u1ed1i \u0111a 2 lo\u1ea1i",
+          "min": 0,
+          "max": 2,
+          "default_index": -1,
+          "items": [
+            {
+              "product_id": 10100018,
+              "product_name": "Sauce Chocolate",
+              "code": "10100018",
+              "price": 10000,
+              "type": 3
+            }
+          ]
+        }
+      ],
+      "price": 59000,
+      "type": [],
+      "slug": "chocolate-da-xay",
+      "__v": 6,
+      "codes": [],
+      "product_category_id": "609fec3cd51c0000a7001d4a",
+      "product_odoo": {
+        "product_tmpl_id": 133,
+        "variants": [
+          {
+            "code": "10030002",
+            "price": 59000,
+            "product_id": 42,
+            "val": "V\u1eeba"
+          },
+          {
+            "code": "10030019",
+            "price": 65000,
+            "product_id": 2017,
+            "val": "L\u1edbn"
+          }
+        ]
+      },
+      "high_res_image": "https://tch-app.s3.ap-southeast-1.amazonaws.com/menufrontend/high_res_image/5b03966a1acd4d5bbd67237c_Chocolate-da-xay.jpg",
+      "is_menuset": true,
+      "is_delivery": true,
+      "is_pickup": true,
+      "hint_note": [
+        "\u00edt ng\u1ecdt",
+        "kh\u00f4ng l\u1ea5y \u1ed1ng h\u00fat & mu\u1ed7ng nh\u1ef1a"
+      ],
+      "intro": { "en": null, "vi": null },
+      "stock": true
+    },
+    {
+      "_id": "5ca47f92acf0d3492076b29a",
+      "product_name": "Cold Brew Truy\u1ec1n Th\u1ed1ng",
+      "base_price": 45000,
+      "description": "Nguy\u00ean b\u1ea3n v\u00e0 T\u01b0\u01a1i m\u1edbi v\u1edbi h\u01b0\u01a1ng g\u1ed7 th\u00f4ng, h\u1ea1t d\u1ebb, n\u1ed1t s\u00f4 c\u00f4 la \u0111\u1eb7c tr\u01b0ng, h\u01b0\u01a1ng kh\u00f3i nh\u1eb9 c\u1ee7a h\u1ea1t Arabica C\u1ea7u \u0110\u1ea5t.",
+      "branch": "TCH",
+      "categ_id": [1],
+      "active": true,
+      "localize": {
+        "en": "Classic Cold Brew",
+        "vi": "Cold Brew Truy\u1ec1n Th\u1ed1ng"
+      },
+      "variants": [
+        {
+          "product_id": 1948,
+          "code": "10020230",
+          "price": 45000,
+          "val": "V\u1eeba",
+          "localize": { "vi": "V\u1eeba", "en": "V\u1eeba" }
+        },
+        {
+          "code": "10020252",
+          "localize": { "en": "L\u1edbn", "vi": "L\u1edbn" },
+          "price": 50000,
+          "product_id": 10020252,
+          "val": "L\u1edbn"
+        }
+      ],
+      "updated_at": "2020-12-22 04:53:44",
+      "created_at": "2019-04-03 09:40:34",
+      "options": [
+        {
+          "name": "Size",
+          "desciption": "Ch\u1ecdn 1 lo\u1ea1i size",
+          "min": 1,
+          "max": 1,
+          "default_index": 0,
+          "items": [
+            {
+              "product_id": 1948,
+              "code": "10020230",
+              "price": 0,
+              "val": "V\u1eeba",
+              "localize": { "vi": "V\u1eeba", "en": "V\u1eeba" },
+              "is_main": true
+            },
+            {
+              "code": "10020252",
+              "localize": { "en": "L\u1edbn", "vi": "L\u1edbn" },
+              "price": 5000,
+              "product_id": 10020252,
+              "val": "L\u1edbn",
+              "is_main": true
+            }
+          ]
+        }
+      ],
+      "topping_list": [],
+      "type": [],
+      "high_res_image": "https://tch-app.s3.ap-southeast-1.amazonaws.com/menufrontend/high_res_image/5ca47f92acf0d3492076b29a_Cold-Brew-Classic.jpg",
+      "image": "https://tch-app.s3.ap-southeast-1.amazonaws.com/menufrontend/5ca47f92acf0d3492076b29a_Cold-Brew-Classic.jpg",
+      "price": 45000,
+      "slug": "cold-brew-truyen-thong",
+      "__v": 6,
+      "codes": [],
+      "product_category_id": "609fec3cd51c0000a7001d45",
+      "product_odoo": {
+        "product_tmpl_id": 1944,
+        "variants": [
+          {
+            "code": "10020252",
+            "price": 50000,
+            "product_id": 2007,
+            "val": "L\u1edbn"
+          },
+          {
+            "code": "10020230",
+            "price": 45000,
+            "product_id": 1948,
+            "val": "V\u1eeba"
+          }
+        ]
+      },
+      "is_menuset": true,
+      "is_delivery": true,
+      "is_pickup": true,
+      "hint_note": [
+        "kh\u00f4ng \u0111\u01b0\u1eddng",
+        "\u00edt \u0111\u00e1",
+        "kh\u00f4ng \u0111\u00e1",
+        "\u0111\u00e1 \u0111\u1ec3 ri\u00eang",
+        "kh\u00f4ng l\u1ea5y \u1ed1ng h\u00fat & mu\u1ed7ng nh\u1ef1a"
+      ],
+      "image_id": null,
+      "intro": { "en": null, "vi": null },
+      "stock": true
+    },
+    {
+      "_id": "5ca47f92acf0d3492076b299",
+      "product_name": "Cold Brew S\u1eefa T\u01b0\u01a1i",
+      "base_price": 45000,
+      "description": "Thanh m\u00e1t v\u00e0 c\u00e2n b\u1eb1ng v\u1edbi h\u01b0\u01a1ng v\u1ecb c\u00e0 ph\u00ea nguy\u00ean b\u1ea3n 100% Arabica C\u1ea7u \u0110\u1ea5t c\u00f9ng s\u1eefa t\u01b0\u01a1i th\u01a1m b\u00e9o cho t\u1eebng ng\u1ee5m tr\u00f2n v\u1ecb, h\u1ea5p d\u1eabn.",
+      "branch": "TCH",
+      "categ_id": [1],
+      "active": true,
+      "localize": {
+        "en": "Cold Brew With Milk",
+        "vi": "Cold Brew S\u1eefa T\u01b0\u01a1i"
+      },
+      "variants": [
+        {
+          "product_id": 1947,
+          "code": "10020229",
+          "price": 45000,
+          "val": "V\u1eeba",
+          "localize": { "vi": "V\u1eeba", "en": "V\u1eeba" }
+        },
+        {
+          "code": "10020253",
+          "localize": { "en": "L\u1edbn", "vi": "L\u1edbn" },
+          "price": 50000,
+          "product_id": 10020253,
+          "val": "L\u1edbn"
+        }
+      ],
+      "updated_at": "2020-12-22 04:55:14",
+      "created_at": "2019-04-03 09:40:34",
+      "options": [
+        {
+          "name": "Size",
+          "desciption": "Ch\u1ecdn 1 lo\u1ea1i size",
+          "min": 1,
+          "max": 1,
+          "default_index": 0,
+          "items": [
+            {
+              "product_id": 1947,
+              "code": "10020229",
+              "price": 0,
+              "val": "V\u1eeba",
+              "localize": { "vi": "V\u1eeba", "en": "V\u1eeba" },
+              "is_main": true
+            },
+            {
+              "code": "10020253",
+              "localize": { "en": "L\u1edbn", "vi": "L\u1edbn" },
+              "price": 5000,
+              "product_id": 10020253,
+              "val": "L\u1edbn",
+              "is_main": true
+            }
+          ]
+        }
+      ],
+      "topping_list": [],
+      "type": [],
+      "high_res_image": "https://tch-app.s3.ap-southeast-1.amazonaws.com/menufrontend/high_res_image/5ca47f92acf0d3492076b299_Cold-brew-sua-tuoi.jpg",
+      "image": "https://tch-app.s3.ap-southeast-1.amazonaws.com/menufrontend/5ca47f92acf0d3492076b299_Cold-brew-sua-tuoi.jpg",
+      "price": 45000,
+      "slug": "cold-brew-sua-tuoi",
+      "__v": 6,
+      "codes": [],
+      "product_category_id": "609fec3cd51c0000a7001d45",
+      "product_odoo": {
+        "product_tmpl_id": 1943,
+        "variants": [
+          {
+            "code": "10020253",
+            "price": 50000,
+            "product_id": 2009,
+            "val": "L\u1edbn"
+          },
+          {
+            "code": "10020229",
+            "price": 45000,
+            "product_id": 1947,
+            "val": "V\u1eeba"
+          }
+        ]
+      },
+      "is_menuset": true,
+      "is_delivery": true,
+      "is_pickup": true,
+      "hint_note": [
+        "kh\u00f4ng \u0111\u01b0\u1eddng",
+        "kh\u00f4ng \u0111\u00e1",
+        "\u00edt \u0111\u00e1",
+        "\u0111\u00e1 \u0111\u1ec3 ri\u00eang",
+        "nhi\u1ec1u s\u1eefa",
+        "kh\u00f4ng l\u1ea5y \u1ed1ng h\u00fat & mu\u1ed7ng nh\u1ef1a"
+      ],
+      "image_id": null,
+      "intro": { "en": null, "vi": null },
+      "stock": true
+    },
+    {
+      "_id": "5bfb492bacf0d31fd9646728",
+      "product_name": "Tr\u00e0 \u0110\u00e0o Cam S\u1ea3 - N\u00f3ng",
+      "base_price": 52000,
+      "description": "V\u1ecb thanh ng\u1ecdt c\u1ee7a \u0111\u00e0o Hy L\u1ea1p, v\u1ecb chua d\u1ecbu c\u1ee7a Cam V\u00e0ng nguy\u00ean v\u1ecf, v\u1ecb ch\u00e1t c\u1ee7a tr\u00e0 \u0111en t\u01b0\u01a1i \u0111\u01b0\u1ee3c \u1ee7 m\u1edbi m\u1ed7i 4 ti\u1ebfng, c\u00f9ng h\u01b0\u01a1ng th\u01a1m n\u1ed3ng \u0111\u1eb7c tr\u01b0ng c\u1ee7a s\u1ea3",
+      "branch": "TCH",
+      "categ_id": [5],
+      "active": true,
+      "variants": [
+        {
+          "product_id": 10010042,
+          "code": "10010042",
+          "price": 52000,
+          "val": "V\u1eeba",
+          "localize": { "vi": "V\u1eeba" }
+        }
+      ],
+      "updated_at": "2020-12-25 06:44:12",
+      "created_at": "2018-11-26 01:15:23",
+      "image": "https://tch-app.s3.ap-southeast-1.amazonaws.com/menufrontend/5bfb492bacf0d31fd9646728_Tra-dao-cam-sa-nong.jpg",
+      "localize": {
+        "en": "Hot Peach Tea Mania",
+        "vi": "Tr\u00e0 \u0110\u00e0o Cam S\u1ea3 - N\u00f3ng"
+      },
+      "topping_list": [
+        {
+          "product_id": 539,
+          "product_name": "\u0110\u00e0o ng\u00e2m",
+          "code": "10100017",
+          "price": 10000
+        }
+      ],
+      "options": [
+        {
+          "name": "Size",
+          "desciption": "Ch\u1ecdn 1 lo\u1ea1i size",
+          "min": 1,
+          "max": 1,
+          "default_index": 0,
+          "items": [
+            {
+              "product_id": 10010042,
+              "code": "10010042",
+              "price": 0,
+              "val": "V\u1eeba",
+              "localize": { "vi": "V\u1eeba" },
+              "is_main": true
+            }
+          ]
+        },
+        {
+          "name": "Topping",
+          "desciption": "Ch\u1ecdn t\u1ed1i \u0111a 2 lo\u1ea1i",
+          "min": 0,
+          "max": 2,
+          "default_index": -1,
+          "items": [
+            {
+              "product_id": 539,
+              "product_name": "\u0110\u00e0o ng\u00e2m",
+              "code": "10100017",
+              "price": 10000,
+              "type": 3
+            }
+          ]
+        }
+      ],
+      "price": 52000,
+      "type": [],
+      "slug": "tra-dao-cam-sa---nong",
+      "__v": 4,
+      "codes": [],
+      "product_category_id": "609fec3cd51c0000a7001d46",
+      "product_odoo": {
+        "product_tmpl_id": 1790,
+        "variants": [
+          {
+            "code": "10010042",
+            "price": 52000,
+            "product_id": 1776,
+            "val": "V\u1eeba"
+          }
+        ]
+      },
+      "high_res_image": "https://tch-app.s3.ap-southeast-1.amazonaws.com/menufrontend/high_res_image/5bfb492bacf0d31fd9646728_Tra-dao-cam-sa-nong.jpg",
+      "is_menuset": true,
+      "is_delivery": true,
+      "is_pickup": true,
+      "stock": true
+    },
+    {
+      "_id": "5b03966a1acd4d5bbd672373",
+      "product_name": "Americano N\u00f3ng",
+      "base_price": 40000,
+      "description": "Americano \u0111\u01b0\u1ee3c pha ch\u1ebf b\u1eb1ng c\u00e1ch th\u00eam n\u01b0\u1edbc v\u00e0o m\u1ed9t ho\u1eb7c hai shot Espresso \u0111\u1ec3 pha lo\u00e3ng \u0111\u1ed9 \u0111\u1eb7c c\u1ee7a c\u00e0 ph\u00ea, t\u1eeb \u0111\u00f3 mang l\u1ea1i h\u01b0\u01a1ng v\u1ecb nh\u1eb9 nh\u00e0ng, kh\u00f4ng g\u1eaft m\u1ea1nh v\u00e0 v\u1eabn th\u01a1m n\u1ed3ng n\u00e0n.",
+      "categ_id": [1, 10],
+      "branch": "TCH",
+      "image_id": 11,
+      "image": "https://tch-app.s3.ap-southeast-1.amazonaws.com/menufrontend/5b03966a1acd4d5bbd672373_americano-nong-app.jpg",
+      "variants": [
+        {
+          "product_id": 10020004,
+          "code": "10020004",
+          "price": 40000,
+          "val": "Nh\u1ecf",
+          "localize": { "vi": "Nh\u1ecf", "en": "Nh\u1ecf" }
+        },
+        {
+          "product_id": 10020003,
+          "code": "10020003",
+          "price": 45000,
+          "val": "V\u1eeba",
+          "localize": { "vi": "V\u1eeba", "en": "V\u1eeba" }
+        }
+      ],
+      "updated_at": "2021-04-01 04:30:53",
+      "created_at": "2018-05-22 04:02:50",
+      "active": true,
+      "localize": { "en": "Americano", "vi": "Americano N\u00f3ng" },
+      "topping_list": [
+        {
+          "product_id": 196,
+          "product_name": "Espresso (1shot)",
+          "code": "10100003",
+          "price": 10000
+        }
+      ],
+      "options": [
+        {
+          "name": "Size",
+          "desciption": "Ch\u1ecdn 1 lo\u1ea1i size",
+          "min": 1,
+          "max": 1,
+          "default_index": 0,
+          "items": [
+            {
+              "product_id": 10020004,
+              "code": "10020004",
+              "price": 0,
+              "val": "Nh\u1ecf",
+              "localize": { "vi": "Nh\u1ecf", "en": "Nh\u1ecf" },
+              "is_main": true
+            },
+            {
+              "product_id": 10020003,
+              "code": "10020003",
+              "price": 5000,
+              "val": "V\u1eeba",
+              "localize": { "vi": "V\u1eeba", "en": "V\u1eeba" },
+              "is_main": true
+            }
+          ]
+        },
+        {
+          "name": "Topping",
+          "desciption": "Ch\u1ecdn t\u1ed1i \u0111a 2 lo\u1ea1i",
+          "min": 0,
+          "max": 2,
+          "default_index": -1,
+          "items": [
+            {
+              "product_id": 196,
+              "product_name": "Espresso (1shot)",
+              "code": "10100003",
+              "price": 10000,
+              "type": 3
+            }
+          ]
+        }
+      ],
+      "price": 40000,
+      "codes": ["IAC01", "IAC02", "IAC04", "IAC03"],
+      "type": [],
+      "slug": "americano-nong",
+      "__v": 6,
+      "product_category_id": "609fec3cd51c0000a7001d44",
+      "product_odoo": {
+        "product_tmpl_id": 111,
+        "variants": [
+          {
+            "code": "10020003",
+            "price": 45000,
+            "product_id": 165,
+            "val": "V\u1eeba"
+          },
+          {
+            "code": "10020004",
+            "price": 40000,
+            "product_id": 11,
+            "val": "Nh\u1ecf"
+          }
+        ]
+      },
+      "high_res_image": "https://tch-app.s3.ap-southeast-1.amazonaws.com/menufrontend/high_res_image/5b03966a1acd4d5bbd672373_americano-nong-app.jpg",
+      "intro": { "en": null, "vi": null },
+      "hint_note": ["kh\u00f4ng \u0111\u01b0\u1eddng"],
+      "is_delivery": true,
+      "is_pickup": true,
+      "is_menuset": true,
+      "stock": true
+    },
+    {
+      "_id": "5b03966a1acd4d5bbd672374",
+      "product_name": "Americano \u0110\u00e1",
+      "base_price": 40000,
+      "description": "Americano \u0111\u01b0\u1ee3c pha ch\u1ebf b\u1eb1ng c\u00e1ch th\u00eam n\u01b0\u1edbc v\u00e0o m\u1ed9t ho\u1eb7c hai shot Espresso \u0111\u1ec3 pha lo\u00e3ng \u0111\u1ed9 \u0111\u1eb7c c\u1ee7a c\u00e0 ph\u00ea, t\u1eeb \u0111\u00f3 mang l\u1ea1i h\u01b0\u01a1ng v\u1ecb nh\u1eb9 nh\u00e0ng, kh\u00f4ng g\u1eaft m\u1ea1nh v\u00e0 v\u1eabn th\u01a1m n\u1ed3ng n\u00e0n.",
+      "categ_id": [1, 10],
+      "branch": "TCH",
+      "image_id": 110,
+      "image": "https://tch-app.s3.ap-southeast-1.amazonaws.com/menufrontend/5b03966a1acd4d5bbd672374_Americano-da.jpg",
+      "variants": [
+        {
+          "product_id": 10020002,
+          "code": "10020002",
+          "price": 40000,
+          "val": "Nh\u1ecf",
+          "localize": { "vi": "Nh\u1ecf", "en": "Nh\u1ecf" }
+        },
+        {
+          "product_id": 10020001,
+          "code": "10020001",
+          "price": 45000,
+          "val": "V\u1eeba",
+          "localize": { "vi": "V\u1eeba", "en": "V\u1eeba" }
+        }
+      ],
+      "updated_at": "2021-03-31 18:21:35",
+      "created_at": "2018-05-22 11:02:50",
+      "active": true,
+      "localize": { "en": "Ice Americano", "vi": "Americano \u0110\u00e1" },
+      "topping_list": [
+        {
+          "product_id": 196,
+          "product_name": "Espresso (1shot)",
+          "code": "10100003",
+          "price": 10000
+        }
+      ],
+      "options": [
+        {
+          "name": "Size",
+          "desciption": "Ch\u1ecdn 1 lo\u1ea1i size",
+          "min": 1,
+          "max": 1,
+          "default_index": 0,
+          "items": [
+            {
+              "product_id": 10020002,
+              "code": "10020002",
+              "price": 0,
+              "val": "Nh\u1ecf",
+              "localize": { "vi": "Nh\u1ecf", "en": "Nh\u1ecf" },
+              "is_main": true
+            },
+            {
+              "product_id": 10020001,
+              "code": "10020001",
+              "price": 5000,
+              "val": "V\u1eeba",
+              "localize": { "vi": "V\u1eeba", "en": "V\u1eeba" },
+              "is_main": true
+            }
+          ]
+        },
+        {
+          "name": "Topping",
+          "desciption": "Ch\u1ecdn t\u1ed1i \u0111a 2 lo\u1ea1i",
+          "min": 0,
+          "max": 2,
+          "default_index": -1,
+          "items": [
+            {
+              "product_id": 196,
+              "product_name": "Espresso (1shot)",
+              "code": "10100003",
+              "price": 10000,
+              "type": 3
+            }
+          ]
+        }
+      ],
+      "price": 40000,
+      "type": [],
+      "slug": "americano-da",
+      "__v": 6,
+      "codes": [],
+      "product_category_id": "609fec3cd51c0000a7001d44",
+      "product_odoo": {
+        "product_tmpl_id": 200,
+        "variants": [
+          {
+            "code": "10020001",
+            "price": 45000,
+            "product_id": 110,
+            "val": "V\u1eeba"
+          },
+          {
+            "code": "10020002",
+            "price": 40000,
+            "product_id": 109,
+            "val": "Nh\u1ecf"
+          }
+        ]
+      },
+      "high_res_image": "https://tch-app.s3.ap-southeast-1.amazonaws.com/menufrontend/high_res_image/5b03966a1acd4d5bbd672374_Americano-da.jpg",
+      "intro": { "en": null, "vi": null },
+      "hint_note": ["\u00edt \u0111\u00e1", "kh\u00f4ng \u0111\u01b0\u1eddng"],
+      "is_menuset": true,
+      "is_delivery": true,
+      "is_pickup": true,
+      "stock": true
+    },
+    {
+      "_id": "5b03966a1acd4d5bbd672375",
+      "product_name": "Sinh T\u1ed1 Vi\u1ec7t Qu\u1ea5t",
+      "base_price": 59000,
+      "description": "M\u1ee9t Vi\u1ec7t Qu\u1ea5t chua thanh, ng\u00f2n ng\u1ecdt, ph\u1ed1i h\u1ee3p nh\u1ecbp nh\u00e0ng v\u1edbi d\u00f2ng s\u1eefa chua b\u1ed5 d\u01b0\u1ee1ng. L\u00e0 m\u00f3n sinh t\u1ed1 th\u01a1m ngon m\u00e0 c\u1ea3 \u0111\u1ea7u l\u01b0\u1ee1i v\u00e0 l\u00e0n da \u0111\u1ec1u th\u00edch.",
+      "categ_id": [6, 22],
+      "branch": "TCH",
+      "image_id": 174,
+      "image": "https://tch-app.s3.ap-southeast-1.amazonaws.com/menufrontend/5b03966a1acd4d5bbd672375_Sinh-to-viet-quoc.jpg",
+      "variants": [
+        {
+          "product_id": 10040007,
+          "code": "10040007",
+          "price": 59000,
+          "val": "V\u1eeba",
+          "localize": { "vi": "V\u1eeba", "en": "V\u1eeba" }
+        }
+      ],
+      "updated_at": "2020-12-25 04:19:22",
+      "created_at": "2018-05-22 04:02:50",
+      "active": true,
+      "localize": {
+        "en": "Blueberry Smoothie",
+        "vi": "Sinh T\u1ed1 Vi\u1ec7t Qu\u1ea5t"
+      },
+      "options": [
+        {
+          "name": "Size",
+          "desciption": "Ch\u1ecdn 1 lo\u1ea1i size",
+          "min": 1,
+          "max": 1,
+          "default_index": 0,
+          "items": [
+            {
+              "product_id": 10040007,
+              "code": "10040007",
+              "price": 0,
+              "val": "V\u1eeba",
+              "localize": { "vi": "V\u1eeba", "en": "V\u1eeba" },
+              "is_main": true
+            }
+          ]
+        }
+      ],
+      "price": 59000,
+      "topping_list": [],
+      "type": [],
+      "slug": "sinh-to-viet-quat",
+      "__v": 4,
+      "codes": [],
+      "product_category_id": "609fec3cd51c0000a7001d49",
+      "product_odoo": {
+        "product_tmpl_id": 252,
+        "variants": [
+          {
+            "code": "10040007",
+            "price": 59000,
+            "product_id": 174,
+            "val": "V\u1eeba"
+          }
+        ]
+      },
+      "high_res_image": "https://tch-app.s3.ap-southeast-1.amazonaws.com/menufrontend/high_res_image/5b03966a1acd4d5bbd672375_Sinh-to-viet-quoc.jpg",
+      "is_menuset": true,
+      "is_delivery": true,
+      "is_pickup": true,
+      "hint_note": [
+        "\u00edt ng\u1ecdt",
+        "kh\u00f4ng \u0111\u01b0\u1eddng",
+        "kh\u00f4ng l\u1ea5y \u1ed1ng h\u00fat & mu\u1ed7ng nh\u1ef1a"
+      ],
+      "stock": true
+    },
+    {
+      "_id": "5b03966a1acd4d5bbd672377",
+      "product_name": "Cappuccino N\u00f3ng",
+      "base_price": 50000,
+      "description": "Cappuccino \u0111\u01b0\u1ee3c g\u1ecdi vui l\u00e0 th\u1ee9c u\u1ed1ng \"m\u1ed9t-ph\u1ea7n-ba\" - 1/3 Espresso, 1/3 S\u1eefa n\u00f3ng, 1/3 Foam.",
+      "categ_id": [1, 10],
+      "branch": "TCH",
+      "image_id": 213,
+      "image": "https://tch-app.s3.ap-southeast-1.amazonaws.com/menufrontend/5b03966a1acd4d5bbd672377_Capu-nong.jpg",
+      "variants": [
+        {
+          "product_id": 10020018,
+          "code": "10020018",
+          "price": 50000,
+          "val": "Nh\u1ecf",
+          "localize": { "vi": "Nh\u1ecf", "en": "Nh\u1ecf" }
+        },
+        {
+          "product_id": 10020017,
+          "code": "10020017",
+          "price": 55000,
+          "val": "V\u1eeba",
+          "localize": { "vi": "V\u1eeba", "en": "V\u1eeba" }
+        }
+      ],
+      "updated_at": "2021-03-31 10:57:51",
+      "created_at": "2018-05-22 04:02:50",
+      "active": true,
+      "localize": { "en": "Hot Cappuccino", "vi": "Cappuccino N\u00f3ng" },
+      "topping_list": [
+        {
+          "product_id": 196,
+          "product_name": "Espresso (1shot)",
+          "code": "10100003",
+          "price": 10000
+        }
+      ],
+      "options": [
+        {
+          "name": "Size",
+          "desciption": "Ch\u1ecdn 1 lo\u1ea1i size",
+          "min": 1,
+          "max": 1,
+          "default_index": 0,
+          "items": [
+            {
+              "product_id": 10020018,
+              "code": "10020018",
+              "price": 0,
+              "val": "Nh\u1ecf",
+              "localize": { "vi": "Nh\u1ecf", "en": "Nh\u1ecf" },
+              "is_main": true
+            },
+            {
+              "product_id": 10020017,
+              "code": "10020017",
+              "price": 5000,
+              "val": "V\u1eeba",
+              "localize": { "vi": "V\u1eeba", "en": "V\u1eeba" },
+              "is_main": true
+            }
+          ]
+        },
+        {
+          "name": "Topping",
+          "desciption": "Ch\u1ecdn t\u1ed1i \u0111a 2 lo\u1ea1i",
+          "min": 0,
+          "max": 2,
+          "default_index": -1,
+          "items": [
+            {
+              "product_id": 196,
+              "product_name": "Espresso (1shot)",
+              "code": "10100003",
+              "price": 10000,
+              "type": 3
+            }
+          ]
+        }
+      ],
+      "price": 50000,
+      "type": [],
+      "slug": "cappuccino-nong",
+      "__v": 6,
+      "codes": [],
+      "product_category_id": "609fec3cd51c0000a7001d44",
+      "product_odoo": {
+        "product_tmpl_id": 271,
+        "variants": [
+          {
+            "code": "10020017",
+            "price": 55000,
+            "product_id": 215,
+            "val": "V\u1eeba"
+          },
+          {
+            "code": "10020018",
+            "price": 50000,
+            "product_id": 213,
+            "val": "Nh\u1ecf"
+          }
+        ]
+      },
+      "high_res_image": "https://tch-app.s3.ap-southeast-1.amazonaws.com/menufrontend/high_res_image/5b03966a1acd4d5bbd672377_Capu-nong.jpg",
+      "intro": { "en": null, "vi": null },
+      "hint_note": ["kh\u00f4ng \u0111\u01b0\u1eddng"],
+      "is_menuset": true,
+      "is_delivery": true,
+      "is_pickup": true,
+      "stock": true
+    },
+    {
+      "_id": "5b03966a1acd4d5bbd672378",
+      "product_name": "Cappuccino \u0110\u00e1",
+      "base_price": 50000,
+      "description": "Cappuccino \u0111\u01b0\u1ee3c g\u1ecdi vui l\u00e0 th\u1ee9c u\u1ed1ng \"m\u1ed9t-ph\u1ea7n-ba\" - 1/3 Espresso, 1/3 S\u1eefa n\u00f3ng, 1/3 Foam.",
+      "categ_id": [1, 10],
+      "branch": "TCH",
+      "image_id": 212,
+      "image": "https://tch-app.s3.ap-southeast-1.amazonaws.com/menufrontend/5b03966a1acd4d5bbd672378_Capu-da.jpg",
+      "variants": [
+        {
+          "product_id": 10020016,
+          "code": "10020016",
+          "price": 50000,
+          "val": "Nh\u1ecf",
+          "localize": { "vi": "Nh\u1ecf", "en": "Nh\u1ecf" }
+        },
+        {
+          "product_id": 10020015,
+          "code": "10020015",
+          "price": 55000,
+          "val": "V\u1eeba",
+          "localize": { "vi": "V\u1eeba", "en": "V\u1eeba" }
+        }
+      ],
+      "updated_at": "2020-12-22 04:46:24",
+      "created_at": "2018-05-22 04:02:50",
+      "active": true,
+      "localize": { "en": "Ice Cappucino", "vi": "Cappuccino \u0110\u00e1" },
+      "topping_list": [
+        {
+          "product_id": 196,
+          "product_name": "Espresso (1shot)",
+          "code": "10100003",
+          "price": 10000
+        }
+      ],
+      "options": [
+        {
+          "name": "Size",
+          "desciption": "Ch\u1ecdn 1 lo\u1ea1i size",
+          "min": 1,
+          "max": 1,
+          "default_index": 0,
+          "items": [
+            {
+              "product_id": 10020016,
+              "code": "10020016",
+              "price": 0,
+              "val": "Nh\u1ecf",
+              "localize": { "vi": "Nh\u1ecf", "en": "Nh\u1ecf" },
+              "is_main": true
+            },
+            {
+              "product_id": 10020015,
+              "code": "10020015",
+              "price": 5000,
+              "val": "V\u1eeba",
+              "localize": { "vi": "V\u1eeba", "en": "V\u1eeba" },
+              "is_main": true
+            }
+          ]
+        },
+        {
+          "name": "Topping",
+          "desciption": "Ch\u1ecdn t\u1ed1i \u0111a 2 lo\u1ea1i",
+          "min": 0,
+          "max": 2,
+          "default_index": -1,
+          "items": [
+            {
+              "product_id": 196,
+              "product_name": "Espresso (1shot)",
+              "code": "10100003",
+              "price": 10000,
+              "type": 3
+            }
+          ]
+        }
+      ],
+      "price": 50000,
+      "type": [],
+      "slug": "cappuccino-da",
+      "high_res_image": "https://tch-app.s3.ap-southeast-1.amazonaws.com/menufrontend/high_res_image/5b03966a1acd4d5bbd672378_Capu-da.jpg",
+      "__v": 6,
+      "codes": [],
+      "product_category_id": "609fec3cd51c0000a7001d44",
+      "product_odoo": {
+        "product_tmpl_id": 1352,
+        "variants": [
+          {
+            "code": "10020015",
+            "price": 55000,
+            "product_id": 214,
+            "val": "V\u1eeba"
+          },
+          {
+            "code": "10020016",
+            "price": 50000,
+            "product_id": 212,
+            "val": "Nh\u1ecf"
+          }
+        ]
+      },
+      "is_menuset": true,
+      "is_delivery": true,
+      "is_pickup": true,
+      "hint_note": [
+        "\u00edt \u0111\u00e1",
+        "\u0111\u00e1 \u0111\u1ec3 ri\u00eang"
+      ],
+      "intro": { "en": null, "vi": null },
+      "stock": true
+    },
+    {
+      "_id": "5b03966a1acd4d5bbd67237a",
+      "product_name": "Caramel Macchiato N\u00f3ng",
+      "base_price": 50000,
+      "description": "V\u1ecb th\u01a1m b\u00e9o c\u1ee7a b\u1ecdt s\u1eefa v\u00e0 s\u1eefa t\u01b0\u01a1i, v\u1ecb \u0111\u1eafng thanh tho\u00e1t c\u1ee7a c\u00e0 ph\u00ea Espresso h\u1ea3o h\u1ea1ng, v\u00e0 v\u1ecb ng\u1ecdt \u0111\u1eadm c\u1ee7a s\u1ed1t caramel.",
+      "categ_id": [1, 10],
+      "branch": "TCH",
+      "image_id": 185,
+      "image": "https://tch-app.s3.ap-southeast-1.amazonaws.com/menufrontend/5b03966a1acd4d5bbd67237a_Caramel-Macchiato-nong.jpg",
+      "variants": [
+        {
+          "product_id": 10020022,
+          "code": "10020022",
+          "price": 50000,
+          "val": "Nh\u1ecf",
+          "localize": { "vi": "Nh\u1ecf", "en": "Nh\u1ecf" }
+        },
+        {
+          "product_id": 10020021,
+          "code": "10020021",
+          "price": 55000,
+          "val": "V\u1eeba",
+          "localize": { "vi": "V\u1eeba", "en": "V\u1eeba" }
+        }
+      ],
+      "updated_at": "2021-01-27 07:44:28",
+      "created_at": "2018-05-22 04:02:50",
+      "active": true,
+      "localize": {
+        "en": "Hot Caramel Macchiato",
+        "vi": "Caramel Macchiato N\u00f3ng"
+      },
+      "options": [
+        {
+          "name": "Size",
+          "desciption": "Ch\u1ecdn 1 lo\u1ea1i size",
+          "min": 1,
+          "max": 1,
+          "default_index": 0,
+          "items": [
+            {
+              "product_id": 10020022,
+              "code": "10020022",
+              "price": 0,
+              "val": "Nh\u1ecf",
+              "localize": { "vi": "Nh\u1ecf", "en": "Nh\u1ecf" },
+              "is_main": true
+            },
+            {
+              "product_id": 10020021,
+              "code": "10020021",
+              "price": 5000,
+              "val": "V\u1eeba",
+              "localize": { "vi": "V\u1eeba", "en": "V\u1eeba" },
+              "is_main": true
+            }
+          ]
+        },
+        {
+          "name": "Topping",
+          "desciption": "Ch\u1ecdn t\u1ed1i \u0111a 2 lo\u1ea1i",
+          "min": 0,
+          "max": 2,
+          "default_index": -1,
+          "items": [
+            {
+              "product_id": 196,
+              "product_name": "Espresso (1shot)",
+              "code": "10100003",
+              "price": 10000,
+              "type": 3
+            },
+            {
+              "product_id": 10100019,
+              "product_name": "Sauce Caramel",
+              "code": "10100019",
+              "price": 10000,
+              "type": 3
+            }
+          ]
+        }
+      ],
+      "price": 50000,
+      "topping_list": [
+        {
+          "product_id": 196,
+          "product_name": "Espresso (1shot)",
+          "code": "10100003",
+          "price": 10000
+        },
+        {
+          "product_id": 10100019,
+          "product_name": "Sauce Caramel",
+          "code": "10100019",
+          "price": 10000
+        }
+      ],
+      "type": [],
+      "slug": "caramel-macchiato-nong",
+      "__v": 6,
+      "codes": [],
+      "product_category_id": "609fec3cd51c0000a7001d44",
+      "product_odoo": {
+        "product_tmpl_id": 258,
+        "variants": [
+          {
+            "code": "10020022",
+            "price": 50000,
+            "product_id": 1293,
+            "val": "Nh\u1ecf"
+          },
+          {
+            "code": "10020021",
+            "price": 55000,
+            "product_id": 185,
+            "val": "V\u1eeba"
+          }
+        ]
+      },
+      "high_res_image": "https://tch-app.s3.ap-southeast-1.amazonaws.com/menufrontend/high_res_image/5b03966a1acd4d5bbd67237a_Caramel-Macchiato-nong.jpg",
+      "is_menuset": true,
+      "is_delivery": true,
+      "is_pickup": true,
+      "hint_note": [
+        "kh\u00f4ng \u0111\u01b0\u1eddng",
+        "kh\u00f4ng l\u1ea5y \u1ed1ng h\u00fat & mu\u1ed7ng nh\u1ef1a"
+      ],
+      "intro": { "en": null, "vi": null },
+      "stock": true
+    },
+    {
+      "_id": "5b03966a1acd4d5bbd672390",
+      "product_name": "Latte N\u00f3ng",
+      "base_price": 50000,
+      "description": "Khi chu\u1ea9n b\u1ecb Latte, c\u00e0 ph\u00ea Espresso v\u00e0 s\u1eefa n\u00f3ng \u0111\u01b0\u1ee3c tr\u1ed9n l\u1eabn v\u00e0o nhau, b\u00ean tr\u00ean v\u1eabn l\u00e0 l\u1edbp foam nh\u01b0ng m\u1ecfng v\u00e0 nh\u1eb9 h\u01a1n Cappucinno.",
+      "categ_id": [1, 10],
+      "branch": "TCH",
+      "image_id": 218,
+      "image": "https://tch-app.s3.ap-southeast-1.amazonaws.com/menufrontend/5b03966a1acd4d5bbd672390_Latte-nong.jpg",
+      "variants": [
+        {
+          "product_id": 10020035,
+          "code": "10020035",
+          "price": 50000,
+          "val": "Nh\u1ecf",
+          "localize": { "vi": "Nh\u1ecf", "en": "Nh\u1ecf" }
+        },
+        {
+          "product_id": 10020034,
+          "code": "10020034",
+          "price": 55000,
+          "val": "V\u1eeba",
+          "localize": { "vi": "V\u1eeba", "en": "V\u1eeba" }
+        }
+      ],
+      "updated_at": "2020-12-22 05:10:41",
+      "created_at": "2018-05-22 04:02:50",
+      "active": true,
+      "localize": { "en": "Latte", "vi": "Latte N\u00f3ng" },
+      "topping_list": [
+        {
+          "product_id": 196,
+          "product_name": "Espresso (1shot)",
+          "code": "10100003",
+          "price": 10000
+        }
+      ],
+      "options": [
+        {
+          "name": "Size",
+          "desciption": "Ch\u1ecdn 1 lo\u1ea1i size",
+          "min": 1,
+          "max": 1,
+          "default_index": 0,
+          "items": [
+            {
+              "product_id": 10020035,
+              "code": "10020035",
+              "price": 0,
+              "val": "Nh\u1ecf",
+              "localize": { "vi": "Nh\u1ecf", "en": "Nh\u1ecf" },
+              "is_main": true
+            },
+            {
+              "product_id": 10020034,
+              "code": "10020034",
+              "price": 5000,
+              "val": "V\u1eeba",
+              "localize": { "vi": "V\u1eeba", "en": "V\u1eeba" },
+              "is_main": true
+            }
+          ]
+        },
+        {
+          "name": "Topping",
+          "desciption": "Ch\u1ecdn t\u1ed1i \u0111a 2 lo\u1ea1i",
+          "min": 0,
+          "max": 2,
+          "default_index": -1,
+          "items": [
+            {
+              "product_id": 196,
+              "product_name": "Espresso (1shot)",
+              "code": "10100003",
+              "price": 10000,
+              "type": 3
+            }
+          ]
+        }
+      ],
+      "price": 50000,
+      "type": [],
+      "slug": "latte-nong",
+      "__v": 6,
+      "codes": [],
+      "product_category_id": "609fec3cd51c0000a7001d44",
+      "product_odoo": {
+        "product_tmpl_id": 272,
+        "variants": [
+          {
+            "code": "10020034",
+            "price": 55000,
+            "product_id": 219,
+            "val": "V\u1eeba"
+          },
+          {
+            "code": "10020035",
+            "price": 50000,
+            "product_id": 218,
+            "val": "Nh\u1ecf"
+          }
+        ]
+      },
+      "high_res_image": "https://tch-app.s3.ap-southeast-1.amazonaws.com/menufrontend/high_res_image/5b03966a1acd4d5bbd672390_Latte-nong.jpg",
+      "is_menuset": true,
+      "is_delivery": true,
+      "is_pickup": true,
+      "hint_note": [
+        "kh\u00f4ng \u0111\u01b0\u1eddng",
+        "kh\u00f4ng l\u1ea5y \u1ed1ng h\u00fat & mu\u1ed7ng nh\u1ef1a"
+      ],
+      "stock": true
+    },
+    {
+      "_id": "5b03966a1acd4d5bbd672393",
+      "product_name": "Matcha \u0110\u00e1 Xay",
+      "base_price": 59000,
+      "description": "Matcha thanh, nh\u1eabn, v\u00e0 \u0111\u1eafng nh\u1eb9 \u0111\u01b0\u1ee3c nh\u00e2n \u0111\u00f4i s\u1ea3ng kho\u00e1i khi u\u1ed1ng l\u1ea1nh. Nh\u1ea5n nh\u00e1 th\u00eam nh\u1eefng n\u00e9t b\u00f9i b\u00e9o c\u1ee7a kem v\u00e0 s\u1eefa. G\u00e2y th\u01b0\u01a1ng nh\u1edb v\u00f4 c\u00f9ng!",
+      "categ_id": [2, 22],
+      "branch": "TCH",
+      "image_id": 222,
+      "image": "https://tch-app.s3.ap-southeast-1.amazonaws.com/menufrontend/5b03966a1acd4d5bbd672393_Matcha-da-xay.jpg",
+      "variants": [
+        {
+          "product_id": 10030005,
+          "code": "10030005",
+          "price": 59000,
+          "val": "V\u1eeba",
+          "localize": { "vi": "V\u1eeba", "en": "V\u1eeba" }
+        },
+        {
+          "code": "10030016",
+          "localize": { "en": "L\u1edbn", "vi": "L\u1edbn" },
+          "price": 65000,
+          "product_id": 10030016,
+          "val": "L\u1edbn"
+        }
+      ],
+      "updated_at": "2020-12-25 04:17:35",
+      "created_at": "2018-05-22 04:02:50",
+      "active": true,
+      "localize": {
+        "en": "Matcha Ice Blended",
+        "vi": "Matcha \u0110\u00e1 Xay"
+      },
+      "options": [
+        {
+          "name": "Size",
+          "desciption": "Ch\u1ecdn 1 lo\u1ea1i size",
+          "min": 1,
+          "max": 1,
+          "default_index": 0,
+          "items": [
+            {
+              "product_id": 10030005,
+              "code": "10030005",
+              "price": 0,
+              "val": "V\u1eeba",
+              "localize": { "vi": "V\u1eeba", "en": "V\u1eeba" },
+              "is_main": true
+            },
+            {
+              "code": "10030016",
+              "localize": { "en": "L\u1edbn", "vi": "L\u1edbn" },
+              "price": 6000,
+              "product_id": 10030016,
+              "val": "L\u1edbn",
+              "is_main": true
+            }
+          ]
+        }
+      ],
+      "price": 59000,
+      "topping_list": [],
+      "type": [],
+      "slug": "matcha-da-xay",
+      "__v": 6,
+      "codes": [],
+      "product_category_id": "609fec3cd51c0000a7001d4a",
+      "product_odoo": {
+        "product_tmpl_id": 273,
+        "variants": [
+          {
+            "code": "10030005",
+            "price": 59000,
+            "product_id": 222,
+            "val": "V\u1eeba"
+          },
+          {
+            "code": "10030016",
+            "price": 65000,
+            "product_id": 2011,
+            "val": "L\u1edbn"
+          }
+        ]
+      },
+      "high_res_image": "https://tch-app.s3.ap-southeast-1.amazonaws.com/menufrontend/high_res_image/5b03966a1acd4d5bbd672393_Matcha-da-xay.jpg",
+      "is_menuset": true,
+      "is_delivery": true,
+      "is_pickup": true,
+      "hint_note": [
+        "\u00edt ng\u1ecdt",
+        "kh\u00f4ng \u0111\u01b0\u1eddng",
+        "kh\u00f4ng l\u1ea5y \u1ed1ng h\u00fat & mu\u1ed7ng nh\u1ef1a"
+      ],
+      "stock": true
+    },
+    {
+      "_id": "5b03966a1acd4d5bbd672394",
+      "product_name": "Tr\u00e0 Matcha Latte N\u00f3ng",
+      "base_price": 59000,
+      "description": "V\u1edbi m\u00e0u xanh m\u00e1t m\u1eaft c\u1ee7a b\u1ed9t tr\u00e0 Matcha, v\u1ecb ng\u1ecdt nh\u1eb9 nh\u00e0ng, pha tr\u1ed9n c\u00f9ng s\u1eefa t\u01b0\u01a1i v\u00e0 l\u1edbp foam m\u1ec1m m\u1ecbn, Matcha Latte l\u00e0 th\u1ee9c u\u1ed1ng y\u00eau th\u00edch c\u1ee7a t\u1ea5t c\u1ea3 m\u1ecdi ng\u01b0\u1eddi khi gh\u00e9 The Coffee House.",
+      "categ_id": [15, 22],
+      "branch": "TCH",
+      "image_id": 220,
+      "image": "https://tch-app.s3.ap-southeast-1.amazonaws.com/menufrontend/5b03966a1acd4d5bbd672394_Matcha-latte-nong.jpg",
+      "variants": [
+        {
+          "product_id": 10010015,
+          "code": "10010015",
+          "price": 59000,
+          "val": "V\u1eeba",
+          "localize": { "vi": "V\u1eeba", "en": "V\u1eeba" }
+        }
+      ],
+      "updated_at": "2020-12-25 06:39:56",
+      "created_at": "2018-05-22 04:02:50",
+      "active": true,
+      "localize": {
+        "en": "Hot Matcha Latte",
+        "vi": "Tr\u00e0 Matcha Latte N\u00f3ng"
+      },
+      "options": [
+        {
+          "name": "Size",
+          "desciption": "Ch\u1ecdn 1 lo\u1ea1i size",
+          "min": 1,
+          "max": 1,
+          "default_index": 0,
+          "items": [
+            {
+              "product_id": 10010015,
+              "code": "10010015",
+              "price": 0,
+              "val": "V\u1eeba",
+              "localize": { "vi": "V\u1eeba", "en": "V\u1eeba" },
+              "is_main": true
+            }
+          ]
+        }
+      ],
+      "price": 59000,
+      "topping_list": [],
+      "type": [],
+      "slug": "tra-matcha-latte-nong",
+      "__v": 4,
+      "codes": [],
+      "product_category_id": "609fec3cd51c0000a7001d4a",
+      "product_odoo": {
+        "product_tmpl_id": 1306,
+        "variants": [
+          {
+            "code": "10010015",
+            "price": 59000,
+            "product_id": 220,
+            "val": "V\u1eeba"
+          }
+        ]
+      },
+      "high_res_image": "https://tch-app.s3.ap-southeast-1.amazonaws.com/menufrontend/high_res_image/5b03966a1acd4d5bbd672394_Matcha-latte-nong.jpg",
+      "is_menuset": true,
+      "is_delivery": true,
+      "is_pickup": true,
+      "hint_note": [
+        "\u00edt ng\u1ecdt",
+        "kh\u00f4ng l\u1ea5y \u1ed1ng h\u00fat & mu\u1ed7ng nh\u1ef1a"
+      ],
+      "intro": { "en": null, "vi": null },
+      "stock": true
+    },
+    {
+      "_id": "5b03966a1acd4d5bbd672395",
+      "product_name": "Tr\u00e0 Matcha Latte \u0110\u00e1",
+      "base_price": 59000,
+      "description": "V\u1edbi m\u00e0u xanh m\u00e1t m\u1eaft c\u1ee7a b\u1ed9t tr\u00e0 Matcha, v\u1ecb ng\u1ecdt nh\u1eb9 nh\u00e0ng, pha tr\u1ed9n c\u00f9ng s\u1eefa t\u01b0\u01a1i v\u00e0 l\u1edbp foam m\u1ec1m m\u1ecbn, Matcha Latte l\u00e0 th\u1ee9c u\u1ed1ng y\u00eau th\u00edch c\u1ee7a t\u1ea5t c\u1ea3 m\u1ecdi ng\u01b0\u1eddi khi gh\u00e9 The Coffee House.",
+      "categ_id": [15, 22],
+      "branch": "TCH",
+      "image_id": 221,
+      "image": "https://tch-app.s3.ap-southeast-1.amazonaws.com/menufrontend/5b03966a1acd4d5bbd672395_Matcha.jpg",
+      "variants": [
+        {
+          "product_id": 10010014,
+          "code": "10010014",
+          "price": 59000,
+          "val": "V\u1eeba",
+          "localize": { "vi": "V\u1eeba", "en": null }
+        }
+      ],
+      "updated_at": "2020-12-25 04:17:05",
+      "created_at": "2018-05-22 04:02:50",
+      "active": true,
+      "localize": {
+        "en": "Ice Matcha Latte",
+        "vi": "Tr\u00e0 Matcha Latte \u0110\u00e1"
+      },
+      "options": [
+        {
+          "name": "Size",
+          "desciption": "Ch\u1ecdn 1 lo\u1ea1i size",
+          "min": 1,
+          "max": 1,
+          "default_index": 0,
+          "items": [
+            {
+              "product_id": 10010014,
+              "code": "10010014",
+              "price": 0,
+              "val": "V\u1eeba",
+              "localize": { "vi": "V\u1eeba", "en": null },
+              "is_main": true
+            }
+          ]
+        }
+      ],
+      "price": 59000,
+      "topping_list": [],
+      "type": [],
+      "slug": "tra-matcha-latte-da",
+      "__v": 4,
+      "codes": [],
+      "product_category_id": "609fec3cd51c0000a7001d4a",
+      "product_odoo": {
+        "product_tmpl_id": 1307,
+        "variants": [
+          {
+            "code": "10010014",
+            "price": 59000,
+            "product_id": 221,
+            "val": "V\u1eeba"
+          }
+        ]
+      },
+      "high_res_image": "https://tch-app.s3.ap-southeast-1.amazonaws.com/menufrontend/high_res_image/5b03966a1acd4d5bbd672395_Matcha.jpg",
+      "is_menuset": true,
+      "is_delivery": true,
+      "is_pickup": true,
+      "hint_note": [
+        "\u00edt ng\u1ecdt",
+        "Kh\u00f4ng l\u1ea5y \u1ed1ng h\u00fat & mu\u1ed7ng nh\u1ef1a"
+      ],
+      "intro": { "en": null, "vi": null },
+      "stock": true
+    },
+    {
+      "_id": "5b03966a1acd4d5bbd672397",
+      "product_name": "Mocha N\u00f3ng",
+      "base_price": 50000,
+      "description": "C\u00e0 ph\u00ea Mocha \u0111\u01b0\u1ee3c v\u00ed von \u0111\u01a1n gi\u1ea3n l\u00e0 S\u1ed1t S\u00f4 c\u00f4 la \u0111\u01b0\u1ee3c pha c\u00f9ng m\u1ed9t t\u00e1ch Espresso.",
+      "categ_id": [1, 10],
+      "branch": "TCH",
+      "image_id": 223,
+      "image": "https://tch-app.s3.ap-southeast-1.amazonaws.com/menufrontend/5b03966a1acd4d5bbd672397_Mocha-nong.jpg",
+      "variants": [
+        {
+          "product_id": 10020040,
+          "code": "10020040",
+          "price": 50000,
+          "val": "Nh\u1ecf",
+          "localize": { "vi": "Nh\u1ecf", "en": "Nh\u1ecf" }
+        },
+        {
+          "product_id": 10020039,
+          "code": "10020039",
+          "price": 55000,
+          "val": "V\u1eeba",
+          "localize": { "vi": "V\u1eeba", "en": "V\u1eeba" }
+        }
+      ],
+      "updated_at": "2021-01-11 04:28:35",
+      "created_at": "2018-05-22 04:02:50",
+      "active": true,
+      "localize": { "en": "Mocha", "vi": "Mocha N\u00f3ng" },
+      "options": [
+        {
+          "name": "Size",
+          "desciption": "Ch\u1ecdn 1 lo\u1ea1i size",
+          "min": 1,
+          "max": 1,
+          "default_index": 0,
+          "items": [
+            {
+              "product_id": 10020040,
+              "code": "10020040",
+              "price": 0,
+              "val": "Nh\u1ecf",
+              "localize": { "vi": "Nh\u1ecf", "en": "Nh\u1ecf" },
+              "is_main": true
+            },
+            {
+              "product_id": 10020039,
+              "code": "10020039",
+              "price": 5000,
+              "val": "V\u1eeba",
+              "localize": { "vi": "V\u1eeba", "en": "V\u1eeba" },
+              "is_main": true
+            }
+          ]
+        },
+        {
+          "name": "Topping",
+          "desciption": "Ch\u1ecdn t\u1ed1i \u0111a 2 lo\u1ea1i",
+          "min": 0,
+          "max": 2,
+          "default_index": -1,
+          "items": [
+            {
+              "product_id": 196,
+              "product_name": "Espresso (1shot)",
+              "code": "10100003",
+              "price": 10000,
+              "type": 3
+            }
+          ]
+        }
+      ],
+      "price": 50000,
+      "topping_list": [
+        {
+          "product_id": 196,
+          "product_name": "Espresso (1shot)",
+          "code": "10100003",
+          "price": 10000
+        }
+      ],
+      "type": [],
+      "slug": "mocha-nong",
+      "__v": 6,
+      "codes": [],
+      "product_category_id": "609fec3cd51c0000a7001d44",
+      "product_odoo": {
+        "product_tmpl_id": 274,
+        "variants": [
+          {
+            "code": "10020039",
+            "price": 55000,
+            "product_id": 225,
+            "val": "V\u1eeba"
+          },
+          {
+            "code": "10020040",
+            "price": 50000,
+            "product_id": 223,
+            "val": "Nh\u1ecf"
+          }
+        ]
+      },
+      "high_res_image": "https://tch-app.s3.ap-southeast-1.amazonaws.com/menufrontend/high_res_image/5b03966a1acd4d5bbd672397_Mocha-nong.jpg",
+      "is_menuset": true,
+      "is_delivery": true,
+      "is_pickup": true,
+      "hint_note": [
+        "kh\u00f4ng \u0111\u01b0\u1eddng",
+        "kh\u00f4ng l\u1ea5y \u1ed1ng h\u00fat & mu\u1ed7ng nh\u1ef1a"
+      ],
+      "stock": true
+    },
+    {
+      "_id": "5b03966a1acd4d5bbd672398",
+      "product_name": "Mocha \u0110\u00e1",
+      "base_price": 50000,
+      "description": "C\u00e0 ph\u00ea Mocha \u0111\u01b0\u1ee3c v\u00ed von \u0111\u01a1n gi\u1ea3n l\u00e0 S\u1ed1t S\u00f4 c\u00f4 la \u0111\u01b0\u1ee3c pha c\u00f9ng m\u1ed9t t\u00e1ch Espresso.",
+      "categ_id": [1, 10],
+      "branch": "TCH",
+      "image_id": 224,
+      "image": "https://tch-app.s3.ap-southeast-1.amazonaws.com/menufrontend/5b03966a1acd4d5bbd672398_Mocha-da.jpg",
+      "variants": [
+        {
+          "product_id": 10020037,
+          "code": "10020037",
+          "price": 50000,
+          "val": "Nh\u1ecf",
+          "localize": { "vi": "Nh\u1ecf", "en": "Nh\u1ecf" }
+        },
+        {
+          "product_id": 10020036,
+          "code": "10020036",
+          "price": 55000,
+          "val": "V\u1eeba",
+          "localize": { "vi": "V\u1eeba", "en": "V\u1eeba" }
+        }
+      ],
+      "updated_at": "2021-01-11 04:28:55",
+      "created_at": "2018-05-22 04:02:50",
+      "active": true,
+      "localize": { "en": "Ice Mocha", "vi": "Mocha \u0110\u00e1" },
+      "options": [
+        {
+          "name": "Size",
+          "desciption": "Ch\u1ecdn 1 lo\u1ea1i size",
+          "min": 1,
+          "max": 1,
+          "default_index": 0,
+          "items": [
+            {
+              "product_id": 10020037,
+              "code": "10020037",
+              "price": 0,
+              "val": "Nh\u1ecf",
+              "localize": { "vi": "Nh\u1ecf", "en": "Nh\u1ecf" },
+              "is_main": true
+            },
+            {
+              "product_id": 10020036,
+              "code": "10020036",
+              "price": 5000,
+              "val": "V\u1eeba",
+              "localize": { "vi": "V\u1eeba", "en": "V\u1eeba" },
+              "is_main": true
+            }
+          ]
+        },
+        {
+          "name": "Topping",
+          "desciption": "Ch\u1ecdn t\u1ed1i \u0111a 2 lo\u1ea1i",
+          "min": 0,
+          "max": 2,
+          "default_index": -1,
+          "items": [
+            {
+              "product_id": 196,
+              "product_name": "Espresso (1shot)",
+              "code": "10100003",
+              "price": 10000,
+              "type": 3
+            }
+          ]
+        }
+      ],
+      "price": 50000,
+      "topping_list": [
+        {
+          "product_id": 196,
+          "product_name": "Espresso (1shot)",
+          "code": "10100003",
+          "price": 10000
+        }
+      ],
+      "type": [],
+      "slug": "mocha-da",
+      "high_res_image": "https://tch-app.s3.ap-southeast-1.amazonaws.com/menufrontend/high_res_image/5b03966a1acd4d5bbd672398_Mocha-da.jpg",
+      "__v": 6,
+      "codes": [],
+      "product_category_id": "609fec3cd51c0000a7001d44",
+      "product_odoo": {
+        "product_tmpl_id": 1354,
+        "variants": [
+          {
+            "code": "10020036",
+            "price": 55000,
+            "product_id": 226,
+            "val": "V\u1eeba"
+          },
+          {
+            "code": "10020037",
+            "price": 50000,
+            "product_id": 224,
+            "val": "Nh\u1ecf"
+          }
+        ]
+      },
+      "is_menuset": true,
+      "is_delivery": true,
+      "is_pickup": true,
+      "hint_note": [
+        "kh\u00f4ng \u0111\u01b0\u1eddng",
+        "\u00edt \u0111\u00e1",
+        "\u0111\u00e1 \u0111\u1ec3 ri\u00eang",
+        "kh\u00f4ng l\u1ea5y \u1ed1ng h\u00fat & mu\u1ed7ng nh\u1ef1a"
+      ],
+      "stock": true
+    },
+    {
+      "_id": "5b03966a1acd4d5bbd6723a0",
+      "product_name": "C\u00e0 Ph\u00ea \u0110en N\u00f3ng",
+      "base_price": 35000,
+      "description": "M\u1ed9t t\u00e1ch c\u00e0 ph\u00ea \u0111en th\u01a1m ng\u00e0o ng\u1ea1t, ph\u1ea3ng ph\u1ea5t m\u00f9i cacao l\u00e0 m\u00f3n qu\u00e0 t\u1ef1 th\u01b0\u1edfng tuy\u1ec7t v\u1eddi nh\u1ea5t cho nh\u1eefng ai m\u00ea \u0111\u1eafm tinh ch\u1ea5t nguy\u00ean b\u1ea3n nh\u1ea5t c\u1ee7a c\u00e0 ph\u00ea. M\u1ed9t t\u00e1ch c\u00e0 ph\u00ea tr\u1ea7m l\u1eafng, thi v\u1ecb gi\u1eefa d\u00f2ng \u0111\u1eddi v\u1ed3n v\u00e3.",
+      "categ_id": [1],
+      "branch": "TCH",
+      "image_id": 134,
+      "image": "https://tch-app.s3.ap-southeast-1.amazonaws.com/menufrontend/5b03966a1acd4d5bbd6723a0_cafe-den-nong.jpg",
+      "variants": [
+        {
+          "product_id": 10020225,
+          "code": "10020225",
+          "price": 35000,
+          "val": "V\u1eeba",
+          "localize": { "vi": "V\u1eeba", "en": "V\u1eeba" }
+        }
+      ],
+      "updated_at": "2020-12-22 04:44:19",
+      "created_at": "2018-05-22 04:02:50",
+      "active": true,
+      "localize": {
+        "en": "Hot Vietnamese Coffee",
+        "vi": "C\u00e0 Ph\u00ea \u0110en N\u00f3ng"
+      },
+      "options": [
+        {
+          "name": "Size",
+          "desciption": "Ch\u1ecdn 1 lo\u1ea1i size",
+          "min": 1,
+          "max": 1,
+          "default_index": 0,
+          "items": [
+            {
+              "product_id": 10020225,
+              "code": "10020225",
+              "price": 0,
+              "val": "V\u1eeba",
+              "localize": { "vi": "V\u1eeba", "en": "V\u1eeba" },
+              "is_main": true
+            }
+          ]
+        }
+      ],
+      "price": 35000,
+      "topping_list": [],
+      "type": [],
+      "slug": "ca-phe-den-nong",
+      "__v": 4,
+      "codes": [],
+      "product_category_id": "609fec3cd51c0000a7001d43",
+      "product_odoo": {
+        "product_tmpl_id": 1913,
+        "variants": [
+          {
+            "code": "10020225",
+            "price": 35000,
+            "product_id": 1908,
+            "val": "V\u1eeba"
+          }
+        ]
+      },
+      "high_res_image": "https://tch-app.s3.ap-southeast-1.amazonaws.com/menufrontend/high_res_image/5b03966a1acd4d5bbd6723a0_cafe-den-nong.jpg",
+      "is_menuset": true,
+      "is_delivery": true,
+      "is_pickup": true,
+      "stock": true
+    },
+    {
+      "_id": "5b03966a1acd4d5bbd6723a1",
+      "product_name": "C\u00e0 Ph\u00ea \u0110en \u0110\u00e1",
+      "base_price": 32000,
+      "description": "M\u1ed9t t\u00e1ch c\u00e0 ph\u00ea \u0111en th\u01a1m ng\u00e0o ng\u1ea1t, ph\u1ea3ng ph\u1ea5t m\u00f9i cacao l\u00e0 m\u00f3n qu\u00e0 t\u1ef1 th\u01b0\u1edfng tuy\u1ec7t v\u1eddi nh\u1ea5t cho nh\u1eefng ai m\u00ea \u0111\u1eafm tinh ch\u1ea5t nguy\u00ean b\u1ea3n nh\u1ea5t c\u1ee7a c\u00e0 ph\u00ea. M\u1ed9t t\u00e1ch c\u00e0 ph\u00ea tr\u1ea7m l\u1eafng, thi v\u1ecb gi\u1eefa d\u00f2ng \u0111\u1eddi v\u1ed3n v\u00e3.",
+      "categ_id": [1],
+      "branch": "TCH",
+      "image_id": 177,
+      "image": "https://tch-app.s3.ap-southeast-1.amazonaws.com/menufrontend/5b03966a1acd4d5bbd6723a1_Cafe-den-da.jpg",
+      "variants": [
+        {
+          "product_id": 10020008,
+          "code": "10020008",
+          "price": 32000,
+          "val": "Nh\u1ecf",
+          "localize": { "vi": "Nh\u1ecf", "en": "Nh\u1ecf" }
+        },
+        {
+          "product_id": 10020007,
+          "code": "10020007",
+          "price": 35000,
+          "val": "V\u1eeba",
+          "localize": { "vi": "V\u1eeba", "en": "V\u1eeba" }
+        },
+        {
+          "code": "10020224",
+          "localize": { "en": "L\u1edbn", "vi": "L\u1edbn" },
+          "price": 38000,
+          "product_id": 10020224,
+          "val": "L\u1edbn"
+        }
+      ],
+      "updated_at": "2020-12-22 04:43:07",
+      "created_at": "2018-05-22 04:02:50",
+      "active": true,
+      "localize": {
+        "en": "Ice Vietnamese Coffee",
+        "vi": "C\u00e0 Ph\u00ea \u0110en \u0110\u00e1"
+      },
+      "options": [
+        {
+          "name": "Size",
+          "desciption": "Ch\u1ecdn 1 lo\u1ea1i size",
+          "min": 1,
+          "max": 1,
+          "default_index": 0,
+          "items": [
+            {
+              "product_id": 10020008,
+              "code": "10020008",
+              "price": 0,
+              "val": "Nh\u1ecf",
+              "localize": { "vi": "Nh\u1ecf", "en": "Nh\u1ecf" },
+              "is_main": true
+            },
+            {
+              "product_id": 10020007,
+              "code": "10020007",
+              "price": 3000,
+              "val": "V\u1eeba",
+              "localize": { "vi": "V\u1eeba", "en": "V\u1eeba" },
+              "is_main": true
+            },
+            {
+              "code": "10020224",
+              "localize": { "en": "L\u1edbn", "vi": "L\u1edbn" },
+              "price": 6000,
+              "product_id": 10020224,
+              "val": "L\u1edbn",
+              "is_main": true
+            }
+          ]
+        }
+      ],
+      "price": 32000,
+      "topping_list": [],
+      "type": [],
+      "slug": "ca-phe-den-da",
+      "__v": 8,
+      "codes": [],
+      "product_category_id": "609fec3cd51c0000a7001d43",
+      "product_odoo": {
+        "product_tmpl_id": 253,
+        "variants": [
+          {
+            "code": "10020224",
+            "price": 38000,
+            "product_id": 1907,
+            "val": "L\u1edbn"
+          },
+          {
+            "code": "10020008",
+            "price": 32000,
+            "product_id": 178,
+            "val": "Nh\u1ecf"
+          },
+          {
+            "code": "10020007",
+            "price": 35000,
+            "product_id": 177,
+            "val": "V\u1eeba"
+          }
+        ]
+      },
+      "high_res_image": "https://tch-app.s3.ap-southeast-1.amazonaws.com/menufrontend/high_res_image/5b03966a1acd4d5bbd6723a1_Cafe-den-da.jpg",
+      "is_menuset": true,
+      "is_delivery": true,
+      "is_pickup": true,
+      "hint_note": [
+        "\u00edt \u0111\u00e1",
+        "\u00edt ng\u1ecdt",
+        "kh\u00f4ng \u0111\u01b0\u1eddng",
+        "kh\u00f4ng l\u1ea5y \u1ed1ng h\u00fat & mu\u1ed7ng nh\u1ef1a",
+        "\u0111\u00e1 \u0111\u1ec3 ri\u00eang"
+      ],
+      "intro": { "en": null, "vi": null },
+      "stock": true
+    },
+    {
+      "_id": "5b03966a1acd4d5bbd6723a2",
+      "product_name": "C\u00e0 Ph\u00ea S\u1eefa N\u00f3ng",
+      "base_price": 35000,
+      "description": "C\u00e0 ph\u00ea phin k\u1ebft h\u1ee3p c\u0169ng s\u1eefa \u0111\u1eb7c l\u00e0 m\u1ed9t s\u00e1ng t\u1ea1o \u0111\u1ea7y t\u1ef1 h\u00e0o c\u1ee7a ng\u01b0\u1eddi Vi\u1ec7t, \u0111\u01b0\u1ee3c xem m\u00f3n u\u1ed1ng th\u01b0\u01a1ng hi\u1ec7u c\u1ee7a Vi\u1ec7t Nam.",
+      "categ_id": [1],
+      "branch": "TCH",
+      "image_id": 184,
+      "image": "https://tch-app.s3.ap-southeast-1.amazonaws.com/menufrontend/5b03966a1acd4d5bbd6723a2_cafe-sua-nong.jpg",
+      "variants": [
+        {
+          "product_id": 10020223,
+          "code": "10020223",
+          "price": 35000,
+          "val": "V\u1eeba",
+          "localize": { "vi": "V\u1eeba", "en": "V\u1eeba" }
+        }
+      ],
+      "updated_at": "2020-12-22 04:45:36",
+      "created_at": "2018-05-22 04:02:50",
+      "active": true,
+      "localize": {
+        "en": "Hot Vietnamese Coffee With Condensed Milk",
+        "vi": "C\u00e0 Ph\u00ea S\u1eefa N\u00f3ng"
+      },
+      "options": [
+        {
+          "name": "Size",
+          "desciption": "Ch\u1ecdn 1 lo\u1ea1i size",
+          "min": 1,
+          "max": 1,
+          "default_index": 0,
+          "items": [
+            {
+              "product_id": 10020223,
+              "code": "10020223",
+              "price": 0,
+              "val": "V\u1eeba",
+              "localize": { "vi": "V\u1eeba", "en": "V\u1eeba" },
+              "is_main": true
+            }
+          ]
+        }
+      ],
+      "price": 35000,
+      "topping_list": [],
+      "type": [],
+      "slug": "ca-phe-sua-nong",
+      "__v": 5,
+      "codes": [],
+      "product_category_id": "609fec3cd51c0000a7001d43",
+      "product_odoo": {
+        "product_tmpl_id": 1912,
+        "variants": [
+          {
+            "code": "10020223",
+            "price": 35000,
+            "product_id": 1906,
+            "val": "V\u1eeba"
+          }
+        ]
+      },
+      "high_res_image": "https://tch-app.s3.ap-southeast-1.amazonaws.com/menufrontend/high_res_image/5b03966a1acd4d5bbd6723a2_cafe-sua-nong.jpg",
+      "is_menuset": true,
+      "is_delivery": true,
+      "is_pickup": true,
+      "hint_note": [
+        "\u00cdt s\u1eefa",
+        "\u00edt \u0111\u00e1",
+        "\u0110\u00e1 \u0111\u1ec3 ri\u00eang",
+        "\u00edt ng\u1ecdt",
+        "Kh\u00f4ng l\u1ea5y \u1ed1ng h\u00fat & mu\u1ed7ng nh\u1ef1a"
+      ],
+      "stock": true
+    },
+    {
+      "_id": "5b03966a1acd4d5bbd67237f",
+      "product_name": "Espresso \u0110\u00e1",
+      "base_price": 45000,
+      "description": "c\u00e0 ph\u00ea m\u00e1y s\u1eed d\u1ee5ng t\u1ef7 l\u1ec7 tr\u1ed9n 70% Arabica v\u00e0 30% Robusta, c\u00e0 ph\u00ea nguy\u1ec7n ch\u1ea5t chi\u1ebft su\u1ea5t t\u1eeb m\u00e1y d\u01b0\u1edbi \u00e1p su\u1ea5t cao, h\u01b0\u01a1ng th\u01a1m m\u1ea1nh v\u00e0 chua nh\u1eb9 t\u1eeb h\u1ea1t, v\u1ecb \u0111\u1eadm \u0111\u00e0 c\u1ee7a h\u1ea1t robusta, h\u00e0m l\u01b0\u1ee3ng cafein th\u1ea5p do t\u00ednh ch\u1ea5t c\u1ee7a h\u1ea1t Arabica",
+      "categ_id": [1, 10],
+      "branch": "TCH",
+      "image_id": 1357,
+      "image": "https://tch-app.s3.ap-southeast-1.amazonaws.com/menufrontend/5b03966a1acd4d5bbd67237f_Cafe-den-da.jpg",
+      "variants": [
+        {
+          "product_id": 10020023,
+          "code": "10020023",
+          "price": 45000,
+          "val": "V\u1eeba",
+          "localize": { "vi": "V\u1eeba", "en": "V\u1eeba" }
+        }
+      ],
+      "updated_at": "2021-01-27 08:26:41",
+      "created_at": "2018-05-22 04:02:50",
+      "active": true,
+      "localize": { "en": "Ice Espresso", "vi": "Espresso \u0110\u00e1" },
+      "topping_list": [
+        {
+          "product_id": 196,
+          "product_name": "Espresso (1shot)",
+          "code": "10100003",
+          "price": 10000
+        }
+      ],
+      "options": [
+        {
+          "name": "Size",
+          "desciption": "Ch\u1ecdn 1 lo\u1ea1i size",
+          "min": 1,
+          "max": 1,
+          "default_index": 0,
+          "items": [
+            {
+              "product_id": 10020023,
+              "code": "10020023",
+              "price": 0,
+              "val": "V\u1eeba",
+              "localize": { "vi": "V\u1eeba", "en": "V\u1eeba" },
+              "is_main": true
+            }
+          ]
+        },
+        {
+          "name": "Topping",
+          "desciption": "Ch\u1ecdn t\u1ed1i \u0111a 2 lo\u1ea1i",
+          "min": 0,
+          "max": 2,
+          "default_index": -1,
+          "items": [
+            {
+              "product_id": 196,
+              "product_name": "Espresso (1shot)",
+              "code": "10100003",
+              "price": 10000,
+              "type": 3
+            }
+          ]
+        }
+      ],
+      "price": 45000,
+      "type": [],
+      "slug": "espresso-da",
+      "__v": 5,
+      "codes": [],
+      "product_category_id": "609fec3cd51c0000a7001d44",
+      "product_odoo": {
+        "product_tmpl_id": 1292,
+        "variants": [
+          {
+            "code": "10020023",
+            "price": 45000,
+            "product_id": 1245,
+            "val": "V\u1eeba"
+          },
+          {
+            "code": "HB002",
+            "price": 35000,
+            "product_id": 1357,
+            "val": "Nh\u1ecf"
+          }
+        ]
+      },
+      "high_res_image": "https://tch-app.s3.ap-southeast-1.amazonaws.com/menufrontend/high_res_image/5b03966a1acd4d5bbd67237f_Cafe-den-da.jpg",
+      "is_menuset": true,
+      "is_delivery": true,
+      "is_pickup": true,
+      "hint_note": [
+        "kh\u00f4ng \u0111\u01b0\u1eddng",
+        "\u00edt \u0111\u00e1",
+        "\u0111\u00e1 \u0111\u1ec3 ri\u00eang",
+        "kh\u00f4ng l\u1ea5y \u1ed1ng h\u00fat & mu\u1ed7ng nh\u1ef1a"
+      ],
+      "intro": { "en": null, "vi": null },
+      "stock": true
+    },
+    {
+      "_id": "5b03966a1acd4d5bbd672380",
+      "product_name": "Espresso N\u00f3ng",
+      "base_price": 40000,
+      "description": "M\u1ed9t c\u1ed1c Espresso nguy\u00ean b\u1ea3n \u0111\u01b0\u1ee3c b\u1eaft \u0111\u1ea7u b\u1edfi nh\u1eefng h\u1ea1t Arabica ch\u1ea5t l\u01b0\u1ee3ng, ph\u1ed1i tr\u1ed9n v\u1edbi t\u1ec9 l\u1ec7 c\u00e2n \u0111\u1ed1i h\u1ea1t Robusta, cho ra v\u1ecb ng\u1ecdt caramel, v\u1ecb chua d\u1ecbu v\u00e0 s\u00e1nh \u0111\u1eb7c. \u0110\u1ec3 \u0111\u1ea1t \u0111\u01b0\u1ee3c s\u1ef1 k\u1ebft h\u1ee3p n\u00e0y, ch\u00fang t\u00f4i xay t\u01b0\u01a1i h\u1ea1t c\u00e0 ph\u00ea cho m\u1ed7i l\u1ea7n pha.",
+      "categ_id": [1, 10],
+      "branch": "TCH",
+      "image_id": 14,
+      "image": "https://tch-app.s3.ap-southeast-1.amazonaws.com/menufrontend/5b03966a1acd4d5bbd672380_Espresso-nong.jpg",
+      "variants": [
+        {
+          "product_id": 10020027,
+          "code": "10020027",
+          "price": 40000,
+          "val": "Nh\u1ecf",
+          "localize": { "vi": "Nh\u1ecf", "en": "Nh\u1ecf" }
+        },
+        {
+          "code": "10020026",
+          "localize": { "en": "V\u1eeba", "vi": "V\u1eeba" },
+          "price": 45000,
+          "product_id": 10020026,
+          "val": "V\u1eeba"
+        }
+      ],
+      "updated_at": "2021-01-04 06:49:01",
+      "created_at": "2018-05-22 04:02:50",
+      "active": true,
+      "localize": { "en": "Espresso", "vi": "Espresso N\u00f3ng" },
+      "topping_list": [
+        {
+          "product_id": 196,
+          "product_name": "Espresso (1shot)",
+          "code": "10100003",
+          "price": 10000
+        }
+      ],
+      "options": [
+        {
+          "name": "Size",
+          "desciption": "Ch\u1ecdn 1 lo\u1ea1i size",
+          "min": 1,
+          "max": 1,
+          "default_index": 0,
+          "items": [
+            {
+              "product_id": 10020027,
+              "code": "10020027",
+              "price": 0,
+              "val": "Nh\u1ecf",
+              "localize": { "vi": "Nh\u1ecf", "en": "Nh\u1ecf" },
+              "is_main": true
+            },
+            {
+              "code": "10020026",
+              "localize": { "en": "V\u1eeba", "vi": "V\u1eeba" },
+              "price": 5000,
+              "product_id": 10020026,
+              "val": "V\u1eeba",
+              "is_main": true
+            }
+          ]
+        },
+        {
+          "name": "Topping",
+          "desciption": "Ch\u1ecdn t\u1ed1i \u0111a 2 lo\u1ea1i",
+          "min": 0,
+          "max": 2,
+          "default_index": -1,
+          "items": [
+            {
+              "product_id": 196,
+              "product_name": "Espresso (1shot)",
+              "code": "10100003",
+              "price": 10000,
+              "type": 3
+            }
+          ]
+        }
+      ],
+      "price": 40000,
+      "type": [],
+      "slug": "espresso-nong",
+      "__v": 6,
+      "codes": [],
+      "product_category_id": "609fec3cd51c0000a7001d44",
+      "product_odoo": {
+        "product_tmpl_id": 110,
+        "variants": [
+          {
+            "code": "10020026",
+            "price": 45000,
+            "product_id": 195,
+            "val": "V\u1eeba"
+          },
+          {
+            "code": "10020027",
+            "price": 40000,
+            "product_id": 14,
+            "val": "Nh\u1ecf"
+          }
+        ]
+      },
+      "high_res_image": "https://tch-app.s3.ap-southeast-1.amazonaws.com/menufrontend/high_res_image/5b03966a1acd4d5bbd672380_Espresso-nong.jpg",
+      "is_menuset": true,
+      "is_delivery": true,
+      "is_pickup": true,
+      "hint_note": [
+        "kh\u00f4ng \u0111\u01b0\u1eddng",
+        "kh\u00f4ng l\u1ea5y \u1ed1ng h\u00fat & mu\u1ed7ng nh\u1ef1a"
+      ],
+      "stock": true
+    },
+    {
+      "_id": "5c3ff3c5acf0d338d22adbae",
+      "product_name": "Oolong H\u1ea1t Sen - \u0110\u00e1",
+      "base_price": 45000,
+      "description": "Tr\u00e0 Oolong v\u00e0 h\u1ea1t Sen \u0111\u1ec1u l\u00e0 nh\u1eefng th\u00e0nh ph\u1ea7n t\u1ed1t cho s\u1ee9c kho\u1ebb v\u1edbi c\u00f4ng d\u1ee5ng thanh l\u1ecdc c\u01a1 th\u1ec3, gi\u1ea3i nhi\u1ec7t v\u00e0 l\u00e0m \u0111\u1eb9p. Tr\u00e0 Oolong Sen An nhi\u00ean c\u00f3 v\u1ecb thanh m\u00e1t c\u1ee7a tr\u00e0 v\u00e0 sen, v\u1ecb ng\u1ecdt d\u1ecbu k\u1ebft h\u1ee3p c\u00f9ng ch\u00fat b\u00e9o th\u01a1m c\u1ee7a cream cheese v\u00e0 h\u1ea1t sen t\u01b0\u01a1i m\u1ec1m \u0103n k\u00e8m. S\u1ea3n ph\u1ea9m c\u00f3 v\u1ecb tr\u00e0 nh\u1eb9 nh\u00e0ng v\u1eeba ph\u1ea3i, c\u00f3 th\u1ec3 d\u00f9ng \u0111\u01b0\u1ee3c c\u1ea3 cho bu\u1ed5i  s\u00e1ng v\u00e0 chi\u1ec1u t\u1ed1i.",
+      "branch": "TCH",
+      "categ_id": [9, 5, 24],
+      "active": true,
+      "variants": [
+        {
+          "code": "10010056",
+          "price": 59000,
+          "product_id": 1911,
+          "val": "L\u1edbn",
+          "localize": { "en": "Size L\u1edbn", "vi": "Size L\u1edbn" }
+        },
+        {
+          "code": "10010044",
+          "price": 52000,
+          "product_id": 1855,
+          "val": "V\u1eeba",
+          "localize": { "en": "Size V\u1eeba", "vi": "Size V\u1eeba" }
+        },
+        {
+          "code": "10010043",
+          "price": 45000,
+          "product_id": 1854,
+          "val": "Nh\u1ecf",
+          "localize": { "en": "Size Nh\u1ecf", "vi": "Size Nh\u1ecf" }
+        }
+      ],
+      "updated_at": "2020-12-26 08:01:44",
+      "created_at": "2019-01-17 03:17:25",
+      "localize": {
+        "en": "Ice Oolong Tea With Lotus Seed",
+        "vi": "Oolong H\u1ea1t Sen - \u0110\u00e1"
+      },
+      "topping_list": [
+        {
+          "product_id": 1456,
+          "product_name": "Extra foam",
+          "code": "10100024",
+          "price": 10000
+        },
+        {
+          "product_id": 10100020,
+          "product_name": "Sen ng\u00e2m",
+          "code": "10100020",
+          "price": 10000
+        }
+      ],
+      "high_res_image": "https://tch-app.s3.ap-southeast-1.amazonaws.com/menufrontend/high_res_image/5c3ff3c5acf0d338d22adbae_Tra-hat-sen.jpg",
+      "image": "https://tch-app.s3.ap-southeast-1.amazonaws.com/menufrontend/5c3ff3c5acf0d338d22adbae_Tra-hat-sen.jpg",
+      "options": [
+        {
+          "name": "Size",
+          "desciption": "Ch\u1ecdn 1 lo\u1ea1i size",
+          "min": 1,
+          "max": 1,
+          "default_index": 0,
+          "items": [
+            {
+              "code": "10010056",
+              "price": 14000,
+              "product_id": 1911,
+              "val": "L\u1edbn",
+              "localize": { "en": "Size L\u1edbn", "vi": "Size L\u1edbn" },
+              "is_main": true
+            },
+            {
+              "code": "10010044",
+              "price": 7000,
+              "product_id": 1855,
+              "val": "V\u1eeba",
+              "localize": { "en": "Size V\u1eeba", "vi": "Size V\u1eeba" },
+              "is_main": true
+            },
+            {
+              "code": "10010043",
+              "price": 0,
+              "product_id": 1854,
+              "val": "Nh\u1ecf",
+              "localize": { "en": "Size Nh\u1ecf", "vi": "Size Nh\u1ecf" },
+              "is_main": true
+            }
+          ]
+        },
+        {
+          "name": "Topping",
+          "desciption": "Ch\u1ecdn t\u1ed1i \u0111a 2 lo\u1ea1i",
+          "min": 0,
+          "max": 2,
+          "default_index": -1,
+          "items": [
+            {
+              "product_id": 1456,
+              "product_name": "Extra foam",
+              "code": "10100024",
+              "price": 10000,
+              "type": 3
+            },
+            {
+              "product_id": 10100020,
+              "product_name": "Sen ng\u00e2m",
+              "code": "10100020",
+              "price": 10000,
+              "type": 3
+            }
+          ]
+        }
+      ],
+      "price": 45000,
+      "type": [],
+      "slug": "oolong-hat-sen---da",
+      "__v": 8,
+      "codes": [],
+      "product_category_id": "609fec3cd51c0000a7001d46",
+      "product_odoo": {
+        "product_tmpl_id": 1867,
+        "variants": [
+          {
+            "code": "10010056",
+            "price": 59000,
+            "product_id": 1911,
+            "val": "L\u1edbn",
+            "localize": { "en": null, "vi": "Size L\u1edbn" }
+          },
+          {
+            "code": "10010044",
+            "price": 52000,
+            "product_id": 1855,
+            "val": "V\u1eeba",
+            "localize": { "en": null, "vi": "Size V\u1eeba" }
+          },
+          {
+            "code": "10010043",
+            "price": 45000,
+            "product_id": 1854,
+            "val": "Nh\u1ecf",
+            "localize": { "en": null, "vi": "Size Nh\u1ecf" }
+          }
+        ]
+      },
+      "is_menuset": true,
+      "is_delivery": true,
+      "is_pickup": true,
+      "hint_note": [
+        "kh\u00f4ng \u0111\u01b0\u1eddng",
+        "\u00edt \u0111\u00e1",
+        "\u0111\u00e1 \u0111\u1ec3 ri\u00eang",
+        "kh\u00f4ng \u0111\u00e1",
+        "kh\u00f4ng l\u1ea5y \u1ed1ng h\u00fat & mu\u1ed7ng nh\u1ef1a"
+      ],
+      "stock": true
+    },
+    {
+      "_id": "5cdbd6e8696fb3792a389754",
+      "product_name": "B\u1ea1c X\u1ec9u N\u00f3ng",
+      "localize": {
+        "en": "Hot  White Vietnamese Coffee",
+        "vi": "B\u1ea1c X\u1ec9u N\u00f3ng"
+      },
+      "base_price": 35000,
+      "categ_id": [1],
+      "topping_list": [],
+      "description": "Theo ch\u00e2n nh\u1eefng ng\u01b0\u1eddi g\u1ed1c Hoa \u0111\u1ebfn \u0111\u1ecbnh c\u01b0 t\u1ea1i S\u00e0i G\u00f2n, B\u1ea1c s\u1ec9u l\u00e0 c\u00e1ch g\u1ecdi t\u1eaft c\u1ee7a \"B\u1ea1c t\u1ea9y s\u1ec9u ph\u00e9\" trong ti\u1ebfng Qu\u1ea3ng \u0110\u00f4ng, ch\u00ednh l\u00e0: Ly s\u1eefa tr\u1eafng k\u00e8m m\u1ed9t ch\u00fat c\u00e0 ph\u00ea.",
+      "variants": [
+        {
+          "code": "10020227",
+          "localize": { "en": "Nh\u1ecf", "vi": "Nh\u1ecf" },
+          "price": 35000,
+          "product_id": 10020227,
+          "val": "V\u1eeba"
+        }
+      ],
+      "type": [],
+      "options": [
+        {
+          "name": "Size",
+          "desciption": "Ch\u1ecdn 1 lo\u1ea1i size",
+          "min": 1,
+          "max": 1,
+          "default_index": 0,
+          "items": [
+            {
+              "code": "10020227",
+              "localize": { "en": "Nh\u1ecf", "vi": "Nh\u1ecf" },
+              "price": 0,
+              "product_id": 10020227,
+              "val": "V\u1eeba",
+              "is_main": true
+            }
+          ]
+        }
+      ],
+      "branch": "TCH",
+      "slug": "bac-xiu-nong",
+      "updated_at": "2020-12-21 04:41:42",
+      "created_at": "2019-05-15 09:07:52",
+      "active": true,
+      "high_res_image": "https://tch-app.s3.ap-southeast-1.amazonaws.com/menufrontend/high_res_image/5cdbd6e8696fb3792a389754_Bac-siu-nong.jpg",
+      "image": "https://tch-app.s3.ap-southeast-1.amazonaws.com/menufrontend/5cdbd6e8696fb3792a389754_Bac-siu-nong.jpg",
+      "price": 35000,
+      "__v": 4,
+      "codes": [],
+      "product_category_id": "609fec3cd51c0000a7001d43",
+      "product_odoo": {
+        "product_tmpl_id": 1914,
+        "variants": [
+          {
+            "code": "10020227",
+            "price": 35000,
+            "product_id": 1910,
+            "val": "V\u1eeba"
+          }
+        ]
+      },
+      "is_menuset": true,
+      "is_delivery": true,
+      "is_pickup": true,
+      "hint_note": [
+        "\u00edt ng\u1ecdt",
+        "\u00edt \u0111\u00e1",
+        "Nhi\u1ec1u s\u1eefa",
+        "Kh\u00f4ng l\u1ea5y \u1ed1ng h\u00fat & mu\u1ed7ng nh\u1ef1a"
+      ],
+      "image_id": null,
+      "intro": { "en": null, "vi": null },
+      "stock": true
+    },
+    {
+      "_id": "5cdb677aacf0d33b682b4b73",
+      "product_name": "Chanh S\u1ea3 \u0110\u00e1 Xay",
+      "base_price": 49000,
+      "description": "S\u1ef1 k\u1ebft h\u1ee3p gi\u1eefa chanh, s\u1ea3 th\u01a1m l\u1eebng v\u00e0 \u0111\u00e1 \u0111em l\u1ea1i c\u1ea3m gi\u00e1c m\u00e1t l\u1ea1nh xua tan n\u00f3ng b\u1ee9c c\u1ee7a m\u00f9a h\u00e8.",
+      "branch": "TCH",
+      "categ_id": [2, 22],
+      "active": true,
+      "localize": {
+        "en": "Lime Lemongrass Ice Blended",
+        "vi": "Chanh S\u1ea3 \u0110\u00e1 Xay"
+      },
+      "variants": [
+        {
+          "product_id": 1968,
+          "code": "10030011",
+          "price": 49000,
+          "val": "V\u1eeba",
+          "localize": { "vi": "V\u1eeba", "en": "V\u1eeba" }
+        },
+        {
+          "code": "10030017",
+          "localize": { "en": "L\u1edbn", "vi": "L\u1edbn" },
+          "price": 55000,
+          "product_id": 10030017,
+          "val": "L\u1edbn"
+        }
+      ],
+      "updated_at": "2020-12-25 03:58:12",
+      "created_at": "2019-05-15 01:12:26",
+      "high_res_image": "https://tch-app.s3.ap-southeast-1.amazonaws.com/menufrontend/high_res_image/5cdb677aacf0d33b682b4b73_Chanh-sa-da-xay.jpg",
+      "image": "https://tch-app.s3.ap-southeast-1.amazonaws.com/menufrontend/5cdb677aacf0d33b682b4b73_Chanh-sa-da-xay.jpg",
+      "options": [
+        {
+          "name": "Size",
+          "desciption": "Ch\u1ecdn 1 lo\u1ea1i size",
+          "min": 1,
+          "max": 1,
+          "default_index": 0,
+          "items": [
+            {
+              "product_id": 1968,
+              "code": "10030011",
+              "price": 0,
+              "val": "V\u1eeba",
+              "localize": { "vi": "V\u1eeba", "en": "V\u1eeba" },
+              "is_main": true
+            },
+            {
+              "code": "10030017",
+              "localize": { "en": "L\u1edbn", "vi": "L\u1edbn" },
+              "price": 6000,
+              "product_id": 10030017,
+              "val": "L\u1edbn",
+              "is_main": true
+            }
+          ]
+        }
+      ],
+      "slug": "chanh-sa-da-xay",
+      "topping_list": [],
+      "type": [],
+      "price": 49000,
+      "__v": 6,
+      "codes": [],
+      "product_category_id": "609fec3cd51c0000a7001d49",
+      "product_odoo": {
+        "product_tmpl_id": 1964,
+        "variants": [
+          {
+            "code": "10030017",
+            "price": 55000,
+            "product_id": 2013,
+            "val": "L\u1edbn"
+          },
+          {
+            "code": "10030011",
+            "price": 49000,
+            "product_id": 1968,
+            "val": "V\u1eeba"
+          }
+        ]
+      },
+      "is_menuset": true,
+      "is_delivery": true,
+      "is_pickup": true,
+      "hint_note": [
+        "\u00edt ng\u1ecdt",
+        "kh\u00f4ng \u0111\u01b0\u1eddng",
+        "kh\u00f4ng l\u1ea5y \u1ed1ng h\u00fat & mu\u1ed7ng nh\u1ef1a"
+      ],
+      "stock": true
+    },
+    {
+      "_id": "5d2c4af1696fb3281b3f4ab9",
+      "product_name": "M\u00edt S\u1ea5y",
+      "localize": { "en": "M\u00edt S\u1ea5y", "vi": "M\u00edt S\u1ea5y" },
+      "base_price": 20000,
+      "price": 20000,
+      "categ_id": [7, 23],
+      "topping_list": [],
+      "description": "Khi \"\u0103n v\u1eb7t\" \u0111\u00e3 tr\u1edf th\u00e0nh xu th\u1ebf, th\u00ec sao c\u00f3 th\u1ec3 b\u1ecf qua m\u00edt s\u1ea5y c\u1ef1c ngon c\u1ee7a Nh\u00e0. M\u00edt s\u1ea5y kh\u00f4 v\u00e0ng \u01b0\u01a1m gi\u00f2n r\u1ee5m, khi \u0103n v\u1eabn gi\u1eef nguy\u00ean \u0111\u01b0\u1ee3c v\u1ecb ng\u1ecdt l\u1ecbm c\u1ee7a m\u00edt t\u01b0\u01a1i.  \u0110\u1ebfn Nh\u00e0 tr\u00f2 chuy\u1ec7n r\u00f4m r\u00e3 v\u00e0 th\u01b0\u1edfng th\u1ee9c m\u00edt s\u1ea5y \u0111\u1ec3 cho c\u00e2u chuy\u1ec7n th\u00eam gi\u00f2n th\u00eam vui ngay th\u00f4i!",
+      "variants": [
+        {
+          "code": "11040193",
+          "localize": { "en": "V\u1eeba", "vi": "V\u1eeba" },
+          "price": 20000,
+          "product_id": 11040193,
+          "val": "V\u1eeba"
+        }
+      ],
+      "type": [],
+      "options": [
+        {
+          "name": "Size",
+          "desciption": "Ch\u1ecdn 1 lo\u1ea1i size",
+          "min": 1,
+          "max": 1,
+          "default_index": 0,
+          "items": [
+            {
+              "code": "11040193",
+              "localize": { "en": "V\u1eeba", "vi": "V\u1eeba" },
+              "price": 0,
+              "product_id": 11040193,
+              "val": "V\u1eeba",
+              "is_main": true
+            }
+          ]
+        }
+      ],
+      "branch": "TCH",
+      "slug": "mit-say",
+      "updated_at": "2021-01-06 02:26:32",
+      "created_at": "2019-07-15 09:44:17",
+      "high_res_image": "https://tch-app.s3.ap-southeast-1.amazonaws.com/menufrontend/high_res_image/5d2c4af1696fb3281b3f4ab9_mit-say-kho-gion.jpg",
+      "image": "https://tch-app.s3.ap-southeast-1.amazonaws.com/menufrontend/5d2c4af1696fb3281b3f4ab9_mit-say-kho-gion.jpg",
+      "__v": 4,
+      "codes": [],
+      "product_category_id": "609fec3cd51c0000a7001d53",
+      "product_odoo": {
+        "product_tmpl_id": 1974,
+        "variants": [
+          {
+            "code": "11040193",
+            "price": 20000,
+            "product_id": 1983,
+            "val": "V\u1eeba"
+          }
+        ]
+      },
+      "active": true,
+      "is_menuset": true,
+      "is_delivery": true,
+      "is_pickup": true,
+      "hint_note": [],
+      "image_id": null,
+      "intro": { "en": null, "vi": null },
+      "stock": true
+    },
+    {
+      "_id": "5b03966a1acd4d5bbd67239d",
+      "product_name": "Socola \u0110\u00e1",
+      "base_price": 59000,
+      "description": "Cacao nguy\u00ean ch\u1ea5t ho\u00e0 c\u00f9ng s\u1eefa t\u01b0\u01a1i b\u00e9o ng\u1eady. V\u1ecb ng\u1ecdt t\u1ef1 nhi\u00ean, kh\u00f4ng g\u1eaft c\u1ed5, \u0111\u1ec3 l\u1ea1i m\u1ed9t ch\u00fat \u0111\u1eafng nh\u1eb9, cay cay tr\u00ean \u0111\u1ea7u l\u01b0\u1ee1i.",
+      "categ_id": [15, 22],
+      "branch": "TCH",
+      "image_id": 499,
+      "image": "https://tch-app.s3.ap-southeast-1.amazonaws.com/menufrontend/5b03966a1acd4d5bbd67239d_Socola.jpg",
+      "variants": [
+        {
+          "product_id": 10050004,
+          "code": "10050004",
+          "price": 59000,
+          "val": "V\u1eeba",
+          "localize": { "vi": "V\u1eeba", "en": "V\u1eeba" }
+        }
+      ],
+      "updated_at": "2020-12-25 04:00:44",
+      "created_at": "2018-05-22 04:02:50",
+      "active": true,
+      "localize": { "en": "Socola Ice", "vi": "Socola \u0110\u00e1" },
+      "ice_list": [],
+      "sugar_list": [],
+      "topping_list": [
+        {
+          "product_id": 10100018,
+          "product_name": "Sauce Chocolate",
+          "code": "10100018",
+          "price": 10000
+        }
+      ],
+      "options": [
+        {
+          "name": "Size",
+          "desciption": "Ch\u1ecdn 1 lo\u1ea1i size",
+          "min": 1,
+          "max": 1,
+          "default_index": 0,
+          "items": [
+            {
+              "product_id": 10050004,
+              "code": "10050004",
+              "price": 0,
+              "val": "V\u1eeba",
+              "localize": { "vi": "V\u1eeba", "en": "V\u1eeba" },
+              "is_main": true
+            }
+          ]
+        },
+        {
+          "name": "Topping",
+          "desciption": "Ch\u1ecdn t\u1ed1i \u0111a 2 lo\u1ea1i",
+          "min": 0,
+          "max": 2,
+          "default_index": -1,
+          "items": [
+            {
+              "product_id": 10100018,
+              "product_name": "Sauce Chocolate",
+              "code": "10100018",
+              "price": 10000,
+              "type": 3
+            }
+          ]
+        }
+      ],
+      "price": 59000,
+      "type": [],
+      "slug": "socola-da",
+      "__v": 4,
+      "codes": [],
+      "product_category_id": "609fec3cd51c0000a7001d4a",
+      "product_odoo": {
+        "product_tmpl_id": 260,
+        "variants": [
+          {
+            "code": "10050004",
+            "price": 59000,
+            "product_id": 187,
+            "val": "V\u1eeba"
+          }
+        ]
+      },
+      "high_res_image": "https://tch-app.s3.ap-southeast-1.amazonaws.com/menufrontend/high_res_image/5b03966a1acd4d5bbd67239d_Socola.jpg",
+      "is_menuset": true,
+      "is_delivery": true,
+      "is_pickup": true,
+      "stock": true
+    },
+    {
+      "_id": "5d43bfed073b26003161b693",
+      "product_name": "Cold Brew Ph\u00fac B\u1ed3n T\u1eed",
+      "localize": {
+        "en": "Cold Brew With Raspberry",
+        "vi": "Cold Brew Ph\u00fac B\u1ed3n T\u1eed"
+      },
+      "base_price": 50000,
+      "price": 50000,
+      "categ_id": [1],
+      "topping_list": [],
+      "description": "V\u1ecb chua ng\u1ecdt c\u1ee7a tr\u00e1i ph\u00fac b\u1ed3n t\u1eed, l\u00e0m d\u1eady l\u00ean h\u01b0\u01a1ng v\u1ecb tr\u00e1i c\u00e2y t\u1ef1 nhi\u00ean v\u1ed1n s\u1eb5n c\u00f3 trong h\u1ea1t c\u00e0 ph\u00ea, h\u00f2a quy\u1ec7n th\u00eam v\u1ecb \u0111\u0103ng \u0111\u1eafng, ng\u1ecdt d\u1ecbu nh\u1eb9 nh\u00e0ng c\u1ee7a Cold Brew mang \u0111\u1ebfn c\u00e1ch th\u01b0\u1edfng th\u1ee9c c\u00e0 ph\u00ea ho\u00e0n to\u00e0n m\u1edbi v\u00e0 \u0111\u1ea7y th\u00fa v\u1ecb.",
+      "variants": [
+        {
+          "code": "10120002",
+          "localize": { "en": "V\u1eeba", "vi": "V\u1eeba" },
+          "price": 50000,
+          "product_id": 10120002,
+          "val": "V\u1eeba"
+        },
+        {
+          "code": "10120001",
+          "localize": { "en": "\bL\u1edbn", "vi": "\bL\u1edbn" },
+          "price": 55000,
+          "product_id": 10120001,
+          "val": "L\u1edbn"
+        }
+      ],
+      "type": [],
+      "options": [
+        {
+          "name": "Size",
+          "desciption": "Ch\u1ecdn 1 lo\u1ea1i size",
+          "min": 1,
+          "max": 1,
+          "default_index": 0,
+          "items": [
+            {
+              "code": "10120002",
+              "localize": { "en": "V\u1eeba", "vi": "V\u1eeba" },
+              "price": 0,
+              "product_id": 10120002,
+              "val": "V\u1eeba",
+              "is_main": true
+            },
+            {
+              "code": "10120001",
+              "localize": { "en": "\bL\u1edbn", "vi": "\bL\u1edbn" },
+              "price": 5000,
+              "product_id": 10120001,
+              "val": "L\u1edbn",
+              "is_main": true
+            }
+          ]
+        }
+      ],
+      "branch": "TCH",
+      "slug": "cold-brew-phuc-bon-tu",
+      "updated_at": "2020-12-22 04:54:18",
+      "created_at": "2019-08-02 04:45:33",
+      "high_res_image": "https://tch-app.s3.ap-southeast-1.amazonaws.com/menufrontend/high_res_image/5d43bfed073b26003161b693_Cold-brew-pbt.jpg",
+      "image": "https://tch-app.s3.ap-southeast-1.amazonaws.com/menufrontend/5d43bfed073b26003161b693_Cold-brew-pbt.jpg",
+      "__v": 7,
+      "codes": [],
+      "product_category_id": "609fec3cd51c0000a7001d45",
+      "product_odoo": {
+        "product_tmpl_id": 2700,
+        "variants": [
+          {
+            "code": "10120001",
+            "price": 55000,
+            "product_id": 2035,
+            "val": "L\u1edbn"
+          },
+          {
+            "code": "10120002",
+            "price": 50000,
+            "product_id": 2034,
+            "val": "V\u1eeba"
+          }
+        ]
+      },
+      "active": true,
+      "is_menuset": true,
+      "is_delivery": true,
+      "is_pickup": true,
+      "hint_note": [
+        "Kh\u00f4ng \u0111\u01b0\u1eddng",
+        "\u00edt \u0111\u00e1",
+        "\u0110\u00e1 \u0111\u1ec3 ri\u00eang",
+        "Kh\u00f4ng \u0111\u00e1",
+        "Kh\u00f4ng l\u1ea5y \u1ed1ng h\u00fat & mu\u1ed7ng nh\u1ef1a"
+      ],
+      "stock": true
+    },
+    {
+      "_id": "5ffbb2671327f700184f54d4",
+      "localize": {
+        "en": "Yogurt D\u01b0a L\u01b0\u1edbi ph\u00e1t t\u00e0i",
+        "vi": "Yogurt D\u01b0a L\u01b0\u1edbi ph\u00e1t t\u00e0i"
+      },
+      "description": "V\u1ecb yogurt chua ng\u1ecdt, m\u00e1t l\u1ea1nh t\u00e1i t\u00ea, quy\u1ec7n c\u00f9ng d\u01b0a l\u01b0\u1edbi th\u01a1m l\u1eebng th\u1eed l\u00e0 m\u00ea ngay\n\nGi\u1ea3i nhi\u1ec7t \u0111\u00f3n T\u1ebft thi\u1ec7t healthy v\u1edbi Yogurt D\u01b0a l\u01b0\u1edbi chua chua ng\u1ecdt ng\u1ecdt, th\u01a1m l\u1eebng \u0111\u1eb7c tr\u01b0ng, th\u00eam s\u1eb5n topping d\u01b0a l\u01b0\u1edbi v\u00e0ng t\u01b0\u01a1i, cho b\u1ea1n nh\u00e2m nhi vui mi\u1ec7ng, \u0111\u1ec3 chuy\u1ec7n h\u1eb9n h\u00f2 r\u00f4m r\u1ea3 thi\u1ec7t vui. Th\u01b0\u1edfng th\u1ee9c ngay!",
+      "product_odoo": {
+        "product_tmpl_id": 4653,
+        "variants": [
+          {
+            "code": "10040033",
+            "price": 59000,
+            "product_id": 2509,
+            "val": "V\u1eeba"
+          }
+        ]
+      },
+      "categ_id": [9, 2, 6, 22, 24],
+      "topping_list": [],
+      "variants": [
+        {
+          "code": "10040033",
+          "price": 59000,
+          "product_id": 2509,
+          "localize": { "en": "V\u1eeba", "vi": "V\u1eeba" },
+          "val": "V\u1eeba"
+        }
+      ],
+      "type": [],
+      "options": [
+        {
+          "name": "Size",
+          "desciption": "Ch\u1ecdn 1 lo\u1ea1i size",
+          "min": 1,
+          "max": 1,
+          "default_index": 0,
+          "items": [
+            {
+              "code": "10040033",
+              "price": 0,
+              "product_id": 2509,
+              "localize": { "en": "V\u1eeba", "vi": "V\u1eeba" },
+              "val": "V\u1eeba",
+              "is_main": true
+            }
+          ]
+        }
+      ],
+      "codes": [],
+      "product_category_id": "609fec3cd51c0000a7001d49",
+      "product_name": "Yogurt D\u01b0a L\u01b0\u1edbi ph\u00e1t t\u00e0i",
+      "price": 59000,
+      "base_price": 59000,
+      "active": true,
+      "branch": "TCH",
+      "slug": "yogurt-dua-luoi-phat-tai",
+      "created_at": "2021-01-11 09:05:27",
+      "updated_at": "2021-04-01 07:31:05",
+      "__v": 0,
+      "high_res_image": "https://tch-app.s3.ap-southeast-1.amazonaws.com/menufrontend/high_res_image/5ffbb2671327f700184f54d4_YOGURT-DUA-LUOI_ko-topping.jpg",
+      "image": "https://tch-app.s3.ap-southeast-1.amazonaws.com/menufrontend/5ffbb2671327f700184f54d4_YOGURT-DUA-LUOI_ko-topping.jpg",
+      "intro": { "en": null, "vi": null },
+      "hint_note": [
+        "\u00edt ng\u1ecdt",
+        "kh\u00f4ng l\u1ea5y \u1ed1ng h\u00fat & mu\u1ed7ng nh\u1ef1a"
+      ],
+      "is_delivery": true,
+      "is_pickup": true,
+      "is_menuset": true,
+      "stock": true
+    },
+    {
+      "_id": "5b4c2f58a9d0590cb37cdade",
+      "product_name": "Socola N\u00f3ng",
+      "base_price": 59000,
+      "description": "Socola nguy\u00ean ch\u1ea5t ho\u00e0 c\u00f9ng s\u1eefa t\u01b0\u01a1i b\u00e9o ng\u1eady. V\u1ecb ng\u1ecdt t\u1ef1 nhi\u00ean, kh\u00f4ng g\u1eaft c\u1ed5, \u0111\u1ec3 l\u1ea1i m\u1ed9t ch\u00fat \u0111\u1eafng nh\u1eb9, cay cay tr\u00ean \u0111\u1ea7u l\u01b0\u1ee1i.",
+      "categ_id": [15, 22],
+      "branch": "TCH",
+      "image_id": 499,
+      "image": "https://tch-app.s3.ap-southeast-1.amazonaws.com/menufrontend/5b4c2f58a9d0590cb37cdade_Chocola-nong.jpg",
+      "variants": [
+        {
+          "product_id": "41",
+          "code": "10050003",
+          "price": 59000,
+          "val": "V\u1eeba",
+          "localize": { "vi": "V\u1eeba", "en": null }
+        }
+      ],
+      "updated_at": "2020-12-25 11:16:12",
+      "created_at": "2018-05-22 11:02:50",
+      "active": true,
+      "localize": { "en": "Chocolate hot", "vi": "Socola N\u00f3ng" },
+      "ice_list": [],
+      "sugar_list": [],
+      "topping_list": [
+        {
+          "product_id": 10100018,
+          "product_name": "Sauce Chocolate",
+          "code": "10100018",
+          "price": 10000
+        }
+      ],
+      "options": [
+        {
+          "name": "Size",
+          "desciption": "Ch\u1ecdn 1 lo\u1ea1i size",
+          "min": 1,
+          "max": 1,
+          "default_index": 0,
+          "items": [
+            {
+              "product_id": "41",
+              "code": "10050003",
+              "price": 0,
+              "val": "V\u1eeba",
+              "localize": { "vi": "V\u1eeba", "en": null },
+              "is_main": true
+            }
+          ]
+        },
+        {
+          "name": "Topping",
+          "desciption": "Ch\u1ecdn t\u1ed1i \u0111a 2 lo\u1ea1i",
+          "min": 0,
+          "max": 2,
+          "default_index": -1,
+          "items": [
+            {
+              "product_id": 10100018,
+              "product_name": "Sauce Chocolate",
+              "code": "10100018",
+              "price": 10000,
+              "type": 3
+            }
+          ]
+        }
+      ],
+      "price": 59000,
+      "type": [],
+      "slug": "socola-nong",
+      "__v": 4,
+      "codes": [],
+      "product_category_id": "609fec3cd51c0000a7001d4a",
+      "product_odoo": {
+        "product_tmpl_id": 132,
+        "variants": [
+          {
+            "code": "10050003",
+            "price": 59000,
+            "product_id": 41,
+            "val": "V\u1eeba"
+          }
+        ]
+      },
+      "high_res_image": "https://tch-app.s3.ap-southeast-1.amazonaws.com/menufrontend/high_res_image/5b4c2f58a9d0590cb37cdade_Chocola-nong.jpg",
+      "is_delivery": true,
+      "is_pickup": true,
+      "is_menuset": true,
+      "stock": true
+    },
+    {
+      "_id": "5f60224ae31aed001153f816",
+      "localize": { "en": "Mochi Kem Xo\u00e0i", "vi": "Mochi Kem Xo\u00e0i" },
+      "description": "B\u1ea1n s\u1ebd th\u00edch th\u00fa v\u1edbi h\u01b0\u01a1ng v\u1ecb chua chua ng\u1ecdt ng\u1ecdt t\u1eeb s\u1ef1 k\u1ebft h\u1ee3p gi\u1eefa nh\u00e2n kem l\u1ea1nh v\u00e0 s\u1ed1t xo\u00e0i. Bao b\u1ecdc b\u1edfi l\u1edbp v\u1ecf n\u1ebfp m\u1ec1m d\u1ebbo. G\u1ecdi Mochi Kem Xo\u00e0i cho ng\u00e0y d\u00e0i thi\u1ec7t t\u01b0\u01a1i.\nS\u1ea3n ph\u1ea9m ph\u1ea3i b\u1ea3o qu\u1ea3n m\u00e1t v\u00e0 d\u00f9ng ngon trong 2h sau khi nh\u1eadn h\u00e0ng",
+      "product_odoo": {
+        "product_tmpl_id": 4478,
+        "variants": [
+          {
+            "code": "11040244",
+            "price": 19000,
+            "product_id": 2320,
+            "val": "V\u1eeba"
+          }
+        ]
+      },
+      "categ_id": [11, 23],
+      "topping_list": [],
+      "variants": [
+        {
+          "code": "11040244",
+          "price": 19000,
+          "product_id": 2320,
+          "localize": { "en": "V\u1eeba", "vi": "V\u1eeba" },
+          "val": "V\u1eeba"
+        }
+      ],
+      "type": [],
+      "options": [
+        {
+          "name": "Size",
+          "desciption": "Ch\u1ecdn 1 lo\u1ea1i size",
+          "min": 1,
+          "max": 1,
+          "default_index": 0,
+          "items": [
+            {
+              "code": "11040244",
+              "price": 0,
+              "product_id": 2320,
+              "localize": { "en": "V\u1eeba", "vi": "V\u1eeba" },
+              "val": "V\u1eeba",
+              "is_main": true
+            }
+          ]
+        }
+      ],
+      "codes": [],
+      "product_category_id": "609fec3cd51c0000a7001d50",
+      "product_name": "Mochi Kem Xo\u00e0i",
+      "price": 19000,
+      "base_price": 19000,
+      "active": true,
+      "branch": "TCH",
+      "slug": "mochi-kem-xoai",
+      "created_at": "2020-09-15 09:09:14",
+      "updated_at": "2020-12-25 17:49:18",
+      "__v": 0,
+      "high_res_image": "https://tch-app.s3.ap-southeast-1.amazonaws.com/menufrontend/high_res_image/5f60224ae31aed001153f816_Mochi-xoai.jpg",
+      "image": "https://tch-app.s3.ap-southeast-1.amazonaws.com/menufrontend/5f60224ae31aed001153f816_Mochi-xoai.jpg",
+      "is_delivery": true,
+      "is_pickup": true,
+      "is_menuset": true,
+      "hint_note": [],
+      "intro": { "en": null, "vi": null },
+      "image_id": null,
+      "stock": true
+    },
+    {
+      "_id": "6014df0e540c0c001894d83d",
+      "localize": {
+        "en": "H\u1ed3ng Tr\u00e0 S\u1eefa (N\u00f3ng)",
+        "vi": "H\u1ed3ng Tr\u00e0 S\u1eefa N\u00f3ng"
+      },
+      "description": "T\u1eebng ng\u1ee5m tr\u00e0 chu\u1ea9n gu \u1ea5m \u00e1p, \u0111\u1eadm \u0111\u00e0 beo b\u00e9o b\u1edfi l\u1edbp s\u1eefa t\u01b0\u01a1i ch\u00e2n \u00e1i ho\u00e0 quy\u1ec7n.\n\nTr\u00e0 \u0111en nguy\u00ean l\u00e1 \u00e2m \u1ea5m d\u1ecbu nh\u1eb9, quy\u1ec7n c\u00f9ng l\u1edbp s\u1eefa th\u01a1m b\u00e9o kh\u00f3 l\u1eabn - h\u01b0\u01a1ng v\u1ecb \u1ea5m \u00e1p chu\u1ea9n gu tr\u00e0, cho t\u1eebng ng\u1ee5m nh\u1eb9 nh\u00e0ng, ng\u1ecdt d\u1ecbu l\u01b0u luy\u1ebfn m\u00e3i n\u01a1i cu\u1ed1ng h\u1ecdng.",
+      "product_odoo": {
+        "product_tmpl_id": 4663,
+        "variants": [
+          {
+            "code": "10010135",
+            "price": 55000,
+            "product_id": 2519,
+            "val": "V\u1eeba"
+          }
+        ]
+      },
+      "categ_id": [9, 4, 24],
+      "topping_list": [],
+      "variants": [
+        {
+          "code": "10010135",
+          "price": 55000,
+          "product_id": 2519,
+          "localize": { "en": "V\u1eeba", "vi": "V\u1eeba" },
+          "val": "V\u1eeba"
+        }
+      ],
+      "type": [],
+      "options": [
+        {
+          "name": "Size",
+          "desciption": "Ch\u1ecdn 1 lo\u1ea1i size",
+          "min": 1,
+          "max": 1,
+          "default_index": 0,
+          "items": [
+            {
+              "code": "10010135",
+              "price": 0,
+              "product_id": 2519,
+              "localize": { "en": "V\u1eeba", "vi": "V\u1eeba" },
+              "val": "V\u1eeba",
+              "is_main": true
+            }
+          ]
+        }
+      ],
+      "codes": [],
+      "product_category_id": "609fec3cd51c0000a7001d47",
+      "product_name": "H\u1ed3ng Tr\u00e0 S\u1eefa N\u00f3ng",
+      "price": 55000,
+      "base_price": 55000,
+      "active": true,
+      "branch": "TCH",
+      "slug": "hong-tra-sua-nong",
+      "created_at": "2021-01-30 11:22:38",
+      "updated_at": "2021-04-01 11:05:33",
+      "__v": 0,
+      "high_res_image": "https://tch-app.s3.ap-southeast-1.amazonaws.com/menufrontend/high_res_image/6014df0e540c0c001894d83d_hong-tra-sua-nong-new.jpg",
+      "image": "https://tch-app.s3.ap-southeast-1.amazonaws.com/menufrontend/6014df0e540c0c001894d83d_hong-tra-sua-nong-new.jpg",
+      "hint_note": ["\u00edt ng\u1ecdt"],
+      "intro": { "en": null, "vi": null },
+      "is_delivery": true,
+      "is_pickup": true,
+      "image_id": null,
+      "is_menuset": true,
+      "stock": true
+    }
+  ],
+  "suggestion": [
+    {
+      "_id": "605da09f717e5d00114a3cda",
+      "localize": {
+        "en": "Tr\u00e0 S\u1eefa Oolong N\u01b0\u1edbng",
+        "vi": "Tr\u00e0 S\u1eefa Oolong N\u01b0\u1edbng"
+      },
+      "description": "\u0110\u1eadm \u0111\u00e0 chu\u1ea9n gu - b\u1edfi tr\u00e0 oolong n\u01b0\u1edbng \u0111\u1eadm v\u1ecb ho\u00e0 c\u00f9ng l\u1edbp s\u1eefa th\u01a1m b\u00e9o.\n\nH\u01b0\u01a1ng v\u1ecb ch\u00e2n \u00e1i \u0111\u00fang gu \u0111\u1eadm \u0111\u00e0 - tr\u00e0 oolong \u0111\u01b0\u1ee3c \"sao\" (n\u01b0\u1edbng) l\u00e2u h\u01a1n cho v\u1ecb \u0111\u1eadm \u0111\u00e0, ho\u00e0 quy\u1ec7n v\u1edbi s\u1eefa th\u01a1m ng\u1eady. Cho t\u1eebng ng\u1ee5m m\u00e1t l\u1ea1nh, l\u01b0u luy\u1ebfn v\u1ecb tr\u00e0 s\u1eefa \u0111\u1eadm \u0111\u00e0 m\u00e3i n\u01a1i cu\u1ed1ng h\u1ecdng.",
+      "product_odoo": {
+        "product_tmpl_id": 4674,
+        "variants": [
+          {
+            "code": "10010143",
+            "price": 55000,
+            "product_id": 2535,
+            "val": "L\u1edbn"
+          },
+          {
+            "code": "10010142",
+            "price": 50000,
+            "product_id": 2534,
+            "val": "V\u1eeba",
+            "localize": { "en": null, "vi": "Size V\u1eeba" }
+          }
+        ]
+      },
+      "categ_id": [9, 4, 24, 69],
+      "topping_list": [
+        {
+          "product_id": 1667,
+          "product_name": "Tr\u00e2n ch\u00e2u tr\u1eafng",
+          "code": "10100016",
+          "price": 10000
+        }
+      ],
+      "variants": [
+        {
+          "code": "10010143",
+          "price": 55000,
+          "product_id": 2535,
+          "localize": { "en": "L\u1edbn", "vi": "L\u1edbn" },
+          "val": "L\u1edbn"
+        },
+        {
+          "code": "10010142",
+          "price": 50000,
+          "product_id": 2534,
+          "val": "V\u1eeba",
+          "localize": { "en": null, "vi": "V\u1eeba" }
+        }
+      ],
+      "type": [],
+      "options": [
+        {
+          "name": "Size",
+          "desciption": "Ch\u1ecdn 1 lo\u1ea1i size",
+          "min": 1,
+          "max": 1,
+          "default_index": 0,
+          "items": [
+            {
+              "code": "10010143",
+              "price": 5000,
+              "product_id": 2535,
+              "localize": { "en": "L\u1edbn", "vi": "L\u1edbn" },
+              "val": "L\u1edbn",
+              "is_main": true
+            },
+            {
+              "code": "10010142",
+              "price": 0,
+              "product_id": 2534,
+              "val": "V\u1eeba",
+              "localize": { "en": null, "vi": "V\u1eeba" },
+              "is_main": true
+            }
+          ]
+        },
+        {
+          "name": "Topping",
+          "desciption": "Ch\u1ecdn t\u1ed1i \u0111a 2 lo\u1ea1i",
+          "min": 0,
+          "max": 2,
+          "default_index": -1,
+          "items": [
+            {
+              "product_id": 1667,
+              "product_name": "Tr\u00e2n ch\u00e2u tr\u1eafng",
+              "code": "10100016",
+              "price": 10000,
+              "type": 3
+            }
+          ]
+        }
+      ],
+      "codes": [],
+      "product_category_id": "609fec3cd51c0000a7001d47",
+      "product_name": "Tr\u00e0 S\u1eefa Oolong N\u01b0\u1edbng",
+      "price": 50000,
+      "base_price": 50000,
+      "active": true,
+      "branch": "TCH",
+      "slug": "tra-sua-oolong-nuong",
+      "created_at": "2021-03-26 08:51:43",
+      "updated_at": "2021-04-01 04:06:36",
+      "__v": 1,
+      "high_res_image": "https://tch-app.s3.ap-southeast-1.amazonaws.com/menufrontend/high_res_image/605da09f717e5d00114a3cda_oolong-nuong-new.jpg",
+      "hint_note": [
+        "\u00edt ng\u1ecdt",
+        "\u00edt \u0111\u00e1",
+        "kh\u00f4ng \u0111\u00e1",
+        "\u0111\u00e1 \u0111\u1ec3 ri\u00eang"
+      ],
+      "image": "https://tch-app.s3.ap-southeast-1.amazonaws.com/menufrontend/605da09f717e5d00114a3cda_oolong-nuong-new.jpg",
+      "intro": { "en": null, "vi": null },
+      "is_delivery": true,
+      "is_pickup": true,
+      "image_id": null,
+      "is_menuset": true,
+      "stock": true
+    }
+  ]
+}

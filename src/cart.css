@@ -1,6 +1,5 @@
 .cart{
     width: calc(33% - 10px);
-    height: auto;
     align-self: start;
     position: relative;
 }

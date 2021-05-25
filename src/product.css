@@ -15,8 +15,10 @@
 }
 .product__list-link{
     display: inline-flex;
+    width: 100%;
 }
 .product__info{
+    width: 100%;
     margin-left: 10px;
 }
 .product__info h2{
