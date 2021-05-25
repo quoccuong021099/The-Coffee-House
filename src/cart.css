@@ -1,0 +1,69 @@
+.cart{
+    width: calc(33% - 10px);
+    height: auto;
+    align-self: start;
+    position: relative;
+}
+.cart-fixed{
+    width: 444px;
+    background-color: #fff;
+    box-shadow: 3px 3px 6px 0 #e5e5e5;
+    position: fixed;
+}
+.btn__cart{
+    width: 100%;
+    height: auto;
+    padding: 13px 20px;
+    border-bottom: 2px solid #e5e5e5;
+}
+.btn-cart{
+    width: 100%;
+    padding:12px 0px;
+    font-size: 12px;
+    font-weight: 600;
+    background-color: rgba(234, 128, 37,.5);
+    color: #fff;
+    border:  none;
+    outline: none;
+}
+.coupon{
+    padding: 13px 20px;
+}
+.total-price, .delivery, .total{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 15px;
+    color: #333;
+    padding: 0 0 10px;
+}
+.delivery{
+    padding: 0 0 20px;
+}
+
+.coupon .form-control input[type="text"]{
+    width: calc(70% + 8px);
+    padding: 10.5px;
+    outline: none;
+}
+.coupon .form-control input[type="text"]:focus{
+    border: 1px solid #ea8025;
+    padding: 11.5px;
+}
+.coupon .form-control input[type="submit"]{
+    width: calc(30% - 8px);
+    padding: 11.5px;
+    outline: none;
+    color: #fff;
+    background-color: #ea8025;
+    border: 1px solid #ea8025;
+    border-left: none;
+}
+.total{
+    border-top: 1px solid #e5e5e5;
+    padding: 13px 20px;
+}
+.total h3{
+    font-size: 24px;
+    font-weight: 600;
+}
