@@ -30,5 +30,18 @@ Home
         - Form coupon
     - Footer
 
-## Step 2: Build A Static Version in React
-
+## Step 2: Build A Static Version in React (Xây dựng một bản tĩnh)
+- Fetch API Category để hiển thị danh sách Category.
+- Fetch API Product để hiển thị danh sách Product.
+## Step 3: Identify The Minimal (but complete) Representation Of UI State
+- Các Component sử dụng dữ liệu:
+    - Category
+    - Product
+- Các component sử dụng props
+    - Category: truyền props category id cho Product/
+    - Product: dùng props category id đó so sánh với cate_id trong API để lấy dữ liệu.
+## Step 4: Identify Where Your State Should Live (Xác định state của bạn ở đâu)
+- Các component sử dụng state:
+    - Category
+    - Product
+## Step 5: Add Inverse Data Flow (Cập nhật dữ liệu theo chiều ngược lại)
