@@ -18,16 +18,27 @@
     
 #### 5. Hệ thống phân cấp
 Home
+
     - Header
+    
     - Body
+    
         - Category
+        
             - Category item
+            
         - Products
+        
             - Input search
+            
             - Product
+            
             - Category-product
+            
             - Product-info
+            
         - Form coupon
+        
     - Footer
 
 ## Step 2: Build A Static Version in React (Xây dựng một bản tĩnh)
