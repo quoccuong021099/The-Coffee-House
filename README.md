@@ -17,7 +17,7 @@
 #### 4. Footer (màu đỏ nâu).
     
 #### 5. Hệ thống phân cấp
-Home
+- Home
 
     - Header
     
