@@ -59,7 +59,7 @@ class Main extends React.Component {
             <span key={category.id}> {category.name} </span> 
             <Product categoryID={category.id}/>
           </ul>
-          ))}
+            ))}
           </div>
        <Cart />
       </section>

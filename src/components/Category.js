@@ -15,10 +15,11 @@ class Category extends React.Component {
     return (
       <div className="category">
         <ul className="category-fixed">
-          {this.state.categories.map((category) => (
+          {this.state.categories.map((category,index) => ( index < 15 ?
             <li className="category__item" key={category.id}>
               <a href="#">{category.name}</a>
             </li>
+            : null
           ))}
         </ul>
       </div>
