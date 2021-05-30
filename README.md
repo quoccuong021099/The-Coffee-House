@@ -14,10 +14,11 @@
 - Category-product: Danh mục của sản phẩm (màu vàng).
 - Product-info: Ảnh,thông tin sản phẩm, nút thêm sản phẩm (mày xanh lá).
 #### 3.3 Form coupon: mã giảm giá (màu hồng)
-#### 4. Footer (màu đỏ nâu).
+### 4. Footer (màu đỏ nâu).
     
-#### 5. Hệ thống phân cấp
-Home
+### 5. Hệ thống phân cấp
+
+- Home
     - Header
     - Body
         - Category
