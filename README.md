@@ -2,6 +2,7 @@
 
 ## Step 1: Break The UI Into A Component Hierarchy
 
+
 ![Image](img.png)
 ### 1. Home chứa toàn bộ nội dung website (màu đen)
 ### 2. Header chứa Logo, form địa chỉ giao hàng, button đăng nhập (màu đỏ)
