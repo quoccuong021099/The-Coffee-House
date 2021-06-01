@@ -2,7 +2,6 @@ import React from "react";
 import Sidebar from "./Sidebar";
 import ProductContainer from "./ProductContainer";
 import CartContainer from "./CartContainer";
-import Input from "./components_child/Input";
 import SearchProduct from "./SearchProduct";
 class Body extends React.Component {
   constructor(props) {
@@ -43,17 +42,7 @@ class Body extends React.Component {
         <Sidebar categories={this.state.categories} />
         <div className="products">
           <SearchProduct/>
-          {this.state.categories.map((category) =>
-            Object.keys(category.ListProduct).length !== 0 ? (
-              <ul className="product" key={category._id} id={`${category._id}`}>
-                <span> {category.name} </span>
-                <ProductContainer
-                  products={this.state.products}
-                  categoryID={category.id}
-                />
-              </ul>
-            ) : null
-          )}
+          <ProductContainer products={this.state.categories}/>
         </div>
         <CartContainer />
       </section>

@@ -1,5 +1,5 @@
 import React from "react";
-import { Link, animateScroll as scroll } from "react-scroll";
+import { Link } from "react-scroll";
 class Sidebar extends React.Component {
 
   // 5af5602d8167f03b21ff7e1c

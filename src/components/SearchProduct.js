@@ -1,5 +1,4 @@
 import React from "react";
-import Sidebar from "./Sidebar";
 import Input from "./components_child/Input";
 
 class Body extends React.Component {

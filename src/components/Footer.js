@@ -6,9 +6,9 @@ function Footer() {
         <div className="footer">
             <ul className="list-footer">
                 <li className="list-item">
-                    <img src="https://order.thecoffeehouse.com/img/logo_footer.png" width="122" height="108"/>
+                    <img src="https://order.thecoffeehouse.com/img/logo_footer.png" width="122" height="108" alt="a"/>
                     <div className="socials">
-                        <a href="#" className="social__item">
+                        <a href="#a" className="social__item">
                         <span
                         >
                             <svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"> 
@@ -16,7 +16,7 @@ function Footer() {
                             </svg>
                         </span>
                         </a>
-                        <a href="#" className="social__item">
+                        <a href="#a" className="social__item">
 
                         <span>
                         <svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"> 
@@ -33,14 +33,14 @@ function Footer() {
                         <p className="about-us__left">VỀ CHÚNG TÔI</p>
                         <p className="about-us__right">CÔNG TY CỔ PHẦN THƯƠNG MẠI DỊCH VỤ TRÀ CÀ PHÊ VN</p>
                     </div>
-                    <a href="#" className="about-us__link">Điều khoản và điều kiện</a>
-                    <a href="#" className="about-us__link">Chính sách bảo mật</a>
-                    <img src="https://order.thecoffeehouse.com/img/gov.png" width="200" height="75" className="about-us__img"/>
+                    <a href="#a" className="about-us__link">Điều khoản và điều kiện</a>
+                    <a href="#a" className="about-us__link">Chính sách bảo mật</a>
+                    <img src="https://order.thecoffeehouse.com/img/gov.png" width="200" height="75" alt="a" className="about-us__img"/>
                 </li>
                 <li className="list-item">
                     <h1 className="app-download">ỨNG DỤNG THE COFFEE HOUSE</h1>
-                    <img src="https://order.thecoffeehouse.com/img/appstore.png" className="app-download__img" width="115" height="40"/>
-                    <img src="https://order.thecoffeehouse.com/img/google-play-badge.png" className="app-download__img" width="127" height="40"/>
+                    <img src="https://order.thecoffeehouse.com/img/appstore.png" alt="a" className="app-download__img" width="115" height="40"/>
+                    <img src="https://order.thecoffeehouse.com/img/google-play-badge.png" alt="a" className="app-download__img" width="127" height="40"/>
                 </li>
                 <li className="list-item">
                     <h1 className="support">HỖ TRỢ KHÁCH HÀNG</h1>

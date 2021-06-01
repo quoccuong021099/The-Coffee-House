@@ -4,8 +4,8 @@ import Input from "./components_child/Input";
 class Logo extends React.Component {
   render() {
     return (
-      <a href="#" className="header__logo">
-        <img src="https://order.thecoffeehouse.com/img/logo.png" />
+      <a href="#a" className="header__logo">
+        <img src="https://order.thecoffeehouse.com/img/logo.png" alt="a" />
       </a>
     );
   }
