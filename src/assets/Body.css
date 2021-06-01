@@ -21,16 +21,22 @@
     position: fixed;
 
 }
+.category__item > .active {
+    border-bottom: 2px solid #ea8025;
+    color: #ea8025;
+  }
+  
 .category__item{
     margin-bottom: 10px;
+    cursor: pointer;
 }
-.category__item:nth-child(1){
+/* .category__item:nth-child(1){
     border-bottom: 2px solid #ea8025;
   
 }
 .category__item:nth-child(1) > a{
     color: #ea8025;
-}
+} */
 .category__item > a{
     display: inline-block;
     padding: 0 20px 8px;

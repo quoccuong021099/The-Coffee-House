@@ -20,13 +20,27 @@
     padding:12px 0px;
     font-size: 12px;
     font-weight: 600;
-    background-color: rgba(234, 128, 37,.5);
-    color: #fff;
+    background-color: rgba(234, 128, 37,.8);
+    color: #fff;    
     border:  none;
     outline: none;
 }
+.btn-cart:hover{
+    border: none;
+}
 .coupon{
     padding: 13px 20px;
+}
+.currency{
+    font-size: 16px;
+}
+.currency__delivery{
+    font-size: 18px;
+    font-weight: 600;
+}
+.currency__total{
+    font-size: 22px;
+    font-weight: bold;
 }
 .total-price, .delivery, .total{
     display: flex;
@@ -40,16 +54,16 @@
     padding: 0 0 20px;
 }
 
-.coupon .form-control input[type="text"]{
+.coupon .form-control .input__coupon{
     width: calc(70% + 8px);
     padding: 10.5px;
     outline: none;
 }
-.coupon .form-control input[type="text"]:focus{
+.coupon .form-control .btn__apply:focus{
     border: 1px solid #ea8025;
     padding: 11.5px;
 }
-.coupon .form-control input[type="submit"]{
+.coupon .form-control .btn__apply{
     width: calc(30% - 8px);
     padding: 11.5px;
     outline: none;

@@ -1,30 +1,43 @@
 import React from "react";
-import "./header.css";
+import Button from "./components_child/Button";
+import Input from "./components_child/Input";
+class Logo extends React.Component {
+  render() {
+    return (
+      <a href="#" className="header__logo">
+        <img src="https://order.thecoffeehouse.com/img/logo.png" />
+      </a>
+    );
+  }
+}
 
 class Header extends React.Component {
   render() {
     return (
       <header className="header">
-        <a href="#" className="header__logo">
-          <img src="https://order.thecoffeehouse.com/img/logo.png" />
-        </a>
+        <Logo />
+
         <div className="form-delivery">
-          <input type="submit" value="GIAO NGAY" className="btn btn__delivery" />
+          <Button
+            className="btn__delivery"
+            type="button"
+            value="GIAO NGAY"
+          ></Button>
           <div className="form-control">
-          <span className="input-icon">
-            <img
-              src="https://order.thecoffeehouse.com/img/icon/location.png"
-              alt=""
+            <span className="input-icon">
+              <img
+                src="https://order.thecoffeehouse.com/img/icon/location.png"
+                alt=""
+              />
+            </span>
+            <Input
+              type="text"
+              className="input-address"
+              placeholder="Nhập địa chỉ giao hàng"
             />
-          </span>
-          <input
-            type="text"
-            placeholder="Nhập địa chỉ giao hàng"
-            className="input-add"
-          />
           </div>
         </div>
-        <button className="btn btn--login">ĐĂNG NHẬP</button>
+        <Button className="btn--login" type="button" value="ĐĂNG NHẬP"></Button>
       </header>
     );
   }

@@ -8,6 +8,7 @@
     justify-content: space-between;
     position: fixed;
     top: 0;
+    z-index: 1;
 }
 .header__logo {
   width: 200px;
@@ -48,14 +49,17 @@
   left: 0;
   transform: translateY(-50%);
 }
-.input-add {
-  width: 450px;
+
+.input {
   height: 40px;
   padding-left: 40px;
   outline: none;
   border: 1px solid #9a9a9a;
 }
-.input-add:focus {
+.input-address{
+  width: 450px;
+}
+.input-add:focus, input:focus {
   border: 1px solid #ea8025;
 }
 
