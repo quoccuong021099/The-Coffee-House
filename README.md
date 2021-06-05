@@ -3,28 +3,39 @@
 ## Step 1: Break The UI Into A Component Hierarchy
 
 
-![Image](img.png)
-### 1. Home chứa toàn bộ nội dung website (màu đen)
-### 2. Header chứa Logo, form địa chỉ giao hàng, button đăng nhập (màu đỏ)
-### 3. Body chứa nội dung của website (màu xanh cam)
-#### 3.1 Category: danh mục sản phẩm (màu xanh da trời)
-- Category item: danh mục con (màu xanh lá non).
-#### 3.2 Products: danh sách sản phẩm (màu tím)
-- Input search:  tìm kiếm sản phẩm (màu nâu).
-- Product: Sản phẩm (màu xanh dương).
-- Category-product: Danh mục của sản phẩm (màu vàng).
-- Product-info: Ảnh,thông tin sản phẩm, nút thêm sản phẩm (mày xanh lá).
-#### 3.3 Form coupon: mã giảm giá (màu hồng)
-### 4. Footer (màu đỏ nâu).
+![Image](https://scontent.fpnh22-2.fna.fbcdn.net/v/t1.15752-9/s2048x2048/196468877_2657702651194153_6118948014395866679_n.png?_nc_cat=100&ccb=1-3&_nc_sid=ae9488&_nc_ohc=oqFgvC6rB3EAX-MrqzP&tn=aPJlnR-rezZbCgJA&_nc_ht=scontent.fpnh22-2.fna&tp=30&oh=d514ef03521e2fe93c5a9aa1152e9bca&oe=60E202F4)
+### 1. Home chứa toàn bộ nội dung website (màu đỏ nâu)
+### 2. Header chứa Logo, form địa chỉ giao hàng, button đăng nhập (màu xanh dương đậm)
+    - Form (màu xanh lá non)
+    - Button (màu hồng)
+    - Input (màu đỏ )
+### 3. Body chứa nội dung của website (màu xanh dương nhạt)
+#### 3.1 Sidebar: danh mục sản phẩm (màu tím)
+#### 3.2 Product Container: danh sách sản phẩm (màu đen)
+- Input search:  tìm kiếm sản phẩm (màu đỏ).
+- Product Item: Ảnh,thông tin sản phẩm, nút thêm sản phẩm (màu cam).
+    - Image product (màu cam nhạt)
+    - Thông tin sản phẩm (màu vàng)
+    - Currency (màu xanh ngọc)
+    - Button add (màu xanh lá)
+#### 3.3 Cart Container: (màu nâu)
+    - Button cart (màu tím)
+    - Currency (Màu xanh ngọc)
+    - Form coupon (màu nâu nhạt)
+        - Input coupon (màu đỏ)
+        - Button Apply (màu tím)
+### 4. Footer (màu xanh lá).
     
 ### 5. Hệ thống phân cấp
 
 - Home
     - Header
-    
+        - Logo
+        - Input 
+        - Button 
     - Body
     
-        - Category
+        - Sidebar
         
             - Category item
             
@@ -32,13 +43,20 @@
         
             - Input search
             
-            - Product
+            - Product Container
+                
+                -Produc tItem
+
+                    - CategoryName
+                    - ProductInfo                    
+                    - Image
+                    - ButtonAdd
             
-            - Category-product
-            
-            - Product-info
-            
-        - Form coupon
+        - Cart Container
+            - ButtontCart
+            - Input
+            - ButtonApply
+            - Currency
         
     - Footer
 
