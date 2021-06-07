@@ -3,7 +3,7 @@ footer{
     height: auto;
     color: #fff;
     background-color: #000;
-    position: relative;
+    position: absolute;
     z-index: 1;
     bottom: 0;
 }

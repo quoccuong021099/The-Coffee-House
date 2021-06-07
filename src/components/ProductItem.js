@@ -4,7 +4,7 @@ import Image from './components_child/Image'
 class ProductContainer extends React.Component {
   render() {
     return (
-      <div>
+      <div >
         {this.props.products.map((item) => (
           <li className="product__item" key={item._id} >
             <ul className="product__list">

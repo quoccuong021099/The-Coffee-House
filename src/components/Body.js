@@ -3,6 +3,9 @@ import Sidebar from "./Sidebar";
 import ProductContainer from "./ProductContainer";
 import CartContainer from "./CartContainer";
 import SearchProduct from "./SearchProduct";
+import PlaceholderSidebar from "./placeholder/PlaceholderSidebar";
+import PlaceholderProduct from "./placeholder/PlaceholderProduct"
+// import Loading from './Loading'
 class Body extends React.Component {
   constructor(props) {
     super(props);
@@ -14,25 +17,27 @@ class Body extends React.Component {
   }
 
   componentDidMount() {
-    fetch("https://api.thecoffeehouse.com/api/v2/menu")
-      .then((res) =>
-        // console.log(res)
-        res.json()
-      )
-      .then((product) => {
-        this.setState({
-          isLoaded: true,
-          products: product.data,
+    setTimeout(() => {
+      fetch("https://api.thecoffeehouse.com/api/v2/menu")
+        .then((res) =>
+          // console.log(res)
+          res.json()
+        )
+        .then((product) => {
+          this.setState({
+            isLoaded: true,
+            products: product.data,
+          });
         });
-      });
-    fetch("https://api.thecoffeehouse.com/api/v2/category/web")
-      .then((res) => res.json())
-      .then((categoryList) => {
-        this.setState({
-          isLoaded: true,
-          categories: categoryList,
+      fetch("https://api.thecoffeehouse.com/api/v2/category/web")
+        .then((res) => res.json())
+        .then((categoryList) => {
+          this.setState({
+            isLoaded: true,
+            categories: categoryList,
+          });
         });
-      });
+    }, 2000);
   }
 
   render() {
@@ -48,20 +53,25 @@ class Body extends React.Component {
       return arr;
     });
     const { isLoaded } = this.state;
-    if (!isLoaded) {
-      return <div>Loading...</div>;
-    } else {
-      return (
-        <section className="main">
+
+    return (
+      <section className="main">
+        {!isLoaded ? (
+          <PlaceholderSidebar />
+        ) : (
           <Sidebar categories={this.state.categories} />
-          <div className="products">
-            <SearchProduct />
+        )}
+        <div className="products">
+          <SearchProduct />
+          {!isLoaded ? (
+            <PlaceholderProduct />
+          ) : (
             <ProductContainer products={this.state.categories} />
-          </div>
-          <CartContainer />
-        </section>
-      );
-    }
+          )}
+        </div>
+        <CartContainer />
+      </section>
+    );
   }
 }
 

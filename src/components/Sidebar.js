@@ -8,7 +8,7 @@ class Sidebar extends React.Component {
       <div className="category">
         <ul className="category-fixed">
           {this.props.categories.map((category) =>
-            Object.keys(category.ListProduct).length !== 0 ? ( 
+           category.ListProduct.length !== 0 ? ( 
               <li className="category__item" key={category._id}>
                 
                 { category._id === this.props.categories[0]._id ?
