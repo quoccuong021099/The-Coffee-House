@@ -4,69 +4,60 @@ import ProductContainer from "./ProductContainer";
 import CartContainer from "./CartContainer";
 import SearchProduct from "./SearchProduct";
 import PlaceholderSidebar from "./placeholder/PlaceholderSidebar";
-import PlaceholderProduct from "./placeholder/PlaceholderProduct"
-// import Loading from './Loading'
+import PlaceholderProduct from "./placeholder/PlaceholderProduct";
 class Body extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      isLoaded: false,
-      products: [],
+      isLoaded: true,
       categories: [],
     };
   }
 
+  merge = (categoryList, products) => {
+    categoryList.map((category) =>{
+      let newData = []
+      products.map((product)=>{
+        if(product.categ_id.includes(category.id))
+          {
+            newData.push(product);
+          }
+      })
+      category.ListProduct = newData
+    })
+    return categoryList
+  };
+
   componentDidMount() {
-    setTimeout(() => {
-      fetch("https://api.thecoffeehouse.com/api/v2/menu")
-        .then((res) =>
-          // console.log(res)
-          res.json()
-        )
-        .then((product) => {
-          this.setState({
-            isLoaded: true,
-            products: product.data,
+    fetch("https://api.thecoffeehouse.com/api/v2/menu")
+      .then((res) => res.json())
+      .then((products) => {
+        fetch("https://api.thecoffeehouse.com/api/v2/category/web")
+          .then((res) => res.json())
+          .then((categoryList) => {
+            let newData = this.merge(categoryList, products.data);
+            this.setState({
+              categories: newData,
+              isLoaded: false,
+            });
           });
-        });
-      fetch("https://api.thecoffeehouse.com/api/v2/category/web")
-        .then((res) => res.json())
-        .then((categoryList) => {
-          this.setState({
-            isLoaded: true,
-            categories: categoryList,
-          });
-        });
-    }, 2000);
+      });
   }
 
   render() {
-    this.state.categories.map((category) => {
-      let arr = [];
-      this.state.products.map((product) => {
-        if (product.categ_id.includes(category.id)) {
-          arr.push(product);
-        }
-        return arr;
-      });
-      category.ListProduct = arr;
-      return arr;
-    });
-    const { isLoaded } = this.state;
-
+    const { isLoaded, categories } = this.state;
     return (
       <section className="main">
-        {!isLoaded ? (
+        {isLoaded ? (
           <PlaceholderSidebar />
         ) : (
-          <Sidebar categories={this.state.categories} />
+          <Sidebar categories={categories} />
         )}
         <div className="products">
-          <SearchProduct />
-          {!isLoaded ? (
+          {isLoaded ? (
             <PlaceholderProduct />
           ) : (
-            <ProductContainer products={this.state.categories} />
+            <ProductContainer products={categories} />
           )}
         </div>
         <CartContainer />

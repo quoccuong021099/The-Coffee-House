@@ -1,5 +1,4 @@
 import React from "react";
-
 class CategoryPlaceholderItem extends React.Component {
   render() {
     return (
@@ -7,12 +6,7 @@ class CategoryPlaceholderItem extends React.Component {
     );
   }
 }
-
 class PlaceholderSidebar extends React.Component {
-  constructor(props) {
-    super(props);
-  }
-
   render() {
     return (
       <div className="category__placeholder">

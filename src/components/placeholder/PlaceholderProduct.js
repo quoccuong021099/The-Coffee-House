@@ -1,5 +1,4 @@
 import React from "react";
-import Image from '../components_child/Image'
 class PlaceholderItem extends React.Component {
   render() {
     return(

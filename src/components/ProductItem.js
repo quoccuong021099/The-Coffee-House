@@ -1,6 +1,7 @@
 import React from "react";
 import AddButton from './components_child/AddButton'
 import Image from './components_child/Image'
+import Currency from './components_child/Currency'
 class ProductContainer extends React.Component {
   render() {
     return (
@@ -15,7 +16,7 @@ class ProductContainer extends React.Component {
                     <h2>{item.product_name}</h2>
                     <p>{item.description}</p>
                     <div className="product__price">
-                      <span>{item.price}</span>
+                      <Currency value={item.price}/>
                       <AddButton width="30" height="30"/>
                     </div>
                   </div>
