@@ -1,6 +1,6 @@
 import React from "react";
-import Button from "./components_child/Button";
-import Input from "./components_child/Input";
+import Button from "./common/Button";
+import Input from "./common/Input";
 class Logo extends React.Component {
   render() {
     return (

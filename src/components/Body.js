@@ -1,8 +1,7 @@
 import React from "react";
 import Sidebar from "./Sidebar";
-import ProductContainer from "./ProductContainer";
+import Main from "./Main";
 import CartContainer from "./CartContainer";
-import SearchProduct from "./SearchProduct";
 import PlaceholderSidebar from "./placeholder/PlaceholderSidebar";
 import PlaceholderProduct from "./placeholder/PlaceholderProduct";
 class Body extends React.Component {
@@ -15,17 +14,18 @@ class Body extends React.Component {
   }
 
   merge = (categoryList, products) => {
-    categoryList.map((category) =>{
-      let newData = []
-      products.map((product)=>{
-        if(product.categ_id.includes(category.id))
-          {
-            newData.push(product);
-          }
-      })
-      category.ListProduct = newData
-    })
-    return categoryList
+    categoryList.map((category) => {
+      let newData = [];
+      products.map((product) => {
+        if (product.categ_id.includes(category.id)) {
+          newData.push(product);
+        }
+        return newData;
+      });
+      category.ListProduct = newData;
+      return newData;
+    });
+    return categoryList;
   };
 
   componentDidMount() {
@@ -54,11 +54,7 @@ class Body extends React.Component {
           <Sidebar categories={categories} />
         )}
         <div className="products">
-          {isLoaded ? (
-            <PlaceholderProduct />
-          ) : (
-            <ProductContainer products={categories} />
-          )}
+          {isLoaded ? <PlaceholderProduct /> : <Main products={categories} />}
         </div>
         <CartContainer />
       </section>

@@ -1,33 +1,30 @@
 import React from "react";
-import AddButton from './components_child/AddButton'
-import Image from './components_child/Image'
-import Currency from './components_child/Currency'
-class ProductContainer extends React.Component {
+import AddButton from "./common/AddButton";
+import Image from "./common/Image";
+import Currency from "./common/Currency";
+class ProductItem extends React.Component {
   render() {
+    let { item } = this.props;
     return (
-      <div >
-        {this.props.products.map((item) => (
-          <li className="product__item" key={item._id} >
-            <ul className="product__list">
-              <li className="product__list-item">
-                <a href="#a" className="product__list-link">
-                  <Image src={item.image} width="80" height="80" />
-                  <div className="product__info">
-                    <h2>{item.product_name}</h2>
-                    <p>{item.description}</p>
-                    <div className="product__price">
-                      <Currency value={item.price}/>
-                      <AddButton width="30" height="30"/>
-                    </div>
-                  </div>
-                </a>
-              </li>
-            </ul>
+      <li className="product__item" >
+        <ul className="product__list">
+          <li className="product__list-item">
+            <a href="#a" className="product__list-link">
+              <Image src={item.image} width="80" height="80" />
+              <div className="product__info">
+                <h2>{item.product_name}</h2>
+                <p>{item.description}</p>
+                <div className="product__price">
+                  <Currency value={item.price} />
+                  <AddButton width="30" height="30" />
+                </div>
+              </div>
+            </a>
           </li>
-        ))}
-      </div>
+        </ul>
+      </li>
     );
   }
 }
 
-export default ProductContainer;
+export default ProductItem;
