@@ -8,10 +8,10 @@ class Input extends React.Component {
         type={`${this.props.type}`}
         placeholder={`${this.props.placeholder}`}
         onChange={this.props.onChange}
+        value={this.props.value}
       />
     );
   }
 }
-
 
 export default Input;

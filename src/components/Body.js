@@ -8,6 +8,7 @@ class Body extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
+      error: null,
       isLoaded: true,
       categories: [],
     };
@@ -32,33 +33,57 @@ class Body extends React.Component {
     fetch("https://api.thecoffeehouse.com/api/v2/menu")
       .then((res) => res.json())
       .then((products) => {
-        fetch("https://api.thecoffeehouse.com/api/v2/category/web")
-          .then((res) => res.json())
-          .then((categoryList) => {
-            let newData = this.merge(categoryList, products.data);
-            this.setState({
-              categories: newData,
-              isLoaded: false,
+        if (products.status_code !== 500) {
+          fetch("https://api.thecoffeehouse.com/api/v2/category/web")
+            .then((res) => res.json())
+            .then((categoryList) => {
+              if (products.status_code !== 500) {
+                let newData = this.merge(categoryList, products.data);
+                this.setState({
+                  categories: newData,
+                  isLoaded: false,
+                });
+              }
+            })
+            .catch((error) => {
+              this.setState({
+                isLoaded: true,
+                error,
+              });
             });
-          });
+        }
+      })
+      .catch((error) => {
+        this.setState({
+          isLoaded: true,
+          error,
+        });
       });
   }
 
   render() {
-    const { isLoaded, categories } = this.state;
-    return (
-      <section className="main">
-        {isLoaded ? (
-          <PlaceholderSidebar />
-        ) : (
-          <Sidebar categories={categories} />
-        )}
-        <div className="products">
-          {isLoaded ? <PlaceholderProduct /> : <Main products={categories} />}
+    const { isLoaded, categories, error } = this.state;
+    if (error) {
+      return (
+        <div className="main">
+          Error: {error.message}
         </div>
-        <CartContainer />
-      </section>
-    );
+      );
+    } else {
+      return (
+        <section className="main">
+          {isLoaded ? (
+            <PlaceholderSidebar />
+          ) : (
+            <Sidebar categories={categories} />
+          )}
+          <div className="products">
+            {isLoaded ? <PlaceholderProduct /> : <Main products={categories} />}
+          </div>
+          <CartContainer />
+        </section>
+      );
+    }
   }
 }
 

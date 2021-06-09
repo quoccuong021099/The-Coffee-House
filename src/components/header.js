@@ -18,10 +18,24 @@ class Header extends React.Component {
     this.state = {
       location: "",
       getAddress: [],
+      Dropdown: false,
     };
   }
-  getAddress = (e) => this.setState({ getAddress: e.target.value });
-  onchange = (e) => this.setState({ location: e.target.value });
+
+
+  getValueInputAddress = (e) =>
+    this.setState({
+      location: e.target.value.toLowerCase(),
+      getAddress: [],
+      Dropdown: false,
+    });
+  // , this.API()
+  onclick = (description) => {
+    this.setState({
+      location: description,
+      Dropdown: true,
+    });
+  };
 
   API = (e) => {
     e.preventDefault();
@@ -30,23 +44,24 @@ class Header extends React.Component {
     )
       .then((res) => res.json())
       .then((loca) => {
-        if (loca.status !== "FAIL") {
+        if (loca.status !== "FAIL" && loca.predictions !== undefined) {
           this.setState({
             getAddress: loca.predictions,
           });
         }
+        // if(this.state.location === ''){
+        //   this.setState({
+        //     getAddress: [],
+        //   });
+        // }
       });
   };
 
   render() {
-    // console.log(this.state.location);
-    // console.log(this.state.getAddress);
-    const { getAddress } = this.state;
-    // console.log(getAddress);
+    const { getAddress, location, Dropdown } = this.state;
     return (
-      <header className="header">
+      <header className="header" >
         <Logo />
-
         <div className="form-delivery">
           <Button
             className="btn__delivery"
@@ -66,12 +81,36 @@ class Header extends React.Component {
                   type="text"
                   className="input-address"
                   placeholder="Nhập địa chỉ giao hàng"
-                  onChange={this.onchange}
+                  onChange={this.getValueInputAddress}
+                  value={location}
                 />
-                <ul className="dropdown-menu">
-                  {getAddress.map((i) => (
-                    <DropdownItem address={i} key={i.id}/>
-                  ))}
+                <ul
+                  className={Dropdown ? "dropdown-menu block" : "dropdown-menu"}
+                >
+                  {location.length !== 0 ? (
+                    getAddress.length > 0 ? (
+                      getAddress.map((i) => (
+                        <DropdownItem
+                          address={i}
+                          key={i.place_id}
+                          onClick={() => this.onclick(i.description)}
+                        />
+                      ))
+                    ) : (
+                      <li>
+                        <span className="input-icon-dropdown">
+                          <img
+                            src="https://order.thecoffeehouse.com/img/icon/location.png"
+                            alt=""
+                          />
+                        </span>
+                        <a href="#a">
+                          <h3 className="dropdown-menu-title">Không tìm thấy địa chỉ</h3>
+                          <p>Không tìm thấy địa chỉ</p>
+                        </a>
+                      </li>
+                    )
+                  ) : null}
                 </ul>
               </form>
             </div>
