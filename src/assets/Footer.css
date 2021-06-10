@@ -11,6 +11,7 @@ footer{
     max-width: 1364px;
     margin: 60px auto 0;
     padding: 70px 0 20px;
+    height: 100%;
 }
 .list-footer{
     display: flex;

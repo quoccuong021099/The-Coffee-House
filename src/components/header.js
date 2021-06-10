@@ -2,11 +2,12 @@ import React from "react";
 import Button from "./common/Button";
 import Input from "./common/Input";
 import DropdownItem from "./DropdownItem";
+import logo from "./image/logo.png"
 class Logo extends React.Component {
   render() {
     return (
       <a href="#a" className="header__logo">
-        <img src="https://order.thecoffeehouse.com/img/logo.png" alt="a" />
+        <img src={logo} alt="logo"/>
       </a>
     );
   }
@@ -21,7 +22,6 @@ class Header extends React.Component {
       Dropdown: false,
     };
   }
-
 
   getValueInputAddress = (e) =>
     this.setState({
@@ -57,67 +57,78 @@ class Header extends React.Component {
       });
   };
 
+  
   render() {
     const { getAddress, location, Dropdown } = this.state;
     return (
-      <header className="header" >
-        <Logo />
-        <div className="form-delivery">
-          <Button
-            className="btn__delivery"
-            type="button"
-            value="GIAO NGAY"
-          ></Button>
-          <div className="form-control">
-            <span className="input-icon">
-              <img
-                src="https://order.thecoffeehouse.com/img/icon/location.png"
-                alt=""
-              />
-            </span>
-            <div className="dropdown">
-              <form onKeyUp={this.API}>
-                <Input
-                  type="text"
-                  className="input-address"
-                  placeholder="Nhập địa chỉ giao hàng"
-                  onChange={this.getValueInputAddress}
-                  value={location}
+        <header className="header">
+          <Logo />
+          <div className="form-delivery">
+            <Button
+              className="btn__delivery"
+              type="button"
+              value="GIAO NGAY"
+            ></Button>
+            <div className="form-control">
+              <span className="input-icon">
+                <img
+                  // src="https://order.thecoffeehouse.com/img/icon/location.png"
+                  alt=""
                 />
-                <ul
-                  className={Dropdown ? "dropdown-menu block" : "dropdown-menu"}
-                >
-                  {location.length !== 0 ? (
-                    getAddress.length > 0 ? (
-                      getAddress.map((i) => (
-                        <DropdownItem
-                          address={i}
-                          key={i.place_id}
-                          onClick={() => this.onclick(i.description)}
-                        />
-                      ))
-                    ) : (
-                      <li>
-                        <span className="input-icon-dropdown">
-                          <img
-                            src="https://order.thecoffeehouse.com/img/icon/location.png"
-                            alt=""
+              </span>
+              <div className="dropdown">
+                <form onKeyUp={this.API}>
+                  <Input
+                    type='text'
+                    className="input-address"
+                    placeholder="Nhập địa chỉ giao hàng"
+                    onChange={this.getValueInputAddress}
+                    value={location}
+                  />
+                  <ul
+                    className={
+                      Dropdown ? "dropdown-menu display" : "dropdown-menu"
+                    }
+                  >
+                    {location.length !== 0 ? (
+                      getAddress.length > 0 ? (
+                        getAddress.map((i) => (
+                          <DropdownItem
+                            address={i}
+                            key={i.place_id}
+                            onClick={() => this.onclick(i.description)}
                           />
-                        </span>
-                        <a href="#a">
-                          <h3 className="dropdown-menu-title">Không tìm thấy địa chỉ</h3>
-                          <p>Không tìm thấy địa chỉ</p>
-                        </a>
-                      </li>
-                    )
-                  ) : null}
-                </ul>
-              </form>
+                        ))
+                      ) : (
+                        <li>
+                          <span className="input-icon-dropdown">
+                            <img
+                              src="https://order.thecoffeehouse.com/img/icon/location.png"
+                              alt=""
+                            />
+                          </span>
+                          <a href="#a">
+                            <h3 className="dropdown-menu-title">
+                              Không tìm thấy địa chỉ{" "}
+                            </h3>
+                            <h3 className="dropdown-menu-title">
+                              "{location}"
+                            </h3>
+                          </a>
+                        </li>
+                      )
+                    ) : null}
+                  </ul>
+                </form>
+              </div>
             </div>
           </div>
-        </div>
-        <Button className="btn--login" type="button" value="ĐĂNG NHẬP"></Button>
-      </header>
+          <Button
+            className="btn--login"
+            type="button"
+            value="ĐĂNG NHẬP"
+          ></Button>
+        </header>
     );
   }
 }

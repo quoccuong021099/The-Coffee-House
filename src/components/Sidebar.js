@@ -1,38 +1,37 @@
 import React from "react";
-import { Link } from "react-scroll";
 class Sidebar extends React.Component {
+  constructor() {
+    super();
+    this.state = {
+      active: 1,
+    };
+  }
 
-  // 5af5602d8167f03b21ff7e1c
+  activeCategory = (id) => {
+    this.setState({
+      active: id,
+    });
+  };
+
   render() {
+    const { active } = this.state;
     return (
       <div className="category">
         <ul className="category-fixed">
           {this.props.categories.map((category) =>
-           category.ListProduct.length !== 0 ? ( 
-              <li className="category__item" key={category._id}>
-                
-                { category._id === this.props.categories[0]._id ?
-
-                <Link
-                  activeClass="active"
-                  to={category._id }
-                  spy={true}
-                  offset={-150}
-                  duration={500}
-                >
-                  {category.name}
-                </Link>
-                :
-                <Link
-                  activeClass="active"
-                  to={category._id}
-                  spy={true}
-                  offset={-60}
-                  duration={500}
-                >
-                  {category.name}
-                </Link>
+            category.ListProduct.length !== 0 ? (
+              <li
+                className={
+                  active === category.id
+                    ? "category__item active-category"
+                    : "category__item "
                 }
+                key={category._id}
+                onClick={() => this.activeCategory(category.id)}
+              >
+                <a className="category__item-link" href={`#${category._id}`}>
+                  {category.name}
+                </a>
               </li>
             ) : null
           )}

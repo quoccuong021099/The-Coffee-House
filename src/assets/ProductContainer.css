@@ -1,9 +1,25 @@
+.all__product{
+    margin-bottom: 500px;
+}
 .product{
     width: 100%;
 }
-.product:last-child{
-    margin-bottom: 470px;
+.product ~ .none_product{
+    display: none;
 }
+.none_product{
+    margin-top: 20px;
+    text-align: center;
+
+}
+.none_product p{
+    color: #ea8025;
+    font-size: 21px;
+    font-weight: 600;
+}
+/* .product:last-child{
+    margin-bottom: 47000px;
+} */
 .product span{
     font-size: 14px;
     color: #333;

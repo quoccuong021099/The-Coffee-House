@@ -7,6 +7,7 @@
     justify-content: space-between;
     align-items: center;
 }
+
 .category{
     width: calc(22% - 10px);
     height: auto;
@@ -49,6 +50,12 @@
 .category__item > a:hover {
     color: #ea8025;
 }
+
+.category__item.active-category{
+    color: #ea8025 !important;
+    border-bottom: 2px solid #ea8025;
+}
+
 .products{
     width: calc(45% - 10px);
 }

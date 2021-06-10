@@ -1,12 +1,15 @@
 import React from 'react';
-
+import logofooter from "./image/logo_footer.png"
+import gov from "./image/gov.png"
+import appstore from "./image/appstore.png"
+import ggplay from "./image/google-play-badge.png"
 function Footer() {
   return (
     <footer >
         <div className="footer">
             <ul className="list-footer">
                 <li className="list-item">
-                    <img src="https://order.thecoffeehouse.com/img/logo_footer.png" width="122" height="108" alt="a"/>
+                    <img src={logofooter} width="122" height="108" alt="a"/>
                     <div className="socials">
                         <a href="#a" className="social__item">
                         <span
@@ -35,12 +38,12 @@ function Footer() {
                     </div>
                     <a href="#a" className="about-us__link">Điều khoản và điều kiện</a>
                     <a href="#a" className="about-us__link">Chính sách bảo mật</a>
-                    <img src="https://order.thecoffeehouse.com/img/gov.png" width="200" height="75" alt="a" className="about-us__img"/>
+                    <img src={gov} width="200" height="75" alt="a" className="about-us__img"/>
                 </li>
                 <li className="list-item">
                     <h1 className="app-download">ỨNG DỤNG THE COFFEE HOUSE</h1>
-                    <img src="https://order.thecoffeehouse.com/img/appstore.png" alt="a" className="app-download__img" width="115" height="40"/>
-                    <img src="https://order.thecoffeehouse.com/img/google-play-badge.png" alt="a" className="app-download__img" width="127" height="40"/>
+                    <img src={appstore} alt="a" className="app-download__img" width="115" height="40"/>
+                    <img src={ggplay} alt="a" className="app-download__img" width="127" height="40"/>
                 </li>
                 <li className="list-item">
                     <h1 className="support">HỖ TRỢ KHÁCH HÀNG</h1>

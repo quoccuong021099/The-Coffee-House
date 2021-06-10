@@ -79,7 +79,17 @@ input:focus {
   width: 100%;
   background-color: #fff;
   box-shadow: 0px 0px 25px -4px rgba(0, 0, 0, 0.5);
+  /* display: none; */
 }
+/* .checkbox:checked + .dropdown-menu {
+  display: none;
+}
+.input-address:focus ~ .dropdown-menu{
+  display: block;
+}
+.input-address:focus + .checkbox:checked{
+  
+} */
 .dropdown-menu-title {
   font-size: 14px;
   font-weight: 600;
@@ -94,10 +104,7 @@ input:focus {
   text-overflow: ellipsis;
   white-space: nowrap;
 }
-.input-address:focus ~ .dropdown-menu {
-  z-index: 1;
-  opacity: 1;
-}
+
 .dropdown-menu li {
   height: 60px;
   border-bottom: 1px solid #b2b2b2;
@@ -126,6 +133,6 @@ input:focus {
   align-items: center;
 }
 
-.block {
+.display {
   display: none !important;
 }
