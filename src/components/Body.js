@@ -4,6 +4,10 @@ import Main from "./Main";
 import CartContainer from "./CartContainer";
 import PlaceholderSidebar from "./placeholder/PlaceholderSidebar";
 import PlaceholderProduct from "./placeholder/PlaceholderProduct";
+import Image from "./common/Image";
+import failData from "./image/search.png";
+import SearchProduct from "./SearchProduct";
+
 class Body extends React.Component {
   constructor(props) {
     super(props);
@@ -11,9 +15,12 @@ class Body extends React.Component {
       error: null,
       isLoaded: true,
       categories: [],
+      search: "",
+      active: 1,
     };
   }
 
+  onchange = (e) => this.setState({ search: e.target.value });
   merge = (categoryList, products) => {
     categoryList.map((category) => {
       let newData = [];
@@ -28,6 +35,14 @@ class Body extends React.Component {
     });
     return categoryList;
   };
+
+
+  activeCategory = (id) => {
+    this.setState({
+      active: id,
+    });
+  };
+
 
   componentDidMount() {
     fetch("https://api.thecoffeehouse.com/api/v2/menu")
@@ -62,11 +77,12 @@ class Body extends React.Component {
   }
 
   render() {
-    const { isLoaded, categories, error } = this.state;
+    const { isLoaded, categories, error, search,active } = this.state;
     if (error) {
       return (
-        <div className="main">
-          Error: {error.message}
+        <div className="failData">
+          <Image src={failData} width="300" height="300" alt="no data" />
+          <br /> Đường truyền dữ liệu có vấn đề. <br /> Vui lòng thử lại sau!
         </div>
       );
     } else {
@@ -75,10 +91,25 @@ class Body extends React.Component {
           {isLoaded ? (
             <PlaceholderSidebar />
           ) : (
-            <Sidebar categories={categories} />
+            <Sidebar categories={categories} active={active} 
+            activeCategory={this.activeCategory} />
           )}
           <div className="products">
-            {isLoaded ? <PlaceholderProduct /> : <Main products={categories} />}
+            {isLoaded ? (
+              <PlaceholderProduct />
+            ) : (
+              <div>
+                <SearchProduct onChange={this.onchange} />
+                <div className="all__product">
+                  <Main 
+                    products={categories} 
+                    search={search}  
+                    active={active} 
+                    activeCategory={this.activeCategory}
+                  />
+                </div>
+              </div>
+            )}
           </div>
           <CartContainer />
         </section>

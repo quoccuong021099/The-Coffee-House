@@ -5,7 +5,8 @@ import Currency from "./common/Currency";
 class ProductItem extends React.Component {
   render() {
     let { item } = this.props;
-    return (
+    
+    return (  
       <li className="product__item" >
         <ul className="product__list">
           <li className="product__list-item">
