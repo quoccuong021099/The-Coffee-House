@@ -35,7 +35,8 @@ class Main extends React.Component {
   }
 
   render() {
-    const { searchProduct, products } = this.props;
+    
+    const { searchProduct, products, onUpdateCartNumber } = this.props;
     let dataProduct = [];
 
     products.map((item) =>
@@ -69,6 +70,7 @@ class Main extends React.Component {
                 searchProduct={searchProduct}
                 dataProduct={dataProduct}
                 dataProductFilter={dataProductFilter}
+                onUpdateCartNumber={onUpdateCartNumber}
               />
             ) : null
           )}

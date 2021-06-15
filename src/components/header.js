@@ -5,6 +5,8 @@ import DropdownItem from "./DropdownItem";
 import logo from "./image/logo.png";
 import Image from "./common/Image";
 import locationImg from "./image/location.png";
+import CartIcon from "./common/CartIcon";
+import DropdownDelivery from "./DropdownDelivery";
 class Logo extends React.Component {
   render() {
     return (
@@ -22,9 +24,14 @@ class Header extends React.Component {
       location: "",
       getAddress: [],
       dropdown: false,
+      delivery: false
     };
   }
-
+  handleDelivery = () => {
+    this.setState({
+      delivery: !this.state.delivery
+    })
+  }
   getValueInputAddress = (e) =>
     this.setState({
       location: e.target.value.toLowerCase(),
@@ -44,7 +51,11 @@ class Header extends React.Component {
     )
       .then((res) => res.json())
       .then((loca) => {
-        if (loca.status !== "FAIL" && loca.predictions !== undefined && e.target.value > 1) {
+        if (
+          loca.status !== "FAIL" &&
+          loca.predictions !== undefined &&
+          e.target.value > 1
+        ) {
           this.setState({
             getAddress: loca.predictions,
             dropdown: false,
@@ -54,7 +65,8 @@ class Header extends React.Component {
   };
 
   render() {
-    const { getAddress, location, dropdown } = this.state;
+    const { getAddress, location, dropdown, delivery } = this.state;
+    const { cartNumber } = this.props;
     return (
       <header className="header">
         <Logo />
@@ -63,6 +75,7 @@ class Header extends React.Component {
             className="btn__delivery"
             type="button"
             value="GIAO NGAY"
+            onClick={this.handleDelivery}
           ></Button>
           <div className="form-control">
             <span className="input-icon">
@@ -75,7 +88,7 @@ class Header extends React.Component {
                   className="input-address"
                   placeholder="Nhập địa chỉ giao hàng"
                   onChange={this.getValueInputAddress}
-                  onKeyUp = {this.API}
+                  onKeyUp={this.API}
                   value={location}
                 />
                 <ul
@@ -113,8 +126,24 @@ class Header extends React.Component {
               </form>
             </div>
           </div>
+          {
+            delivery ? 
+            <DropdownDelivery />
+            : null
+          }
         </div>
-        <Button className="btn--login" type="button" value="ĐĂNG NHẬP"></Button>
+        <div className="form-login">
+          <Button
+            className="btn--login"
+            type="button"
+            value="ĐĂNG NHẬP"
+          ></Button>
+          {cartNumber > 0 ? (
+            <div className="cart-icon">
+              <span>{cartNumber}</span> <CartIcon />
+            </div>
+          ) : null}
+        </div>
       </header>
     );
   }

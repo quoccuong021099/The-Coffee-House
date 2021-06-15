@@ -79,15 +79,15 @@ class Body extends React.Component {
   }
 
   render() {
+    
     const {
       isLoaded,
       categories,
       error,
       searchProduct,
       active,
-      // addProductFlag,
     } = this.state;
-    // console.log(addProductFlag);
+    const {onUpdateCartNumber} = this.props
     if (error) {
       return (
         <div className="failData">
@@ -119,6 +119,7 @@ class Body extends React.Component {
                     searchProduct={searchProduct}
                     active={active}
                     activeCategory={this.activeCategory}
+                    onUpdateCartNumber={onUpdateCartNumber}
                   />
                 </div>
               </div>

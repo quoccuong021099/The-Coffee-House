@@ -9,13 +9,13 @@ class AddToCart extends React.Component {
     this.state = {
       size: this.props.productInfo.variants[0].val,
       price: this.props.productInfo.variants[0].price,
-      name: ''
+      name: "",
     };
   }
-  handleSize = (data,data1) =>
+  handleSize = (data, data1) =>
     this.setState({
       size: data,
-      price: data1
+      price: data1,
     });
 
   handlePrices = (data) => {
@@ -24,20 +24,19 @@ class AddToCart extends React.Component {
     if (price.checked) {
       this.setState({
         price: this.state.price + data.price,
-        name: this.state.name.concat(` ${data.product_name} +`)
+        name: this.state.name.concat(` ${data.product_name} +`),
       });
-    }
-    else{
+    } else {
       this.setState({
         price: this.state.price - data.price,
-        name: this.state.name.replace(`${data.product_name} +`,'')
+        name: this.state.name.replace(`${data.product_name} +`, ""),
       });
     }
   };
 
   render() {
-    const { productInfo, addProductFlag } = this.props;
-    const {name,size} = this.state
+    const { productInfo, addProductFlag, onUpdateCartNumber } = this.props;
+    const { name, size } = this.state;
     return (
       <>
         <div
@@ -55,9 +54,14 @@ class AddToCart extends React.Component {
             productInfo={productInfo}
             onClick={this.handleSize}
             onChange={this.handlePrices}
-            
           />
-          <AddToCartFooter productInfo={productInfo} price={this.state.price} addProductFlag={addProductFlag}/>
+          <AddToCartFooter
+            closeModal={this.props.closeModal}
+            productInfo={productInfo}
+            price={this.state.price}
+            addProductFlag={addProductFlag}
+            onUpdateCartNumber={onUpdateCartNumber}
+          />
         </div>
       </>
     );

@@ -13,6 +13,8 @@ class Input extends React.Component {
           value={this.props.value}
           name={this.props.name}
           onClick={this.props.onClick}
+          onSubmit={this.props.onSubmit}
+          hidden={this.props.hidden}
         />
     );
   }

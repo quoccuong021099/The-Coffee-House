@@ -16,7 +16,8 @@ class ProductContainer extends React.Component {
   closeModal = () => this.setState({ addProductFlag: false, productInfo: null });
 
   render() {
-    let { category, searchProduct } = this.props;
+    
+    let { category, searchProduct,onUpdateCartNumber } = this.props;
     let { addProductFlag, productInfo } = this.state;
 
     const filteredProduct = category.ListProduct.filter((i) => {
@@ -45,6 +46,7 @@ class ProductContainer extends React.Component {
           closeModal={this.closeModal}
           productInfo={productInfo}
           addProductFlag={addProductFlag}
+          onUpdateCartNumber={onUpdateCartNumber}
         />
         : null
       }

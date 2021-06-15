@@ -22,6 +22,7 @@ class AddToCart extends React.Component {
   };
 
   render() {
+    const { onUpdateCartNumber, closeModal } = this.props;
     return (
       <>
         <div className="add-to-cart__footer">
@@ -37,9 +38,13 @@ class AddToCart extends React.Component {
           <div className="add-to-cart__submit">
             <Button
               className="add-to-cart__btn-submit"
-              type="button"
+              type="submit"
               value={`THÊM VÀO GIỎ ${this.props.price * this.state.amount}`}
-            ></Button>
+              onClick={onUpdateCartNumber}
+              onSubmit={closeModal}
+            >
+            </Button>
+             
           </div>
         </div>
       </>
