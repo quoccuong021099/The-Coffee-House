@@ -7,7 +7,7 @@ import PlaceholderProduct from "./placeholder/PlaceholderProduct";
 import Image from "./common/Image";
 import failData from "./image/search.png";
 import SearchProduct from "./SearchProduct";
-
+// import AddToCart from "./AddToCart";
 class Body extends React.Component {
   constructor(props) {
     super(props);
@@ -15,12 +15,13 @@ class Body extends React.Component {
       error: null,
       isLoaded: true,
       categories: [],
-      search: "",
-      active: 1,
+      searchProduct: "",
+      active: null,
+      // addProductFlag: false,
     };
   }
 
-  onchange = (e) => this.setState({ search: e.target.value });
+  onchange = (e) => this.setState({ searchProduct: e.target.value });
   merge = (categoryList, products) => {
     categoryList.map((category) => {
       let newData = [];
@@ -36,13 +37,13 @@ class Body extends React.Component {
     return categoryList;
   };
 
-
+  // addProduct = () => this.setState({ addProductFlag: true });
+  // closeModal = () => this.setState({ addProductFlag: false });
   activeCategory = (id) => {
     this.setState({
       active: id,
     });
   };
-
 
   componentDidMount() {
     fetch("https://api.thecoffeehouse.com/api/v2/menu")
@@ -57,6 +58,7 @@ class Body extends React.Component {
                 this.setState({
                   categories: newData,
                   isLoaded: false,
+                  active: newData[0].id,
                 });
               }
             })
@@ -77,7 +79,15 @@ class Body extends React.Component {
   }
 
   render() {
-    const { isLoaded, categories, error, search,active } = this.state;
+    const {
+      isLoaded,
+      categories,
+      error,
+      searchProduct,
+      active,
+      // addProductFlag,
+    } = this.state;
+    // console.log(addProductFlag);
     if (error) {
       return (
         <div className="failData">
@@ -91,8 +101,11 @@ class Body extends React.Component {
           {isLoaded ? (
             <PlaceholderSidebar />
           ) : (
-            <Sidebar categories={categories} active={active} 
-            activeCategory={this.activeCategory} />
+            <Sidebar
+              categories={categories}
+              active={active}
+              activeCategory={this.activeCategory}
+            />
           )}
           <div className="products">
             {isLoaded ? (
@@ -101,10 +114,10 @@ class Body extends React.Component {
               <div>
                 <SearchProduct onChange={this.onchange} />
                 <div className="all__product">
-                  <Main 
-                    products={categories} 
-                    search={search}  
-                    active={active} 
+                  <Main
+                    products={categories}
+                    searchProduct={searchProduct}
+                    active={active}
                     activeCategory={this.activeCategory}
                   />
                 </div>

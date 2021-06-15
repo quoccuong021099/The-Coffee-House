@@ -1,23 +1,15 @@
 import React from "react";
 import ProductContainer from "./ProductContainer";
-import SearchProduct from "./SearchProduct";
 import Image from "./common/Image";
-import search1 from "./image/search.png";
+import search1 from "./image/search.png"
 class Main extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      search: "",
-    };
-  }
-  onchange = (e) => this.setState({ search: e.target.value });
-
-  onScrollCate = () => {
-    let a = window.scrollY;
+  onScrollCategory = () => {
+    let windowScrollY = window.scrollY;
     let $ = document.getElementById.bind(document);
     let selector = document.querySelectorAll(".product");
     selector.forEach((i) =>
-      $(i.id).offsetTop <= a && a <= $(i.id).offsetTop + $(i.id).offsetHeight
+      $(i.id).offsetTop <= windowScrollY &&
+      windowScrollY <= $(i.id).offsetTop + $(i.id).offsetHeight
         ? this.changeActive(i.id)
         : null
     );
@@ -25,9 +17,8 @@ class Main extends React.Component {
 
   changeActive = (data) => {
     this.props.activeCategory(data);
-
-    let a = document.querySelectorAll(".active-category");
-    if (a.length > 0) {
+    let selectorActiveCategory = document.querySelectorAll(".active-category");
+    if (selectorActiveCategory.length > 0) {
       document
         .querySelector(".active-category")
         .classList.remove("active-category");
@@ -35,33 +26,54 @@ class Main extends React.Component {
     document.getElementById(`add${data}`).classList.add("active-category");
   };
 
+  componentDidMount() {
+    window.addEventListener("scroll", this.onScrollCategory);
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener("scroll", this.onScrollCategory);
+  }
+
   render() {
-    let { search } = this.props;
-    let { products } = this.props;
+    const { searchProduct, products } = this.props;
+    let dataProduct = [];
 
-    window.addEventListener("scroll", this.onScrollCate);
+    products.map((item) =>
+      item.ListProduct.length > 0 ? dataProduct.push(item.ListProduct) : null
+    );
 
-    return (
-      <>
-        {products.map((category) =>
-          category.ListProduct.length !== 0 ? (
-            <ProductContainer
-              id={category.id}
-              category={category}
-              key={category._id}
-              search={search}
-            />
-          ) : null
-        )}
+    let dataProductFilter = dataProduct.map((item) =>
+      item.filter((i) =>
+        i.product_name.toLowerCase().includes(searchProduct.toLowerCase())
+      )
+    );
+    let result = dataProductFilter.some((item) => item.length > 0);
+    if (!result) {
+      return (
         <div className="none_product">
           <Image src={search1} width="300" height="300" alt="no data" />
           <p>
             Rất tiếc chúng tôi không tìm <br /> thấy sản phẩm!
           </p>
         </div>
-        {/* </div> */}
-      </>
-    );
+      );
+    } else
+      return (
+        <>
+          {products.map((category) =>
+            category.ListProduct.length !== 0 ? (
+              <ProductContainer
+                id={category.id}
+                category={category}
+                key={category._id}
+                searchProduct={searchProduct}
+                dataProduct={dataProduct}
+                dataProductFilter={dataProductFilter}
+              />
+            ) : null
+          )}
+        </>
+      );
   }
 }
 

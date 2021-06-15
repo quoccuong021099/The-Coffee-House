@@ -1,6 +1,6 @@
 import React from "react";
 
-class AddButton extends React.Component {
+class SubtractButton extends React.Component {
   render() {
     return (
       <svg
@@ -8,9 +8,10 @@ class AddButton extends React.Component {
         height={this.props.height}
         viewBox="0 0 20 20"
         xmlns="http://www.w3.org/2000/svg"
-        onClick={this.props.onAddButton}
         style={{cursor:"pointer"}}
+        onClick={this.props.onSubtractButton}
       >
+        {" "}
         <circle
           fill="none"
           stroke="#ea8025"
@@ -18,15 +19,7 @@ class AddButton extends React.Component {
           cx="9.5"
           cy="9.5"
           r="9"
-        ></circle>
-        <line
-          fill="none"
-          stroke="#ea8025"
-          x1="9.5"
-          y1="5"
-          x2="9.5"
-          y2="14"
-        ></line>
+        ></circle>{" "}
         <line
           fill="none"
           stroke="#ea8025"
@@ -40,4 +33,4 @@ class AddButton extends React.Component {
   }
 }
 
-export default AddButton;
+export default SubtractButton;

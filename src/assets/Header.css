@@ -80,14 +80,14 @@ input:focus {
   background-color: #fff;
   box-shadow: 0px 0px 25px -4px rgba(0, 0, 0, 0.5);
   transition: all 0.1s;
-  visibility: hidden;
+  /* visibility: hidden; */
 
 }
 
-.input-address:focus ~ .dropdown-menu{
+/* .input-address:focus ~ .dropdown-menu{
 
   visibility: visible;
-}
+} */
 .dropdown-menu-title {
   font-size: 14px;
   font-weight: 600;
@@ -131,6 +131,6 @@ input:focus {
   align-items: center;
 }
 
-.display {
+.display-none {
   display: none !important;
 }

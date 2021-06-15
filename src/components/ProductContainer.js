@@ -1,36 +1,53 @@
 import React from "react";
 import ProductItem from "./ProductItem";
+import AddToCart from "./AddToCart";
 class ProductContainer extends React.Component {
- constructor(){
-   super()
-   this.state = {
-    // active: false,
-   }
- }
-  
-  
+  constructor(props) {
+    super(props);
+    this.state = {
+      addProductFlag: false,
+      productInfo: null,
+    };
+  }
+
+  addProduct = (data) =>
+    this.setState({ addProductFlag: true, productInfo: data });
+
+  closeModal = () => this.setState({ addProductFlag: false, productInfo: null });
+
   render() {
-    let { category, search } = this.props;
+    let { category, searchProduct } = this.props;
+    let { addProductFlag, productInfo } = this.state;
+
     const filteredProduct = category.ListProduct.filter((i) => {
-      return i.product_name.toLowerCase().indexOf(search.toLowerCase()) !== -1;
+      return i.product_name.toLowerCase().includes(searchProduct.toLowerCase());
     });
+
     
-
-
-
     if (filteredProduct.length === 0) return null;
-    
+
     return (
-      <ul className="product" id={`${category.id}`}
-      >
+      <ul className="product" id={`${category.id}`}>
         <span> {category.name} </span>
-        {filteredProduct.map((item) => (
+        {filteredProduct.map((filteredItem) => (
           <ProductItem
-            item={item}
-            key={item._id}
+            filteredItem={filteredItem}
+            key={filteredItem._id}
             filteredProduct={filteredProduct}
+            addProduct={this.addProduct}
+            addProductFlag={addProductFlag}
           />
-          ))}
+        ))}
+        {
+          productInfo !== null ?
+        <AddToCart
+          className={addProductFlag ? " " : "add-to-cart__display"}
+          closeModal={this.closeModal}
+          productInfo={productInfo}
+          addProductFlag={addProductFlag}
+        />
+        : null
+      }
       </ul>
     );
   }
