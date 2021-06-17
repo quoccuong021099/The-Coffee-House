@@ -1,21 +1,10 @@
 import React from "react";
 import Button from "./common/Button";
 class DropdownDelivery extends React.Component {
-  constructor() {
-    super();
-    this.state = {
-      timeOrder: false,
-    };
-  }
-  handleTimeOrder = () => {
-    this.setState({
-      timeOrder: !this.state.timeOrder,
-    });
-  };
   render() {
     return (
       <div className="dropdown-delivery">
-        <div className="ship-now">
+        <div className="ship-now" onClick={this.props.handleShipNow}>
           <div className="ship-now__left">
             <svg
               width="20"
@@ -59,7 +48,7 @@ class DropdownDelivery extends React.Component {
             </svg>
           </div>
         </div>
-        <div className="time-order" onClick={this.handleTimeOrder}>
+        <div className="time-order" onClick={this.props.handleTimeOrder}>
           <svg
             width="20"
             height="20"
@@ -73,23 +62,49 @@ class DropdownDelivery extends React.Component {
           </svg>
           <h3>Thời gian đặt hàng</h3>
         </div>
-        {this.state.timeOrder ? (
+        {this.props.timerFlag ? (
           <div className="time-order__description">
             <div className="select-group">
               <span>Ngày đặt</span> <br />
-              <select type="select" defaultValue="NGÀY 16-06">
-                <option value="NGÀY 16-06" >NGÀY 16-06</option>
-                <option value="NGÀY 17-06">NGÀY 17-06</option>
+              <select
+                id="select"
+                type="select"
+                value={this.props.valueDate}
+                onChange={this.props.getValueDate}
+              >
+                <option value={this.props.today}>Hôm Nay</option>
+                <option value={this.props.tommorow}>NGÀY {this.props.tommorow}</option>
+                <option value={this.props.nextTwoDays}>NGÀY {this.props.nextTwoDays}</option>
               </select>
             </div>
             <div className="select-group">
               <span>Thời gian đặt</span> <br />
-              <select type="select" defaultValue="07:30">
-                <option value="07:30" >07:30</option>
-                <option value="08:00">08:00</option>
+              <select
+                type="select"
+                value={this.props.valueTime}
+                onChange={this.props.getValueTime}
+              >
+                {console.log(this.props.valueDate)}
+                {this.props.valueDate === this.props.today
+                  ? this.props.optionValueTime.map((item, index) => (
+                      <option value={item} key={`time${index}`}>
+                        {item}
+                      </option>
+                    ))
+                  : this.props.optionValueTimeNotNow.map((item, index) => (
+                      <option value={item} key={`time${index}`}>
+                        {item}
+                      </option>
+                    ))}
               </select>
             </div>
-            <Button className="timer" type="submit" value="HẸN GIỜ"/>
+
+            <Button
+              className="timer"
+              type="submit"
+              value="HẸN GIỜ"
+              onClick={this.props.getValueTimer}
+            />
           </div>
         ) : null}
       </div>

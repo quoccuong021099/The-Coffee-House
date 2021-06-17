@@ -127,9 +127,9 @@ input:focus {
   align-items: center;
 }
 
-.display-none {
+/* .display-none {
   display: none !important;
-}
+} */
 
 .form-login {
   display: flex;
@@ -172,7 +172,9 @@ input:focus {
   align-items: center;
   border-bottom: 1px solid #e5e5e5;
   padding: 10px;
+  cursor: pointer;
 }
+
 .time-order{
   justify-content: flex-start;
   cursor: pointer;
@@ -185,12 +187,16 @@ input:focus {
 }
 .ship-now__left h3, .time-order h3 {
   margin-left: 10px;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 300;
-  color: #333;
+  color: #999;
 }
-
-
+.ship-now__left h3:hover{
+  color: #222;
+}
+.ship-now__left:hover svg circle,.ship-now__left:hover svg path,.ship-now__left:hover svg rect{
+  stroke: #222;
+}
 .time-order__description{
   padding: 10px;
 }

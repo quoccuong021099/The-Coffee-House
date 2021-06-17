@@ -19,7 +19,6 @@ class AddToCart extends React.Component {
     });
 
   handlePrices = (data) => {
-    console.log(data);
     let price = document.getElementById(data.code);
     if (price.checked) {
       this.setState({
@@ -29,7 +28,7 @@ class AddToCart extends React.Component {
     } else {
       this.setState({
         price: this.state.price - data.price,
-        name: this.state.name.replace(`${data.product_name} +`, ""),
+        name: this.state.name.replace(` ${data.product_name} +`, ""),
       });
     }
   };
@@ -40,7 +39,7 @@ class AddToCart extends React.Component {
     return (
       <>
         <div
-          className={`overlay ${this.props.className}`}
+          className={`overlay`}
           onClick={this.props.closeModal}
         ></div>
         <div className={`add-to-cart ${this.props.className}`}>

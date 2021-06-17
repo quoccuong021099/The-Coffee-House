@@ -35,13 +35,13 @@ class AddToCart extends React.Component {
             <span>{this.state.amount}</span>
             <AddButton width="36" height="36" onAddButton={this.onAddButton} />
           </div>
-          <div className="add-to-cart__submit">
+          <div className="add-to-cart__submit" onClick={closeModal}>
             <Button
               className="add-to-cart__btn-submit"
               type="submit"
               value={`THÊM VÀO GIỎ ${this.props.price * this.state.amount}`}
               onClick={onUpdateCartNumber}
-              onSubmit={closeModal}
+              
             >
             </Button>
              
