@@ -13,21 +13,20 @@ class ProductContainer extends React.Component {
   addProduct = (data) =>
     this.setState({ addProductFlag: true, productInfo: data });
 
-  closeModal = () =>{
+  closeModal = () => {
     this.setState({
-      addProductFlag: false
+      addProductFlag: false,
     });
-    setTimeout(()=>{
+    setTimeout(() => {
       this.setState({
-        productInfo: null
-      })
-    }, 300
-    );
-    }
+        productInfo: null,
+      });
+    }, 300);
+  };
   render() {
-    let { category, searchProduct, onUpdateCartNumber,changeDeliveryCharge } = this.props;
+    let { category, searchProduct, onUpdateCartNumber, changeDeliveryCharge } =
+      this.props;
     let { addProductFlag, productInfo } = this.state;
-
     const filteredProduct = category.ListProduct.filter((i) => {
       return i.product_name.toLowerCase().includes(searchProduct.toLowerCase());
     });

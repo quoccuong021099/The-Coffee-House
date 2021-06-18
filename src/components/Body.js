@@ -76,16 +76,13 @@ class Body extends React.Component {
   }
 
   render() {
-    
+    const { isLoaded, categories, error, searchProduct, active } = this.state;
     const {
-      isLoaded,
-      categories,
-      error,
-      searchProduct,
-      active,
-      
-    } = this.state;
-    const {onUpdateCartNumber,deliveryCharge,changeDeliveryCharge,productInfoForCart} = this.props
+      onUpdateCartNumber,
+      deliveryCharge,
+      changeDeliveryCharge,
+      productInfoForCart,
+    } = this.props;
     if (error) {
       return (
         <div className="failData">
@@ -119,13 +116,15 @@ class Body extends React.Component {
                     activeCategory={this.activeCategory}
                     onUpdateCartNumber={onUpdateCartNumber}
                     changeDeliveryCharge={changeDeliveryCharge}
-                    
                   />
                 </div>
               </div>
             )}
           </div>
-          <CartContainer deliveryCharge={deliveryCharge} productInfoForCart={productInfoForCart}/>
+          <CartContainer
+            deliveryCharge={deliveryCharge}
+            productInfoForCart={productInfoForCart}
+          />
         </section>
       );
     }

@@ -5,8 +5,9 @@ import Currency from './common/Currency'
 class CartContainer extends React.Component {
 
   render() {
-    const {deliveryCharge,productInfoForCart} = this.props
-    console.log(productInfoForCart);
+    const {deliveryCharge} = this.props
+    // productInfoForCart
+    // console.log(productInfoForCart);
     return (
       <div className="cart">
         <div className="cart-fixed">

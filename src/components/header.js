@@ -182,16 +182,15 @@ class Header extends React.Component {
     let hours = today.getHours();
     let arrValueTime = [];
     for (let i = hours; i < 21; i++) {
-      if(i < hours + 3){
-      for (let j = 0; j <= 45; j += 15) {
-        if (j === 0) {
-          arrValueTime.push(`${i}:00`);
-        } else {
-          arrValueTime.push(`${i}:${j}`);
+      if (i < hours + 3) {
+        for (let j = 0; j <= 45; j += 15) {
+          if (j === 0) {
+            arrValueTime.push(`${i}:00`);
+          } else {
+            arrValueTime.push(`${i}:${j}`);
+          }
         }
-      }
-    }
-      else{
+      } else {
         for (let j = 0; j <= 30; j += 30) {
           if (j === 0) {
             arrValueTime.push(`${i}:00`);
@@ -202,17 +201,28 @@ class Header extends React.Component {
       }
     }
 
+    let arrValueTimeNotNow = [];
+    for (let i = 7; i < 21; i++) {
+      for (let j = 0; j <= 30; j += 30) {
+        if (j === 0) {
+          arrValueTimeNotNow.push(`${i}:00`);
+        } else {
+          arrValueTimeNotNow.push(`${i}:${j}`);
+        }
+      }
+    }
+
     if (minutes < 15) {
       arrValueTime.splice(0, 4);
     } else if (minutes < 30) {
       arrValueTime.splice(0, 2);
     } else if (minutes <= 45) {
       arrValueTime.splice(0, 4);
-    } else if(minutes > 45 && minutes < 60) arrValueTime.splice(0, 7);
+    } else if (minutes > 45 && minutes < 60) arrValueTime.splice(0, 7);
     arrValueTime.pop();
     this.setState({
       optionValueTime: ["TRONG 15-30 PHÚT", ...arrValueTime],
-      optionValueTimeNotNow: arrValueTime,
+      optionValueTimeNotNow: arrValueTimeNotNow,
     });
   }
   componentWillUnmount() {
@@ -234,7 +244,7 @@ class Header extends React.Component {
       tommorow,
       nextTwoDays,
     } = this.state;
-    const { cartNumber,changeDeliveryCharge } = this.props;
+    const { cartNumber, changeDeliveryCharge } = this.props;
     return (
       <header className="header">
         <Logo />

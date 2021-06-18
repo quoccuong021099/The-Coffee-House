@@ -1,7 +1,7 @@
 import React from "react";
 import ProductContainer from "./ProductContainer";
 import Image from "./common/Image";
-import search1 from "./image/search.png"
+import search1 from "./image/search.png";
 class Main extends React.Component {
   onScrollCategory = () => {
     let windowScrollY = window.scrollY;
@@ -16,7 +16,6 @@ class Main extends React.Component {
   };
 
   changeActive = (data) => {
-    this.props.activeCategory(data);
     let selectorActiveCategory = document.querySelectorAll(".active-category");
     if (selectorActiveCategory.length > 0) {
       document
@@ -35,8 +34,12 @@ class Main extends React.Component {
   }
 
   render() {
-    
-    const { searchProduct, products, onUpdateCartNumber,changeDeliveryCharge } = this.props;
+    const {
+      searchProduct,
+      products,
+      onUpdateCartNumber,
+      changeDeliveryCharge,
+    } = this.props;
     let dataProduct = [];
 
     products.map((item) =>
@@ -72,7 +75,6 @@ class Main extends React.Component {
                 dataProductFilter={dataProductFilter}
                 onUpdateCartNumber={onUpdateCartNumber}
                 changeDeliveryCharge={changeDeliveryCharge}
-                
               />
             ) : null
           )}
