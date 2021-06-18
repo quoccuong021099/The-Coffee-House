@@ -25,7 +25,7 @@ class ProductContainer extends React.Component {
     );
     }
   render() {
-    let { category, searchProduct, onUpdateCartNumber } = this.props;
+    let { category, searchProduct, onUpdateCartNumber,changeDeliveryCharge } = this.props;
     let { addProductFlag, productInfo } = this.state;
 
     const filteredProduct = category.ListProduct.filter((i) => {
@@ -54,6 +54,7 @@ class ProductContainer extends React.Component {
             productInfo={productInfo}
             addProductFlag={addProductFlag}
             onUpdateCartNumber={onUpdateCartNumber}
+            changeDeliveryCharge={changeDeliveryCharge}
           />
         ) : null}
       </>

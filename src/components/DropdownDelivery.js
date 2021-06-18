@@ -84,7 +84,7 @@ class DropdownDelivery extends React.Component {
                 value={this.props.valueTime}
                 onChange={this.props.getValueTime}
               >
-                {console.log(this.props.valueDate)}
+                {/* {console.log(this.props.valueDate)} */}
                 {this.props.valueDate === this.props.today
                   ? this.props.optionValueTime.map((item, index) => (
                       <option value={item} key={`time${index}`}>
@@ -98,13 +98,15 @@ class DropdownDelivery extends React.Component {
                     ))}
               </select>
             </div>
-
+                    <div onClick={this.props.changeDeliveryCharge}>
             <Button
               className="timer"
               type="submit"
               value="HẸN GIỜ"
               onClick={this.props.getValueTimer}
+              
             />
+            </div>
           </div>
         ) : null}
       </div>

@@ -34,7 +34,7 @@ class AddToCart extends React.Component {
   };
 
   render() {
-    const { productInfo, addProductFlag, onUpdateCartNumber } = this.props;
+    const { productInfo, addProductFlag, onUpdateCartNumber,changeDeliveryCharge } = this.props;
     const { name, size } = this.state;
     return (
       <>
@@ -60,6 +60,9 @@ class AddToCart extends React.Component {
             price={this.state.price}
             addProductFlag={addProductFlag}
             onUpdateCartNumber={onUpdateCartNumber}
+            changeDeliveryCharge={changeDeliveryCharge}
+            size={size}
+            name={name}
           />
         </div>
       </>

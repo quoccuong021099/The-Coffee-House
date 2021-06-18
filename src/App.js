@@ -12,24 +12,49 @@ import Header from "./components/Header";
 import Body from "./components/Body";
 import Footer from "./components/Footer";
 class App extends React.Component {
-  constructor(){
-    super()
-    this.state={
-      cartNumber: 0
-    }
+  constructor() {
+    super();
+    this.state = {
+      cartNumber: 0,
+      // amount: 0,
+      // totalPrice: 0,
+      // size: '',
+      // name: '',
+      // productNameInCart: '',
+      productInfoForCart: [],
+      deliveryCharge: false,
+    };
   }
 
-  onUpdateCartNumber = () => {
+  onUpdateCartNumber = (amount,totalPrice,size,name,productNameInCart) => {
+    // console.log(amount,totalPrice,size,name,productNameInCart);
+    let productInfo = [amount,totalPrice,size,name,productNameInCart]
+    console.log(productInfo);
     this.setState({
-      cartNumber: this.state.cartNumber + 1
-    })
-  }
+      cartNumber: this.state.cartNumber + amount, 
+      productInfoForCart: productInfo
+    });
+  };
+
+  changeDeliveryCharge = () => {
+    this.setState({
+      deliveryCharge: true,
+    });
+  };
   render() {
-    const {cartNumber} = this.state
+    const { cartNumber,deliveryCharge,productInfoForCart} = this.state;
     return (
       <div className="App">
-        <Header cartNumber = {cartNumber}/>
-        <Body onUpdateCartNumber={this.onUpdateCartNumber}/>
+        <Header
+          cartNumber={cartNumber}
+          changeDeliveryCharge={this.changeDeliveryCharge}
+        />
+        <Body
+          onUpdateCartNumber={this.onUpdateCartNumber}
+          changeDeliveryCharge={this.changeDeliveryCharge}
+          deliveryCharge={deliveryCharge}
+          productInfoForCart={productInfoForCart}
+        />
         <Footer />
       </div>
     );

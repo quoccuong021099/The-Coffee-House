@@ -17,7 +17,6 @@ class Body extends React.Component {
       categories: [],
       searchProduct: "",
       active: null,
-      // addProductFlag: false,
     };
   }
 
@@ -37,8 +36,6 @@ class Body extends React.Component {
     return categoryList;
   };
 
-  // addProduct = () => this.setState({ addProductFlag: true });
-  // closeModal = () => this.setState({ addProductFlag: false });
   activeCategory = (id) => {
     this.setState({
       active: id,
@@ -86,8 +83,9 @@ class Body extends React.Component {
       error,
       searchProduct,
       active,
+      
     } = this.state;
-    const {onUpdateCartNumber} = this.props
+    const {onUpdateCartNumber,deliveryCharge,changeDeliveryCharge,productInfoForCart} = this.props
     if (error) {
       return (
         <div className="failData">
@@ -120,12 +118,14 @@ class Body extends React.Component {
                     active={active}
                     activeCategory={this.activeCategory}
                     onUpdateCartNumber={onUpdateCartNumber}
+                    changeDeliveryCharge={changeDeliveryCharge}
+                    
                   />
                 </div>
               </div>
             )}
           </div>
-          <CartContainer />
+          <CartContainer deliveryCharge={deliveryCharge} productInfoForCart={productInfoForCart}/>
         </section>
       );
     }

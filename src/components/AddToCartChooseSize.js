@@ -20,7 +20,7 @@ class ChooseSize extends React.Component {
                 onClick={() => onClick(item.val,item.price)}
                 value={`${item.val} (+${
                   item.price - productInfo.variants[0].price
-                })`}
+                } ₫)`}
               />
             ))}
           </div>

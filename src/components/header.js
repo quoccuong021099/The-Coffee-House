@@ -19,34 +19,6 @@ class Logo extends React.Component {
 
 class Header extends React.Component {
   constructor(props) {
-    let day = new Date();
-    let nextDay = new Date(day);
-    let twoMoreDate = new Date(day);
-    nextDay.setDate(day.getDate() + 1);
-    twoMoreDate.setDate(day.getDate() + 2);
-    let month, month1, month2, date, date1, date2;
-    if (day.getMonth() < 10) {
-      month = `0${day.getMonth() + 1}`;
-    } else month = day.getMonth();
-    if (day.getDate() < 10) {
-      date = `0${day.getDate() + 1}`;
-    } else date = day.getDate();
-    if (nextDay.getMonth() < 10) {
-      month1 = `0${nextDay.getMonth() + 1}`;
-    } else month1 = nextDay.getMonth();
-    if (nextDay.getDate() < 10) {
-      date1 = `0${nextDay.getDate() + 1}`;
-    } else date1 = nextDay.getDate();
-    if (twoMoreDate.getMonth() < 10) {
-      month2 = `0${twoMoreDate.getMonth() + 1}`;
-    } else month2 = twoMoreDate.getDate();
-    if (twoMoreDate.getDate() < 10) {
-      date2 = `0${twoMoreDate.getDate() + 1}`;
-    } else date2 = twoMoreDate.getDate();
-    // console.log(month);
-    let today = `${date}/${month}/${day.getFullYear()}`;
-    let tommorow = `${date1}/${month1}/${nextDay.getFullYear()}`;
-    let nextTwoDays = `${date2}/${month2}/${twoMoreDate.getFullYear()}`;
     super(props);
     this.container = React.createRef();
     this.state = {
@@ -55,17 +27,31 @@ class Header extends React.Component {
       dropdown: false,
       delivery: false,
       valueTime: "TRONG 15-30 PHÚT",
-      valueDate: today,
+      valueDate: null,
       valueTimerOnButton: "",
       timerFlag: false,
-      optionValueTime: ["TRONG 15-30 PHÚT", "07:00", "07:30"],
-      optionValueTimeNotNow: ["07:00", "07:30"],
+      optionValueTime: [],
+      optionValueTimeNotNow: [],
       notNow: false,
-      today: today,
-      tommorow: tommorow,
-      nextTwoDays: nextTwoDays,
+      today: null,
+      tommorow: null,
+      nextTwoDays: null,
     };
   }
+
+  getDayFunc = () => {
+    let today = new Date();
+    let nextDay = new Date(today);
+    nextDay.setDate(today.getDate() + 1);
+    let twoMoreDate = new Date(today);
+    twoMoreDate.setDate(today.getDate() + 2);
+    let arrDate = [];
+    arrDate.push(today);
+    arrDate.push(nextDay);
+    arrDate.push(twoMoreDate);
+    return arrDate;
+  };
+
   handleDelivery = () => {
     this.setState({
       // delivery: !this.state.delivery,
@@ -145,14 +131,9 @@ class Header extends React.Component {
     });
   };
 
-  getOclock = () => {
-    let arr = [];
-    for (let i = 7; i < 21; i++) {
-      arr.push(`${i}:30`);
-    }
+  // getOclock = () => {
 
-    return arr;
-  };
+  // };
 
   API = (e) => {
     fetch(
@@ -185,6 +166,54 @@ class Header extends React.Component {
   };
   componentDidMount() {
     document.addEventListener("mousedown", this.handleClickOutside);
+    let arrDate = this.getDayFunc();
+    this.setState({
+      today: arrDate[0].toLocaleDateString("en-GB"),
+      tommorow: arrDate[1].toLocaleDateString("en-GB"),
+      nextTwoDays: arrDate[2].toLocaleDateString("en-GB"),
+      valueDate: arrDate[0].toLocaleDateString("en-GB"),
+    });
+
+    let today = new Date();
+    today.setMinutes(today.getMinutes());
+    let minutes = today.getMinutes();
+    today.setHours(today.getHours());
+    today.toLocaleString();
+    let hours = today.getHours();
+    let arrValueTime = [];
+    for (let i = hours; i < 21; i++) {
+      if(i < hours + 3){
+      for (let j = 0; j <= 45; j += 15) {
+        if (j === 0) {
+          arrValueTime.push(`${i}:00`);
+        } else {
+          arrValueTime.push(`${i}:${j}`);
+        }
+      }
+    }
+      else{
+        for (let j = 0; j <= 30; j += 30) {
+          if (j === 0) {
+            arrValueTime.push(`${i}:00`);
+          } else {
+            arrValueTime.push(`${i}:${j}`);
+          }
+        }
+      }
+    }
+
+    if (minutes < 15) {
+      arrValueTime.splice(0, 4);
+    } else if (minutes < 30) {
+      arrValueTime.splice(0, 2);
+    } else if (minutes <= 45) {
+      arrValueTime.splice(0, 4);
+    } else if(minutes > 45 && minutes < 60) arrValueTime.splice(0, 7);
+    arrValueTime.pop();
+    this.setState({
+      optionValueTime: ["TRONG 15-30 PHÚT", ...arrValueTime],
+      optionValueTimeNotNow: arrValueTime,
+    });
   }
   componentWillUnmount() {
     document.removeEventListener("mousedown", this.handleClickOutside);
@@ -205,7 +234,7 @@ class Header extends React.Component {
       tommorow,
       nextTwoDays,
     } = this.state;
-    const { cartNumber } = this.props;
+    const { cartNumber,changeDeliveryCharge } = this.props;
     return (
       <header className="header">
         <Logo />
@@ -278,7 +307,7 @@ class Header extends React.Component {
               today={today}
               tommorow={tommorow}
               nextTwoDays={nextTwoDays}
-              getOclock={this.getOclock()}
+              changeDeliveryCharge={changeDeliveryCharge}
             />
           ) : null}
         </div>

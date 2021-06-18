@@ -22,7 +22,8 @@ class AddToCart extends React.Component {
   };
 
   render() {
-    const { onUpdateCartNumber, closeModal } = this.props;
+    const { onUpdateCartNumber, closeModal, changeDeliveryCharge,size,name,productInfo } = this.props;
+    // console.log(productInfo.product_name);
     return (
       <>
         <div className="add-to-cart__footer">
@@ -35,16 +36,18 @@ class AddToCart extends React.Component {
             <span>{this.state.amount}</span>
             <AddButton width="36" height="36" onAddButton={this.onAddButton} />
           </div>
+          <div onClick={changeDeliveryCharge}>
           <div className="add-to-cart__submit" onClick={closeModal}>
             <Button
               className="add-to-cart__btn-submit"
               type="submit"
-              value={`THÊM VÀO GIỎ ${this.props.price * this.state.amount}`}
-              onClick={onUpdateCartNumber}
+              value={`THÊM VÀO GIỎ ${this.props.price * this.state.amount} ₫`}
+              onClick={() =>onUpdateCartNumber(this.state.amount,this.props.price * this.state.amount,size,name,productInfo.product_name)}
               
             >
             </Button>
              
+          </div>
           </div>
         </div>
       </>

@@ -4,7 +4,7 @@ class Currency extends React.Component {
  
   render() {
     return (
-      <span className={`currency ${this.props.className}`} >{`${this.props.value}`}</span>
+      <span className={`currency ${this.props.className}`} >{`${this.props.value} ₫`}</span>
     );
   }
 }
