@@ -10,8 +10,8 @@ class InputGroup extends React.Component {
             type={this.props.type} 
             name={this.props.name} 
             id={this.props.id} 
-            onClick={this.props.onClick}
-            onChange={this.props.onChange}
+            onClick={this.props.handleSize}
+            onChange={this.props.handlePrices}
           />
           <label htmlFor={this.props.htmlFor}></label>
           <label htmlFor={this.props.htmlFor} >{this.props.value}</label>

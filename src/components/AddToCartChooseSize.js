@@ -2,7 +2,7 @@ import React from "react";
 import InputGroup from "./common/InputGroup";
 class ChooseSize extends React.Component {
   render() {
-    const { productInfo, onClick } = this.props;
+    const { productInfo, handleSize } = this.props;
     return (
       <>
         <div className="add-to-cart__size">
@@ -17,7 +17,7 @@ class ChooseSize extends React.Component {
                 key={item.code}
                 name="radio"
                 id={`radio${item.code}`}
-                onClick={() => onClick(item.val,item.price)}
+                handleSize={() => handleSize(item.val,item.price)}
                 value={`${item.val} (+${
                   item.price - productInfo.variants[0].price
                 } ₫)`}

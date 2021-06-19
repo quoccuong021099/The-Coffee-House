@@ -1,7 +1,7 @@
 import React from "react";
 import ProductContainer from "./ProductContainer";
 import Image from "./common/Image";
-import search1 from "./image/search.png";
+import searchNotFound from "./image/search.png";
 class Main extends React.Component {
   onScrollCategory = () => {
     let windowScrollY = window.scrollY;
@@ -40,6 +40,7 @@ class Main extends React.Component {
       onUpdateCartNumber,
       changeDeliveryCharge,
     } = this.props;
+
     let dataProduct = [];
 
     products.map((item) =>
@@ -55,7 +56,7 @@ class Main extends React.Component {
     if (!result) {
       return (
         <div className="none_product">
-          <Image src={search1} width="300" height="300" alt="no data" />
+          <Image src={searchNotFound} width="300" height="300" alt="no data" />
           <p>
             Rất tiếc chúng tôi không tìm <br /> thấy sản phẩm!
           </p>
@@ -71,8 +72,6 @@ class Main extends React.Component {
                 category={category}
                 key={category._id}
                 searchProduct={searchProduct}
-                dataProduct={dataProduct}
-                dataProductFilter={dataProductFilter}
                 onUpdateCartNumber={onUpdateCartNumber}
                 changeDeliveryCharge={changeDeliveryCharge}
               />

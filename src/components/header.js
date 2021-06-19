@@ -36,6 +36,8 @@ class Header extends React.Component {
       today: null,
       tommorow: null,
       nextTwoDays: null,
+      hours:null,
+      minutes: null
     };
   }
 
@@ -220,9 +222,17 @@ class Header extends React.Component {
       arrValueTime.splice(0, 4);
     } else if (minutes > 45 && minutes < 60) arrValueTime.splice(0, 7);
     arrValueTime.pop();
+    // if(hours >= 21){
+    //   this.setState({
+    //     optionValueTime: arrValueTimeNotNow,
+    //     optionValueTimeNotNow: arrValueTimeNotNow,
+    //   });
+    // }
     this.setState({
       optionValueTime: ["TRONG 15-30 PHÚT", ...arrValueTime],
       optionValueTimeNotNow: arrValueTimeNotNow,
+      minutes: minutes,
+      hours: hours
     });
   }
   componentWillUnmount() {
@@ -243,8 +253,11 @@ class Header extends React.Component {
       today,
       tommorow,
       nextTwoDays,
+      minutes,
+      hours
     } = this.state;
     const { cartNumber, changeDeliveryCharge } = this.props;
+    // console.log(minutes,hours);
     return (
       <header className="header">
         <Logo />
@@ -318,6 +331,8 @@ class Header extends React.Component {
               tommorow={tommorow}
               nextTwoDays={nextTwoDays}
               changeDeliveryCharge={changeDeliveryCharge}
+              minutes= {minutes}
+              hours={ hours}
             />
           ) : null}
         </div>

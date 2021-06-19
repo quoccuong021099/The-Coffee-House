@@ -40,9 +40,7 @@ class ProductContainer extends React.Component {
             <ProductItem
               filteredItem={filteredItem}
               key={filteredItem._id}
-              filteredProduct={filteredProduct}
               addProduct={this.addProduct}
-              addProductFlag={addProductFlag}
             />
           ))}
         </ul>

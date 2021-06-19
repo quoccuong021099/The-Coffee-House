@@ -51,8 +51,8 @@ class AddToCart extends React.Component {
           />
           <AddToCartBody
             productInfo={productInfo}
-            onClick={this.handleSize}
-            onChange={this.handlePrices}
+            handleSize={this.handleSize}
+            handlePrices={this.handlePrices}
           />
           <AddToCartFooter
             closeModal={this.props.closeModal}

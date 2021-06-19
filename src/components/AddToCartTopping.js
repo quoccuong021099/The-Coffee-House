@@ -2,7 +2,7 @@ import React from "react";
 import InputGroup from "./common/InputGroup";
 class AddToCartBody extends React.Component {
   render() {
-    const { productInfo,onchange } = this.props;
+    const { productInfo,handlePrices } = this.props;
     // console.log(productInfo.topping_list);
     return (
       <>
@@ -17,7 +17,7 @@ class AddToCartBody extends React.Component {
               value={`${item.product_name} (+${
                 item.price
               }₫)`}
-              onChange={()=>onchange(item)}
+              handlePrices={()=>handlePrices(item)}
             />
           ))}
         </div>

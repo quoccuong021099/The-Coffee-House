@@ -29,7 +29,6 @@ class App extends React.Component {
   onUpdateCartNumber = (amount,totalPrice,size,name,productNameInCart) => {
     // console.log(amount,totalPrice,size,name,productNameInCart);
     let productInfo = [amount,totalPrice,size,name,productNameInCart]
-    console.log(productInfo);
     this.setState({
       cartNumber: this.state.cartNumber + amount, 
       productInfoForCart: productInfo

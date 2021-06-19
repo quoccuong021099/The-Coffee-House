@@ -2,6 +2,7 @@ import React from "react";
 import Button from "./common/Button";
 class DropdownDelivery extends React.Component {
   render() {
+    console.log(this.props.minutes);
     return (
       <div className="dropdown-delivery">
         <div className="ship-now" onClick={this.props.handleShipNow}>
@@ -73,8 +74,12 @@ class DropdownDelivery extends React.Component {
                 onChange={this.props.getValueDate}
               >
                 <option value={this.props.today}>Hôm Nay</option>
-                <option value={this.props.tommorow}>NGÀY {this.props.tommorow}</option>
-                <option value={this.props.nextTwoDays}>NGÀY {this.props.nextTwoDays}</option>
+                <option value={this.props.tommorow}>
+                  NGÀY {this.props.tommorow}
+                </option>
+                <option value={this.props.nextTwoDays}>
+                  NGÀY {this.props.nextTwoDays}
+                </option>
               </select>
             </div>
             <div className="select-group">
@@ -98,14 +103,13 @@ class DropdownDelivery extends React.Component {
                     ))}
               </select>
             </div>
-                    <div onClick={this.props.changeDeliveryCharge}>
-            <Button
-              className="timer"
-              type="submit"
-              value="HẸN GIỜ"
-              onClick={this.props.getValueTimer}
-              
-            />
+            <div onClick={this.props.changeDeliveryCharge}>
+              <Button
+                className="timer"
+                type="submit"
+                value="HẸN GIỜ"
+                onClick={this.props.getValueTimer}
+              />
             </div>
           </div>
         ) : null}
