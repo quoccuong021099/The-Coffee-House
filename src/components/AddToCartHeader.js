@@ -1,6 +1,6 @@
 import React from "react";
-import Image from "./common/Image";
-import CloseButton from "./common/CloseButton";
+import Image from "../common/Image";
+import CloseButton from "../common/CloseButton";
 class AddToCartHeader extends React.Component {
   render() {
     const { productInfo,size,name } = this.props;

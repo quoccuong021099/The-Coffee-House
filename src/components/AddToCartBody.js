@@ -4,7 +4,7 @@ import AddToCartTopping from "./AddToCartTopping";
 import AddToCartNote from "./AddToCartNote";
 class AddToCartBody extends React.Component {
   render() {
-    const { productInfo, handleSize, handlePrices } = this.props;
+    const { productInfo, handleSize, handlePrices,getValueNoteProduct } = this.props;
     return (
       <>
         <div className="add-to-cart__body">
@@ -12,7 +12,7 @@ class AddToCartBody extends React.Component {
           {productInfo.topping_list.length > 0 ? (
             <AddToCartTopping productInfo={productInfo} handlePrices={handlePrices} />
           ) : null}
-          <AddToCartNote />
+          <AddToCartNote getValueNoteProduct={getValueNoteProduct}/>
         </div>
       </>
     );

@@ -1,7 +1,7 @@
 import React from "react";
 import ProductContainer from "./ProductContainer";
-import Image from "./common/Image";
-import searchNotFound from "./image/search.png";
+import Image from "../common/Image";
+import searchNotFound from "../image/search.png";
 class Main extends React.Component {
   onScrollCategory = () => {
     let windowScrollY = window.scrollY;

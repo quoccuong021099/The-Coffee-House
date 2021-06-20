@@ -1,5 +1,5 @@
 import React from "react";
-import InputGroup from "./common/InputGroup";
+import InputGroup from "../common/InputGroup";
 class AddToCartBody extends React.Component {
   render() {
     const { productInfo,handlePrices } = this.props;

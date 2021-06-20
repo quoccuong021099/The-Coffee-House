@@ -1,8 +1,7 @@
 import React from "react";
-import Button from "./common/Button";
+import Button from "../common/Button";
 class DropdownDelivery extends React.Component {
   render() {
-    console.log(this.props.minutes);
     return (
       <div className="dropdown-delivery">
         <div className="ship-now" onClick={this.props.handleShipNow}>

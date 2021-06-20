@@ -24,8 +24,12 @@ class ProductContainer extends React.Component {
     }, 300);
   };
   render() {
-    let { category, searchProduct, onUpdateCartNumber, changeDeliveryCharge } =
-      this.props;
+    const {
+      category,
+      searchProduct,
+      onUpdateCartNumber,
+      changeDeliveryCharge,
+    } = this.props;
     let { addProductFlag, productInfo } = this.state;
     const filteredProduct = category.ListProduct.filter((i) => {
       return i.product_name.toLowerCase().includes(searchProduct.toLowerCase());

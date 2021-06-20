@@ -26,9 +26,9 @@ class App extends React.Component {
     };
   }
 
-  onUpdateCartNumber = (amount,totalPrice,size,name,productNameInCart) => {
+  onUpdateCartNumber = (amount,totalPrice,size,name,productNameInCart,valueNoteProduct) => {
     // console.log(amount,totalPrice,size,name,productNameInCart);
-    let productInfo = [amount,totalPrice,size,name,productNameInCart]
+    let productInfo = [amount,totalPrice,size,name,productNameInCart,valueNoteProduct]
     this.setState({
       cartNumber: this.state.cartNumber + amount, 
       productInfoForCart: productInfo
@@ -40,6 +40,7 @@ class App extends React.Component {
       deliveryCharge: true,
     });
   };
+ 
   render() {
     const { cartNumber,deliveryCharge,productInfoForCart} = this.state;
     return (

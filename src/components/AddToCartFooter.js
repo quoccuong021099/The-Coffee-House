@@ -1,7 +1,7 @@
 import React from "react";
-import Button from "./common/Button";
-import SubtractButton from "./common/SubtractButton";
-import AddButton from "./common/AddButton";
+import Button from "../common/Button";
+import SubtractButton from "../common/SubtractButton";
+import AddButton from "../common/AddButton";
 class AddToCart extends React.Component {
   constructor() {
     super();
@@ -29,6 +29,7 @@ class AddToCart extends React.Component {
       size,
       name,
       productInfo,
+      valueNoteProduct
     } = this.props;
     // console.log(productInfo.product_name);
     return (
@@ -55,7 +56,8 @@ class AddToCart extends React.Component {
                     this.props.price * this.state.amount,
                     size,
                     name,
-                    productInfo.product_name
+                    productInfo.product_name,
+                    valueNoteProduct
                   )
                 }
               ></Button>

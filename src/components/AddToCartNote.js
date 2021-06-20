@@ -1,6 +1,6 @@
 import React from "react";
-import Input from "./common/Input";
-import NoteIcon from "./common/NoteIcon";
+import Input from "../common/Input";
+import NoteIcon from "../common/NoteIcon";
 class AddToCartBody extends React.Component {
   render() {
     return (
@@ -9,7 +9,7 @@ class AddToCartBody extends React.Component {
           <span className="add-to-cart__note-icon">
             <NoteIcon />
           </span>
-          <Input type="text" placeholder="Thêm ghi chú món này" />
+          <Input type="text" placeholder="Thêm ghi chú món này" onChange={this.props.getValueNoteProduct}/>
         </div>
       </>
     );

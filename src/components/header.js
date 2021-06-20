@@ -1,11 +1,11 @@
 import React from "react";
-import Button from "./common/Button";
-import Input from "./common/Input";
+import Button from "../common/Button";
+import Input from "../common/Input";
 import DropdownItem from "./DropdownItem";
-import logo from "./image/logo.png";
-import Image from "./common/Image";
-import locationImg from "./image/location.png";
-import CartIcon from "./common/CartIcon";
+import logo from "../image/logo.png";
+import Image from "../common/Image";
+import locationImg from "../image/location.png";
+import CartIcon from "../common/CartIcon";
 import DropdownDelivery from "./DropdownDelivery";
 class Logo extends React.Component {
   render() {
@@ -36,8 +36,8 @@ class Header extends React.Component {
       today: null,
       tommorow: null,
       nextTwoDays: null,
-      hours:null,
-      minutes: null
+      hours: null,
+      minutes: null,
     };
   }
 
@@ -56,7 +56,6 @@ class Header extends React.Component {
 
   handleDelivery = () => {
     this.setState({
-      // delivery: !this.state.delivery,
       delivery: true,
     });
   };
@@ -104,7 +103,6 @@ class Header extends React.Component {
     });
   };
   getValueTime = (e) => {
-    // console.log(e.target.value);
     this.setState({
       valueTime: e.target.value,
     });
@@ -132,10 +130,6 @@ class Header extends React.Component {
       dropdown: true,
     });
   };
-
-  // getOclock = () => {
-
-  // };
 
   API = (e) => {
     fetch(
@@ -169,6 +163,7 @@ class Header extends React.Component {
   componentDidMount() {
     document.addEventListener("mousedown", this.handleClickOutside);
     let arrDate = this.getDayFunc();
+
     this.setState({
       today: arrDate[0].toLocaleDateString("en-GB"),
       tommorow: arrDate[1].toLocaleDateString("en-GB"),
@@ -222,17 +217,11 @@ class Header extends React.Component {
       arrValueTime.splice(0, 4);
     } else if (minutes > 45 && minutes < 60) arrValueTime.splice(0, 7);
     arrValueTime.pop();
-    // if(hours >= 21){
-    //   this.setState({
-    //     optionValueTime: arrValueTimeNotNow,
-    //     optionValueTimeNotNow: arrValueTimeNotNow,
-    //   });
-    // }
     this.setState({
       optionValueTime: ["TRONG 15-30 PHÚT", ...arrValueTime],
       optionValueTimeNotNow: arrValueTimeNotNow,
       minutes: minutes,
-      hours: hours
+      hours: hours,
     });
   }
   componentWillUnmount() {
@@ -254,10 +243,9 @@ class Header extends React.Component {
       tommorow,
       nextTwoDays,
       minutes,
-      hours
+      hours,
     } = this.state;
     const { cartNumber, changeDeliveryCharge } = this.props;
-    // console.log(minutes,hours);
     return (
       <header className="header">
         <Logo />
@@ -331,8 +319,8 @@ class Header extends React.Component {
               tommorow={tommorow}
               nextTwoDays={nextTwoDays}
               changeDeliveryCharge={changeDeliveryCharge}
-              minutes= {minutes}
-              hours={ hours}
+              minutes={minutes}
+              hours={hours}
             />
           ) : null}
         </div>

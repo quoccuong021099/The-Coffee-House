@@ -1,7 +1,7 @@
 import React from "react";
-import Button from "./common/Button";
-import Input from "./common/Input";
-import Currency from "./common/Currency";
+import Button from "../common/Button";
+import Input from "../common/Input";
+import Currency from "../common/Currency";
 class CartContainer extends React.Component {
   render() {
     const { deliveryCharge, productInfoForCart } = this.props;
@@ -17,7 +17,7 @@ class CartContainer extends React.Component {
               value="XEM GIỎ HÀNG"
             ></Button>
           </div>
-          {/* {productInfoForCart.length > 0 && (
+          {productInfoForCart.length > 0 && (
             <div className="cart-list-product">
               <div className="cart-list-product__left">
                 <span className="cart-list-product__left-amount">
@@ -30,8 +30,11 @@ class CartContainer extends React.Component {
                   <span className="cart-list-product__left-more">
                     {productInfoForCart[2]}
                     {productInfoForCart[3] !== "" &&
-                      `+ ${productInfoForCart[3]}`}
+                      `+ ${productInfoForCart[3].slice(0, -2)}`}
                   </span>
+                  <p className="cart-list-product__left-note">
+                    {productInfoForCart[5]}
+                  </p>
                 </div>
               </div>
               <div className="cart-list-product__right">
@@ -41,7 +44,7 @@ class CartContainer extends React.Component {
                 />
               </div>
             </div>
-          )} */}
+          )}
           <div className="coupon">
             <div className="total-price">
               <span>Cộng (0 món)</span>
