@@ -29,9 +29,8 @@ class AddToCart extends React.Component {
       size,
       name,
       productInfo,
-      valueNoteProduct
+      valueNoteProduct,
     } = this.props;
-    // console.log(productInfo.product_name);
     return (
       <>
         <div className="add-to-cart__footer">

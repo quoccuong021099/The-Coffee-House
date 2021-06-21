@@ -3,7 +3,6 @@ import InputGroup from "../common/InputGroup";
 class AddToCartBody extends React.Component {
   render() {
     const { productInfo,handlePrices } = this.props;
-    // console.log(productInfo.topping_list);
     return (
       <>
         <div className="add-to-cart__topping">

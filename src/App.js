@@ -26,13 +26,47 @@ class App extends React.Component {
     };
   }
 
-  onUpdateCartNumber = (amount,totalPrice,size,name,productNameInCart,valueNoteProduct) => {
+  onUpdateCartNumber = (
+    amount,
+    totalPrice,
+    size,
+    name,
+    productNameInCart,
+    valueNoteProduct
+  ) => {
     // console.log(amount,totalPrice,size,name,productNameInCart);
-    let productInfo = [amount,totalPrice,size,name,productNameInCart,valueNoteProduct]
-    this.setState({
-      cartNumber: this.state.cartNumber + amount, 
-      productInfoForCart: productInfo
-    });
+    let productInfo = {
+      amount: amount,
+      totalPrice: totalPrice,
+      size: size,
+      nameTopping: name,
+      productNameInCart: productNameInCart,
+      valueNoteProduct: valueNoteProduct,
+    };
+
+    if (this.state.productInfoForCart.length > 0) {
+      this.state.productInfoForCart.map(
+        (item) =>
+          item.nameTopping === productInfo.nameTopping &&
+          item.size === productInfo.size &&
+          item.productNameInCart === productInfo.productNameInCart &&
+          ((item.amount += productInfo.amount),
+          this.setState({
+            cartNumber: this.state.cartNumber + amount,
+            productInfoForCart: this.state.productInfoForCart,
+          }))
+      );
+      this.setState({
+        cartNumber: this.state.cartNumber + amount,
+        productInfoForCart: [...this.state.productInfoForCart, productInfo],
+      }); }
+     
+      else {
+      this.setState({
+        cartNumber: this.state.cartNumber + amount,
+        productInfoForCart: [...this.state.productInfoForCart, productInfo],
+      });
+    }
   };
 
   changeDeliveryCharge = () => {
@@ -40,9 +74,9 @@ class App extends React.Component {
       deliveryCharge: true,
     });
   };
- 
+
   render() {
-    const { cartNumber,deliveryCharge,productInfoForCart} = this.state;
+    const { cartNumber, deliveryCharge, productInfoForCart } = this.state;
     return (
       <div className="App">
         <Header

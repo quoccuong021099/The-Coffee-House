@@ -16,7 +16,7 @@ class ChooseSize extends React.Component {
                 htmlFor={`radio${item.code}`}
                 key={item.code}
                 name="radio"
-                id={`radio${item.code}`}
+                // id={`radio${item.code}`}
                 handleSize={() => handleSize(item.val,item.price)}
                 value={`${item.val} (+${
                   item.price - productInfo.variants[0].price

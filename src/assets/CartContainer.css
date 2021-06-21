@@ -106,6 +106,7 @@
     border-radius: 2px;
     color: #fff;
     background-color: rgba(234, 128, 37,.8);
+    margin-top: 5px;
 }
 .cart-list-product__left-param{
     margin-left: 15px;
@@ -123,7 +124,7 @@
 .cart-list-product__left-note{
     position: absolute;
     max-width: 360px;
-    overflow: hidden;
+    overflow-x: scroll;
 }
 .cart-list-product__right{
     align-self: self-start;

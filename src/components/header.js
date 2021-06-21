@@ -56,7 +56,7 @@ class Header extends React.Component {
 
   handleDelivery = () => {
     this.setState({
-      delivery: true,
+      delivery: !this.state.delivery,
     });
   };
   handleShipNow = () => {
@@ -99,7 +99,7 @@ class Header extends React.Component {
   handleTimeOrder = () => {
     this.setState({
       timerFlag: true,
-      delivery: true,
+      // delivery: true,
     });
   };
   getValueTime = (e) => {
@@ -117,37 +117,55 @@ class Header extends React.Component {
         valueTime: this.state.optionValueTime[0],
       });
   };
-  getValueInputAddress = (e) =>
+  getValueInputAddress = (e) => {
     this.setState({
-      location: e.target.value.toLowerCase(),
-      getAddress: [],
-      dropdown: true,
+      location: e.target.value,
     });
-
-  onclick = (description) => {
-    this.setState({
-      location: description,
-      dropdown: true,
-    });
-  };
-
-  API = (e) => {
     fetch(
-      `https://order.thecoffeehouse.com/api/location?address=${e.target.value.toLowerCase()}`
+      `https://api.thecoffeehouse.com/api/v5/map/autocomplete?key=${e.target.value.toLowerCase()}&from=TCH-WEB`,
+      {
+        headers: {
+          accept: "application/json, text/plain, */*",
+          "accept-language": "en-US,en;q=0.9,ja;q=0.8",
+          "cache-control": "no-cache",
+          pragma: "no-cache",
+          "sec-ch-ua":
+            '" Not;A Brand";v="99", "Google Chrome";v="91", "Chromium";v="91"',
+          "sec-ch-ua-mobile": "?0",
+          "sec-fetch-dest": "empty",
+          "sec-fetch-mode": "cors",
+          "sec-fetch-site": "same-site",
+          "tch-app-version": "",
+          "tch-device-id": "",
+          "x-csrf-token": "XJVEF4AnLtZqcFJ87XeJaV1nJxGC5HrAkMy9QCHA",
+          "x-requested-with": "XMLHttpRequest",
+        },
+        referrer: "https://order.thecoffeehouse.com/",
+        referrerPolicy: "strict-origin-when-cross-origin",
+        body: null,
+        method: "GET",
+        mode: "cors",
+        credentials: "omit",
+      }
     )
       .then((res) => res.json())
       .then((loca) => {
-        if (
-          loca.status !== "FAIL" &&
-          loca.predictions !== undefined &&
-          e.target.value > 1
-        ) {
-          this.setState({
-            getAddress: loca.predictions,
-            // dropdown: false,
-          });
-        }
+        this.setState({
+          getAddress: loca.addresses,
+        });
       });
+  };
+
+  fullAddress = (full_address) => {
+    this.setState({
+      location: full_address,
+      dropdown: false,
+    });
+  };
+  onFocusAddress = () => {
+    this.setState({
+      dropdown: true,
+    });
   };
   handleClickOutside = (event) => {
     if (
@@ -155,13 +173,14 @@ class Header extends React.Component {
       !this.container.current.contains(event.target)
     ) {
       this.setState({
-        delivery: false,
         dropdown: false,
+        delivery: false
       });
     }
   };
   componentDidMount() {
     document.addEventListener("mousedown", this.handleClickOutside);
+
     let arrDate = this.getDayFunc();
 
     this.setState({
@@ -171,12 +190,12 @@ class Header extends React.Component {
       valueDate: arrDate[0].toLocaleDateString("en-GB"),
     });
 
-    let today = new Date();
-    today.setMinutes(today.getMinutes());
-    let minutes = today.getMinutes();
-    today.setHours(today.getHours());
-    today.toLocaleString();
-    let hours = today.getHours();
+    let now = new Date();
+    now.setMinutes(now.getMinutes());
+    now.setHours(now.getHours());
+    now.toLocaleString();
+    let minutes = now.getMinutes();
+    let hours = now.getHours();
     let arrValueTime = [];
     for (let i = hours; i < 21; i++) {
       if (i < hours + 3) {
@@ -217,6 +236,7 @@ class Header extends React.Component {
       arrValueTime.splice(0, 4);
     } else if (minutes > 45 && minutes < 60) arrValueTime.splice(0, 7);
     arrValueTime.pop();
+
     this.setState({
       optionValueTime: ["TRONG 15-30 PHÚT", ...arrValueTime],
       optionValueTimeNotNow: arrValueTimeNotNow,
@@ -263,48 +283,46 @@ class Header extends React.Component {
               <Image src={locationImg} alt="Location Image" />
             </span>
             <div className="dropdown">
-              <form onSubmit={(e) => e.preventDefault()}>
-                <Input
-                  type="text"
-                  className="input-address"
-                  placeholder="Nhập địa chỉ giao hàng"
-                  onChange={this.getValueInputAddress}
-                  onKeyUp={this.API}
-                  value={location}
-                />
-                <ul className="dropdown-menu">
-                  {location.length !== 0
-                    ? getAddress.length > 0
-                      ? getAddress.map((i) => (
-                          <DropdownItem
-                            address={i}
-                            key={i.place_id}
-                            onClick={() => this.onclick(i.description)}
-                          />
-                        ))
-                      : dropdown && (
-                          <li>
-                            <span className="input-icon-dropdown">
-                              <img src={locationImg} alt="" />
-                            </span>
-                            <a href="#a">
-                              <h3 className="dropdown-menu-title">
-                                Không tìm thấy địa chỉ{" "}
-                              </h3>
-                              <h3 className="dropdown-menu-title">
-                                "{location}"
-                              </h3>
-                            </a>
-                          </li>
-                        )
-                    : null}
-                </ul>
-              </form>
+             
+              <Input
+                type="text"
+                className="input-address"
+                placeholder="Nhập địa chỉ giao hàng"
+                value={location}
+                onChange={this.getValueInputAddress}
+                onFocus={this.onFocusAddress}
+              />
+              <ul className="dropdown-menu">
+                {dropdown && location.length !== 0
+                  ? getAddress.length > 0
+                    ? getAddress.map((i) => (
+                        <DropdownItem
+                          address={i}
+                          key={i.place_id}
+                          fullAddress={() => this.fullAddress(i.full_address)}
+                        />
+                      ))
+                    : dropdown && (
+                        <li>
+                          <span className="input-icon-dropdown">
+                            <img src={locationImg} alt="" />
+                          </span>
+                          <a href="#a">
+                            <h3 className="dropdown-menu-title">
+                              Không tìm thấy địa chỉ
+                            </h3>
+                            <h3 className="dropdown-menu-title">
+                              "{location}"
+                            </h3>
+                          </a>
+                        </li>
+                      )
+                  : null}
+              </ul>
             </div>
           </div>
           {delivery ? (
             <DropdownDelivery
-              // onClick={this.handleDelivery}
               handleShipNow={this.handleShipNow}
               getValueTime={this.getValueTime}
               getValueDate={this.getValueDate}

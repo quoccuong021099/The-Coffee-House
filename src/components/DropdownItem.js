@@ -2,7 +2,7 @@ import React from "react";
 
 class DropdownItem extends React.Component {
   render() {
-    let { address } = this.props;
+    const { address } = this.props;
     return (
       <li >
         <span className="input-icon-dropdown">
@@ -11,11 +11,11 @@ class DropdownItem extends React.Component {
             alt=""
           />
         </span>
-        <a href="#a" onClick={this.props.onClick}>
+        <a href="#a" onClick={this.props.fullAddress}>
           <h3 className="dropdown-menu-title">
-            {address.structured_formatting.main_text}
+            {address.title_address}
           </h3>
-          <p>{address.structured_formatting.secondary_text}</p>
+          <p>{address.full_address}</p>
         </a>
       </li>
     );

@@ -13,10 +13,10 @@ class AddToCart extends React.Component {
       valueNoteProduct: "",
     };
   }
-  handleSize = (data, data1) =>
+  handleSize = (size, price) =>
     this.setState({
-      size: data,
-      price: data1,
+      size: size,
+      price: price,
     });
 
   handlePrices = (data) => {
@@ -45,7 +45,7 @@ class AddToCart extends React.Component {
       onUpdateCartNumber,
       changeDeliveryCharge,
     } = this.props;
-    const { name, size,valueNoteProduct } = this.state;
+    const { name, size, valueNoteProduct } = this.state;
     return (
       <>
         <div className={`overlay`} onClick={this.props.closeModal}></div>
@@ -71,7 +71,7 @@ class AddToCart extends React.Component {
             changeDeliveryCharge={changeDeliveryCharge}
             size={size}
             name={name}
-            valueNoteProduct = {valueNoteProduct}
+            valueNoteProduct={valueNoteProduct}
           />
         </div>
       </>
