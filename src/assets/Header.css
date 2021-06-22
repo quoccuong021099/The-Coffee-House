@@ -141,6 +141,9 @@ input:focus {
   position: relative;
   cursor: pointer;
 }
+.cart-icon:hover svg circle,.cart-icon:hover svg polyline{
+  stroke: #39f !important;
+}
 .cart-icon span {
   position: absolute;
   display: flex;

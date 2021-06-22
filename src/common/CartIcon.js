@@ -9,9 +9,8 @@ class CartIcon extends React.Component {
         viewBox="0 0 20 20"
         xmlns="http://www.w3.org/2000/svg"
       >
-        {" "}
-        <circle cx="7.3" cy="17.3" r="1.4"></circle>{" "}
-        <circle cx="13.3" cy="17.3" r="1.4"></circle>{" "}
+        <circle cx="7.3" cy="17.3" r="1.4"></circle>
+        <circle cx="13.3" cy="17.3" r="1.4"></circle>
         <polyline
           fill="none"
           stroke="#000"

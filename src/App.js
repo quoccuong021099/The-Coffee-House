@@ -16,11 +16,6 @@ class App extends React.Component {
     super();
     this.state = {
       cartNumber: 0,
-      // amount: 0,
-      // totalPrice: 0,
-      // size: '',
-      // name: '',
-      // productNameInCart: '',
       productInfoForCart: [],
       deliveryCharge: false,
     };
@@ -34,7 +29,6 @@ class App extends React.Component {
     productNameInCart,
     valueNoteProduct
   ) => {
-    // console.log(amount,totalPrice,size,name,productNameInCart);
     let productInfo = {
       amount: amount,
       totalPrice: totalPrice,
@@ -45,28 +39,32 @@ class App extends React.Component {
     };
 
     if (this.state.productInfoForCart.length > 0) {
-      this.state.productInfoForCart.map(
-        (item) =>
-          item.nameTopping === productInfo.nameTopping &&
-          item.size === productInfo.size &&
-          item.productNameInCart === productInfo.productNameInCart &&
-          ((item.amount += productInfo.amount),
-          this.setState({
-            cartNumber: this.state.cartNumber + amount,
-            productInfoForCart: this.state.productInfoForCart,
-          }))
+      let flag = true;
+      this.state.productInfoForCart.map((item) =>
+        item.nameTopping === productInfo.nameTopping &&
+        item.size === productInfo.size &&
+        item.productNameInCart === productInfo.productNameInCart
+          ? ((item.amount += productInfo.amount),
+            (item.totalPrice += productInfo.totalPrice),
+            this.setState({
+              cartNumber: this.state.cartNumber + amount,
+            }),
+            (flag = false))
+          : (flag = true)
       );
-      this.setState({
-        cartNumber: this.state.cartNumber + amount,
-        productInfoForCart: [...this.state.productInfoForCart, productInfo],
-      }); }
-     
-      else {
+      if (flag) {
+        this.setState({
+          cartNumber: this.state.cartNumber + amount,
+          productInfoForCart: [...this.state.productInfoForCart, productInfo],
+        });
+      }
+    } else {
       this.setState({
         cartNumber: this.state.cartNumber + amount,
         productInfoForCart: [...this.state.productInfoForCart, productInfo],
       });
     }
+   
   };
 
   changeDeliveryCharge = () => {

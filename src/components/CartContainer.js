@@ -4,16 +4,14 @@ import Input from "../common/Input";
 import Currency from "../common/Currency";
 class CartContainer extends React.Component {
   render() {
-
     const { deliveryCharge, productInfoForCart } = this.props;
-    // productInfoForCart.length > 1 &&
-    // var newArr = productInfoForCart.filter(
-    //   (item) =>
-    //   item.nameTopping !== productInfo.nameTopping &&
-    //   item.size !== productInfo.size &&
-    //   item.productNameInCart !== productInfo.productNameInCart
-    //   )
-
+    if (productInfoForCart.length > 0) {
+      var cong = productInfoForCart.reduce(
+        (accumulator, item) => accumulator + item.totalPrice,
+        0
+      );
+    }
+    console.log(cong);
     return (
       <div className="cart">
         <div className="cart-fixed">
@@ -24,51 +22,56 @@ class CartContainer extends React.Component {
               value="XEM GIỎ HÀNG"
             ></Button>
           </div>
-          
-          {
-               
-              
-          }
-          {productInfoForCart.length > 0 && (
-            productInfoForCart.map((item,index) => (
-              <div className="cart-list-product" key={`${index}`}>
-              <div className="cart-list-product__left">
-                <span className="cart-list-product__left-amount">
-                  {item.amount}
-                </span>
-                <div className="cart-list-product__left-param">
-                  <h1 className="cart-list-product__left-name">
-                    {item.productNameInCart}
-                  </h1>
-                  <span className="cart-list-product__left-more">
-                    {item.size}
-                    {item.nameTopping !== "" &&
-                      `+ ${item.nameTopping.slice(0,-2)}`}
+
+          {productInfoForCart.length > 0 &&
+            productInfoForCart.map((item, index) => (
+              <div
+                className="cart-list-product"
+                key={`${index}`}
+                onClick={this.props.handleChangeProduct}
+              >
+                <div className="cart-list-product__left">
+                  <span className="cart-list-product__left-amount">
+                    {item.amount}
                   </span>
-                  <p className="cart-list-product__left-note">
-                    {item.valueNoteProduct}
-                  </p>
+                  <div className="cart-list-product__left-param">
+                    <h1 className="cart-list-product__left-name">
+                      {item.productNameInCart}
+                    </h1>
+                    <span className="cart-list-product__left-more">
+                      {item.size}
+                      {item.nameTopping !== "" &&
+                        `+ ${item.nameTopping.slice(0, -2)}`}
+                    </span>
+                    <p className="cart-list-product__left-note">
+                      {item.valueNoteProduct}
+                    </p>
+                  </div>
+                </div>
+                <div className="cart-list-product__right">
+                  <Currency
+                    className="cart-list-product__right-currency"
+                    value={item.totalPrice}
+                  />
                 </div>
               </div>
-              <div className="cart-list-product__right">
-                <Currency
-                  className="cart-list-product__right-currency"
-                  value={item.totalPrice}
-                />
-              </div>
-            </div>
-            ))
-          )}
+            ))}
           <div className="coupon">
             <div className="total-price">
               <span>Cộng (0 món)</span>
-              <Currency value="0" />
+              <Currency value={cong !== undefined ? `${cong}` : 0} />
             </div>
             <div className="delivery">
               <span>Vận chuyển</span>
               <Currency
                 className="currency__delivery"
-                value={deliveryCharge ? `10.000` : `0`}
+                value={
+                  deliveryCharge
+                    ? cong !== undefined && cong >= 50000
+                      ? 0
+                      : 10000
+                    : 0
+                }
               />
             </div>
             <form className="form-control">
@@ -88,7 +91,13 @@ class CartContainer extends React.Component {
             <span>Tổng cộng</span>
             <Currency
               className="currency__total"
-              value={deliveryCharge ? `10.000` : `0`}
+              value={
+                deliveryCharge
+                  ? cong !== undefined && cong >= 50000
+                    ? `${cong}`
+                    : `${cong + 10000}`
+                  : 0
+              }
             />
           </div>
         </div>
