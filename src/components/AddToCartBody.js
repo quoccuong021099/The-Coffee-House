@@ -9,7 +9,7 @@ class AddToCartBody extends React.Component {
       <>
         <div className="add-to-cart__body">
           <AddToCartChooseSize productInfo={productInfo} handleSize={handleSize} />
-          {productInfo.topping_list.length > 0 ? (
+          {(productInfo.topping_list !== undefined && productInfo.topping_list.length > 0 ) ? (
             <AddToCartTopping productInfo={productInfo} handlePrices={handlePrices} />
           ) : null}
           <AddToCartNote getValueNoteProduct={getValueNoteProduct}/>

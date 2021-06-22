@@ -9,14 +9,13 @@ class ChooseSize extends React.Component {
           <p>Loại</p>
           <p>Size -</p>
           <div className="choose-size">
-            {productInfo.variants.map((item) => (
+            {productInfo.variants && productInfo.variants.map((item) => (
               <InputGroup
                 defaultChecked={item.val === productInfo.variants[0].val ? "checked" : ""}
                 type='radio'
                 htmlFor={`radio${item.code}`}
                 key={item.code}
                 name="radio"
-                // id={`radio${item.code}`}
                 handleSize={() => handleSize(item.val,item.price)}
                 value={`${item.val} (+${
                   item.price - productInfo.variants[0].price

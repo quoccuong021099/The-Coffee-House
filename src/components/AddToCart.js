@@ -5,47 +5,47 @@ import AddToCartBody from "./AddToCartBody";
 class AddToCart extends React.Component {
   constructor(props) {
     super(props);
-
     this.state = {
       size: this.props.productInfo.variants[0].val,
       price: this.props.productInfo.variants[0].price,
-      name: "",
+      toppingPrice: 0,
+      toppingName: "",
       valueNoteProduct: "",
     };
   }
-  handleSize = (size, price) =>
-    this.setState({
-      size: size,
-      price: price,
-    });
 
   handlePrices = (data) => {
     let price = document.getElementById(data.code);
     if (price.checked) {
       this.setState({
-        price: this.state.price + data.price,
-        name: this.state.name.concat(` ${data.product_name} +`),
+        toppingPrice: this.state.toppingPrice + data.price,
+        toppingName: this.state.toppingName.concat(` ${data.product_name} +`),
       });
     } else {
       this.setState({
-        price: this.state.price - data.price,
-        name: this.state.name.replace(` ${data.product_name} +`, ""),
+        toppingPrice: this.state.toppingPrice - data.price,
+        toppingName: this.state.toppingName.replace(
+          ` ${data.product_name} +`,
+          ""
+        ),
       });
     }
   };
+  handleSize = (size, price) =>
+    // console.log(size,price);
+    this.setState({
+      size: size,
+      price: price,
+    });
   getValueNoteProduct = (e) => {
     this.setState({
       valueNoteProduct: e.target.value,
     });
   };
   render() {
-    const {
-      productInfo,
-      addProductFlag,
-      onUpdateCartNumber,
-      changeDeliveryCharge,
-    } = this.props;
-    const { name, size, valueNoteProduct } = this.state;
+    const { productInfo, addProductFlag, moveToCart, closeModal } = this.props;
+    const { toppingName, size, price, valueNoteProduct, toppingPrice } =
+      this.state;
     return (
       <>
         <div className={`overlay`} onClick={this.props.closeModal}></div>
@@ -54,7 +54,7 @@ class AddToCart extends React.Component {
             closeModal={this.props.closeModal}
             productInfo={productInfo}
             size={size}
-            name={name}
+            toppingName={toppingName}
           />
           <AddToCartBody
             productInfo={productInfo}
@@ -63,15 +63,15 @@ class AddToCart extends React.Component {
             getValueNoteProduct={this.getValueNoteProduct}
           />
           <AddToCartFooter
-            closeModal={this.props.closeModal}
+            closeModal={closeModal}
             productInfo={productInfo}
-            price={this.state.price}
-            addProductFlag={addProductFlag}
-            onUpdateCartNumber={onUpdateCartNumber}
-            changeDeliveryCharge={changeDeliveryCharge}
+            price={price}
             size={size}
-            name={name}
+            toppingName={toppingName}
+            // addProductFlag={addProductFlag}
+            moveToCart={moveToCart}
             valueNoteProduct={valueNoteProduct}
+            toppingPrice={toppingPrice}
           />
         </div>
       </>

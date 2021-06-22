@@ -1,36 +1,8 @@
 import React from "react";
 import ProductItem from "./ProductItem";
-import AddToCart from "./AddToCart";
 class ProductContainer extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      addProductFlag: false,
-      productInfo: null,
-    };
-  }
-
-  addProduct = (data) =>
-    this.setState({ addProductFlag: true, productInfo: data });
-
-  closeModal = () => {
-    this.setState({
-      addProductFlag: false,
-    });
-    setTimeout(() => {
-      this.setState({
-        productInfo: null,
-      });
-    }, 300);
-  };
   render() {
-    const {
-      category,
-      searchProduct,
-      onUpdateCartNumber,
-      changeDeliveryCharge,
-    } = this.props;
-    let { addProductFlag, productInfo } = this.state;
+    const { category, searchProduct, addProduct } = this.props;
     const filteredProduct = category.ListProduct.filter((i) => {
       return i.product_name.toLowerCase().includes(searchProduct.toLowerCase());
     });
@@ -44,20 +16,11 @@ class ProductContainer extends React.Component {
             <ProductItem
               filteredItem={filteredItem}
               key={filteredItem._id}
-              addProduct={this.addProduct}
+              addProduct={addProduct}
+              
             />
           ))}
         </ul>
-        {productInfo !== null ? (
-          <AddToCart
-            className={addProductFlag ? " " : "add-to-cart__display"}
-            closeModal={this.closeModal}
-            productInfo={productInfo}
-            addProductFlag={addProductFlag}
-            onUpdateCartNumber={onUpdateCartNumber}
-            changeDeliveryCharge={changeDeliveryCharge}
-          />
-        ) : null}
       </>
     );
   }

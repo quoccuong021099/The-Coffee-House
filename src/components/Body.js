@@ -7,6 +7,7 @@ import PlaceholderProduct from "../placeholder/PlaceholderProduct";
 import Image from "../common/Image";
 import failData from "../image/search.png";
 import SearchProduct from "./SearchProduct";
+import AddToCart from "./AddToCart";
 class Body extends React.Component {
   constructor(props) {
     super(props);
@@ -16,8 +17,28 @@ class Body extends React.Component {
       categories: [],
       searchProduct: "",
       active: null,
+      addProductFlag: false,
+      productInfo: null,
+      productInfoForCart: [],
+      co: -1,
     };
   }
+
+  addProduct = (data) =>
+    this.setState({ addProductFlag: true, productInfo: data, co: -1 });
+  editProduct = (data) =>
+    this.setState({ addProductFlag: true, co: 0, productInfo: data });
+
+  closeModal = () => {
+    this.setState({
+      addProductFlag: false,
+    });
+    setTimeout(() => {
+      this.setState({
+        productInfo: null,
+      });
+    }, 300);
+  };
 
   onchange = (e) => this.setState({ searchProduct: e.target.value });
   merge = (categoryList, products) => {
@@ -74,14 +95,67 @@ class Body extends React.Component {
       });
   }
 
+  moveToCart = (data) => {
+    // if (this.state.co === -1) {
+      if (this.state.productInfoForCart.length === 0) {
+        this.setState({
+          productInfoForCart: [...this.state.productInfoForCart, data],
+        });
+      } else {
+        let flag = 1;
+        this.state.productInfoForCart.map((item) =>
+          item.product_name === data.product_name &&
+          item.size === data.size &&
+          item.toppingName === data.toppingName
+            ? ((item.amount += data.amount),
+              (item.totalPrice += data.totalPrice),
+              (flag *= -1))
+            : (flag *= 1)
+        );
+        if (flag === 1) {
+          this.setState({
+            productInfoForCart: [...this.state.productInfoForCart, data],
+          });
+        }
+      }
+    // }
+    // if (this.state.co === 0) {
+    //   if (this.state.productInfoForCart.length === 0) {
+    //     this.setState({
+    //       productInfoForCart: [...this.state.productInfoForCart, data],
+    //     });
+    //   } else {
+    //     let flag = 1;
+    //     this.state.productInfoForCart.map((item) =>
+    //       item.product_name === data.product_name &&
+    //       item.size === data.size &&
+    //       item.toppingName === data.toppingName
+    //         ? ((item.amount += data.amount),
+    //           (item.totalPrice += data.totalPrice),
+    //           (flag *= -1))
+    //         : (flag *= 1)
+    //     );
+    //     if (flag === 1) {
+    //       this.setState({
+    //         productInfoForCart: [...this.state.productInfoForCart, data],
+    //       });
+    //     }
+    //   }
+    // }
+  };
   render() {
-    const { isLoaded, categories, error, searchProduct, active } = this.state;
     const {
-      onUpdateCartNumber,
-      deliveryCharge,
-      changeDeliveryCharge,
-      productInfoForCart
-    } = this.props;
+      isLoaded,
+      categories,
+      error,
+      searchProduct,
+      active,
+      productInfo,
+      addProductFlag,
+      productInfoForCart,
+    } = this.state;
+    const { onUpdateCartNumber, deliveryCharge, changeDeliveryCharge } =
+      this.props;
     if (error) {
       return (
         <div className="failData">
@@ -115,6 +189,7 @@ class Body extends React.Component {
                     activeCategory={this.activeCategory}
                     onUpdateCartNumber={onUpdateCartNumber}
                     changeDeliveryCharge={changeDeliveryCharge}
+                    addProduct={this.addProduct}
                   />
                 </div>
               </div>
@@ -123,7 +198,17 @@ class Body extends React.Component {
           <CartContainer
             deliveryCharge={deliveryCharge}
             productInfoForCart={productInfoForCart}
+            editProduct={this.editProduct}
           />
+          {productInfo !== null && (
+            <AddToCart
+              className={addProductFlag ? " " : "add-to-cart__display"}
+              closeModal={this.closeModal}
+              productInfo={productInfo}
+              addProductFlag={addProductFlag}
+              moveToCart={this.moveToCart}
+            />
+          )}
         </section>
       );
     }

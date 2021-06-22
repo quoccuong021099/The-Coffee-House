@@ -34,17 +34,13 @@ class Main extends React.Component {
   }
 
   render() {
-    const {
-      searchProduct,
-      products,
-      onUpdateCartNumber,
-      changeDeliveryCharge,
-    } = this.props;
+    const { searchProduct, products,addProduct } = this.props;
 
     let dataProduct = [];
 
-    products.map((item) =>
-      item.ListProduct.length > 0 ? dataProduct.push(item.ListProduct) : null
+    products.map(
+      (item) =>
+        item.ListProduct.length > 0 && dataProduct.push(item.ListProduct)
     );
 
     let dataProductFilter = dataProduct.map((item) =>
@@ -65,17 +61,17 @@ class Main extends React.Component {
     } else
       return (
         <>
-          {products.map((category) =>
-            category.ListProduct.length !== 0 ? (
-              <ProductContainer
-                id={category.id}
-                category={category}
-                key={category._id}
-                searchProduct={searchProduct}
-                onUpdateCartNumber={onUpdateCartNumber}
-                changeDeliveryCharge={changeDeliveryCharge}
-              />
-            ) : null
+          {products.map(
+            (category) =>
+              category.ListProduct.length !== 0 && (
+                <ProductContainer
+                  id={category.id}
+                  category={category}
+                  key={category._id}
+                  searchProduct={searchProduct}
+                  addProduct={addProduct}
+                />
+              )
           )}
         </>
       );

@@ -12,81 +12,11 @@ import Header from "./components/Header";
 import Body from "./components/Body";
 import Footer from "./components/Footer";
 class App extends React.Component {
-  constructor() {
-    super();
-    this.state = {
-      cartNumber: 0,
-      productInfoForCart: [],
-      deliveryCharge: false,
-    };
-  }
-
-  onUpdateCartNumber = (
-    amount,
-    totalPrice,
-    size,
-    name,
-    productNameInCart,
-    valueNoteProduct
-  ) => {
-    let productInfo = {
-      amount: amount,
-      totalPrice: totalPrice,
-      size: size,
-      nameTopping: name,
-      productNameInCart: productNameInCart,
-      valueNoteProduct: valueNoteProduct,
-    };
-
-    if (this.state.productInfoForCart.length > 0) {
-      let flag = true;
-      this.state.productInfoForCart.map((item) =>
-        item.nameTopping === productInfo.nameTopping &&
-        item.size === productInfo.size &&
-        item.productNameInCart === productInfo.productNameInCart
-          ? ((item.amount += productInfo.amount),
-            (item.totalPrice += productInfo.totalPrice),
-            this.setState({
-              cartNumber: this.state.cartNumber + amount,
-            }),
-            (flag = false))
-          : (flag = true)
-      );
-      if (flag) {
-        this.setState({
-          cartNumber: this.state.cartNumber + amount,
-          productInfoForCart: [...this.state.productInfoForCart, productInfo],
-        });
-      }
-    } else {
-      this.setState({
-        cartNumber: this.state.cartNumber + amount,
-        productInfoForCart: [...this.state.productInfoForCart, productInfo],
-      });
-    }
-   
-  };
-
-  changeDeliveryCharge = () => {
-    this.setState({
-      deliveryCharge: true,
-    });
-  };
-
   render() {
-    const { cartNumber, deliveryCharge, productInfoForCart } = this.state;
     return (
       <div className="App">
-        <Header
-          cartNumber={cartNumber}
-          changeDeliveryCharge={this.changeDeliveryCharge}
-        />
-        <Body
-          onUpdateCartNumber={this.onUpdateCartNumber}
-          changeDeliveryCharge={this.changeDeliveryCharge}
-          deliveryCharge={deliveryCharge}
-          productInfoForCart={productInfoForCart}
-        />
+        <Header />
+        <Body />
         <Footer />
       </div>
     );

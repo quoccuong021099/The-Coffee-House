@@ -23,14 +23,27 @@ class AddToCart extends React.Component {
 
   render() {
     const {
-      onUpdateCartNumber,
       closeModal,
-      changeDeliveryCharge,
-      size,
-      name,
-      productInfo,
+      price,
+      toppingName,
       valueNoteProduct,
+      size,
+      productInfo,
+      toppingPrice,
     } = this.props;
+    const { amount } = this.state;
+    let productInCart = {
+      totalPrice: amount * (price + toppingPrice),
+      amount: amount,
+      toppingName: toppingName,
+      valueNoteProduct: valueNoteProduct,
+      size: size,
+      product_name: productInfo.product_name,
+      // productInfo: productInfo,
+      image: productInfo.image,
+      variants: productInfo.variants,
+      topping_list: productInfo.topping_list
+    };
     return (
       <>
         <div className="add-to-cart__footer">
@@ -43,22 +56,13 @@ class AddToCart extends React.Component {
             <span>{this.state.amount}</span>
             <AddButton width="36" height="36" onAddButton={this.onAddButton} />
           </div>
-          <div onClick={changeDeliveryCharge}>
+          <div>
             <div className="add-to-cart__submit" onClick={closeModal}>
               <Button
                 className="add-to-cart__btn-submit"
                 type="submit"
-                value={`THÊM VÀO GIỎ ${this.props.price * this.state.amount} ₫`}
-                onClick={() =>
-                  onUpdateCartNumber(
-                    this.state.amount,
-                    this.props.price * this.state.amount,
-                    size,
-                    name,
-                    productInfo.product_name,
-                    valueNoteProduct
-                  )
-                }
+                value={`THÊM VÀO GIỎ${amount * (price + toppingPrice)} ₫`}
+                onClick={() => this.props.moveToCart(productInCart)}
               ></Button>
             </div>
           </div>

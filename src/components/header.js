@@ -265,7 +265,6 @@ class Header extends React.Component {
       minutes,
       hours,
     } = this.state;
-    const { cartNumber, changeDeliveryCharge } = this.props;
     return (
       <header className="header">
         <Logo />
@@ -336,7 +335,6 @@ class Header extends React.Component {
               today={today}
               tommorow={tommorow}
               nextTwoDays={nextTwoDays}
-              changeDeliveryCharge={changeDeliveryCharge}
               minutes={minutes}
               hours={hours}
             />
@@ -348,11 +346,11 @@ class Header extends React.Component {
             type="button"
             value="ĐĂNG NHẬP"
           ></Button>
-          {cartNumber > 0 ? (
+          {/* {cartNumber > 0 ? (
             <div className="cart-icon">
               <span>{cartNumber}</span> <CartIcon />
             </div>
-          ) : null}
+          ) : null} */}
         </div>
       </header>
     );

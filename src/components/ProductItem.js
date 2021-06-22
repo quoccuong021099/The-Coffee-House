@@ -3,14 +3,15 @@ import AddButton from "../common/AddButton";
 import Image from "../common/Image";
 import Currency from "../common/Currency";
 class ProductItem extends React.Component {
-
   render() {
     let { filteredItem } = this.props;
-
     return (
-      <li className="product__item">
+      <li
+        className="product__item "
+        onClick={() => this.props.addProduct(filteredItem)}
+      >
         <ul className="product__list">
-          <li className="product__list-item" onClick={() => this.props.addProduct(filteredItem)}>
+          <li className="product__list-item">
             <a href="#a" className="product__list-link">
               <Image src={filteredItem.image} width="80" height="80" />
               <div className="product__info">

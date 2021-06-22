@@ -3,7 +3,7 @@ import Image from "../common/Image";
 import CloseButton from "../common/CloseButton";
 class AddToCartHeader extends React.Component {
   render() {
-    const { productInfo,size,name } = this.props;
+    const { productInfo,size,toppingName } = this.props;
     return (
       <>
         <div className="add-to-cart__header">
@@ -17,7 +17,7 @@ class AddToCartHeader extends React.Component {
             <div className="add-to-cart__header-info">
               <h3>{productInfo.product_name}</h3>
               <p>{size}</p>
-              <p>{name.slice(0,-2)}</p>
+              <p>{toppingName.slice(0,-2)}</p>
             </div>
           </div>
           <div className="add-to-cart__header-right">

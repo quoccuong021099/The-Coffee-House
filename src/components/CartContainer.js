@@ -4,14 +4,7 @@ import Input from "../common/Input";
 import Currency from "../common/Currency";
 class CartContainer extends React.Component {
   render() {
-    const { deliveryCharge, productInfoForCart } = this.props;
-    if (productInfoForCart.length > 0) {
-      var cong = productInfoForCart.reduce(
-        (accumulator, item) => accumulator + item.totalPrice,
-        0
-      );
-    }
-    console.log(cong);
+    const { productInfoForCart } = this.props;
     return (
       <div className="cart">
         <div className="cart-fixed">
@@ -22,13 +15,12 @@ class CartContainer extends React.Component {
               value="XEM GIỎ HÀNG"
             ></Button>
           </div>
-
           {productInfoForCart.length > 0 &&
             productInfoForCart.map((item, index) => (
               <div
                 className="cart-list-product"
                 key={`${index}`}
-                onClick={this.props.handleChangeProduct}
+                onClick={() => this.props.editProduct(item)}
               >
                 <div className="cart-list-product__left">
                   <span className="cart-list-product__left-amount">
@@ -36,12 +28,12 @@ class CartContainer extends React.Component {
                   </span>
                   <div className="cart-list-product__left-param">
                     <h1 className="cart-list-product__left-name">
-                      {item.productNameInCart}
+                      {item.product_name}
                     </h1>
                     <span className="cart-list-product__left-more">
                       {item.size}
-                      {item.nameTopping !== "" &&
-                        `+ ${item.nameTopping.slice(0, -2)}`}
+                      {item.toppingName !== "" &&
+                        `+ ${item.toppingName.slice(0, -2)}`}
                     </span>
                     <p className="cart-list-product__left-note">
                       {item.valueNoteProduct}
@@ -59,20 +51,11 @@ class CartContainer extends React.Component {
           <div className="coupon">
             <div className="total-price">
               <span>Cộng (0 món)</span>
-              <Currency value={cong !== undefined ? `${cong}` : 0} />
+              <Currency value={0} />
             </div>
             <div className="delivery">
               <span>Vận chuyển</span>
-              <Currency
-                className="currency__delivery"
-                value={
-                  deliveryCharge
-                    ? cong !== undefined && cong >= 50000
-                      ? 0
-                      : 10000
-                    : 0
-                }
-              />
+              <Currency className="currency__delivery" value={10000} />
             </div>
             <form className="form-control">
               <Input
@@ -89,16 +72,7 @@ class CartContainer extends React.Component {
           </div>
           <div className="total">
             <span>Tổng cộng</span>
-            <Currency
-              className="currency__total"
-              value={
-                deliveryCharge
-                  ? cong !== undefined && cong >= 50000
-                    ? `${cong}`
-                    : `${cong + 10000}`
-                  : 0
-              }
-            />
+            <Currency className="currency__total" value={10000} />
           </div>
         </div>
       </div>
