@@ -1,3 +1,4 @@
+/* eslint-disable react/no-direct-mutation-state */
 import React from "react";
 import Sidebar from "./Sidebar";
 import Main from "./Main";
@@ -20,14 +21,75 @@ class Body extends React.Component {
       addProductFlag: false,
       productInfo: null,
       productInfoForCart: [],
-      co: -1,
+      indexProductOrder: -1,
     };
   }
 
-  addProduct = (data) =>
-    this.setState({ addProductFlag: true, productInfo: data, co: -1 });
-  editProduct = (data) =>
-    this.setState({ addProductFlag: true, co: 0, productInfo: data });
+  addToCartV2 = (data) => {
+    let { productInfoForCart } = this.state;
+
+    let copyProductInfoForCart = [...productInfoForCart];
+
+    if (this.state.indexProductOrder !== -1) {
+      copyProductInfoForCart = copyProductInfoForCart.filter(
+        (item, index) => index !== this.state.indexProductOrder
+      );
+      this.setState({
+        productInfoForCart: copyProductInfoForCart,
+      });
+    }
+    let flag = 1;
+    copyProductInfoForCart.map((item) =>
+      item.product_name === data.product_name &&
+      item.size === data.size &&
+      item.toppingName === data.toppingName
+        ? ((item.amount += data.amount),
+          (item.totalPrice += data.totalPrice),
+          (flag *= -1))
+        : (flag *= 1)
+    );
+
+    if (flag === 1) {
+      this.setState({
+        productInfoForCart: [...copyProductInfoForCart, data].filter(
+          (item) => item.amount > 0
+        ),
+      });
+      this.props.getAmount([...copyProductInfoForCart, data])
+    }
+
+    this.setState({
+      optionBoxClose: false,
+      indexProductOrder: -1,
+      productInfo: null,
+    });
+  };
+
+  /////////////////////
+  addProduct = (data) => {
+    let products = {
+      product_name: data.product_name,
+      image: data.image,
+      topping_list: data.topping_list,
+      variants: data.variants,
+      price: data.price,
+    };
+    this.setState({
+      addProductFlag: true,
+      productInfo: products,
+      indexProductOrder: -1,
+    });
+  };
+  /////////////////////
+
+  editProduct = (data, index) => {
+    this.setState({
+      addProductFlag: true,
+      productInfo: data,
+      indexProductOrder: index,
+    });
+  };
+  /////////////////////
 
   closeModal = () => {
     this.setState({
@@ -39,8 +101,11 @@ class Body extends React.Component {
       });
     }, 300);
   };
+  /////////////////////
 
   onchange = (e) => this.setState({ searchProduct: e.target.value });
+  /////////////////////
+
   merge = (categoryList, products) => {
     categoryList.map((category) => {
       let newData = [];
@@ -55,6 +120,7 @@ class Body extends React.Component {
     });
     return categoryList;
   };
+  /////////////////////
 
   activeCategory = (id) => {
     this.setState({
@@ -62,6 +128,7 @@ class Body extends React.Component {
     });
   };
 
+  /////////////////////
   componentDidMount() {
     fetch("https://api.thecoffeehouse.com/api/v2/menu")
       .then((res) => res.json())
@@ -94,55 +161,8 @@ class Body extends React.Component {
         });
       });
   }
+  /////////////////////
 
-  moveToCart = (data) => {
-    // if (this.state.co === -1) {
-      if (this.state.productInfoForCart.length === 0) {
-        this.setState({
-          productInfoForCart: [...this.state.productInfoForCart, data],
-        });
-      } else {
-        let flag = 1;
-        this.state.productInfoForCart.map((item) =>
-          item.product_name === data.product_name &&
-          item.size === data.size &&
-          item.toppingName === data.toppingName
-            ? ((item.amount += data.amount),
-              (item.totalPrice += data.totalPrice),
-              (flag *= -1))
-            : (flag *= 1)
-        );
-        if (flag === 1) {
-          this.setState({
-            productInfoForCart: [...this.state.productInfoForCart, data],
-          });
-        }
-      }
-    // }
-    // if (this.state.co === 0) {
-    //   if (this.state.productInfoForCart.length === 0) {
-    //     this.setState({
-    //       productInfoForCart: [...this.state.productInfoForCart, data],
-    //     });
-    //   } else {
-    //     let flag = 1;
-    //     this.state.productInfoForCart.map((item) =>
-    //       item.product_name === data.product_name &&
-    //       item.size === data.size &&
-    //       item.toppingName === data.toppingName
-    //         ? ((item.amount += data.amount),
-    //           (item.totalPrice += data.totalPrice),
-    //           (flag *= -1))
-    //         : (flag *= 1)
-    //     );
-    //     if (flag === 1) {
-    //       this.setState({
-    //         productInfoForCart: [...this.state.productInfoForCart, data],
-    //       });
-    //     }
-    //   }
-    // }
-  };
   render() {
     const {
       isLoaded,
@@ -151,7 +171,6 @@ class Body extends React.Component {
       searchProduct,
       active,
       productInfo,
-      addProductFlag,
       productInfoForCart,
     } = this.state;
     const { onUpdateCartNumber, deliveryCharge, changeDeliveryCharge } =
@@ -199,14 +218,16 @@ class Body extends React.Component {
             deliveryCharge={deliveryCharge}
             productInfoForCart={productInfoForCart}
             editProduct={this.editProduct}
+            
+            deliveryChargeFlag={this.props.deliveryChargeFlag}
+
           />
           {productInfo !== null && (
             <AddToCart
-              className={addProductFlag ? " " : "add-to-cart__display"}
               closeModal={this.closeModal}
               productInfo={productInfo}
-              addProductFlag={addProductFlag}
-              moveToCart={this.moveToCart}
+              addToCartV2={this.addToCartV2}
+              changeDeliveryChargeFlag={this.props.changeDeliveryChargeFlag}
             />
           )}
         </section>

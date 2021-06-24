@@ -101,7 +101,7 @@ class DropdownDelivery extends React.Component {
                     ))}
               </select>
             </div>
-            <div onClick={this.props.changeDeliveryCharge}>
+            <div onClick={this.props.changeDeliveryChargeFlag}>
               <Button
                 className="timer"
                 type="submit"

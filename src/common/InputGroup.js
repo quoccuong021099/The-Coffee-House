@@ -5,16 +5,14 @@ class InputGroup extends React.Component {
     return (
       <>
         <div className="input-group">
-          <Input 
-            defaultChecked={this.props.defaultChecked} 
-            type={this.props.type} 
-            name={this.props.name} 
-            id={this.props.id} 
-            onClick={this.props.handleSize}
-            onChange={this.props.handlePrices}
+          <Input
+            defaultChecked={this.props.defaultChecked}
+            type={this.props.type}
+            name={this.props.name}
+            id={this.props.id}
+            onClick={this.props.onClick}
           />
-          <label htmlFor={this.props.htmlFor}></label>
-          <label htmlFor={this.props.htmlFor} >{this.props.value}</label>
+          <label htmlFor={this.props.id}>{this.props.value}</label>
         </div>
       </>
     );

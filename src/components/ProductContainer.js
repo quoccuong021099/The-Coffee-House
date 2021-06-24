@@ -2,7 +2,7 @@ import React from "react";
 import ProductItem from "./ProductItem";
 class ProductContainer extends React.Component {
   render() {
-    const { category, searchProduct, addProduct } = this.props;
+    const { category, searchProduct,  addProduct } = this.props;
     const filteredProduct = category.ListProduct.filter((i) => {
       return i.product_name.toLowerCase().includes(searchProduct.toLowerCase());
     });

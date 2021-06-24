@@ -34,7 +34,7 @@ class Main extends React.Component {
   }
 
   render() {
-    const { searchProduct, products,addProduct } = this.props;
+    const { searchProduct, products, addProduct } = this.props;
 
     let dataProduct = [];
 

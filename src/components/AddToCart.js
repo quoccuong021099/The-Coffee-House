@@ -1,18 +1,35 @@
 import React from "react";
-import AddToCartFooter from "./AddToCartFooter";
-import AddToCartHeader from "./AddToCartHeader";
-import AddToCartBody from "./AddToCartBody";
+import Button from "../common/Button";
+import SubtractButton from "../common/SubtractButton";
+import AddButton from "../common/AddButton";
+import AddToCartChooseSize from "./AddToCartChooseSize";
+import AddToCartTopping from "./AddToCartTopping";
+import AddToCartNote from "./AddToCartNote";
+import Image from "../common/Image";
+import CloseButton from "../common/CloseButton";
 class AddToCart extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
       size: this.props.productInfo.variants[0].val,
       price: this.props.productInfo.variants[0].price,
+      amount: 1,
       toppingPrice: 0,
       toppingName: "",
-      valueNoteProduct: "",
     };
   }
+
+  onSubtractButton = () => {
+    if (this.state.amount > 0)
+      this.setState({
+        amount: this.state.amount - 1,
+      });
+  };
+  onAddButton = () => {
+    this.setState({
+      amount: this.state.amount + 1,
+    });
+  };
 
   handlePrices = (data) => {
     let price = document.getElementById(data.code);
@@ -31,48 +48,119 @@ class AddToCart extends React.Component {
       });
     }
   };
-  handleSize = (size, price) =>
-    // console.log(size,price);
+  handleSize = (item) => {
     this.setState({
-      size: size,
-      price: price,
-    });
-  getValueNoteProduct = (e) => {
-    this.setState({
-      valueNoteProduct: e.target.value,
+      size: item.val,
+      price: item.price,
     });
   };
+  componentDidMount() {
+    const { productInfo } = this.props;
+    if (
+      productInfo.size !== undefined &&
+      productInfo.amount !== undefined &&
+      productInfo.toppingName !== undefined &&
+      productInfo.toppingPrice !== undefined &&
+      productInfo.toppingPrice !== undefined
+    ) {
+      this.setState({
+        amount: productInfo.amount,
+        size: productInfo.size,
+        toppingName: productInfo.toppingName,
+        toppingPrice: productInfo.toppingPrice,
+        price: productInfo.price,
+      });
+    }
+  }
   render() {
-    const { productInfo, addProductFlag, moveToCart, closeModal } = this.props;
-    const { toppingName, size, price, valueNoteProduct, toppingPrice } =
-      this.state;
+    const { productInfo, closeModal } = this.props;
+    const { toppingName, size, price, toppingPrice, amount } = this.state;
+    let productInCart = {
+      product_name: productInfo.product_name,
+      toppingName: toppingName,
+      toppingPrice: toppingPrice,
+      topping_list: productInfo.topping_list,
+      size: size,
+      image: productInfo.image,
+      variants: productInfo.variants,
+      amount: amount,
+      totalPrice: amount * (price + toppingPrice),
+      price: this.state.price,
+    };
+    // console.log(productInfo);
     return (
       <>
         <div className={`overlay`} onClick={this.props.closeModal}></div>
         <div className={`add-to-cart ${this.props.className}`}>
-          <AddToCartHeader
-            closeModal={this.props.closeModal}
-            productInfo={productInfo}
-            size={size}
-            toppingName={toppingName}
-          />
-          <AddToCartBody
-            productInfo={productInfo}
-            handleSize={this.handleSize}
-            handlePrices={this.handlePrices}
-            getValueNoteProduct={this.getValueNoteProduct}
-          />
-          <AddToCartFooter
-            closeModal={closeModal}
-            productInfo={productInfo}
-            price={price}
-            size={size}
-            toppingName={toppingName}
-            // addProductFlag={addProductFlag}
-            moveToCart={moveToCart}
-            valueNoteProduct={valueNoteProduct}
-            toppingPrice={toppingPrice}
-          />
+          {/* ////////////////////////////////////////////////////////// */}
+          {/* HEADER MODAL*/}
+          <div className="add-to-cart__header">
+            <div className="add-to-cart__header-left">
+              <Image
+                src={productInfo.image}
+                width="80"
+                height="80"
+                alt="Product image"
+              />
+              <div className="add-to-cart__header-info">
+                <h3>{productInfo.product_name}</h3>
+                <p>{size}</p>
+                <p>{toppingName.slice(0, -2)}</p>
+              </div>
+            </div>
+            <div className="add-to-cart__header-right">
+              <CloseButton closeModal={this.props.closeModal} />
+            </div>
+          </div>
+
+          {/* ////////////////////////////////////////////////////////// */}
+          {/* BODY MODAL*/}
+          <div className="add-to-cart__body">
+            <AddToCartChooseSize
+              productInfo={productInfo}
+              handleSize={this.handleSize}
+              size={size}
+            />
+            {productInfo.topping_list !== undefined &&
+            productInfo.topping_list.length > 0 ? (
+              <AddToCartTopping
+                productInfo={productInfo}
+                handlePrices={this.handlePrices}
+                toppingName={toppingName}
+              />
+            ) : null}
+            <AddToCartNote />
+          </div>
+
+          {/* ////////////////////////////////////////////////////////// */}
+          {/* FOOTER MODAL*/}
+          <div className="add-to-cart__footer">
+            <div className="add-to-cart__amount">
+              <SubtractButton
+                width="36"
+                height="36"
+                onSubtractButton={this.onSubtractButton}
+              />
+              <span>{amount}</span>
+              <AddButton
+                width="36"
+                height="36"
+                onAddButton={this.onAddButton}
+              />
+            </div>
+            <div>
+              <div onClick={this.props.changeDeliveryChargeFlag}>
+                <div className="add-to-cart__submit" onClick={closeModal}>
+                  <Button
+                    className="add-to-cart__btn-submit"
+                    type="submit"
+                    value={`THÊM VÀO GIỎ ${amount * (price + toppingPrice)} ₫`}
+                    onClick={() => this.props.addToCartV2(productInCart)}
+                  ></Button>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </>
     );
