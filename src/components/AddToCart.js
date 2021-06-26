@@ -16,6 +16,7 @@ class AddToCart extends React.Component {
       amount: 1,
       toppingPrice: 0,
       toppingName: "",
+      toppingCode: [],
     };
   }
 
@@ -31,12 +32,16 @@ class AddToCart extends React.Component {
     });
   };
 
-  handlePrices = (data) => {
+  handlePrices = (data, index) => {
     let price = document.getElementById(data.code);
+
     if (price.checked) {
+      let cuong = this.state.toppingCode.splice(index, 0, data.code);
       this.setState({
         toppingPrice: this.state.toppingPrice + data.price,
         toppingName: this.state.toppingName.concat(` ${data.product_name} +`),
+        toppingCode: [...this.state.toppingCode, cuong],
+        // [...this.state.toppingCode, data.code],
       });
     } else {
       this.setState({
@@ -45,6 +50,7 @@ class AddToCart extends React.Component {
           ` ${data.product_name} +`,
           ""
         ),
+        toppingCode: this.state.toppingCode.splice(index, 1, data.code),
       });
     }
   };
@@ -61,7 +67,8 @@ class AddToCart extends React.Component {
       productInfo.amount !== undefined &&
       productInfo.toppingName !== undefined &&
       productInfo.toppingPrice !== undefined &&
-      productInfo.toppingPrice !== undefined
+      productInfo.toppingPrice !== undefined &&
+      productInfo.toppingCode !== undefined
     ) {
       this.setState({
         amount: productInfo.amount,
@@ -69,15 +76,18 @@ class AddToCart extends React.Component {
         toppingName: productInfo.toppingName,
         toppingPrice: productInfo.toppingPrice,
         price: productInfo.price,
+        toppingCode: productInfo.toppingCode,
       });
     }
   }
   render() {
     const { productInfo, closeModal } = this.props;
-    const { toppingName, size, price, toppingPrice, amount } = this.state;
+    const { toppingName, toppingCode, toppingPrice, price, size, amount } =
+      this.state;
     let productInCart = {
       product_name: productInfo.product_name,
       toppingName: toppingName,
+      toppingCode: toppingCode,
       toppingPrice: toppingPrice,
       topping_list: productInfo.topping_list,
       size: size,
@@ -87,7 +97,7 @@ class AddToCart extends React.Component {
       totalPrice: amount * (price + toppingPrice),
       price: this.state.price,
     };
-    // console.log(productInfo);
+    console.log(toppingCode);
     return (
       <>
         <div className={`overlay`} onClick={this.props.closeModal}></div>
@@ -155,7 +165,7 @@ class AddToCart extends React.Component {
                     className="add-to-cart__btn-submit"
                     type="submit"
                     value={`THÊM VÀO GIỎ ${amount * (price + toppingPrice)} ₫`}
-                    onClick={() => this.props.addToCartV2(productInCart)}
+                    onClick={() => this.props.addToCart(productInCart)}
                   ></Button>
                 </div>
               </div>

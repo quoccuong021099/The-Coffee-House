@@ -7,7 +7,7 @@ class AddToCartBody extends React.Component {
       <>
         <div className="add-to-cart__topping">
           <p>Topping -</p>
-          {productInfo.topping_list.map((item) => (
+          {productInfo.topping_list.map((item,index) => (
             
             <InputGroup
               key={item.code}
@@ -18,7 +18,7 @@ class AddToCartBody extends React.Component {
               }
               id={item.code}
               value={`${item.product_name} (+${item.price}₫)`}
-              onClick={() => handlePrices(item)}
+              onClick={() => handlePrices(item,index)}
             />
           ))}
         </div>

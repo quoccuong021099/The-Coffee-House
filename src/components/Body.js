@@ -25,7 +25,7 @@ class Body extends React.Component {
     };
   }
 
-  addToCartV2 = (data) => {
+  addToCart = (data) => {
     let { productInfoForCart } = this.state;
 
     let copyProductInfoForCart = [...productInfoForCart];
@@ -39,10 +39,11 @@ class Body extends React.Component {
       });
     }
     let flag = 1;
+    console.log(data);
     copyProductInfoForCart.map((item) =>
       item.product_name === data.product_name &&
       item.size === data.size &&
-      item.toppingName === data.toppingName
+      JSON.stringify(item.toppingCode) === JSON.stringify(data.toppingCode)
         ? ((item.amount += data.amount),
           (item.totalPrice += data.totalPrice),
           (flag *= -1))
@@ -55,7 +56,7 @@ class Body extends React.Component {
           (item) => item.amount > 0
         ),
       });
-      this.props.getAmount([...copyProductInfoForCart, data])
+      this.props.getAmount([...copyProductInfoForCart, data]);
     }
 
     this.setState({
@@ -218,15 +219,13 @@ class Body extends React.Component {
             deliveryCharge={deliveryCharge}
             productInfoForCart={productInfoForCart}
             editProduct={this.editProduct}
-            
             deliveryChargeFlag={this.props.deliveryChargeFlag}
-
           />
           {productInfo !== null && (
             <AddToCart
               closeModal={this.closeModal}
               productInfo={productInfo}
-              addToCartV2={this.addToCartV2}
+              addToCart={this.addToCart}
               changeDeliveryChargeFlag={this.props.changeDeliveryChargeFlag}
             />
           )}

@@ -63,7 +63,7 @@ class CartContainer extends React.Component {
                       <div className="cart-list-product__right">
                         <Currency
                           className="cart-list-product__right-currency"
-                          value={item.totalPrice}
+                          value={item.totalPrice.toString().replace(/(\d)(?=(\d{3})+(?!\d))/g,'$1.')}
                         />
                       </div>
                     </div>
@@ -73,7 +73,7 @@ class CartContainer extends React.Component {
           <div className="coupon">
             <div className="total-price">
               <span>Cộng ({plusNumberCart} món)</span>
-              <Currency value={plusPrice > 0 ? plusPrice : 0} />
+              <Currency value={plusPrice > 0 ? plusPrice.toString().replace(/(\d)(?=(\d{3})+(?!\d))/g,'$1.') : 0} />
             </div>
             <div className="delivery">
               <span>Vận chuyển</span>
@@ -83,7 +83,7 @@ class CartContainer extends React.Component {
                   this.props.deliveryChargeFlag
                     ? plusPrice > 50000
                       ? 0
-                      : 10000
+                      : (10000).toString().replace(/(\d)(?=(\d{3})+(?!\d))/g,'$1.')
                     : 0
                 }
               />
@@ -108,8 +108,8 @@ class CartContainer extends React.Component {
               value={
                 this.props.deliveryChargeFlag
                   ? plusPrice > 50000
-                    ? plusPrice
-                    : plusPrice + 10000
+                    ? plusPrice.toString().replace(/(\d)(?=(\d{3})+(?!\d))/g,'$1.')
+                    : (plusPrice + 10000).toString().replace(/(\d)(?=(\d{3})+(?!\d))/g,'$1.')
                   : 0
               }
             />
