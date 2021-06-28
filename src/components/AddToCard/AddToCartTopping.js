@@ -1,5 +1,5 @@
 import React from "react";
-import InputGroup from "../common/InputGroup";
+import InputGroup from "../../common/InputGroup";
 class AddToCartBody extends React.Component {
   render() {
     const { productInfo, handlePrices, toppingName } = this.props;
@@ -7,8 +7,7 @@ class AddToCartBody extends React.Component {
       <>
         <div className="add-to-cart__topping">
           <p>Topping -</p>
-          {productInfo.topping_list.map((item,index) => (
-            
+          {productInfo.topping_list.map((item, index) => (
             <InputGroup
               key={item.code}
               type="checkbox"
@@ -18,7 +17,7 @@ class AddToCartBody extends React.Component {
               }
               id={item.code}
               value={`${item.product_name} (+${item.price}₫)`}
-              onClick={() => handlePrices(item,index)}
+              onClick={() => handlePrices(item, index)}
             />
           ))}
         </div>

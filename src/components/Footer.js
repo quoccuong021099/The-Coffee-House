@@ -3,6 +3,7 @@ import logofooter from "../image/logo_footer.png";
 import gov from "../image/gov.png";
 import appstore from "../image/appstore.png";
 import ggplay from "../image/google-play-badge.png";
+import react from "react";
 function Footer() {
   return (
     <footer>
@@ -111,4 +112,4 @@ function Footer() {
   );
 }
 
-export default Footer;
+export default react.memo(Footer);

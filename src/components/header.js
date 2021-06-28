@@ -1,12 +1,12 @@
 import React from "react";
 import Button from "../common/Button";
 import Input from "../common/Input";
-import DropdownItem from "./DropdownItem";
+import DropdownItem from "./Delivery/DropdownItem";
 import logo from "../image/logo.png";
 import Image from "../common/Image";
 import locationImg from "../image/location.png";
 import CartIcon from "../common/CartIcon";
-import DropdownDelivery from "./DropdownDelivery";
+import DropdownDelivery from "./Delivery/DropdownDelivery";
 class Logo extends React.Component {
   render() {
     return (
@@ -174,7 +174,7 @@ class Header extends React.Component {
     ) {
       this.setState({
         dropdown: false,
-        delivery: false
+        delivery: false,
       });
     }
   };
@@ -282,7 +282,6 @@ class Header extends React.Component {
               <Image src={locationImg} alt="Location Image" />
             </span>
             <div className="dropdown">
-             
               <Input
                 type="text"
                 className="input-address"

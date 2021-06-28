@@ -9,7 +9,7 @@ import "./assets/add-to-cart.css";
 import "./assets/CartContainer.css";
 import "./assets/Footer.css";
 import Header from "./components/Header";
-import Body from "./components/Body";
+import Body from "./components/Body/Body";
 import Footer from "./components/Footer";
 class App extends React.Component {
   constructor() {
@@ -30,8 +30,8 @@ class App extends React.Component {
       number.map((item) => (amount += item.amount));
     }
     this.setState({
-      cartNumber: amount
-    })
+      cartNumber: amount,
+    });
   };
   render() {
     return (

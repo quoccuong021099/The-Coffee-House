@@ -1,5 +1,5 @@
 import React from "react";
-import Input from "../common/Input";
+import Input from "../../common/Input";
 
 class Body extends React.Component {
   render() {
@@ -31,9 +31,7 @@ class Body extends React.Component {
           type="text"
           className="input-search"
           placeholder="Tìm kiếm sản phẩm"
-
           onChange={this.props.onChange}
-          
         />
       </div>
     );

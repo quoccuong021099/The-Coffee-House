@@ -1,7 +1,7 @@
 import React from "react";
-import Button from "../common/Button";
-import Input from "../common/Input";
-import Currency from "../common/Currency";
+import Button from "../../common/Button";
+import Input from "../../common/Input";
+import Currency from "../../common/Currency";
 class CartContainer extends React.Component {
   plusPrice = () => {
     let price1 = 0;
@@ -21,7 +21,7 @@ class CartContainer extends React.Component {
     const { productInfoForCart, editProduct } = this.props;
     let plusPrice = this.plusPrice();
     let plusNumberCart = this.plusNumberCart();
-    
+
     return (
       <div className="cart">
         <div className="cart-fixed">
@@ -63,7 +63,9 @@ class CartContainer extends React.Component {
                       <div className="cart-list-product__right">
                         <Currency
                           className="cart-list-product__right-currency"
-                          value={item.totalPrice.toString().replace(/(\d)(?=(\d{3})+(?!\d))/g,'$1.')}
+                          value={item.totalPrice
+                            .toString()
+                            .replace(/(\d)(?=(\d{3})+(?!\d))/g, "$1.")}
                         />
                       </div>
                     </div>
@@ -73,7 +75,15 @@ class CartContainer extends React.Component {
           <div className="coupon">
             <div className="total-price">
               <span>Cộng ({plusNumberCart} món)</span>
-              <Currency value={plusPrice > 0 ? plusPrice.toString().replace(/(\d)(?=(\d{3})+(?!\d))/g,'$1.') : 0} />
+              <Currency
+                value={
+                  plusPrice > 0
+                    ? plusPrice
+                        .toString()
+                        .replace(/(\d)(?=(\d{3})+(?!\d))/g, "$1.")
+                    : 0
+                }
+              />
             </div>
             <div className="delivery">
               <span>Vận chuyển</span>
@@ -83,7 +93,9 @@ class CartContainer extends React.Component {
                   this.props.deliveryChargeFlag
                     ? plusPrice > 50000
                       ? 0
-                      : (10000).toString().replace(/(\d)(?=(\d{3})+(?!\d))/g,'$1.')
+                      : (10000)
+                          .toString()
+                          .replace(/(\d)(?=(\d{3})+(?!\d))/g, "$1.")
                     : 0
                 }
               />
@@ -101,15 +113,19 @@ class CartContainer extends React.Component {
               ></Button>
             </form>
           </div>
-          <div className="total" >
+          <div className="total">
             <span>Tổng cộng</span>
             <Currency
               className="currency__total"
               value={
                 this.props.deliveryChargeFlag
                   ? plusPrice > 50000
-                    ? plusPrice.toString().replace(/(\d)(?=(\d{3})+(?!\d))/g,'$1.')
-                    : (plusPrice + 10000).toString().replace(/(\d)(?=(\d{3})+(?!\d))/g,'$1.')
+                    ? plusPrice
+                        .toString()
+                        .replace(/(\d)(?=(\d{3})+(?!\d))/g, "$1.")
+                    : (plusPrice + 10000)
+                        .toString()
+                        .replace(/(\d)(?=(\d{3})+(?!\d))/g, "$1.")
                   : 0
               }
             />

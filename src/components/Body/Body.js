@@ -1,14 +1,14 @@
 /* eslint-disable react/no-direct-mutation-state */
 import React from "react";
 import Sidebar from "./Sidebar";
-import Main from "./Main";
+import Main from "../Product/Main";
 import CartContainer from "./CartContainer";
-import PlaceholderSidebar from "../placeholder/PlaceholderSidebar";
-import PlaceholderProduct from "../placeholder/PlaceholderProduct";
-import Image from "../common/Image";
-import failData from "../image/search.png";
-import SearchProduct from "./SearchProduct";
-import AddToCart from "./AddToCart";
+import PlaceholderSidebar from "../../placeholder/PlaceholderSidebar";
+import PlaceholderProduct from "../../placeholder/PlaceholderProduct";
+import Image from "../../common/Image";
+import failData from "../../image/search.png";
+import SearchProduct from "../Product/SearchProduct";
+import AddToCart from "../AddToCard/AddToCart";
 class Body extends React.Component {
   constructor(props) {
     super(props);

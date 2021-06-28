@@ -1,12 +1,12 @@
 import React from "react";
-import Button from "../common/Button";
-import SubtractButton from "../common/SubtractButton";
-import AddButton from "../common/AddButton";
+import Button from "../../common/Button";
+import SubtractButton from "../../common/SubtractButton";
+import AddButton from "../../common/AddButton";
 import AddToCartChooseSize from "./AddToCartChooseSize";
 import AddToCartTopping from "./AddToCartTopping";
 import AddToCartNote from "./AddToCartNote";
-import Image from "../common/Image";
-import CloseButton from "../common/CloseButton";
+import Image from "../../common/Image";
+import CloseButton from "../../common/CloseButton";
 class AddToCart extends React.Component {
   constructor(props) {
     super(props);

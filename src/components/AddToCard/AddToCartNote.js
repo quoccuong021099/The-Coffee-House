@@ -1,6 +1,6 @@
 import React from "react";
-import Input from "../common/Input";
-import NoteIcon from "../common/NoteIcon";
+import Input from "../../common/Input";
+import NoteIcon from "../../common/NoteIcon";
 class AddToCartBody extends React.Component {
   render() {
     return (

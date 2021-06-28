@@ -1,5 +1,5 @@
 import React from "react";
-import InputGroup from "../common/InputGroup";
+import InputGroup from "../../common/InputGroup";
 class ChooseSize extends React.Component {
   render() {
     const { productInfo, handleSize, size } = this.props;
