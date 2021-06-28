@@ -97,7 +97,6 @@ class AddToCart extends React.Component {
       totalPrice: amount * (price + toppingPrice),
       price: this.state.price,
     };
-    console.log(toppingCode);
     return (
       <>
         <div className={`overlay`} onClick={this.props.closeModal}></div>
