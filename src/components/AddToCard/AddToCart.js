@@ -36,11 +36,11 @@ class AddToCart extends React.Component {
     let price = document.getElementById(data.code);
 
     if (price.checked) {
-      let cuong = this.state.toppingCode.splice(index, 0, data.code);
+      let indexTopping = this.state.toppingCode.splice(index, 0, data.code);
       this.setState({
         toppingPrice: this.state.toppingPrice + data.price,
         toppingName: this.state.toppingName.concat(` ${data.product_name} +`),
-        toppingCode: [...this.state.toppingCode, cuong],
+        toppingCode: [...this.state.toppingCode, indexTopping],
         // [...this.state.toppingCode, data.code],
       });
     } else {

@@ -108,7 +108,7 @@ class CartContainer extends React.Component {
               />
               <Button
                 className="btn__apply"
-                type="submit"
+                type="button"
                 value="ÁP DỤNG"
               ></Button>
             </form>

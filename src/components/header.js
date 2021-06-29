@@ -7,13 +7,11 @@ import Image from "../common/Image";
 import locationImg from "../image/location.png";
 import CartIcon from "../common/CartIcon";
 import DropdownDelivery from "./Delivery/DropdownDelivery";
+import { Link } from "react-router-dom";
+
 class Logo extends React.Component {
   render() {
-    return (
-      <a href="#a" className="header__logo">
-        <img src={logo} alt="logo" />
-      </a>
-    );
+    return <img src={logo} alt="logo" />;
   }
 }
 
@@ -267,85 +265,90 @@ class Header extends React.Component {
     } = this.state;
     return (
       <header className="header">
-        <Logo />
-        <div className="form-delivery" ref={this.container}>
-          <Button
-            className="btn__delivery"
-            type="button"
-            value={
-              valueTimerOnButton === "" ? `GIAO NGAY` : `${valueTimerOnButton}`
-            }
-            onClick={this.handleDelivery}
-          ></Button>
-          <div className="form-control">
-            <span className="input-icon">
-              <Image src={locationImg} alt="Location Image" />
-            </span>
-            <div className="dropdown">
-              <Input
-                type="text"
-                className="input-address"
-                placeholder="Nhập địa chỉ giao hàng"
-                value={location}
-                onChange={this.getValueInputAddress}
-                onFocus={this.onFocusAddress}
-              />
-              <ul className="dropdown-menu">
-                {dropdown && location.length !== 0
-                  ? getAddress.length > 0
-                    ? getAddress.map((i) => (
-                        <DropdownItem
-                          address={i}
-                          key={i.place_id}
-                          fullAddress={() => this.fullAddress(i.full_address)}
-                        />
-                      ))
-                    : dropdown && (
-                        <li>
-                          <span className="input-icon-dropdown">
-                            <img src={locationImg} alt="" />
-                          </span>
-                          <a href="#a">
-                            <h3 className="dropdown-menu-title">
-                              Không tìm thấy địa chỉ
-                            </h3>
-                            <h3 className="dropdown-menu-title">
-                              "{location}"
-                            </h3>
-                          </a>
-                        </li>
-                      )
-                  : null}
-              </ul>
+        <Link to="/" className="header__logo">
+          <Logo />
+        </Link>
+        {
+          <div className="form-delivery" ref={this.container}>
+            <Button
+              className="btn__delivery"
+              type="button"
+              value={
+                valueTimerOnButton === ""
+                  ? `GIAO NGAY`
+                  : `${valueTimerOnButton}`
+              }
+              onClick={this.handleDelivery}
+            ></Button>
+            <div className="form-control">
+              <span className="input-icon">
+                <Image src={locationImg} alt="Location Image" />
+              </span>
+              <div className="dropdown">
+                <Input
+                  type="text"
+                  className="input-address"
+                  placeholder="Nhập địa chỉ giao hàng"
+                  value={location}
+                  onChange={this.getValueInputAddress}
+                  onFocus={this.onFocusAddress}
+                />
+                <ul className="dropdown-menu">
+                  {dropdown && location.length !== 0
+                    ? getAddress.length > 0
+                      ? getAddress.map((i) => (
+                          <DropdownItem
+                            address={i}
+                            key={i.place_id}
+                            fullAddress={() => this.fullAddress(i.full_address)}
+                          />
+                        ))
+                      : dropdown && (
+                          <li>
+                            <span className="input-icon-dropdown">
+                              <img src={locationImg} alt="" />
+                            </span>
+                            <a href="#a">
+                              <h3 className="dropdown-menu-title">
+                                Không tìm thấy địa chỉ
+                              </h3>
+                              <h3 className="dropdown-menu-title">
+                                "{location}"
+                              </h3>
+                            </a>
+                          </li>
+                        )
+                    : null}
+                </ul>
+              </div>
             </div>
+            {delivery ? (
+              <DropdownDelivery
+                handleShipNow={this.handleShipNow}
+                getValueTime={this.getValueTime}
+                getValueDate={this.getValueDate}
+                getValueTimer={this.getValueTimer}
+                handleTimeOrder={this.handleTimeOrder}
+                timerFlag={timerFlag}
+                valueDate={valueDate}
+                valueTime={valueTime}
+                optionValueTime={optionValueTime}
+                optionValueTimeNotNow={optionValueTimeNotNow}
+                today={today}
+                tommorow={tommorow}
+                nextTwoDays={nextTwoDays}
+                minutes={minutes}
+                hours={hours}
+                changeDeliveryChargeFlag={this.props.changeDeliveryChargeFlag}
+              />
+            ) : null}
           </div>
-          {delivery ? (
-            <DropdownDelivery
-              handleShipNow={this.handleShipNow}
-              getValueTime={this.getValueTime}
-              getValueDate={this.getValueDate}
-              getValueTimer={this.getValueTimer}
-              handleTimeOrder={this.handleTimeOrder}
-              timerFlag={timerFlag}
-              valueDate={valueDate}
-              valueTime={valueTime}
-              optionValueTime={optionValueTime}
-              optionValueTimeNotNow={optionValueTimeNotNow}
-              today={today}
-              tommorow={tommorow}
-              nextTwoDays={nextTwoDays}
-              minutes={minutes}
-              hours={hours}
-              changeDeliveryChargeFlag={this.props.changeDeliveryChargeFlag}
-            />
-          ) : null}
-        </div>
+        }
         <div className="form-login">
-          <Button
-            className="btn--login"
-            type="button"
-            value="ĐĂNG NHẬP"
-          ></Button>
+          <Link to="/LoginPage">
+            <Button className="btn--login" type="button" value="ĐĂNG NHẬP" />
+          </Link>
+
           {this.props.cartNumber > 0 ? (
             <div className="cart-icon">
               <span>{this.props.cartNumber}</span> <CartIcon />

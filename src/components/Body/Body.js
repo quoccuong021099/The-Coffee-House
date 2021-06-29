@@ -39,7 +39,6 @@ class Body extends React.Component {
       });
     }
     let flag = 1;
-    console.log(data);
     copyProductInfoForCart.map((item) =>
       item.product_name === data.product_name &&
       item.size === data.size &&
@@ -51,12 +50,27 @@ class Body extends React.Component {
     );
 
     if (flag === 1) {
+      // setItem LocalStorage
+      localStorage.setItem(
+        "productInfoForCart",
+        JSON.stringify(
+          [...copyProductInfoForCart, data].filter((item) => item.amount > 0)
+        )
+      );
+
       this.setState({
         productInfoForCart: [...copyProductInfoForCart, data].filter(
           (item) => item.amount > 0
         ),
       });
+
       this.props.getAmount([...copyProductInfoForCart, data]);
+    } else {
+      // setItem LocalStorage
+      localStorage.setItem(
+        "productInfoForCart",
+        JSON.stringify(copyProductInfoForCart)
+      );
     }
 
     this.setState({
@@ -161,6 +175,20 @@ class Body extends React.Component {
           error,
         });
       });
+
+    if (
+      JSON.parse(localStorage.getItem("productInfoForCart")) &&
+      JSON.parse(localStorage.getItem("productInfoForCart")).length > 0
+    ) {
+      this.setState({
+        productInfoForCart: JSON.parse(
+          localStorage.getItem("productInfoForCart")
+        ),
+      });
+      this.props.getAmount(
+        JSON.parse(localStorage.getItem("productInfoForCart"))
+      );
+    }
   }
   /////////////////////
 
