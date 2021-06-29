@@ -51,10 +51,25 @@
 .btn-register {
   width: 100%;
   margin-top: 40px;
-  background-color: #f5f5f5;
+  background-color: #ea8025;
+  color: #fff;
   outline: none;
-  /* border: none; */
+  border: 1px solid #ea8025;
 }
+.btn-login:hover,
+.btn-register:hover {
+  border: none;
+  outline: none;
+}
+button[disabled] {
+  background-color: #f5f5f5;
+  color: #c8c8c8;
+  outline: none;
+  border: 1px solid #b2b2b2;
+  user-select: none;
+  cursor: default;
+}
+
 .error {
   display: inline-block;
   color: red;

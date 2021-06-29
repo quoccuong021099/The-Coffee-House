@@ -9,6 +9,7 @@ class Button extends React.Component {
         type={`${this.props.type}`}
         onClick = {this.props.onClick}
         onSubmit = {this.props.onSubmit}
+        disabled={this.props.disabled}
       >
         {`${this.props.value}`}
       
