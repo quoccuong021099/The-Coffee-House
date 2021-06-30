@@ -23,6 +23,46 @@
   outline: none;
   border: none;
 }
+.wrapper-verify {
+  background-color: #fff;
+  width: 515px;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.form-control-verify {
+  border: 1px solid #b2b2b2;
+  width: 90%;
+  height: 90%;
+  padding: 20px;
+}
+.form-control-verify p {
+  text-align: center;
+  max-width: 100%;
+  font-size: 15px;
+  margin: 20px 0;
+}
+.input-otp {
+  width: 100%;
+  border-radius: 3px;
+  padding: 20px;
+  margin: 15px 0;
+}
+.btn-otp {
+  display: block;
+  background-color: #808080 !important;
+  color: #fff !important;
+  text-align: center;
+  width: 80%;
+  align-self: center;
+  margin: 15px auto 0;
+  border-radius: 5px;
+}
+.form-control-verify input {
+  border: 1px solid #b2b2b2;
+}
+
 .form-control-login,
 .form-control-register {
   position: relative;
@@ -39,6 +79,7 @@
   top: 20px;
   left: 15px;
   transform: translateY(-50%);
+  user-select: none;
 }
 .number span {
   position: absolute;

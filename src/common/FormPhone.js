@@ -6,27 +6,6 @@ import Vn from "../image/vn.png";
 import Image from "../common/Image";
 
 class FormPhone extends React.Component {
-  // constructor() {
-  //   super();
-  //   this.state = {
-  //     phoneNumberValue: null,
-  //     submitPhoneFlag: false,
-  //   };
-  // }
-  // handleChangePhoneNumber = (e) => {
-  //   this.setState({
-  //     phoneNumberValue: e.target.value,
-  //     submitPhoneFlag: false,
-  //   });
-  // };
-  // handleSubmitPhone = (e) => {
-  //   e.preventDefault();
-  //   if (!this.state.phoneNumberValue)
-  //     this.setState({
-  //       submitPhoneFlag: true,
-  //     });
-  // };
-
   blockInvalidChar = (e) =>
     ["e", "E", "+", "-"].includes(e.key) && e.preventDefault();
   render() {
@@ -35,6 +14,7 @@ class FormPhone extends React.Component {
       submitPhoneFlag,
       handleSubmitPhone,
       handleChangePhoneNumber,
+      handleClickLogin,
     } = this.props;
     return (
       <form className="form-control-login" onSubmit={handleSubmitPhone}>
@@ -70,6 +50,7 @@ class FormPhone extends React.Component {
               : false
           }
           onSubmit={this.handleSubmitPhone}
+          onClick={handleClickLogin}
         />
       </form>
     );
