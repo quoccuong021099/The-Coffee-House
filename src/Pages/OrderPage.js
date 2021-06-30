@@ -10,8 +10,7 @@ import "../assets/Footer.css";
 import Header from "../components/Header";
 import Body from "../components/Body/Body";
 import Footer from "../components/Footer";
-import LoginPage from "./LoginPage";
-import Register from "../Pages/Register";
+import LoginAndRegister from "./LoginAndRegister";
 import { Switch, Route } from "react-router-dom";
 
 class OrderPage extends React.Component {
@@ -47,10 +46,7 @@ class OrderPage extends React.Component {
           flagLogin={this.state.flagLogin}
         />
         <Switch>
-          {/* <LoginPage />
-          <Register /> */}
-          <Route path="/LoginPage" component={LoginPage} />
-          <Route path="/Register" component={Register} />
+          <Route path="/LoginAndRegister" component={LoginAndRegister} />
           <Route
             exact
             path="/"

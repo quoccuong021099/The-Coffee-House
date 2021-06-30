@@ -345,7 +345,7 @@ class Header extends React.Component {
           </div>
         }
         <div className="form-login">
-          <Link to="/LoginPage">
+          <Link to="/LoginAndRegister">
             <Button className="btn--login" type="button" value="ĐĂNG NHẬP" />
           </Link>
 
