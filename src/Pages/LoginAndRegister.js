@@ -45,10 +45,13 @@ class LoginAndRegister extends React.Component {
       .signInWithPhoneNumber(phoneNumber, appVerifier)
       .then((confirmationResult) => {
         window.confirmationResult = confirmationResult;
-        document.querySelector(".notify").textContent = "OTP has been sent !!";
+        document.querySelector(
+          ".notify"
+        ).textContent = `Đã gửi mã OTP đến (+84) ${this.state.phone}!!`;
       })
       .catch((error) => {
-        document.querySelector(".notify").textContent = "SMS not sent !!";
+        document.querySelector(".notify").textContent =
+          "Số điện thoại không tồn tại, hoặc số điện  thoại đã được đăng ký !!";
       });
     this.setState({
       flagOTP: true,
@@ -92,7 +95,7 @@ class LoginAndRegister extends React.Component {
     });
   };
   render() {
-    const { login, flagOTP, phone } = this.state;
+    const { login, flagOTP, phone, otp } = this.state;
     return (
       <div className="wrapper-login">
         {flagOTP && (
@@ -100,6 +103,7 @@ class LoginAndRegister extends React.Component {
             handleChange={this.handleChange}
             onSubmitOTP={this.onSubmitOTP}
             valueInputPhone={phone}
+            handleReturn={this.handleReturn}
           />
         )}
         {login && (
