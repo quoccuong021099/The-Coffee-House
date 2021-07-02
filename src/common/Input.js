@@ -17,6 +17,7 @@ class Input extends React.Component {
         onKeyDown={this.props.onKeyDown}
         hidden={this.props.hidden}
         min={this.props.min}
+        required={this.props.required}
       />
     );
   }

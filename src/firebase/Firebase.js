@@ -1,12 +1,13 @@
 import firebase from "firebase";
-var config = {
-  apiKey: "AIzaSyDMtXGuqQgXYV0W4oCUbgLcO_D3ccyhfFc",
-  authDomain: "the-coffee-house-fbfc1.firebaseapp.com",
-  projectId: "the-coffee-house-fbfc1",
-  storageBucket: "the-coffee-house-fbfc1.appspot.com",
-  messagingSenderId: "851022176940",
-  appId: "1:851022176940:web:90cd25ee3482574c6e7509",
+import "firebase/auth";
+var firebaseConfig = {
+  apiKey: "AIzaSyDktpqILTA4vMcvT8ppAuwk_yy6mp_o9JM",
+  authDomain: "otp-coffee-14a6a.firebaseapp.com",
+  projectId: "otp-coffee-14a6a",
+  storageBucket: "otp-coffee-14a6a.appspot.com",
+  messagingSenderId: "920061102773",
+  appId: "1:920061102773:web:3d1abf061b2e013ba14cfc",
 };
 // Initialize Firebase
-firebase.initializeApp(config);
+firebase.initializeApp(firebaseConfig);
 export default firebase;
