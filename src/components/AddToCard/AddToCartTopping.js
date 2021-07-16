@@ -17,7 +17,7 @@ class AddToCartBody extends React.Component {
               }
               id={item.code}
               value={`${item.product_name} (+${item.price}₫)`}
-              onClick={() => handlePrices(item, index)}
+              onClick={(e) => handlePrices(item, index, e)}
             />
           ))}
         </div>

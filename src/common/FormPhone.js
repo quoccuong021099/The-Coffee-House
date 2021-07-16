@@ -9,16 +9,11 @@ class FormPhone extends React.Component {
   blockInvalidChar = (e) =>
     ["e", "E", "+", "-"].includes(e.key) && e.preventDefault();
   render() {
-    const {
-      onSignInSubmit,
-      handleChange,
-      nameInput,
-      textButton,
-      valueInputPhone,
-    } = this.props;
+    const { onSubmit, handleChange, nameInput, textButton, valueInputPhone } =
+      this.props;
     return (
       <>
-        <form className="form-control-login" onSubmit={onSignInSubmit}>
+        <form className="form-control-login" onSubmit={onSubmit}>
           <div className="number">
             <Image src={Vn} width="36" height="24" />
             <span>+84</span>

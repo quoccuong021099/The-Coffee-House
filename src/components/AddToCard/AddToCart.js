@@ -32,16 +32,15 @@ class AddToCart extends React.Component {
     });
   };
 
-  handlePrices = (data, index) => {
-    let price = document.getElementById(data.code);
+  handlePrices = (data, index, e) => {
+    let price = e.target.checked;
 
-    if (price.checked) {
+    if (price) {
       let indexTopping = this.state.toppingCode.splice(index, 0, data.code);
       this.setState({
         toppingPrice: this.state.toppingPrice + data.price,
         toppingName: this.state.toppingName.concat(` ${data.product_name} +`),
         toppingCode: [...this.state.toppingCode, indexTopping],
-        // [...this.state.toppingCode, data.code],
       });
     } else {
       this.setState({
@@ -50,7 +49,7 @@ class AddToCart extends React.Component {
           ` ${data.product_name} +`,
           ""
         ),
-        toppingCode: this.state.toppingCode.splice(index, 1, data.code),
+        toppingCode: this.state.toppingCode.filter((i) => i !== data.code),
       });
     }
   };
@@ -84,10 +83,11 @@ class AddToCart extends React.Component {
     const { productInfo, closeModal } = this.props;
     const { toppingName, toppingCode, toppingPrice, price, size, amount } =
       this.state;
+    // console.log(toppingCode.filter((i) => typeof i === "string"));
     let productInCart = {
       product_name: productInfo.product_name,
       toppingName: toppingName,
-      toppingCode: toppingCode,
+      toppingCode: toppingCode.filter((i) => typeof i === "string"),
       toppingPrice: toppingPrice,
       topping_list: productInfo.topping_list,
       size: size,

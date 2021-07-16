@@ -26,6 +26,7 @@ class Body extends React.Component {
   }
 
   addToCart = (data) => {
+    console.log("Data dòng 30: ", data.toppingCode);
     let { productInfoForCart } = this.state;
 
     let copyProductInfoForCart = [...productInfoForCart];
@@ -94,15 +95,18 @@ class Body extends React.Component {
       productInfo: products,
       indexProductOrder: -1,
     });
+    document.body.classList.add("lock-scroll");
   };
   /////////////////////
 
   editProduct = (data, index) => {
+    console.log("edut: ", data.toppingCode);
     this.setState({
       addProductFlag: true,
       productInfo: data,
       indexProductOrder: index,
     });
+    document.body.classList.add("lock-scroll");
   };
   /////////////////////
 
@@ -110,12 +114,14 @@ class Body extends React.Component {
     this.setState({
       addProductFlag: false,
     });
+    document.body.classList.remove("lock-scroll");
     setTimeout(() => {
       this.setState({
         productInfo: null,
       });
     }, 300);
   };
+
   /////////////////////
 
   onchange = (e) => this.setState({ searchProduct: e.target.value });

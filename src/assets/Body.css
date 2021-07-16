@@ -1,3 +1,6 @@
+.lock-scroll {
+  overflow-y: hidden;
+}
 .main {
   max-width: 1364px;
   margin: 60px auto 0;

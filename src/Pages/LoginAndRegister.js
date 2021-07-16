@@ -3,15 +3,18 @@ import Button from "../common/Button";
 import "../assets/login.css";
 import FormPhone from "../common/FormPhone";
 import InputOTP from "../common/InputOTP";
-import firebase from "../firebase/Firebase";
+import firebase, { db } from "../firebase/Firebase";
+import FormCustomer from "../common/FormCustomer";
 
 class LoginAndRegister extends React.Component {
   constructor() {
     super();
     this.state = {
       otpValue: null,
-      login: false,
+      login: true,
       flagOTP: false,
+      customers: null,
+      flagCustomer: false,
     };
   }
 
@@ -27,64 +30,96 @@ class LoginAndRegister extends React.Component {
       {
         size: "invisible",
         callback: (response) => {
-          // reCAPTCHA solved, allow signInWithPhoneNumber.
-          this.onSignInSubmit();
+          this.onSignUpSubmit();
           console.log("Recaptca varified");
         },
         defaultCountry: "IN",
       }
     );
   };
-  onSignInSubmit = (e) => {
+  onSignUpSubmit = (e) => {
     e.preventDefault();
+    const index = this.state.customers.findIndex(
+      (i) => i.phone === this.state.phoneSignUp
+    );
+    this.setState({
+      flagOTP: true,
+      login: false,
+      flagCustomer: false,
+    });
+    if (index >= 0) return alert("Số điện thoại đã tồn tại");
+    this.sendOTP();
+  };
+
+  sendOTP = () => {
     this.configureCaptcha();
-    const phoneNumber = "+84" + this.state.phone.slice(1);
+    let phoneNumber = null;
+    if (this.state.phoneSignUp) {
+      phoneNumber = "+84" + this.state.phoneSignUp.slice(1);
+    }
+    if (this.state.phoneSignIn) {
+      phoneNumber = "+84" + this.state.phoneSignIn.slice(1);
+    }
     const appVerifier = window.recaptchaVerifier;
     firebase
       .auth()
       .signInWithPhoneNumber(phoneNumber, appVerifier)
       .then((confirmationResult) => {
         window.confirmationResult = confirmationResult;
-        document.querySelector(
-          ".notify"
-        ).textContent = `Đã gửi mã OTP đến (+84) ${this.state.phone}!!`;
+        console.log("OTP is sent");
       })
       .catch((error) => {
-        document.querySelector(".notify").textContent =
-          "Số điện thoại không tồn tại, hoặc số điện  thoại đã được đăng ký !!";
+        console.log(error);
       });
-    this.setState({
-      flagOTP: true,
-      login: false,
-    });
   };
+
+  onSignInSubmit = (e) => {
+    e.preventDefault();
+    const index = this.state.customers.findIndex(
+      (i) => i.phone === this.state.phoneSignIn
+    );
+    if (index >= 0) {
+      this.sendOTP();
+      this.setState({
+        flagOTP: true,
+        login: false,
+      });
+    } else {
+      alert("Số điện thoại chưa được đăng ký");
+    }
+  };
+
   onSubmitOTP = (e) => {
     e.preventDefault();
-    const code = this.state.otp;
-    if (code !== undefined && window.confirmationResult !== undefined) {
-      window.confirmationResult
-        .confirm(code)
-        .then((result) => {
-          // User signed in successfully.
-          const user = result.user;
-          console.log(JSON.stringify(user));
-          alert("User is verified");
-          // ...
-        })
-        .catch((error) => {
-          // User couldn't sign in (bad verification code?)
-          // ...
-          alert("User is not verified");
-        });
+    const index = this.state.customers.findIndex(
+      (i) => i.phone === this.state.phoneSignUp
+    );
+    if (index >= 0) {
+      // đăng nhập
+      return alert("Số điện thoại đã tồn tại");
+    } else {
+      const code = this.state.otp;
+      if (code !== undefined && window.confirmationResult !== undefined) {
+        window.confirmationResult
+          .confirm(code)
+          .then((result) => {
+            const user = result.user;
+            console.log(user);
+            alert("User is verified");
+          })
+          .catch((error) => {
+            alert("User is not verified");
+          });
+      }
+      this.setState({
+        flagOTP: false,
+        login: false,
+      });
     }
-    this.setState({
-      flagOTP: false,
-      login: false,
-    });
   };
   handleReturn = () => {
     this.setState({
-      phone: undefined,
+      phoneSignUp: undefined,
       flagOTP: false,
       login: false,
     });
@@ -94,15 +129,65 @@ class LoginAndRegister extends React.Component {
       login: true,
     });
   };
+
+  componentDidMount() {
+    db.collection("customer")
+      .get()
+      .then((result) => {
+        const customers = [];
+        result.forEach((item) => {
+          const data = item.data();
+          customers.push(data);
+        });
+        this.setState({
+          customers: customers,
+        });
+      })
+      .catch((error) => {
+        console.log(error);
+      });
+  }
+  onSubmitCustomer = (e) => {
+    const { name, lastname, age, phoneSignUp } = this.state;
+    e.preventDefault();
+    console.log(phoneSignUp);
+    db.collection("customer").add({
+      name: name,
+      lastname: lastname,
+      age: age,
+      phone: phoneSignUp,
+    });
+    alert("Đăng ký thành công");
+    this.setState({
+      flagCustomer: false,
+      login: true,
+    });
+  };
   render() {
-    const { login, flagOTP, phone, otp } = this.state;
+    const {
+      login,
+      flagOTP,
+      phoneSignUp,
+      phoneSignIn,
+      otp,
+      customers,
+      flagCustomer,
+    } = this.state;
+    console.log(flagCustomer);
     return (
       <div className="wrapper-login">
         {flagOTP && (
           <InputOTP
             handleChange={this.handleChange}
             onSubmitOTP={this.onSubmitOTP}
-            valueInputPhone={phone}
+            valueInputPhone={phoneSignUp}
+            handleReturn={this.handleReturn}
+          />
+        )}
+        {flagCustomer && (
+          <FormCustomer
+            handleChange={this.handleChange}
+            onSubmitCustomer={this.onSubmitCustomer}
             handleReturn={this.handleReturn}
           />
         )}
@@ -111,10 +196,10 @@ class LoginAndRegister extends React.Component {
             <h2>Chào Bạn,</h2>
             <p>Nhập số điện thoại để tiếp tục</p>
             <FormPhone
-              onSignInSubmit={this.onSignInSubmit}
+              onSubmit={this.onSignUpSubmit}
               handleChange={this.handleChange}
-              nameInput="phone"
-              valueInputPhone={phone}
+              nameInput="phoneSignUp"
+              valueInputPhone={phoneSignUp}
               textButton="Tiếp tục"
             />
             <p className="link-register return" onClick={this.handleReturn}>
@@ -128,11 +213,11 @@ class LoginAndRegister extends React.Component {
             <h2>Đăng Nhập</h2>
 
             <FormPhone
-              onSignInSubmit={this.onSignInSubmit}
+              onSubmit={this.onSignInSubmit}
               handleChange={this.handleChange}
               textButton="Đăng nhập"
-              nameInput="phone"
-              valueInputPhone={phone}
+              nameInput="phoneSignIn"
+              valueInputPhone={phoneSignIn}
             />
 
             <p className="link-register" onClick={this.handleRegister}>
